@@ -387,37 +387,10 @@
 <v>BE_systemes_embarques\capteur_us\PSoC 5LP Architecture TRM</v>
 <v>BE_systemes_embarques\capteur_us\CY8C58LP Family Datasheet</v>
 <v>BE_systemes_embarques\capteur_us\System Reference Guides</v>
-<v>BE_systemes_embarques\capteur_us\System Reference Guides\cy_boot_v5_50</v>
-<v>BE_systemes_embarques\capteur_us\CharLCD_v2_20.pdf</v>
-<v>BE_systemes_embarques\capteur_us\Comp_v2_0.pdf</v>
-<v>BE_systemes_embarques\capteur_us\cy_clock_v2_20</v>
-<v>BE_systemes_embarques\capteur_us\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
-<v>BE_systemes_embarques\capteur_us\cy_isr_v1_70.pdf</v>
-<v>BE_systemes_embarques\capteur_us\cy_pins_v2_20</v>
-<v>BE_systemes_embarques\capteur_us\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>BE_systemes_embarques\capteur_us\cy_vref_v1_70.pdf</v>
-<v>BE_systemes_embarques\capteur_us\PGA_Inv_v2_0.pdf</v>
-<v>BE_systemes_embarques\capteur_us\PWM_v3_30.pdf</v>
-<v>BE_systemes_embarques\capteur_us\Speaker_v1_0.pdf</v>
-<v>BE_systemes_embarques\capteur_us\Timer_v2_70.pdf</v>
-<v>BE_systemes_embarques\capteur_us\VDAC8_v1_90.pdf</v>
-<v>BE_systemes_embarques\capteur_us\ZeroTerminal.pdf</v>
 <v>BE_systemes_embarques\Counter_exemple</v>
 <v>BE_systemes_embarques\Counter_exemple\PSoC 5LP Architecture TRM</v>
 <v>BE_systemes_embarques\Counter_exemple\CY8C58LP Family Datasheet</v>
 <v>BE_systemes_embarques\Counter_exemple\System Reference Guides</v>
-<v>BE_systemes_embarques\Counter_exemple\System Reference Guides\cy_boot_v5_50</v>
-<v>BE_systemes_embarques\Counter_exemple\CharLCD_v2_20.pdf</v>
-<v>BE_systemes_embarques\Counter_exemple\Counter_v3_0.pdf</v>
-<v>BE_systemes_embarques\Counter_exemple\cy_clock_v2_20</v>
-<v>BE_systemes_embarques\Counter_exemple\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
-<v>BE_systemes_embarques\Counter_exemple\cy_isr_v1_70.pdf</v>
-<v>BE_systemes_embarques\Counter_exemple\cy_pins_v2_20</v>
-<v>BE_systemes_embarques\Counter_exemple\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>BE_systemes_embarques\Counter_exemple\cy_sync_v1_0.pdf</v>
-<v>BE_systemes_embarques\Counter_exemple\cy_tff_v1_0.pdf</v>
-<v>BE_systemes_embarques\Counter_exemple\OneTerminal.pdf</v>
-<v>BE_systemes_embarques\Counter_exemple\ZeroTerminal.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>BE_systemes_embarques</v>
@@ -425,31 +398,10 @@
 <v>BE_systemes_embarques\capteur_us\PSoC 5LP Architecture TRM</v>
 <v>BE_systemes_embarques\capteur_us\CY8C58LP Family Datasheet</v>
 <v>BE_systemes_embarques\capteur_us\System Reference Guides</v>
-<v>BE_systemes_embarques\capteur_us\System Reference Guides\cy_boot_v5_50</v>
-<v>BE_systemes_embarques\capteur_us\CharLCD_v2_20.pdf</v>
-<v>BE_systemes_embarques\capteur_us\Comp_v2_0.pdf</v>
-<v>BE_systemes_embarques\capteur_us\cy_clock_v2_20</v>
-<v>BE_systemes_embarques\capteur_us\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
-<v>BE_systemes_embarques\capteur_us\cy_isr_v1_70.pdf</v>
-<v>BE_systemes_embarques\capteur_us\cy_pins_v2_20</v>
-<v>BE_systemes_embarques\capteur_us\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>BE_systemes_embarques\capteur_us\cy_vref_v1_70.pdf</v>
-<v>BE_systemes_embarques\capteur_us\PGA_Inv_v2_0.pdf</v>
-<v>BE_systemes_embarques\capteur_us\PWM_v3_30.pdf</v>
-<v>BE_systemes_embarques\capteur_us\Speaker_v1_0.pdf</v>
-<v>BE_systemes_embarques\capteur_us\Timer_v2_70.pdf</v>
-<v>BE_systemes_embarques\capteur_us\VDAC8_v1_90.pdf</v>
-<v>BE_systemes_embarques\capteur_us\ZeroTerminal.pdf</v>
 <v>BE_systemes_embarques\Counter_exemple</v>
 <v>BE_systemes_embarques\Counter_exemple\PSoC 5LP Architecture TRM</v>
 <v>BE_systemes_embarques\Counter_exemple\CY8C58LP Family Datasheet</v>
 <v>BE_systemes_embarques\Counter_exemple\System Reference Guides</v>
-<v>BE_systemes_embarques\Counter_exemple\System Reference Guides\cy_boot_v5_50</v>
-<v>BE_systemes_embarques\Counter_exemple\CharLCD_v2_20.pdf</v>
-<v>BE_systemes_embarques\Counter_exemple\Counter_v3_0.pdf</v>
-<v>BE_systemes_embarques\Counter_exemple\cy_clock_v2_20</v>
-<v>BE_systemes_embarques\Counter_exemple\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
-<v>BE_systemes_embarques\Counter_exemple\cy_isr_v1_70.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -476,7 +428,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="714, 404" SelectedTabbedMdiWindow="9e8df0db-00e9-46de-9fe7-083c950c7853"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="6d0653a0-27c7-43e1-8e8c-eea05ee190dd" /><DocumentWindow Key="7598ea94-0f4e-4e12-975a-0890ef685552" Guid="9e8df0db-00e9-46de-9fe7-083c950c7853" /><DocumentWindow Key="8a298ead-a800-4627-bebc-a86b30630854" Guid="77d173f3-d065-4fe3-a9e2-000d46914252" /><DocumentWindow Key="65792fb0-d09b-427b-9518-a5f8f45483f6" Guid="ec1bee81-5e31-4584-bb7a-0cd70db2a701" /><DocumentWindow Key="a6a10997-b7da-495b-909d-e926d7471d24" Guid="b96b7bfa-bfc0-4949-add5-7a3426839b2c" /><DocumentWindow Key="d862d807-bd19-4aad-a2d6-ffb49a041afb" Guid="2deba146-618a-4e26-b2e9-5a3e897bba25" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="795, 404" SelectedTabbedMdiWindow="984f643f-9eaa-4ee1-b894-9dd9ac9dd7f4"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="6d0653a0-27c7-43e1-8e8c-eea05ee190dd" /><DocumentWindow Key="f51b8d07-b258-4ad0-bf4d-fd34f7e58f79" Guid="0c6f466e-a28f-47e3-a8f0-361af57ef839" /><DocumentWindow Key="0588a06b-6b8c-431c-889b-3b1ffae257b2" Guid="453393a2-f9a8-4a41-9e3e-6943c910c171" /><DocumentWindow Key="e2731cab-5ab1-4c9f-a4fb-0e5f46d7a421" Guid="0bcf1c4e-3a65-499d-ba6d-e4f555724740" /><DocumentWindow Key="8cd21356-9326-42ee-b444-072dfa790813" Guid="68c25409-3723-4ad1-a880-0904c8360d04" /><DocumentWindow Key="1ccfeeec-fab6-466c-a9bf-ff40b6916d4c" Guid="984f643f-9eaa-4ee1-b894-9dd9ac9dd7f4" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
