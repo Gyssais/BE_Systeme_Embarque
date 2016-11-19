@@ -378,9 +378,54 @@
 <VisibleNodeIds>
 <v>BE_systemes_embarques</v>
 <v>BE_systemes_embarques\capteur_us</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Ampli_Recept.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Ampli_Recept_PM.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1_CustChars.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1_LCDPort.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1_PM.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Clock_1.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Detect_Seuil_Recept.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Detect_Seuil_Recept_PM.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_1.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_2.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_3.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Timer_US.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Timer_US_PM.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\TimerISR.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\US_40kHz.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\US_40kHz_PM.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\V_seuil.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\V_seuil_PM.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\capteur_us.elf</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\capteur_us.hex</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\capteur_us.map</v>
+<v>BE_systemes_embarques\capteur_us\capteur_us.gpdsc</v>
 <v>BE_systemes_embarques\capteur_us\capteur_us.rpt</v>
 <v>BE_systemes_embarques\capteur_us\capteur_us_timing.html</v>
 <v>BE_systemes_embarques\Counter_exemple</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1_CustChars.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1_LCDPort.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -490,7 +535,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="795, 404" SelectedTabbedMdiWindow="984f643f-9eaa-4ee1-b894-9dd9ac9dd7f4"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="6d0653a0-27c7-43e1-8e8c-eea05ee190dd" /><DocumentWindow Key="f51b8d07-b258-4ad0-bf4d-fd34f7e58f79" Guid="0c6f466e-a28f-47e3-a8f0-361af57ef839" /><DocumentWindow Key="0588a06b-6b8c-431c-889b-3b1ffae257b2" Guid="453393a2-f9a8-4a41-9e3e-6943c910c171" /><DocumentWindow Key="e2731cab-5ab1-4c9f-a4fb-0e5f46d7a421" Guid="0bcf1c4e-3a65-499d-ba6d-e4f555724740" /><DocumentWindow Key="8cd21356-9326-42ee-b444-072dfa790813" Guid="68c25409-3723-4ad1-a880-0904c8360d04" /><DocumentWindow Key="1ccfeeec-fab6-466c-a9bf-ff40b6916d4c" Guid="984f643f-9eaa-4ee1-b894-9dd9ac9dd7f4" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1349, 756" SelectedTabbedMdiWindow="27e8d2e3-4fc9-4e3b-8813-7788c006eae2"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="6d0653a0-27c7-43e1-8e8c-eea05ee190dd" /><DocumentWindow Key="d7cdc747-6f0a-4bcc-a819-897d8a0ace91" Guid="b5d7b9cf-b328-46d3-8850-681924fdec85" /><DocumentWindow Key="bfb376e1-fbbf-401f-b348-72d8e037190e" Guid="27e8d2e3-4fc9-4e3b-8813-7788c006eae2" /><DocumentWindow Key="ac1e5581-49d3-4beb-aea6-0b28e6965205" Guid="e0013521-d8b6-4ff7-b347-29886a9edae2" /><DocumentWindow Key="236eb380-a52b-42c9-8d58-9849590765bb" Guid="6dd4246a-f997-44f9-9c54-508eed1aa2e5" /><DocumentWindow Key="76643d61-841a-410c-96fb-b83ba8599eb8" Guid="20885f11-d082-4619-a95d-f91d4b5bb43e" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
