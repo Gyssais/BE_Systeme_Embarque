@@ -1,0 +1,2738 @@
+Loading plugins phase: Elapsed time ==> 0s.437ms
+<CYPRESSTAG name="CyDsfit arguments...">
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\capteur_us.cyprj -d CY8C5868AXI-LP035 -s C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
+<CYPRESSTAG name="Design elaboration results...">
+</CYPRESSTAG>
+Elaboration phase: Elapsed time ==> 1s.697ms
+<CYPRESSTAG name="HDL generation results...">
+</CYPRESSTAG>
+HDL generation phase: Elapsed time ==> 0s.047ms
+<CYPRESSTAG name="Synthesis results...">
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp Verilog Synthesis Compiler: Version 6.3 IR 41
+  -|               |-   Copyright (C) 1991-2001 Cypress Semiconductor
+   |_______________|
+     | | | | | | |
+
+======================================================================
+Compiling:  capteur_us.v
+Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\bin\warp.exe
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\capteur_us.cyprj -dcpsoc3 capteur_us.v -verilog
+======================================================================
+
+======================================================================
+Compiling:  capteur_us.v
+Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\bin\warp.exe
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\capteur_us.cyprj -dcpsoc3 capteur_us.v -verilog
+======================================================================
+
+======================================================================
+Compiling:  capteur_us.v
+Program  :   vlogfe
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\capteur_us.cyprj -dcpsoc3 -verilog capteur_us.v
+======================================================================
+
+vlogfe V6.3 IR 41:  Verilog parser
+Thu Nov 17 11:47:14 2016
+
+
+======================================================================
+Compiling:  capteur_us.v
+Program  :   vpp
+Options  :    -yv2 -q10 capteur_us.v
+======================================================================
+
+vpp V6.3 IR 41:  Verilog Pre-Processor
+Thu Nov 17 11:47:14 2016
+
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_PWM_v3_30\B_PWM_v3_30.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\OneTerminal\OneTerminal.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_Timer_v2_70\B_Timer_v2_70.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_vref_v1_70\cy_vref_v1_70.v'
+
+vpp:  No errors.
+
+Library 'work' => directory 'lcpsoc3'
+General_symbol_table
+General_symbol_table
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Using control file 'capteur_us.ctl'.
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_PWM_v3_30\B_PWM_v3_30.v (line 947, col 46):  Note: Substituting module 'sub_vi_vv' for '-'.
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_PWM_v3_30\B_PWM_v3_30.v (line 977, col 46):  Note: Substituting module 'add_vi_vv' for '+'.
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_Timer_v2_70\B_Timer_v2_70.v (line 368, col 46):  Note: Substituting module 'cmp_vv_vv' for '='.
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_Timer_v2_70\B_Timer_v2_70.v (line 374, col 62):  Note: Substituting module 'add_vv_vv' for '+'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3pkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif'.
+
+vlogfe:  No errors.
+
+
+======================================================================
+Compiling:  capteur_us.v
+Program  :   tovif
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\capteur_us.cyprj -dcpsoc3 -verilog capteur_us.v
+======================================================================
+
+tovif V6.3 IR 41:  High-level synthesis
+Thu Nov 17 11:47:14 2016
+
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Linking 'C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\capteur_us.ctl'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_PWM_v3_30\B_PWM_v3_30.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
+Linking 'C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\capteur_us.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\OneTerminal\OneTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_Timer_v2_70\B_Timer_v2_70.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_vref_v1_70\cy_vref_v1_70.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3pkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\lcpsoc3\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mcompare.vif'.
+
+tovif:  No errors.
+
+
+======================================================================
+Compiling:  capteur_us.v
+Program  :   topld
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\capteur_us.cyprj -dcpsoc3 -verilog capteur_us.v
+======================================================================
+
+topld V6.3 IR 41:  Synthesis and optimization
+Thu Nov 17 11:47:15 2016
+
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Linking 'C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\capteur_us.ctl'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_PWM_v3_30\B_PWM_v3_30.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
+Linking 'C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\capteur_us.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\OneTerminal\OneTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_Timer_v2_70\B_Timer_v2_70.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_vref_v1_70\cy_vref_v1_70.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3pkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\lcpsoc3\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mcompare.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\lcpsoc3\stdlogic\cpsoc3.vif'.
+
+----------------------------------------------------------
+Detecting unused logic.
+----------------------------------------------------------
+    User names
+	\US_40kHz:PWMUDB:km_run\
+	\US_40kHz:PWMUDB:ctrl_cmpmode2_2\
+	\US_40kHz:PWMUDB:ctrl_cmpmode2_1\
+	\US_40kHz:PWMUDB:ctrl_cmpmode2_0\
+	\US_40kHz:PWMUDB:ctrl_cmpmode1_2\
+	\US_40kHz:PWMUDB:ctrl_cmpmode1_1\
+	\US_40kHz:PWMUDB:ctrl_cmpmode1_0\
+	\US_40kHz:PWMUDB:capt_rising\
+	\US_40kHz:PWMUDB:capt_falling\
+	\US_40kHz:PWMUDB:trig_rise\
+	\US_40kHz:PWMUDB:trig_fall\
+	\US_40kHz:PWMUDB:sc_kill\
+	\US_40kHz:PWMUDB:min_kill\
+	\US_40kHz:PWMUDB:km_tc\
+	\US_40kHz:PWMUDB:db_tc\
+	\US_40kHz:PWMUDB:dith_sel\
+	\US_40kHz:Net_101\
+	\US_40kHz:Net_96\
+	\US_40kHz:PWMUDB:MODULE_1:b_31\
+	\US_40kHz:PWMUDB:MODULE_1:b_30\
+	\US_40kHz:PWMUDB:MODULE_1:b_29\
+	\US_40kHz:PWMUDB:MODULE_1:b_28\
+	\US_40kHz:PWMUDB:MODULE_1:b_27\
+	\US_40kHz:PWMUDB:MODULE_1:b_26\
+	\US_40kHz:PWMUDB:MODULE_1:b_25\
+	\US_40kHz:PWMUDB:MODULE_1:b_24\
+	\US_40kHz:PWMUDB:MODULE_1:b_23\
+	\US_40kHz:PWMUDB:MODULE_1:b_22\
+	\US_40kHz:PWMUDB:MODULE_1:b_21\
+	\US_40kHz:PWMUDB:MODULE_1:b_20\
+	\US_40kHz:PWMUDB:MODULE_1:b_19\
+	\US_40kHz:PWMUDB:MODULE_1:b_18\
+	\US_40kHz:PWMUDB:MODULE_1:b_17\
+	\US_40kHz:PWMUDB:MODULE_1:b_16\
+	\US_40kHz:PWMUDB:MODULE_1:b_15\
+	\US_40kHz:PWMUDB:MODULE_1:b_14\
+	\US_40kHz:PWMUDB:MODULE_1:b_13\
+	\US_40kHz:PWMUDB:MODULE_1:b_12\
+	\US_40kHz:PWMUDB:MODULE_1:b_11\
+	\US_40kHz:PWMUDB:MODULE_1:b_10\
+	\US_40kHz:PWMUDB:MODULE_1:b_9\
+	\US_40kHz:PWMUDB:MODULE_1:b_8\
+	\US_40kHz:PWMUDB:MODULE_1:b_7\
+	\US_40kHz:PWMUDB:MODULE_1:b_6\
+	\US_40kHz:PWMUDB:MODULE_1:b_5\
+	\US_40kHz:PWMUDB:MODULE_1:b_4\
+	\US_40kHz:PWMUDB:MODULE_1:b_3\
+	\US_40kHz:PWMUDB:MODULE_1:b_2\
+	\US_40kHz:PWMUDB:MODULE_1:b_1\
+	\US_40kHz:PWMUDB:MODULE_1:b_0\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:a_31\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:a_30\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:a_29\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:a_28\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:a_27\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:a_26\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:a_25\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:a_24\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_31\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_30\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_29\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_28\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_27\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_26\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_25\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_24\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_23\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_22\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_21\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_20\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_19\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_18\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_17\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_16\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_15\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_14\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_13\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_12\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_11\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_10\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_9\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_8\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_7\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_6\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_5\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_4\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_3\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_2\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_1\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:b_0\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_31\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_30\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_29\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_28\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_27\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_26\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_25\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_24\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_23\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_22\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_21\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_20\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_19\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_18\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_17\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_16\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_15\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_14\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_13\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_12\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_11\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_10\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_9\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_8\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_7\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_6\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_5\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_4\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_3\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_2\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_31\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_30\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_29\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_28\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_27\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_26\
+	\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_25\
+	Net_386
+	Net_380
+	Net_379
+	\US_40kHz:Net_113\
+	\US_40kHz:Net_107\
+	\US_40kHz:Net_114\
+	\Detect_Seuil_Recept:Net_9\
+	\Timer_US:Net_260\
+	Net_411
+	\Timer_US:Net_53\
+	Net_410
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:albi_1\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:agbi_1\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:lt_0\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:gt_0\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:lt_1\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:gt_1\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:lti_0\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:gti_0\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:albi_0\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:agbi_0\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:xneq\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:xlt\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:xlte\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:xgt\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:xgte\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:lt\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:gt\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:gte\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:lte\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_2:neq\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_3:g2:a0:b_1\
+	\Timer_US:TimerUDB:sIntCapCount:MODULE_3:g2:a0:b_0\
+	\Timer_US:TimerUDB:zeros_3\
+	\Timer_US:Net_102\
+	\Timer_US:Net_266\
+
+    Synthesized names
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_31\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_30\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_29\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_28\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_27\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_26\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_25\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_24\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_23\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_22\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_21\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_20\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_19\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_18\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_17\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_16\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_15\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_14\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_13\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_12\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_11\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_10\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_9\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_8\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_7\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_6\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_5\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_4\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_3\
+	\US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_2\
+
+Deleted 163 User equations/components.
+Deleted 30 Synthesized equations/components.
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+Aliasing \US_40kHz:PWMUDB:hwCapture\ to zero
+Aliasing \US_40kHz:PWMUDB:trig_out\ to one
+Aliasing \US_40kHz:PWMUDB:runmode_enable\\R\ to zero
+Aliasing \US_40kHz:PWMUDB:runmode_enable\\S\ to zero
+Aliasing \US_40kHz:PWMUDB:ltch_kill_reg\\R\ to zero
+Aliasing \US_40kHz:PWMUDB:ltch_kill_reg\\S\ to zero
+Aliasing \US_40kHz:PWMUDB:min_kill_reg\\R\ to zero
+Aliasing \US_40kHz:PWMUDB:min_kill_reg\\S\ to zero
+Aliasing \US_40kHz:PWMUDB:final_kill\ to one
+Aliasing \US_40kHz:PWMUDB:dith_count_1\\R\ to zero
+Aliasing \US_40kHz:PWMUDB:dith_count_1\\S\ to zero
+Aliasing \US_40kHz:PWMUDB:dith_count_0\\R\ to zero
+Aliasing \US_40kHz:PWMUDB:dith_count_0\\S\ to zero
+Aliasing \US_40kHz:PWMUDB:reset\ to zero
+Aliasing \US_40kHz:PWMUDB:status_6\ to zero
+Aliasing \US_40kHz:PWMUDB:status_4\ to zero
+Aliasing \US_40kHz:PWMUDB:cmp1_status_reg\\R\ to zero
+Aliasing \US_40kHz:PWMUDB:cmp1_status_reg\\S\ to zero
+Aliasing \US_40kHz:PWMUDB:cmp2_status_reg\\R\ to zero
+Aliasing \US_40kHz:PWMUDB:cmp2_status_reg\\S\ to zero
+Aliasing \US_40kHz:PWMUDB:final_kill_reg\\R\ to zero
+Aliasing \US_40kHz:PWMUDB:final_kill_reg\\S\ to zero
+Aliasing \US_40kHz:PWMUDB:cs_addr_0\ to zero
+Aliasing \US_40kHz:PWMUDB:pwm_temp\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_23\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_22\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_21\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_20\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_19\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_18\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_17\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_16\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_15\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_14\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_13\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_12\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_11\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_10\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_9\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_8\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_7\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_6\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_5\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_4\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_3\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_2\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_0\ to one
+Aliasing tmpOE__Pin_2_net_0 to one
+Aliasing tmpOE__Pin_1_net_0 to one
+Aliasing \Detect_Seuil_Recept:clock\ to zero
+Aliasing \V_seuil:Net_83\ to zero
+Aliasing \V_seuil:Net_81\ to zero
+Aliasing \V_seuil:Net_82\ to zero
+Aliasing tmpOE__Pin_3_net_0 to one
+Aliasing Net_12 to zero
+Aliasing \Timer_US:TimerUDB:ctrl_cmode_1\ to zero
+Aliasing \Timer_US:TimerUDB:ctrl_cmode_0\ to one
+Aliasing \Timer_US:TimerUDB:ctrl_tmode_1\ to zero
+Aliasing \Timer_US:TimerUDB:ctrl_tmode_0\ to one
+Aliasing \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:aeqb_0\ to one
+Aliasing \Timer_US:TimerUDB:sIntCapCount:MODIN4_1\ to \Timer_US:TimerUDB:sIntCapCount:MODIN2_1\
+Aliasing \Timer_US:TimerUDB:sIntCapCount:MODIN4_0\ to \Timer_US:TimerUDB:sIntCapCount:MODIN2_0\
+Aliasing \Timer_US:TimerUDB:sIntCapCount:MODULE_3:g2:a0:g1:z1:s0:g1:u0:b_0\ to one
+Aliasing \Timer_US:TimerUDB:status_6\ to zero
+Aliasing \Timer_US:TimerUDB:status_5\ to zero
+Aliasing \Timer_US:TimerUDB:status_4\ to zero
+Aliasing \Timer_US:TimerUDB:status_0\ to \Timer_US:TimerUDB:tc_i\
+Aliasing \Ampli_Recept:Net_36\ to zero
+Aliasing \Ampli_Recept:Net_40\ to zero
+Aliasing \Ampli_Recept:Net_37\ to zero
+Aliasing \Ampli_Recept:Net_38\ to zero
+Aliasing \US_40kHz:PWMUDB:min_kill_reg\\D\ to one
+Aliasing \US_40kHz:PWMUDB:prevCapture\\D\ to zero
+Aliasing \US_40kHz:PWMUDB:trig_last\\D\ to zero
+Aliasing \US_40kHz:PWMUDB:ltch_kill_reg\\D\ to one
+Aliasing \US_40kHz:PWMUDB:tc_i_reg\\D\ to \US_40kHz:PWMUDB:status_2\
+Removing Lhs of wire \US_40kHz:PWMUDB:ctrl_enable\[19] = \US_40kHz:PWMUDB:control_7\[11]
+Removing Lhs of wire \US_40kHz:PWMUDB:hwCapture\[29] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:hwEnable\[30] = \US_40kHz:PWMUDB:control_7\[11]
+Removing Lhs of wire \US_40kHz:PWMUDB:trig_out\[34] = one[7]
+Removing Lhs of wire \US_40kHz:PWMUDB:runmode_enable\\R\[36] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:runmode_enable\\S\[37] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:final_enable\[38] = \US_40kHz:PWMUDB:runmode_enable\[35]
+Removing Lhs of wire \US_40kHz:PWMUDB:ltch_kill_reg\\R\[42] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:ltch_kill_reg\\S\[43] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:min_kill_reg\\R\[44] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:min_kill_reg\\S\[45] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:final_kill\[48] = one[7]
+Removing Lhs of wire \US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_1\[52] = \US_40kHz:PWMUDB:MODULE_1:g2:a0:s_1\[293]
+Removing Lhs of wire \US_40kHz:PWMUDB:add_vi_vv_MODGEN_1_0\[54] = \US_40kHz:PWMUDB:MODULE_1:g2:a0:s_0\[294]
+Removing Lhs of wire \US_40kHz:PWMUDB:dith_count_1\\R\[55] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:dith_count_1\\S\[56] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:dith_count_0\\R\[57] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:dith_count_0\\S\[58] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:reset\[61] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:status_6\[62] = zero[10]
+Removing Rhs of wire \US_40kHz:PWMUDB:status_5\[63] = \US_40kHz:PWMUDB:final_kill_reg\[78]
+Removing Lhs of wire \US_40kHz:PWMUDB:status_4\[64] = zero[10]
+Removing Rhs of wire \US_40kHz:PWMUDB:status_3\[65] = \US_40kHz:PWMUDB:fifo_full\[85]
+Removing Rhs of wire \US_40kHz:PWMUDB:status_1\[67] = \US_40kHz:PWMUDB:cmp2_status_reg\[77]
+Removing Rhs of wire \US_40kHz:PWMUDB:status_0\[68] = \US_40kHz:PWMUDB:cmp1_status_reg\[76]
+Removing Lhs of wire \US_40kHz:PWMUDB:cmp1_status_reg\\R\[79] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:cmp1_status_reg\\S\[80] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:cmp2_status_reg\\R\[81] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:cmp2_status_reg\\S\[82] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:final_kill_reg\\R\[83] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:final_kill_reg\\S\[84] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:cs_addr_2\[86] = \US_40kHz:PWMUDB:tc_i\[40]
+Removing Lhs of wire \US_40kHz:PWMUDB:cs_addr_1\[87] = \US_40kHz:PWMUDB:runmode_enable\[35]
+Removing Lhs of wire \US_40kHz:PWMUDB:cs_addr_0\[88] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:compare1\[121] = \US_40kHz:PWMUDB:cmp1_less\[92]
+Removing Rhs of wire Net_260[132] = \US_40kHz:PWMUDB:pwm1_i_reg\[125]
+Removing Rhs of wire Net_272[133] = \US_40kHz:PWMUDB:pwm2_i_reg\[127]
+Removing Lhs of wire \US_40kHz:PWMUDB:pwm_temp\[134] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_23\[175] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_22\[176] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_21\[177] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_20\[178] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_19\[179] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_18\[180] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_17\[181] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_16\[182] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_15\[183] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_14\[184] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_13\[185] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_12\[186] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_11\[187] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_10\[188] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_9\[189] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_8\[190] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_7\[191] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_6\[192] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_5\[193] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_4\[194] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_3\[195] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_2\[196] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_1\[197] = \US_40kHz:PWMUDB:MODIN1_1\[198]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODIN1_1\[198] = \US_40kHz:PWMUDB:dith_count_1\[51]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:a_0\[199] = \US_40kHz:PWMUDB:MODIN1_0\[200]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODIN1_0\[200] = \US_40kHz:PWMUDB:dith_count_0\[53]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_0\[332] = one[7]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_0\[333] = one[7]
+Removing Lhs of wire tmpOE__Pin_2_net_0[342] = one[7]
+Removing Lhs of wire tmpOE__Pin_1_net_0[348] = one[7]
+Removing Lhs of wire \Detect_Seuil_Recept:clock\[356] = zero[10]
+Removing Rhs of wire Net_426[358] = \Detect_Seuil_Recept:Net_1\[357]
+Removing Lhs of wire \V_seuil:Net_83\[361] = zero[10]
+Removing Lhs of wire \V_seuil:Net_81\[362] = zero[10]
+Removing Lhs of wire \V_seuil:Net_82\[363] = zero[10]
+Removing Lhs of wire tmpOE__Pin_3_net_0[367] = one[7]
+Removing Lhs of wire Net_12[373] = zero[10]
+Removing Rhs of wire Net_463[377] = \Timer_US:Net_55\[378]
+Removing Lhs of wire \Timer_US:TimerUDB:ctrl_enable\[394] = \Timer_US:TimerUDB:control_7\[386]
+Removing Lhs of wire \Timer_US:TimerUDB:ctrl_ten\[395] = \Timer_US:TimerUDB:control_4\[389]
+Removing Lhs of wire \Timer_US:TimerUDB:ctrl_cmode_1\[396] = zero[10]
+Removing Lhs of wire \Timer_US:TimerUDB:ctrl_cmode_0\[397] = one[7]
+Removing Lhs of wire \Timer_US:TimerUDB:ctrl_tmode_1\[398] = zero[10]
+Removing Lhs of wire \Timer_US:TimerUDB:ctrl_tmode_0\[399] = one[7]
+Removing Lhs of wire \Timer_US:TimerUDB:ctrl_ic_1\[400] = \Timer_US:TimerUDB:control_1\[392]
+Removing Lhs of wire \Timer_US:TimerUDB:ctrl_ic_0\[401] = \Timer_US:TimerUDB:control_0\[393]
+Removing Rhs of wire \Timer_US:TimerUDB:timer_enable\[405] = \Timer_US:TimerUDB:runmode_enable\[478]
+Removing Rhs of wire \Timer_US:TimerUDB:run_mode\[406] = \Timer_US:TimerUDB:hwEnable_reg\[407]
+Removing Lhs of wire \Timer_US:TimerUDB:tc_i\[411] = \Timer_US:TimerUDB:status_tc\[408]
+Removing Lhs of wire \Timer_US:TimerUDB:hwEnable\[413] = \Timer_US:TimerUDB:control_7\[386]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:cmp_vv_vv_MODGEN_2\[417] = \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:xeq\[456]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:add_vv_vv_MODGEN_3_1\[418] = \Timer_US:TimerUDB:sIntCapCount:MODULE_3:g2:a0:s_1\[473]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:add_vv_vv_MODGEN_3_0\[420] = \Timer_US:TimerUDB:sIntCapCount:MODULE_3:g2:a0:s_0\[474]
+Removing Lhs of wire \Timer_US:TimerUDB:capt_fifo_load_int\[422] = \Timer_US:TimerUDB:capt_int_temp\[421]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:newa_1\[423] = \Timer_US:TimerUDB:sIntCapCount:MODIN2_1\[424]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODIN2_1\[424] = \Timer_US:TimerUDB:int_capt_count_1\[416]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:newa_0\[425] = \Timer_US:TimerUDB:sIntCapCount:MODIN2_0\[426]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODIN2_0\[426] = \Timer_US:TimerUDB:int_capt_count_0\[419]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:newb_1\[427] = \Timer_US:TimerUDB:sIntCapCount:MODIN3_1\[428]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODIN3_1\[428] = \Timer_US:TimerUDB:control_1\[392]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:newb_0\[429] = \Timer_US:TimerUDB:sIntCapCount:MODIN3_0\[430]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODIN3_0\[430] = \Timer_US:TimerUDB:control_0\[393]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:dataa_1\[431] = \Timer_US:TimerUDB:int_capt_count_1\[416]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:dataa_0\[432] = \Timer_US:TimerUDB:int_capt_count_0\[419]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:datab_1\[433] = \Timer_US:TimerUDB:control_1\[392]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:datab_0\[434] = \Timer_US:TimerUDB:control_0\[393]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:a_1\[435] = \Timer_US:TimerUDB:int_capt_count_1\[416]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:a_0\[436] = \Timer_US:TimerUDB:int_capt_count_0\[419]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:b_1\[437] = \Timer_US:TimerUDB:control_1\[392]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:b_0\[438] = \Timer_US:TimerUDB:control_0\[393]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:aeqb_0\[441] = one[7]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:eq_0\[442] = \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:xnor_array_0\[440]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:eqi_0\[444] = \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:eq_1\[443]
+Removing Rhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:xeq\[456] = \Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:aeqb_1\[445]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_3:g2:a0:a_1\[467] = \Timer_US:TimerUDB:int_capt_count_1\[416]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODIN4_1\[468] = \Timer_US:TimerUDB:int_capt_count_1\[416]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_3:g2:a0:a_0\[469] = \Timer_US:TimerUDB:int_capt_count_0\[419]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODIN4_0\[470] = \Timer_US:TimerUDB:int_capt_count_0\[419]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_3:g2:a0:g1:z1:s0:g1:u0:c_0\[476] = one[7]
+Removing Lhs of wire \Timer_US:TimerUDB:sIntCapCount:MODULE_3:g2:a0:g1:z1:s0:g1:u0:b_0\[477] = one[7]
+Removing Lhs of wire \Timer_US:TimerUDB:status_6\[485] = zero[10]
+Removing Lhs of wire \Timer_US:TimerUDB:status_5\[486] = zero[10]
+Removing Lhs of wire \Timer_US:TimerUDB:status_4\[487] = zero[10]
+Removing Lhs of wire \Timer_US:TimerUDB:status_0\[488] = \Timer_US:TimerUDB:status_tc\[408]
+Removing Lhs of wire \Timer_US:TimerUDB:status_1\[489] = \Timer_US:TimerUDB:capt_int_temp\[421]
+Removing Rhs of wire \Timer_US:TimerUDB:status_2\[490] = \Timer_US:TimerUDB:fifo_full\[491]
+Removing Rhs of wire \Timer_US:TimerUDB:status_3\[492] = \Timer_US:TimerUDB:fifo_nempty\[493]
+Removing Lhs of wire \Timer_US:TimerUDB:cs_addr_2\[495] = zero[10]
+Removing Lhs of wire \Timer_US:TimerUDB:cs_addr_1\[496] = \Timer_US:TimerUDB:trig_reg\[484]
+Removing Lhs of wire \Timer_US:TimerUDB:cs_addr_0\[497] = \Timer_US:TimerUDB:per_zero\[410]
+Removing Lhs of wire \Ampli_Recept:Net_36\[629] = zero[10]
+Removing Lhs of wire \Ampli_Recept:Net_40\[630] = zero[10]
+Removing Lhs of wire \Ampli_Recept:Net_37\[631] = zero[10]
+Removing Lhs of wire \Ampli_Recept:Net_38\[632] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:min_kill_reg\\D\[636] = one[7]
+Removing Lhs of wire \US_40kHz:PWMUDB:prevCapture\\D\[637] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:trig_last\\D\[638] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:ltch_kill_reg\\D\[641] = one[7]
+Removing Lhs of wire \US_40kHz:PWMUDB:prevCompare1\\D\[644] = \US_40kHz:PWMUDB:cmp1\[71]
+Removing Lhs of wire \US_40kHz:PWMUDB:prevCompare2\\D\[645] = \US_40kHz:PWMUDB:cmp2\[74]
+Removing Lhs of wire \US_40kHz:PWMUDB:cmp1_status_reg\\D\[646] = \US_40kHz:PWMUDB:cmp1_status\[72]
+Removing Lhs of wire \US_40kHz:PWMUDB:cmp2_status_reg\\D\[647] = \US_40kHz:PWMUDB:cmp2_status\[75]
+Removing Lhs of wire \US_40kHz:PWMUDB:pwm_i_reg\\D\[649] = \US_40kHz:PWMUDB:pwm_i\[124]
+Removing Lhs of wire \US_40kHz:PWMUDB:pwm1_i_reg\\D\[650] = \US_40kHz:PWMUDB:pwm1_i\[126]
+Removing Lhs of wire \US_40kHz:PWMUDB:pwm2_i_reg\\D\[651] = \US_40kHz:PWMUDB:pwm2_i\[128]
+Removing Lhs of wire \US_40kHz:PWMUDB:tc_i_reg\\D\[652] = \US_40kHz:PWMUDB:status_2\[66]
+Removing Lhs of wire \Timer_US:TimerUDB:capture_last\\D\[653] = Net_426[358]
+Removing Lhs of wire \Timer_US:TimerUDB:hwEnable_reg\\D\[654] = \Timer_US:TimerUDB:control_7\[386]
+Removing Lhs of wire \Timer_US:TimerUDB:tc_reg_i\\D\[655] = \Timer_US:TimerUDB:status_tc\[408]
+Removing Lhs of wire \Timer_US:TimerUDB:capture_out_reg_i\\D\[656] = \Timer_US:TimerUDB:capt_fifo_load\[404]
+Removing Lhs of wire \Timer_US:TimerUDB:trig_last\\D\[662] = Net_272[133]
+
+------------------------------------------------------
+Aliased 0 equations, 149 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+Substituting virtuals - pass 1:
+
+Note:  Expanding virtual equation for 'one' (cost = 0):
+one <=  ('1') ;
+
+Note:  Expanding virtual equation for 'zero' (cost = 0):
+zero <=  ('0') ;
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:cmp1\' (cost = 0):
+\US_40kHz:PWMUDB:cmp1\ <= (\US_40kHz:PWMUDB:cmp1_less\);
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:compare2\' (cost = 1):
+\US_40kHz:PWMUDB:compare2\ <= ((not \US_40kHz:PWMUDB:cmp2_eq\ and not \US_40kHz:PWMUDB:cmp2_less\));
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_1\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_1\ <= (\US_40kHz:PWMUDB:dith_count_0\);
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_0\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_0\ <= (not \US_40kHz:PWMUDB:dith_count_0\);
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_17\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_17\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_9\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_9\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_2\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_2\ <= ((\US_40kHz:PWMUDB:dith_count_1\ and \US_40kHz:PWMUDB:dith_count_0\));
+
+Note:  Expanding virtual equation for '\Timer_US:TimerUDB:fifo_load_polarized\' (cost = 1):
+\Timer_US:TimerUDB:fifo_load_polarized\ <= ((not \Timer_US:TimerUDB:capture_last\ and Net_426));
+
+Note:  Expanding virtual equation for '\Timer_US:TimerUDB:capt_fifo_load\' (cost = 9):
+\Timer_US:TimerUDB:capt_fifo_load\ <= ((not \Timer_US:TimerUDB:capture_last\ and Net_426 and \Timer_US:TimerUDB:timer_enable\));
+
+Note:  Expanding virtual equation for '\Timer_US:TimerUDB:trigger_polarized\' (cost = 0):
+\Timer_US:TimerUDB:trigger_polarized\ <= (\Timer_US:TimerUDB:trig_rise_detected\);
+
+Note:  Expanding virtual equation for '\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:xnor_array_1\' (cost = 2):
+\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:xnor_array_1\ <= ((not \Timer_US:TimerUDB:control_1\ and not \Timer_US:TimerUDB:int_capt_count_1\)
+	OR (\Timer_US:TimerUDB:control_1\ and \Timer_US:TimerUDB:int_capt_count_1\));
+
+Note:  Expanding virtual equation for '\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:xnor_array_0\' (cost = 4):
+\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:xnor_array_0\ <= ((not \Timer_US:TimerUDB:control_0\ and not \Timer_US:TimerUDB:int_capt_count_0\)
+	OR (\Timer_US:TimerUDB:control_0\ and \Timer_US:TimerUDB:int_capt_count_0\));
+
+Note:  Expanding virtual equation for '\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:eq_1\' (cost = 4):
+\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:gx:u0:eq_1\ <= ((not \Timer_US:TimerUDB:control_1\ and not \Timer_US:TimerUDB:control_0\ and not \Timer_US:TimerUDB:int_capt_count_1\ and not \Timer_US:TimerUDB:int_capt_count_0\)
+	OR (not \Timer_US:TimerUDB:control_1\ and not \Timer_US:TimerUDB:int_capt_count_1\ and \Timer_US:TimerUDB:control_0\ and \Timer_US:TimerUDB:int_capt_count_0\)
+	OR (not \Timer_US:TimerUDB:control_0\ and not \Timer_US:TimerUDB:int_capt_count_0\ and \Timer_US:TimerUDB:control_1\ and \Timer_US:TimerUDB:int_capt_count_1\)
+	OR (\Timer_US:TimerUDB:control_1\ and \Timer_US:TimerUDB:control_0\ and \Timer_US:TimerUDB:int_capt_count_1\ and \Timer_US:TimerUDB:int_capt_count_0\));
+
+Note:  Expanding virtual equation for '\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:xeq\' (cost = 60):
+\Timer_US:TimerUDB:sIntCapCount:MODULE_2:g1:a0:xeq\ <= ((not \Timer_US:TimerUDB:control_1\ and not \Timer_US:TimerUDB:control_0\ and not \Timer_US:TimerUDB:int_capt_count_1\ and not \Timer_US:TimerUDB:int_capt_count_0\)
+	OR (not \Timer_US:TimerUDB:control_1\ and not \Timer_US:TimerUDB:int_capt_count_1\ and \Timer_US:TimerUDB:control_0\ and \Timer_US:TimerUDB:int_capt_count_0\)
+	OR (not \Timer_US:TimerUDB:control_0\ and not \Timer_US:TimerUDB:int_capt_count_0\ and \Timer_US:TimerUDB:control_1\ and \Timer_US:TimerUDB:int_capt_count_1\)
+	OR (\Timer_US:TimerUDB:control_1\ and \Timer_US:TimerUDB:control_0\ and \Timer_US:TimerUDB:int_capt_count_1\ and \Timer_US:TimerUDB:int_capt_count_0\));
+
+Note:  Expanding virtual equation for '\Timer_US:TimerUDB:sIntCapCount:MODULE_3:g2:a0:g1:z1:s0:g1:u0:c_1\' (cost = 0):
+\Timer_US:TimerUDB:sIntCapCount:MODULE_3:g2:a0:g1:z1:s0:g1:u0:c_1\ <= (\Timer_US:TimerUDB:int_capt_count_0\);
+
+Note:  Expanding virtual equation for '\Timer_US:TimerUDB:sIntCapCount:MODULE_3:g2:a0:s_0\' (cost = 0):
+\Timer_US:TimerUDB:sIntCapCount:MODULE_3:g2:a0:s_0\ <= (not \Timer_US:TimerUDB:int_capt_count_0\);
+
+
+Substituting virtuals - pass 2:
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:cmp2\' (cost = 2):
+\US_40kHz:PWMUDB:cmp2\ <= ((not \US_40kHz:PWMUDB:cmp2_eq\ and not \US_40kHz:PWMUDB:cmp2_less\));
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_1\' (cost = 2):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:s_1\ <= ((not \US_40kHz:PWMUDB:dith_count_0\ and \US_40kHz:PWMUDB:dith_count_1\)
+	OR (not \US_40kHz:PWMUDB:dith_count_1\ and \US_40kHz:PWMUDB:dith_count_0\));
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_18\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_18\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_10\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_10\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_3\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_3\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\Timer_US:TimerUDB:trigger_enable\' (cost = 6):
+\Timer_US:TimerUDB:trigger_enable\ <= ((\Timer_US:TimerUDB:control_4\ and \Timer_US:TimerUDB:trig_rise_detected\));
+
+Note:  Expanding virtual equation for '\Timer_US:TimerUDB:sIntCapCount:MODULE_3:g2:a0:s_1\' (cost = 8):
+\Timer_US:TimerUDB:sIntCapCount:MODULE_3:g2:a0:s_1\ <= ((not \Timer_US:TimerUDB:int_capt_count_0\ and \Timer_US:TimerUDB:int_capt_count_1\)
+	OR (not \Timer_US:TimerUDB:int_capt_count_1\ and \Timer_US:TimerUDB:int_capt_count_0\));
+
+
+Substituting virtuals - pass 3:
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_19\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_19\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_11\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_11\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_4\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_4\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\Timer_US:TimerUDB:status_tc\' (cost = 5):
+\Timer_US:TimerUDB:status_tc\ <= ((\Timer_US:TimerUDB:control_4\ and \Timer_US:TimerUDB:run_mode\ and \Timer_US:TimerUDB:per_zero\ and \Timer_US:TimerUDB:trig_rise_detected\));
+
+
+Substituting virtuals - pass 4:
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_20\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_20\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_12\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_12\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_5\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_5\ <=  ('0') ;
+
+
+Substituting virtuals - pass 5:
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_21\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_21\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_13\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_13\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_6\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_6\ <=  ('0') ;
+
+
+Substituting virtuals - pass 6:
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_22\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_22\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_14\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_14\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_7\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_7\ <=  ('0') ;
+
+
+Substituting virtuals - pass 7:
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_23\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_23\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_15\' (cost = 0):
+\US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_15\ <=  ('0') ;
+
+
+Substituting virtuals - pass 8:
+
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 40 signals.
+	Turned 0 signals into soft nodes.
+	Maximum default expansion cost was set at 3.
+----------------------------------------------------------
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+Aliasing \US_40kHz:PWMUDB:final_capture\ to zero
+Aliasing \US_40kHz:PWMUDB:pwm_i\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_24\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_16\ to zero
+Aliasing \US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_8\ to zero
+Aliasing \US_40kHz:PWMUDB:final_kill_reg\\D\ to zero
+Removing Lhs of wire \US_40kHz:PWMUDB:final_capture\[90] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:pwm_i\[124] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_24\[303] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_16\[313] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_8\[323] = zero[10]
+Removing Lhs of wire \US_40kHz:PWMUDB:runmode_enable\\D\[639] = \US_40kHz:PWMUDB:control_7\[11]
+Removing Lhs of wire \US_40kHz:PWMUDB:final_kill_reg\\D\[648] = zero[10]
+
+------------------------------------------------------
+Aliased 0 equations, 7 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+Eliminating unused logic - pass 1:
+
+
+Eliminating unused logic - pass 2:
+
+
+Substituting virtuals - pass 1:
+
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 0 signals.
+	Turned 0 signals into soft nodes.
+	Maximum default expansion cost was set at 3.
+----------------------------------------------------------
+
+topld:  No errors.
+
+CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp
+Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\bin\warp.exe
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\capteur_us.cyprj -dcpsoc3 capteur_us.v -verilog
+</CYPRESSTAG>
+Warp synthesis phase: Elapsed time ==> 1s.428ms
+<CYPRESSTAG name="Fitter results...">
+<CYPRESSTAG name="Fitter startup details...">
+cyp3fit: V4.0.0.432, Family: PSoC3, Started at: Thursday, 17 November 2016 11:47:15
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\capteur_us.cyprj -d CY8C5868AXI-LP035 capteur_us.v -verilog
+</CYPRESSTAG>
+<CYPRESSTAG name="Design parsing">
+Design parsing phase: Elapsed time ==> 0s.017ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Tech Mapping">
+<CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
+    Removed wire end \US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_24\ kept zero
+    Removed wire end \US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_16\ kept zero
+    Removed wire end \US_40kHz:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_8\ kept zero
+    Converted constant MacroCell: \US_40kHz:PWMUDB:prevCapture\ from registered to combinatorial
+    Converted constant MacroCell: \US_40kHz:PWMUDB:trig_last\ from registered to combinatorial
+    Converted constant MacroCell: \US_40kHz:PWMUDB:status_5\ from registered to combinatorial
+    Converted constant MacroCell: \US_40kHz:PWMUDB:pwm_i_reg\ from registered to combinatorial
+Assigning clock timer_clock to clock BUS_CLK because it is a pass-through
+<CYPRESSTAG name="Global Clock Selection" icon="FILE_RPT_TECHM">
+    Digital Clock 0: Automatic-assigning  clock 'Clock_1'. Fanout=1, Signal=Net_214
+</CYPRESSTAG>
+
+Removing unused cells resulting from optimization
+Done removing unused cells.
+<CYPRESSTAG name="UDB Clock/Enable Remapping Results">
+    UDB Clk/Enable \US_40kHz:PWMUDB:clock_enable_block\: with output requested to be synchronous
+        ClockIn: Clock_1 was determined to be a global clock that is synchronous to BUS_CLK
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: Clock_1, EnableOut: Constant 1
+    UDB Clk/Enable \Timer_US:TimerUDB:clock_enable_block\: with output requested to be synchronous
+        ClockIn: BUS_CLK was determined to be a global clock that is synchronous to BUS_CLK
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: BUS_CLK, EnableOut: Constant 1
+    UDB Clk/Enable \Timer_US:TimerUDB:sCTRLReg:SyncCtl:cy_psoc3_udb_Ctl_Clk_Sync\: with output requested to be synchronous
+        ClockIn: BUS_CLK was determined to be a global clock that is synchronous to BUS_CLK
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: BUS_CLK, EnableOut: Constant 1
+</CYPRESSTAG>
+
+Removing unused cells resulting from optimization
+Done removing unused cells.
+<CYPRESSTAG name="Duplicate Macrocell detection">
+</CYPRESSTAG>
+</CYPRESSTAG>
+<CYPRESSTAG name="Duplicate Macrocell detection">
+
+Removing unused cells resulting from optimization
+Done removing unused cells.
+</CYPRESSTAG>
+<CYPRESSTAG name="Design Equations" icon="FILE_RPT_EQUATION">
+
+------------------------------------------------------------
+Design Equations
+------------------------------------------------------------
+    <CYPRESSTAG name="Pin listing">
+
+    ------------------------------------------------------------
+    Pin listing
+    ------------------------------------------------------------
+
+    Pin : Name = Pin_2(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: CMOS_OUT
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL, ROUTABLE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => Pin_2(0)__PA ,
+            input => Net_272 ,
+            pad => Pin_2(0)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = Pin_1(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: CMOS_OUT
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL, ROUTABLE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => Pin_1(0)__PA ,
+            input => Net_260 ,
+            pad => Pin_1(0)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = Pin_3(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_ANALOG
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: True
+            Can contain Digital: False
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: ANALOG
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => Pin_3(0)__PA ,
+            analog_term => Net_389 ,
+            pad => Pin_3(0)_PAD );
+        Properties:
+        {
+        }
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
+
+    ------------------------------------------------------------
+    Macrocell listing
+    ------------------------------------------------------------
+
+    MacroCell: Name=\US_40kHz:PWMUDB:status_2\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \US_40kHz:PWMUDB:runmode_enable\ * \US_40kHz:PWMUDB:tc_i\
+        );
+        Output = \US_40kHz:PWMUDB:status_2\ (fanout=1)
+
+    MacroCell: Name=\Timer_US:TimerUDB:capt_fifo_load\, Mode=(Combinatorial)
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_426 * !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\
+        );
+        Output = \Timer_US:TimerUDB:capt_fifo_load\ (fanout=3)
+
+    MacroCell: Name=\Timer_US:TimerUDB:status_tc\, Mode=(Combinatorial)
+        Total # of inputs        : 4
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer_US:TimerUDB:control_4\ * \Timer_US:TimerUDB:run_mode\ * 
+              \Timer_US:TimerUDB:per_zero\ * 
+              \Timer_US:TimerUDB:trig_rise_detected\
+        );
+        Output = \Timer_US:TimerUDB:status_tc\ (fanout=1)
+
+    MacroCell: Name=\Timer_US:TimerUDB:trig_reg\, Mode=(Combinatorial)
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer_US:TimerUDB:control_4\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              \Timer_US:TimerUDB:trig_rise_detected\
+        );
+        Output = \Timer_US:TimerUDB:trig_reg\ (fanout=3)
+
+    MacroCell: Name=\US_40kHz:PWMUDB:runmode_enable\, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_214) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \US_40kHz:PWMUDB:control_7\
+        );
+        Output = \US_40kHz:PWMUDB:runmode_enable\ (fanout=4)
+
+    MacroCell: Name=\US_40kHz:PWMUDB:prevCompare1\, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_214) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \US_40kHz:PWMUDB:cmp1_less\
+        );
+        Output = \US_40kHz:PWMUDB:prevCompare1\ (fanout=1)
+
+    MacroCell: Name=\US_40kHz:PWMUDB:prevCompare2\, Mode=(D-Register)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_214) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\US_40kHz:PWMUDB:cmp2_eq\ * !\US_40kHz:PWMUDB:cmp2_less\
+        );
+        Output = \US_40kHz:PWMUDB:prevCompare2\ (fanout=1)
+
+    MacroCell: Name=\US_40kHz:PWMUDB:status_0\, Mode=(D-Register)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_214) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\US_40kHz:PWMUDB:prevCompare1\ * \US_40kHz:PWMUDB:cmp1_less\
+        );
+        Output = \US_40kHz:PWMUDB:status_0\ (fanout=1)
+
+    MacroCell: Name=\US_40kHz:PWMUDB:status_1\, Mode=(D-Register)
+        Total # of inputs        : 3
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_214) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\US_40kHz:PWMUDB:prevCompare2\ * !\US_40kHz:PWMUDB:cmp2_eq\ * 
+              !\US_40kHz:PWMUDB:cmp2_less\
+        );
+        Output = \US_40kHz:PWMUDB:status_1\ (fanout=1)
+
+    MacroCell: Name=Net_260, Mode=(D-Register)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_214) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \US_40kHz:PWMUDB:runmode_enable\ * \US_40kHz:PWMUDB:cmp1_less\
+        );
+        Output = Net_260 (fanout=1)
+
+    MacroCell: Name=Net_272, Mode=(D-Register)
+        Total # of inputs        : 3
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_214) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \US_40kHz:PWMUDB:runmode_enable\ * !\US_40kHz:PWMUDB:cmp2_eq\ * 
+              !\US_40kHz:PWMUDB:cmp2_less\
+        );
+        Output = Net_272 (fanout=4)
+
+    MacroCell: Name=\Timer_US:TimerUDB:capture_last\, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_426
+        );
+        Output = \Timer_US:TimerUDB:capture_last\ (fanout=4)
+
+    MacroCell: Name=\Timer_US:TimerUDB:run_mode\, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer_US:TimerUDB:control_7\
+        );
+        Output = \Timer_US:TimerUDB:run_mode\ (fanout=3)
+
+    MacroCell: Name=\Timer_US:TimerUDB:int_capt_count_1\, Mode=(T-Register)
+        Total # of inputs        : 7
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              Net_426 * \Timer_US:TimerUDB:control_1\ * 
+              !\Timer_US:TimerUDB:control_0\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              \Timer_US:TimerUDB:int_capt_count_1\
+            + Net_426 * \Timer_US:TimerUDB:control_1\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              \Timer_US:TimerUDB:int_capt_count_0\
+            + Net_426 * !\Timer_US:TimerUDB:control_0\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              \Timer_US:TimerUDB:int_capt_count_0\
+            + Net_426 * !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              \Timer_US:TimerUDB:int_capt_count_1\ * 
+              \Timer_US:TimerUDB:int_capt_count_0\
+        );
+        Output = \Timer_US:TimerUDB:int_capt_count_1\ (fanout=3)
+
+    MacroCell: Name=\Timer_US:TimerUDB:int_capt_count_0\, Mode=(T-Register)
+        Total # of inputs        : 7
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              Net_426 * !\Timer_US:TimerUDB:control_1\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              \Timer_US:TimerUDB:int_capt_count_1\
+            + Net_426 * \Timer_US:TimerUDB:control_1\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              !\Timer_US:TimerUDB:int_capt_count_1\
+            + Net_426 * \Timer_US:TimerUDB:control_0\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\
+            + Net_426 * !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              \Timer_US:TimerUDB:int_capt_count_0\
+        );
+        Output = \Timer_US:TimerUDB:int_capt_count_0\ (fanout=3)
+
+    MacroCell: Name=\Timer_US:TimerUDB:capt_int_temp\, Mode=(D-Register)
+        Total # of inputs        : 7
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              Net_426 * !\Timer_US:TimerUDB:control_1\ * 
+              !\Timer_US:TimerUDB:control_0\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              !\Timer_US:TimerUDB:int_capt_count_1\ * 
+              !\Timer_US:TimerUDB:int_capt_count_0\
+            + Net_426 * !\Timer_US:TimerUDB:control_1\ * 
+              \Timer_US:TimerUDB:control_0\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              !\Timer_US:TimerUDB:int_capt_count_1\ * 
+              \Timer_US:TimerUDB:int_capt_count_0\
+            + Net_426 * \Timer_US:TimerUDB:control_1\ * 
+              !\Timer_US:TimerUDB:control_0\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              \Timer_US:TimerUDB:int_capt_count_1\ * 
+              !\Timer_US:TimerUDB:int_capt_count_0\
+            + Net_426 * \Timer_US:TimerUDB:control_1\ * 
+              \Timer_US:TimerUDB:control_0\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              \Timer_US:TimerUDB:int_capt_count_1\ * 
+              \Timer_US:TimerUDB:int_capt_count_0\
+        );
+        Output = \Timer_US:TimerUDB:capt_int_temp\ (fanout=1)
+
+    MacroCell: Name=\Timer_US:TimerUDB:timer_enable\, Mode=(D-Register)
+        Total # of inputs        : 8
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              !Net_463 * \Timer_US:TimerUDB:control_7\ * 
+              \Timer_US:TimerUDB:control_4\ * !\Timer_US:TimerUDB:run_mode\ * 
+              !\Timer_US:TimerUDB:trig_disable\ * 
+              \Timer_US:TimerUDB:trig_rise_detected\
+            + !Net_463 * \Timer_US:TimerUDB:control_7\ * 
+              \Timer_US:TimerUDB:control_4\ * !\Timer_US:TimerUDB:per_zero\ * 
+              !\Timer_US:TimerUDB:trig_disable\ * 
+              \Timer_US:TimerUDB:trig_rise_detected\
+            + \Timer_US:TimerUDB:control_7\ * \Timer_US:TimerUDB:control_4\ * 
+              !\Timer_US:TimerUDB:timer_enable\ * 
+              !\Timer_US:TimerUDB:trig_disable\ * 
+              \Timer_US:TimerUDB:trig_rise_detected\
+        );
+        Output = \Timer_US:TimerUDB:timer_enable\ (fanout=7)
+
+    MacroCell: Name=\Timer_US:TimerUDB:trig_disable\, Mode=(T-Register)
+        Total # of inputs        : 7
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_463 * \Timer_US:TimerUDB:control_4\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              !\Timer_US:TimerUDB:trig_disable\ * 
+              \Timer_US:TimerUDB:trig_rise_detected\
+            + \Timer_US:TimerUDB:control_4\ * 
+              \Timer_US:TimerUDB:timer_enable\ * \Timer_US:TimerUDB:run_mode\ * 
+              \Timer_US:TimerUDB:per_zero\ * 
+              !\Timer_US:TimerUDB:trig_disable\ * 
+              \Timer_US:TimerUDB:trig_rise_detected\
+        );
+        Output = \Timer_US:TimerUDB:trig_disable\ (fanout=2)
+
+    MacroCell: Name=\Timer_US:TimerUDB:trig_last\, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_272
+        );
+        Output = \Timer_US:TimerUDB:trig_last\ (fanout=2)
+
+    MacroCell: Name=\Timer_US:TimerUDB:trig_rise_detected\, Mode=(D-Register)
+        Total # of inputs        : 5
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_272 * \Timer_US:TimerUDB:control_7\ * 
+              \Timer_US:TimerUDB:control_4\ * !\Timer_US:TimerUDB:trig_last\
+            + \Timer_US:TimerUDB:control_7\ * \Timer_US:TimerUDB:control_4\ * 
+              \Timer_US:TimerUDB:trig_rise_detected\
+        );
+        Output = \Timer_US:TimerUDB:trig_rise_detected\ (fanout=5)
+
+    MacroCell: Name=\Timer_US:TimerUDB:trig_fall_detected\, Mode=(D-Register)
+        Total # of inputs        : 5
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !Net_272 * \Timer_US:TimerUDB:control_7\ * 
+              \Timer_US:TimerUDB:control_4\ * \Timer_US:TimerUDB:trig_last\
+            + \Timer_US:TimerUDB:control_7\ * \Timer_US:TimerUDB:control_4\ * 
+              \Timer_US:TimerUDB:trig_fall_detected\
+        );
+        Output = \Timer_US:TimerUDB:trig_fall_detected\ (fanout=1)
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Datapath listing">
+
+    ------------------------------------------------------------
+    Datapath listing
+    ------------------------------------------------------------
+
+    datapathcell: Name =\US_40kHz:PWMUDB:sP8:pwmdp:u0\
+        PORT MAP (
+            clock => Net_214 ,
+            cs_addr_2 => \US_40kHz:PWMUDB:tc_i\ ,
+            cs_addr_1 => \US_40kHz:PWMUDB:runmode_enable\ ,
+            cl0_comb => \US_40kHz:PWMUDB:cmp1_less\ ,
+            z0_comb => \US_40kHz:PWMUDB:tc_i\ ,
+            ce1_comb => \US_40kHz:PWMUDB:cmp2_eq\ ,
+            cl1_comb => \US_40kHz:PWMUDB:cmp2_less\ ,
+            f1_blk_stat_comb => \US_40kHz:PWMUDB:status_3\ );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000001000000000000001100000001000000010000000000000011000000000000001100000000000000110000000000000011000000000000001100000011111111000000001111111111111111101000000000000000000100000000000000000000011000"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    datapathcell: Name =\Timer_US:TimerUDB:sT24:timerdp:u0\
+        PORT MAP (
+            clock => ClockBlock_BUS_CLK ,
+            cs_addr_1 => \Timer_US:TimerUDB:trig_reg\ ,
+            cs_addr_0 => \Timer_US:TimerUDB:per_zero\ ,
+            f0_load => \Timer_US:TimerUDB:capt_fifo_load\ ,
+            chain_out => \Timer_US:TimerUDB:sT24:timerdp:carry0\ );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+        Next in chain : \Timer_US:TimerUDB:sT24:timerdp:u1\
+
+    datapathcell: Name =\Timer_US:TimerUDB:sT24:timerdp:u1\
+        PORT MAP (
+            clock => ClockBlock_BUS_CLK ,
+            cs_addr_1 => \Timer_US:TimerUDB:trig_reg\ ,
+            cs_addr_0 => \Timer_US:TimerUDB:per_zero\ ,
+            f0_load => \Timer_US:TimerUDB:capt_fifo_load\ ,
+            chain_in => \Timer_US:TimerUDB:sT24:timerdp:carry0\ ,
+            chain_out => \Timer_US:TimerUDB:sT24:timerdp:carry1\ );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+        Previous in chain : \Timer_US:TimerUDB:sT24:timerdp:u0\
+        Next in chain : \Timer_US:TimerUDB:sT24:timerdp:u2\
+
+    datapathcell: Name =\Timer_US:TimerUDB:sT24:timerdp:u2\
+        PORT MAP (
+            clock => ClockBlock_BUS_CLK ,
+            cs_addr_1 => \Timer_US:TimerUDB:trig_reg\ ,
+            cs_addr_0 => \Timer_US:TimerUDB:per_zero\ ,
+            f0_load => \Timer_US:TimerUDB:capt_fifo_load\ ,
+            z0_comb => \Timer_US:TimerUDB:per_zero\ ,
+            f0_bus_stat_comb => \Timer_US:TimerUDB:status_3\ ,
+            f0_blk_stat_comb => \Timer_US:TimerUDB:status_2\ ,
+            chain_in => \Timer_US:TimerUDB:sT24:timerdp:carry1\ );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+        Previous in chain : \Timer_US:TimerUDB:sT24:timerdp:u1\
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Status register listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="StatusI register listing">
+
+    ------------------------------------------------------------
+    StatusI register listing
+    ------------------------------------------------------------
+
+    statusicell: Name =\US_40kHz:PWMUDB:genblk8:stsreg\
+        PORT MAP (
+            clock => Net_214 ,
+            status_3 => \US_40kHz:PWMUDB:status_3\ ,
+            status_2 => \US_40kHz:PWMUDB:status_2\ ,
+            status_1 => \US_40kHz:PWMUDB:status_1\ ,
+            status_0 => \US_40kHz:PWMUDB:status_0\ );
+        Properties:
+        {
+            cy_force_order = 1
+            cy_int_mask = "1111111"
+            cy_md_select = "0100111"
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    statusicell: Name =\Timer_US:TimerUDB:rstSts:stsreg\
+        PORT MAP (
+            clock => ClockBlock_BUS_CLK ,
+            status_3 => \Timer_US:TimerUDB:status_3\ ,
+            status_2 => \Timer_US:TimerUDB:status_2\ ,
+            status_1 => \Timer_US:TimerUDB:capt_int_temp\ ,
+            status_0 => \Timer_US:TimerUDB:status_tc\ ,
+            interrupt => Net_463 );
+        Properties:
+        {
+            cy_force_order = 1
+            cy_int_mask = "1111111"
+            cy_md_select = "0000011"
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Sync listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Control register listing">
+
+    ------------------------------------------------------------
+    Control register listing
+    ------------------------------------------------------------
+
+    controlcell: Name =\US_40kHz:PWMUDB:genblk1:ctrlreg\
+        PORT MAP (
+            clock => Net_214 ,
+            control_7 => \US_40kHz:PWMUDB:control_7\ ,
+            control_6 => \US_40kHz:PWMUDB:control_6\ ,
+            control_5 => \US_40kHz:PWMUDB:control_5\ ,
+            control_4 => \US_40kHz:PWMUDB:control_4\ ,
+            control_3 => \US_40kHz:PWMUDB:control_3\ ,
+            control_2 => \US_40kHz:PWMUDB:control_2\ ,
+            control_1 => \US_40kHz:PWMUDB:control_1\ ,
+            control_0 => \US_40kHz:PWMUDB:control_0\ );
+        Properties:
+        {
+            cy_ctrl_mode_0 = "11111111"
+            cy_ctrl_mode_1 = "00000000"
+            cy_ext_reset = 0
+            cy_force_order = 1
+            cy_init_value = "00000000"
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    controlcell: Name =\Timer_US:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
+        PORT MAP (
+            clock => ClockBlock_BUS_CLK ,
+            control_7 => \Timer_US:TimerUDB:control_7\ ,
+            control_6 => \Timer_US:TimerUDB:control_6\ ,
+            control_5 => \Timer_US:TimerUDB:control_5\ ,
+            control_4 => \Timer_US:TimerUDB:control_4\ ,
+            control_3 => \Timer_US:TimerUDB:control_3\ ,
+            control_2 => \Timer_US:TimerUDB:control_2\ ,
+            control_1 => \Timer_US:TimerUDB:control_1\ ,
+            control_0 => \Timer_US:TimerUDB:control_0\ );
+        Properties:
+        {
+            cy_ctrl_mode_0 = "11111111"
+            cy_ctrl_mode_1 = "00000000"
+            cy_ext_reset = 0
+            cy_force_order = 1
+            cy_init_value = "00000000"
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Count7 listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="DRQ listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Interrupt listing">
+
+    ------------------------------------------------------------
+    Interrupt listing
+    ------------------------------------------------------------
+
+    interrupt: Name =TimerISR
+        PORT MAP (
+            interrupt => Net_463 );
+        Properties:
+        {
+            int_type = "00"
+            is_nmi = 0
+        }
+    </CYPRESSTAG>
+</CYPRESSTAG>
+<CYPRESSTAG name="Technology mapping summary" expanded>
+
+------------------------------------------------------------
+Technology mapping summary
+------------------------------------------------------------
+
+Resource Type                 : Used : Free :  Max :  % Used
+============================================================
+Digital Clocks                :    1 :    7 :    8 : 12.50 %
+Analog Clocks                 :    0 :    4 :    4 :  0.00 %
+CapSense Buffers              :    0 :    2 :    2 :  0.00 %
+Digital Filter Block          :    0 :    1 :    1 :  0.00 %
+Interrupts                    :    1 :   31 :   32 :  3.13 %
+IO                            :    6 :   66 :   72 :  8.33 %
+Segment LCD                   :    0 :    1 :    1 :  0.00 %
+CAN 2.0b                      :    0 :    1 :    1 :  0.00 %
+I2C                           :    0 :    1 :    1 :  0.00 %
+USB                           :    0 :    1 :    1 :  0.00 %
+DMA Channels                  :    0 :   24 :   24 :  0.00 %
+Timer                         :    0 :    4 :    4 :  0.00 %
+UDB                           :      :      :      :        
+  Macrocells                  :   21 :  171 :  192 : 10.94 %
+  Unique P-terms              :   35 :  349 :  384 :  9.11 %
+  Total P-terms               :   35 :      :      :        
+  Datapath Cells              :    4 :   20 :   24 : 16.67 %
+  Status Cells                :    2 :   22 :   24 :  8.33 %
+    StatusI Registers         :    2 :      :      :        
+  Control Cells               :    2 :   22 :   24 :  8.33 %
+    Control Registers         :    2 :      :      :        
+Opamp                         :    0 :    4 :    4 :  0.00 %
+Comparator                    :    1 :    3 :    4 : 25.00 %
+Delta-Sigma ADC               :    0 :    1 :    1 :  0.00 %
+LPF                           :    0 :    2 :    2 :  0.00 %
+SAR ADC                       :    0 :    2 :    2 :  0.00 %
+Analog (SC/CT) Blocks         :    1 :    3 :    4 : 25.00 %
+DAC                           :      :      :      :        
+  VIDAC                       :    1 :    3 :    4 : 25.00 %
+</CYPRESSTAG>
+Technology Mapping: Elapsed time ==> 0s.040ms
+Tech Mapping phase: Elapsed time ==> 0s.133ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Analog Placement">
+Initial Analog Placement Results:
+IO_6@[IOP=(1)][IoId=(6)] : Pin_1(0) (fixed)
+IO_7@[IOP=(1)][IoId=(7)] : Pin_2(0) (fixed)
+IO_0@[IOP=(2)][IoId=(0)] : Pin_3(0) (fixed)
+SC[3]@[FFB(SC,3)] : \Ampli_Recept:SC\
+Comparator[0]@[FFB(Comparator,0)] : \Detect_Seuil_Recept:ctComp\
+VIDAC[2]@[FFB(VIDAC,2)] : \V_seuil:viDAC8\
+Vref[1]@[FFB(Vref,1)] : vRef_2
+Log: apr.M0058: The analog placement iterative improvement is 55% done. (App=cydsfit)
+Analog Placement Results:
+IO_6@[IOP=(1)][IoId=(6)] : Pin_1(0) (fixed)
+IO_7@[IOP=(1)][IoId=(7)] : Pin_2(0) (fixed)
+IO_0@[IOP=(2)][IoId=(0)] : Pin_3(0) (fixed)
+SC[0]@[FFB(SC,0)] : \Ampli_Recept:SC\
+Comparator[0]@[FFB(Comparator,0)] : \Detect_Seuil_Recept:ctComp\
+VIDAC[2]@[FFB(VIDAC,2)] : \V_seuil:viDAC8\
+Vref[1]@[FFB(Vref,1)] : vRef_2
+
+Analog Placement phase: Elapsed time ==> 0s.809ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Analog Routing">
+Analog Routing phase: Elapsed time ==> 0s.005ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Analog Code Generation">
+============ Analog Final Answer Routes ============
+Dump of CyAnalogRoutingResultsDB
+Map of net to items {
+  Net: Net_389 {
+    sc_0_vin
+    agl0_x_sc_0_vin
+    agl0
+    agl0_x_p2_0
+    p2_0
+  }
+  Net: Net_439 {
+    common_Vdda/2
+    common_Vdda/2_x_comp_vref_vdda
+    comp_vref_vdda
+    abusl0_x_comp_vref_vdda
+    abusl0
+    abusl0_x_sc_0_vref
+    sc_0_vref
+  }
+  Net: Net_437 {
+    comp_0_vplus
+    agl5_x_comp_0_vplus
+    agl5
+    agl5_x_sc_0_vout
+    sc_0_vout
+  }
+  Net: Net_436 {
+    vidac_2_vout
+    agl4_x_vidac_2_vout
+    agl4
+    agl4_x_comp_0_vminus
+    comp_0_vminus
+  }
+  Net: \V_seuil:Net_77\ {
+  }
+}
+Map of item to net {
+  sc_0_vin                                         -> Net_389
+  agl0_x_sc_0_vin                                  -> Net_389
+  agl0                                             -> Net_389
+  agl0_x_p2_0                                      -> Net_389
+  p2_0                                             -> Net_389
+  common_Vdda/2                                    -> Net_439
+  common_Vdda/2_x_comp_vref_vdda                   -> Net_439
+  comp_vref_vdda                                   -> Net_439
+  abusl0_x_comp_vref_vdda                          -> Net_439
+  abusl0                                           -> Net_439
+  abusl0_x_sc_0_vref                               -> Net_439
+  sc_0_vref                                        -> Net_439
+  comp_0_vplus                                     -> Net_437
+  agl5_x_comp_0_vplus                              -> Net_437
+  agl5                                             -> Net_437
+  agl5_x_sc_0_vout                                 -> Net_437
+  sc_0_vout                                        -> Net_437
+  vidac_2_vout                                     -> Net_436
+  agl4_x_vidac_2_vout                              -> Net_436
+  agl4                                             -> Net_436
+  agl4_x_comp_0_vminus                             -> Net_436
+  comp_0_vminus                                    -> Net_436
+}
+Mux Info {
+}
+Dump of CyP35AnalogRoutingResultsDB
+IsVddaHalfUsedForComp = True
+IsVddaHalfUsedForSar0 = False
+IsVddaHalfUsedForSar1 = False
+Analog Code Generation phase: Elapsed time ==> 0s.310ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Digital Placement">
+<CYPRESSTAG name="Detailed placement messages">
+I2076: Total run-time: 0.8 sec.
+
+</CYPRESSTAG>
+<CYPRESSTAG name="PLD Packing">
+<CYPRESSTAG name="PLD Packing Summary" expanded>
+
+------------------------------------------------------------
+PLD Packing Summary
+------------------------------------------------------------
+            Resource Type : Used : Free :  Max :  % Used
+    ====================================================
+                     PLDs :    9 :   39 :   48 :  18.75%
+
+<CYPRESSTAG name="PLD Statistics">
+
+        PLD Resource Type :     Average/LAB
+    =======================================
+                   Inputs :            6.00
+                   Pterms :            3.89
+               Macrocells :            2.33
+</CYPRESSTAG>
+<CYPRESSTAG name="Packed PLD Contents">
+Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
+</CYPRESSTAG>
+PLD Packing: Elapsed time ==> 0s.001ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Partitioning">
+<CYPRESSTAG name="Initial Partitioning Summary">
+Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
+<CYPRESSTAG name="Final Partitioning Summary">
+Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
+Partitioning: Elapsed time ==> 0s.025ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Final Placement Summary">
+
+------------------------------------------------------------
+Final Placement Summary
+------------------------------------------------------------
+
+       Resource Type :      Count : Avg Inputs : Avg Outputs
+    ========================================================
+                 UDB :          5 :       7.60 :       4.20
+<CYPRESSTAG name="Final Placement Details">
+<CYPRESSTAG name="Component Details">
+
+------------------------------------------------------------
+Component Placement Details
+------------------------------------------------------------
+UDB [UDB=(0,0)] contents:
+LAB@[UDB=(0,0)][LB=1] #macrocells=1, #inputs=2, #pterms=1
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=Net_260, Mode=(D-Register) @ [UDB=(0,0)][LB=1][MC=1]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_214) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \US_40kHz:PWMUDB:runmode_enable\ * \US_40kHz:PWMUDB:cmp1_less\
+        );
+        Output = Net_260 (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+datapathcell: Name =\Timer_US:TimerUDB:sT24:timerdp:u2\
+    PORT MAP (
+        clock => ClockBlock_BUS_CLK ,
+        cs_addr_1 => \Timer_US:TimerUDB:trig_reg\ ,
+        cs_addr_0 => \Timer_US:TimerUDB:per_zero\ ,
+        f0_load => \Timer_US:TimerUDB:capt_fifo_load\ ,
+        z0_comb => \Timer_US:TimerUDB:per_zero\ ,
+        f0_bus_stat_comb => \Timer_US:TimerUDB:status_3\ ,
+        f0_blk_stat_comb => \Timer_US:TimerUDB:status_2\ ,
+        chain_in => \Timer_US:TimerUDB:sT24:timerdp:carry1\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Previous in chain : \Timer_US:TimerUDB:sT24:timerdp:u1\
+
+UDB [UDB=(0,1)] contents:
+LAB@[UDB=(0,1)][LB=0] #macrocells=3, #inputs=7, #pterms=6
+{
+    [McSlotId=0]:     MacroCell: Name=\Timer_US:TimerUDB:capt_fifo_load\, Mode=(Combinatorial) @ [UDB=(0,1)][LB=0][MC=0]
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_426 * !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\
+        );
+        Output = \Timer_US:TimerUDB:capt_fifo_load\ (fanout=3)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\Timer_US:TimerUDB:capture_last\, Mode=(D-Register) @ [UDB=(0,1)][LB=0][MC=1]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_426
+        );
+        Output = \Timer_US:TimerUDB:capture_last\ (fanout=4)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\Timer_US:TimerUDB:capt_int_temp\, Mode=(D-Register) @ [UDB=(0,1)][LB=0][MC=2]
+        Total # of inputs        : 7
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              Net_426 * !\Timer_US:TimerUDB:control_1\ * 
+              !\Timer_US:TimerUDB:control_0\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              !\Timer_US:TimerUDB:int_capt_count_1\ * 
+              !\Timer_US:TimerUDB:int_capt_count_0\
+            + Net_426 * !\Timer_US:TimerUDB:control_1\ * 
+              \Timer_US:TimerUDB:control_0\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              !\Timer_US:TimerUDB:int_capt_count_1\ * 
+              \Timer_US:TimerUDB:int_capt_count_0\
+            + Net_426 * \Timer_US:TimerUDB:control_1\ * 
+              !\Timer_US:TimerUDB:control_0\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              \Timer_US:TimerUDB:int_capt_count_1\ * 
+              !\Timer_US:TimerUDB:int_capt_count_0\
+            + Net_426 * \Timer_US:TimerUDB:control_1\ * 
+              \Timer_US:TimerUDB:control_0\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              \Timer_US:TimerUDB:int_capt_count_1\ * 
+              \Timer_US:TimerUDB:int_capt_count_0\
+        );
+        Output = \Timer_US:TimerUDB:capt_int_temp\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(0,1)][LB=1] #macrocells=1, #inputs=7, #pterms=4
+{
+    [McSlotId=0]:     MacroCell: Name=\Timer_US:TimerUDB:int_capt_count_1\, Mode=(T-Register) @ [UDB=(0,1)][LB=1][MC=0]
+        Total # of inputs        : 7
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              Net_426 * \Timer_US:TimerUDB:control_1\ * 
+              !\Timer_US:TimerUDB:control_0\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              \Timer_US:TimerUDB:int_capt_count_1\
+            + Net_426 * \Timer_US:TimerUDB:control_1\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              \Timer_US:TimerUDB:int_capt_count_0\
+            + Net_426 * !\Timer_US:TimerUDB:control_0\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              \Timer_US:TimerUDB:int_capt_count_0\
+            + Net_426 * !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              \Timer_US:TimerUDB:int_capt_count_1\ * 
+              \Timer_US:TimerUDB:int_capt_count_0\
+        );
+        Output = \Timer_US:TimerUDB:int_capt_count_1\ (fanout=3)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+datapathcell: Name =\Timer_US:TimerUDB:sT24:timerdp:u1\
+    PORT MAP (
+        clock => ClockBlock_BUS_CLK ,
+        cs_addr_1 => \Timer_US:TimerUDB:trig_reg\ ,
+        cs_addr_0 => \Timer_US:TimerUDB:per_zero\ ,
+        f0_load => \Timer_US:TimerUDB:capt_fifo_load\ ,
+        chain_in => \Timer_US:TimerUDB:sT24:timerdp:carry0\ ,
+        chain_out => \Timer_US:TimerUDB:sT24:timerdp:carry1\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Previous in chain : \Timer_US:TimerUDB:sT24:timerdp:u0\
+    Next in chain : \Timer_US:TimerUDB:sT24:timerdp:u2\
+
+UDB [UDB=(0,2)] contents:
+LAB@[UDB=(0,2)][LB=0] #macrocells=4, #inputs=10, #pterms=8
+{
+    [McSlotId=0]:     MacroCell: Name=\Timer_US:TimerUDB:trig_reg\, Mode=(Combinatorial) @ [UDB=(0,2)][LB=0][MC=0]
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer_US:TimerUDB:control_4\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              \Timer_US:TimerUDB:trig_rise_detected\
+        );
+        Output = \Timer_US:TimerUDB:trig_reg\ (fanout=3)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\Timer_US:TimerUDB:timer_enable\, Mode=(D-Register) @ [UDB=(0,2)][LB=0][MC=1]
+        Total # of inputs        : 8
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              !Net_463 * \Timer_US:TimerUDB:control_7\ * 
+              \Timer_US:TimerUDB:control_4\ * !\Timer_US:TimerUDB:run_mode\ * 
+              !\Timer_US:TimerUDB:trig_disable\ * 
+              \Timer_US:TimerUDB:trig_rise_detected\
+            + !Net_463 * \Timer_US:TimerUDB:control_7\ * 
+              \Timer_US:TimerUDB:control_4\ * !\Timer_US:TimerUDB:per_zero\ * 
+              !\Timer_US:TimerUDB:trig_disable\ * 
+              \Timer_US:TimerUDB:trig_rise_detected\
+            + \Timer_US:TimerUDB:control_7\ * \Timer_US:TimerUDB:control_4\ * 
+              !\Timer_US:TimerUDB:timer_enable\ * 
+              !\Timer_US:TimerUDB:trig_disable\ * 
+              \Timer_US:TimerUDB:trig_rise_detected\
+        );
+        Output = \Timer_US:TimerUDB:timer_enable\ (fanout=7)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\Timer_US:TimerUDB:trig_rise_detected\, Mode=(D-Register) @ [UDB=(0,2)][LB=0][MC=2]
+        Total # of inputs        : 5
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_272 * \Timer_US:TimerUDB:control_7\ * 
+              \Timer_US:TimerUDB:control_4\ * !\Timer_US:TimerUDB:trig_last\
+            + \Timer_US:TimerUDB:control_7\ * \Timer_US:TimerUDB:control_4\ * 
+              \Timer_US:TimerUDB:trig_rise_detected\
+        );
+        Output = \Timer_US:TimerUDB:trig_rise_detected\ (fanout=5)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\Timer_US:TimerUDB:trig_disable\, Mode=(T-Register) @ [UDB=(0,2)][LB=0][MC=3]
+        Total # of inputs        : 7
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_463 * \Timer_US:TimerUDB:control_4\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              !\Timer_US:TimerUDB:trig_disable\ * 
+              \Timer_US:TimerUDB:trig_rise_detected\
+            + \Timer_US:TimerUDB:control_4\ * 
+              \Timer_US:TimerUDB:timer_enable\ * \Timer_US:TimerUDB:run_mode\ * 
+              \Timer_US:TimerUDB:per_zero\ * 
+              !\Timer_US:TimerUDB:trig_disable\ * 
+              \Timer_US:TimerUDB:trig_rise_detected\
+        );
+        Output = \Timer_US:TimerUDB:trig_disable\ (fanout=2)
+        Properties               : 
+        {
+        }
+}
+
+LAB@[UDB=(0,2)][LB=1] #macrocells=4, #inputs=8, #pterms=5
+{
+    [McSlotId=0]:     MacroCell: Name=\Timer_US:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(0,2)][LB=1][MC=0]
+        Total # of inputs        : 4
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer_US:TimerUDB:control_4\ * \Timer_US:TimerUDB:run_mode\ * 
+              \Timer_US:TimerUDB:per_zero\ * 
+              \Timer_US:TimerUDB:trig_rise_detected\
+        );
+        Output = \Timer_US:TimerUDB:status_tc\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\Timer_US:TimerUDB:run_mode\, Mode=(D-Register) @ [UDB=(0,2)][LB=1][MC=1]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Timer_US:TimerUDB:control_7\
+        );
+        Output = \Timer_US:TimerUDB:run_mode\ (fanout=3)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\Timer_US:TimerUDB:trig_last\, Mode=(D-Register) @ [UDB=(0,2)][LB=1][MC=2]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_272
+        );
+        Output = \Timer_US:TimerUDB:trig_last\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\Timer_US:TimerUDB:trig_fall_detected\, Mode=(D-Register) @ [UDB=(0,2)][LB=1][MC=3]
+        Total # of inputs        : 5
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !Net_272 * \Timer_US:TimerUDB:control_7\ * 
+              \Timer_US:TimerUDB:control_4\ * \Timer_US:TimerUDB:trig_last\
+            + \Timer_US:TimerUDB:control_7\ * \Timer_US:TimerUDB:control_4\ * 
+              \Timer_US:TimerUDB:trig_fall_detected\
+        );
+        Output = \Timer_US:TimerUDB:trig_fall_detected\ (fanout=1)
+        Properties               : 
+        {
+        }
+}
+
+statusicell: Name =\Timer_US:TimerUDB:rstSts:stsreg\
+    PORT MAP (
+        clock => ClockBlock_BUS_CLK ,
+        status_3 => \Timer_US:TimerUDB:status_3\ ,
+        status_2 => \Timer_US:TimerUDB:status_2\ ,
+        status_1 => \Timer_US:TimerUDB:capt_int_temp\ ,
+        status_0 => \Timer_US:TimerUDB:status_tc\ ,
+        interrupt => Net_463 );
+    Properties:
+    {
+        cy_force_order = 1
+        cy_int_mask = "1111111"
+        cy_md_select = "0000011"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+controlcell: Name =\Timer_US:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
+    PORT MAP (
+        clock => ClockBlock_BUS_CLK ,
+        control_7 => \Timer_US:TimerUDB:control_7\ ,
+        control_6 => \Timer_US:TimerUDB:control_6\ ,
+        control_5 => \Timer_US:TimerUDB:control_5\ ,
+        control_4 => \Timer_US:TimerUDB:control_4\ ,
+        control_3 => \Timer_US:TimerUDB:control_3\ ,
+        control_2 => \Timer_US:TimerUDB:control_2\ ,
+        control_1 => \Timer_US:TimerUDB:control_1\ ,
+        control_0 => \Timer_US:TimerUDB:control_0\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "11111111"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(0,3)] is empty.
+UDB [UDB=(0,4)] is empty.
+UDB [UDB=(0,5)] is empty.
+UDB [UDB=(1,0)] contents:
+LAB@[UDB=(1,0)][LB=0] #macrocells=3, #inputs=4, #pterms=3
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\US_40kHz:PWMUDB:prevCompare1\, Mode=(D-Register) @ [UDB=(1,0)][LB=0][MC=1]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_214) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \US_40kHz:PWMUDB:cmp1_less\
+        );
+        Output = \US_40kHz:PWMUDB:prevCompare1\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\US_40kHz:PWMUDB:status_0\, Mode=(D-Register) @ [UDB=(1,0)][LB=0][MC=2]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_214) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\US_40kHz:PWMUDB:prevCompare1\ * \US_40kHz:PWMUDB:cmp1_less\
+        );
+        Output = \US_40kHz:PWMUDB:status_0\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\US_40kHz:PWMUDB:prevCompare2\, Mode=(D-Register) @ [UDB=(1,0)][LB=0][MC=3]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_214) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\US_40kHz:PWMUDB:cmp2_eq\ * !\US_40kHz:PWMUDB:cmp2_less\
+        );
+        Output = \US_40kHz:PWMUDB:prevCompare2\ (fanout=1)
+        Properties               : 
+        {
+        }
+}
+
+LAB@[UDB=(1,0)][LB=1] #macrocells=3, #inputs=6, #pterms=3
+{
+    [McSlotId=0]:     MacroCell: Name=\US_40kHz:PWMUDB:status_1\, Mode=(D-Register) @ [UDB=(1,0)][LB=1][MC=0]
+        Total # of inputs        : 3
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_214) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\US_40kHz:PWMUDB:prevCompare2\ * !\US_40kHz:PWMUDB:cmp2_eq\ * 
+              !\US_40kHz:PWMUDB:cmp2_less\
+        );
+        Output = \US_40kHz:PWMUDB:status_1\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]:     MacroCell: Name=\US_40kHz:PWMUDB:status_2\, Mode=(Combinatorial) @ [UDB=(1,0)][LB=1][MC=2]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \US_40kHz:PWMUDB:runmode_enable\ * \US_40kHz:PWMUDB:tc_i\
+        );
+        Output = \US_40kHz:PWMUDB:status_2\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\US_40kHz:PWMUDB:runmode_enable\, Mode=(D-Register) @ [UDB=(1,0)][LB=1][MC=3]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_214) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \US_40kHz:PWMUDB:control_7\
+        );
+        Output = \US_40kHz:PWMUDB:runmode_enable\ (fanout=4)
+        Properties               : 
+        {
+        }
+}
+
+datapathcell: Name =\US_40kHz:PWMUDB:sP8:pwmdp:u0\
+    PORT MAP (
+        clock => Net_214 ,
+        cs_addr_2 => \US_40kHz:PWMUDB:tc_i\ ,
+        cs_addr_1 => \US_40kHz:PWMUDB:runmode_enable\ ,
+        cl0_comb => \US_40kHz:PWMUDB:cmp1_less\ ,
+        z0_comb => \US_40kHz:PWMUDB:tc_i\ ,
+        ce1_comb => \US_40kHz:PWMUDB:cmp2_eq\ ,
+        cl1_comb => \US_40kHz:PWMUDB:cmp2_less\ ,
+        f1_blk_stat_comb => \US_40kHz:PWMUDB:status_3\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000001100000001000000010000000000000011000000000000001100000000000000110000000000000011000000000000001100000011111111000000001111111111111111101000000000000000000100000000000000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+statusicell: Name =\US_40kHz:PWMUDB:genblk8:stsreg\
+    PORT MAP (
+        clock => Net_214 ,
+        status_3 => \US_40kHz:PWMUDB:status_3\ ,
+        status_2 => \US_40kHz:PWMUDB:status_2\ ,
+        status_1 => \US_40kHz:PWMUDB:status_1\ ,
+        status_0 => \US_40kHz:PWMUDB:status_0\ );
+    Properties:
+    {
+        cy_force_order = 1
+        cy_int_mask = "1111111"
+        cy_md_select = "0100111"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+controlcell: Name =\US_40kHz:PWMUDB:genblk1:ctrlreg\
+    PORT MAP (
+        clock => Net_214 ,
+        control_7 => \US_40kHz:PWMUDB:control_7\ ,
+        control_6 => \US_40kHz:PWMUDB:control_6\ ,
+        control_5 => \US_40kHz:PWMUDB:control_5\ ,
+        control_4 => \US_40kHz:PWMUDB:control_4\ ,
+        control_3 => \US_40kHz:PWMUDB:control_3\ ,
+        control_2 => \US_40kHz:PWMUDB:control_2\ ,
+        control_1 => \US_40kHz:PWMUDB:control_1\ ,
+        control_0 => \US_40kHz:PWMUDB:control_0\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "11111111"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(1,1)] contents:
+LAB@[UDB=(1,1)][LB=0] #macrocells=1, #inputs=7, #pterms=4
+{
+    [McSlotId=0]:     MacroCell: Name=\Timer_US:TimerUDB:int_capt_count_0\, Mode=(T-Register) @ [UDB=(1,1)][LB=0][MC=0]
+        Total # of inputs        : 7
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              Net_426 * !\Timer_US:TimerUDB:control_1\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              \Timer_US:TimerUDB:int_capt_count_1\
+            + Net_426 * \Timer_US:TimerUDB:control_1\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              !\Timer_US:TimerUDB:int_capt_count_1\
+            + Net_426 * \Timer_US:TimerUDB:control_0\ * 
+              !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\
+            + Net_426 * !\Timer_US:TimerUDB:capture_last\ * 
+              \Timer_US:TimerUDB:timer_enable\ * 
+              \Timer_US:TimerUDB:int_capt_count_0\
+        );
+        Output = \Timer_US:TimerUDB:int_capt_count_0\ (fanout=3)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(1,1)][LB=1] #macrocells=1, #inputs=3, #pterms=1
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=Net_272, Mode=(D-Register) @ [UDB=(1,1)][LB=1][MC=1]
+        Total # of inputs        : 3
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_214) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \US_40kHz:PWMUDB:runmode_enable\ * !\US_40kHz:PWMUDB:cmp2_eq\ * 
+              !\US_40kHz:PWMUDB:cmp2_less\
+        );
+        Output = Net_272 (fanout=4)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+datapathcell: Name =\Timer_US:TimerUDB:sT24:timerdp:u0\
+    PORT MAP (
+        clock => ClockBlock_BUS_CLK ,
+        cs_addr_1 => \Timer_US:TimerUDB:trig_reg\ ,
+        cs_addr_0 => \Timer_US:TimerUDB:per_zero\ ,
+        f0_load => \Timer_US:TimerUDB:capt_fifo_load\ ,
+        chain_out => \Timer_US:TimerUDB:sT24:timerdp:carry0\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Next in chain : \Timer_US:TimerUDB:sT24:timerdp:u1\
+
+UDB [UDB=(1,2)] is empty.
+UDB [UDB=(1,3)] is empty.
+UDB [UDB=(1,4)] is empty.
+UDB [UDB=(1,5)] is empty.
+UDB [UDB=(2,0)] is empty.
+UDB [UDB=(2,1)] is empty.
+UDB [UDB=(2,2)] is empty.
+UDB [UDB=(2,3)] is empty.
+UDB [UDB=(2,4)] is empty.
+UDB [UDB=(2,5)] is empty.
+UDB [UDB=(3,0)] is empty.
+UDB [UDB=(3,1)] is empty.
+UDB [UDB=(3,2)] is empty.
+UDB [UDB=(3,3)] is empty.
+UDB [UDB=(3,4)] is empty.
+UDB [UDB=(3,5)] is empty.
+Intr container @ [IntrContainer=(0)]: 
+  Intr@ [IntrContainer=(0)][IntrId=(0)] 
+    interrupt: Name =TimerISR
+        PORT MAP (
+            interrupt => Net_463 );
+        Properties:
+        {
+            int_type = "00"
+            is_nmi = 0
+        }
+Drq container @ [DrqContainer=(0)]: empty
+Port 0 is empty
+Port 1 contains the following IO cells:
+[IoId=6]: 
+Pin : Name = Pin_1(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: CMOS_OUT
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL, ROUTABLE
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => Pin_1(0)__PA ,
+        input => Net_260 ,
+        pad => Pin_1(0)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=7]: 
+Pin : Name = Pin_2(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: CMOS_OUT
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL, ROUTABLE
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => Pin_2(0)__PA ,
+        input => Net_272 ,
+        pad => Pin_2(0)_PAD );
+    Properties:
+    {
+    }
+
+Port 2 contains the following IO cells:
+[IoId=0]: 
+Pin : Name = Pin_3(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_ANALOG
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: True
+        Can contain Digital: False
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: ANALOG
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => Pin_3(0)__PA ,
+        analog_term => Net_389 ,
+        pad => Pin_3(0)_PAD );
+    Properties:
+    {
+    }
+
+Port 3 is empty
+Port 4 is empty
+Port 5 is empty
+Port 6 is empty
+Port 12 is empty
+Port 15 is empty
+ARM group 0: empty
+CAN 2.0b group 0: empty
+Cache group 0: empty
+CapSense group 0: empty
+Clock group 0: 
+    Clock Block @ F(Clock,0): 
+    clockblockcell: Name =ClockBlock
+        PORT MAP (
+            imo => ClockBlock_IMO ,
+            pllout => ClockBlock_PLL_OUT ,
+            ilo => ClockBlock_ILO ,
+            clk_100k => ClockBlock_100k ,
+            clk_1k => ClockBlock_1k ,
+            clk_32k => ClockBlock_32k ,
+            xtal => ClockBlock_XTAL ,
+            clk_32k_xtal => ClockBlock_XTAL_32KHZ ,
+            clk_sync => ClockBlock_MASTER_CLK ,
+            clk_bus_glb => ClockBlock_BUS_CLK ,
+            clk_bus => ClockBlock_BUS_CLK_local ,
+            dclk_glb_0 => Net_214 ,
+            dclk_0 => Net_214_local );
+        Properties:
+        {
+        }
+Comparator group 0: 
+    Comparator Block @ F(Comparator,0): 
+    comparatorcell: Name =\Detect_Seuil_Recept:ctComp\
+        PORT MAP (
+            vplus => Net_437 ,
+            vminus => Net_436 ,
+            out => Net_426 );
+        Properties:
+        {
+            cy_registers = ""
+        }
+Digital Filter Block group 0: empty
+Delta-Sigma ADC group 0: empty
+Decimator group 0: empty
+EMIF group 0: empty
+I2C group 0: empty
+Segment LCD group 0: empty
+LVD group 0: empty
+PM group 0: empty
+Analog (SC/CT) Blocks group 0: 
+    SC Block @ F(SC,0): 
+    sccell: Name =\Ampli_Recept:SC\
+        PORT MAP (
+            vref => Net_439 ,
+            vin => Net_389 ,
+            modout => \Ampli_Recept:Net_30\ ,
+            vout => Net_437 );
+        Properties:
+        {
+            cy_registers = ""
+        }
+SPC group 0: empty
+Timer group 0: empty
+USB group 0: empty
+VIDAC group 0: 
+    VIDAC Block @ F(VIDAC,2): 
+    vidaccell: Name =\V_seuil:viDAC8\
+        PORT MAP (
+            vout => Net_436 ,
+            iout => \V_seuil:Net_77\ );
+        Properties:
+        {
+            cy_registers = ""
+            is_all_if_any = 0
+            reg_data = 0
+        }
+Opamp group 0: empty
+CapSense Buffers group 0: empty
+Vref group 0: 
+    Vref Block @ F(Vref,1): 
+    vrefcell: Name =vRef_2
+        PORT MAP (
+            vout => Net_439 );
+        Properties:
+        {
+            autoenable = 1
+            guid = "4720866E-BC14-478d-B8A0-3E44F38CADAC"
+            ignoresleep = 0
+            name = "Vdda/2"
+        }
+LPF group 0: empty
+SAR ADC group 0: empty
+</CYPRESSTAG>
+<CYPRESSTAG name="Port Configuration Details">
+
+------------------------------------------------------------
+Port Configuration report
+------------------------------------------------------------
+     |     |       | Interrupt |                  |          | 
+Port | Pin | Fixed |      Type |       Drive Mode |     Name | Connections
+-----+-----+-------+-----------+------------------+----------+----------------
+   1 |   6 |     * |      NONE |         CMOS_OUT | Pin_1(0) | In(Net_260)
+     |   7 |     * |      NONE |         CMOS_OUT | Pin_2(0) | In(Net_272)
+-----+-----+-------+-----------+------------------+----------+----------------
+   2 |   0 |     * |      NONE |      HI_Z_ANALOG | Pin_3(0) | Analog(Net_389)
+------------------------------------------------------------------------------
+</CYPRESSTAG>
+</CYPRESSTAG>
+</CYPRESSTAG>
+Digital component placer commit/Report: Elapsed time ==> 0s.002ms
+Digital Placement phase: Elapsed time ==> 1s.231ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Digital Routing">
+Routing successful.
+Digital Routing phase: Elapsed time ==> 1s.920ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Bitstream Generation">
+Bitstream Generation phase: Elapsed time ==> 0s.266ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Bitstream Verification">
+Bitstream Verification phase: Elapsed time ==> 0s.074ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Static timing analysis">
+Timing report is in capteur_us_timing.html.
+Static timing analysis phase: Elapsed time ==> 0s.380ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Data reporting">
+Data reporting phase: Elapsed time ==> 0s.000ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Database update...">
+Design database save phase: Elapsed time ==> 0s.245ms
+</CYPRESSTAG>
+cydsfit: Elapsed time ==> 5s.418ms
+</CYPRESSTAG>
+Fitter phase: Elapsed time ==> 5s.419ms
+API generation phase: Elapsed time ==> 0s.990ms
+Dependency generation phase: Elapsed time ==> 0s.016ms
+Cleanup phase: Elapsed time ==> 0s.001ms

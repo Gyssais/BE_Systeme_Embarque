@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BE_systemes_embarques\capteur_us">
+<ExpandedNodeIds>
+<v>BE_systemes_embarques</v>
+<v>BE_systemes_embarques\capteur_us\TopDesign</v>
+<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr</v>
+<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr\Pins</v>
+<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr\Analog</v>
+<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr\Clocks</v>
+<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr\Interrupts</v>
+<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr\DMA</v>
+<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr\System</v>
+<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr\Directives</v>
+<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr\Flash Security</v>
+<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr\EEPROM</v>
+<v>BE_systemes_embarques\capteur_us\Header Files</v>
+<v>BE_systemes_embarques\capteur_us\Header Files\cyapicallbacks.h</v>
+<v>BE_systemes_embarques\capteur_us\Source Files</v>
+<v>BE_systemes_embarques\capteur_us\Source Files\main.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Ampli_Recept</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Ampli_Recept\Ampli_Recept.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Ampli_Recept\Ampli_Recept.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Ampli_Recept\Ampli_Recept_PM.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Clock_1</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Clock_1\Clock_1.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Clock_1\Clock_1.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\cmsis_armcc.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\cmsis_gcc.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\core_cmInstr.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\CyBootAsmGnu.s</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\CyBootAsmIar.s</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\CyBootAsmRv.s</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\CyDmac.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\CyDmac.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\CyFlash.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\CyFlash.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\CyLib.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\CyLib.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\cypins.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\cyPm.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\cyPm.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\CySpc.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\CySpc.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\cytypes.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Detect_Seuil_Recept</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Detect_Seuil_Recept\Detect_Seuil_Recept.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Detect_Seuil_Recept\Detect_Seuil_Recept.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Detect_Seuil_Recept\Detect_Seuil_Recept_PM.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Pin_1</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Pin_1\Pin_1.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Pin_1\Pin_1.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Pin_1\Pin_1_aliases.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Pin_2</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Pin_2\Pin_2.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Pin_2\Pin_2.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Pin_2\Pin_2_aliases.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Pin_3</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Pin_3\Pin_3.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Pin_3\Pin_3.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Pin_3\Pin_3_aliases.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Timer_US</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Timer_US\Timer_US.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Timer_US\Timer_US.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Timer_US\Timer_US_PM.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\TimerISR</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\TimerISR\TimerISR.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\TimerISR\TimerISR.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\US_40kHz</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\US_40kHz\US_40kHz.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\US_40kHz\US_40kHz.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\US_40kHz\US_40kHz_PM.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\V_seuil</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\V_seuil\V_seuil.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\V_seuil\V_seuil.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\V_seuil\V_seuil_PM.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cycodeshareexport.ld</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cycodeshareimport.ld</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cydevice.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cydeviceiar.inc</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cydevicerv.inc</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cydisabledsheets.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cyfitter.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cyfitter_cfg.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cyfitter_cfg.h</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cyfittergnu.inc</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cyfitteriar.inc</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cyfitterrv.inc</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cymetadata.c</v>
+<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\project.h</v>
+<v>BE_systemes_embarques\Counter_exemple</v>
+<v>BE_systemes_embarques\Counter_exemple\TopDesign</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\Pins</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\Analog</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\Clocks</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\Interrupts</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\DMA</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\System</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\Directives</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\Flash Security</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\EEPROM</v>
+<v>BE_systemes_embarques\Counter_exemple\Header Files</v>
+<v>BE_systemes_embarques\Counter_exemple\Header Files\cyapicallbacks.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Source Files</v>
+<v>BE_systemes_embarques\Counter_exemple\Source Files\main.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter.pdf</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1\CharLCD_1.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1\CharLCD_1.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1\CharLCD_1_CustChars.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1\CharLCD_1_PM.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1_LCDPort</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1_LCDPort\CharLCD_1_LCDPort.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1_LCDPort\CharLCD_1_LCDPort.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1_LCDPort\CharLCD_1_LCDPort_aliases.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\clock_1</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\clock_1\clock_1.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\clock_1\clock_1.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\clock_2</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\clock_2\clock_2.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\clock_2\clock_2.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\Counter_1</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\Counter_1\Counter_1.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\Counter_1\Counter_1.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\Counter_1\Counter_1_PM.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CounterISR</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CounterISR\CounterISR.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CounterISR\CounterISR.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\cmsis_armcc.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\cmsis_gcc.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\core_cmInstr.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\CyBootAsmGnu.s</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\CyBootAsmIar.s</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\CyBootAsmRv.s</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\CyDmac.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\CyDmac.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\CyFlash.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\CyFlash.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\CyLib.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\CyLib.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\cypins.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\cyPm.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\cyPm.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\CySpc.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\CySpc.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\cytypes.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\P0_4</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\P0_4\P0_4.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\P0_4\P0_4.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\P0_4\P0_4_aliases.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\P0_5</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\P0_5\P0_5.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\P0_5\P0_5.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\P0_5\P0_5_aliases.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cycodeshareexport.ld</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cycodeshareimport.ld</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cydevice.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cydeviceiar.inc</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cydevicerv.inc</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cydisabledsheets.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cyfitter.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cyfitter_cfg.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cyfitter_cfg.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cyfittergnu.inc</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cyfitteriar.inc</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cyfitterrv.inc</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\cymetadata.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\project.h</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>BE_systemes_embarques</v>
+<v>BE_systemes_embarques\capteur_us</v>
+<v>BE_systemes_embarques\Counter_exemple</v>
+<v>BE_systemes_embarques\Counter_exemple\TopDesign</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\Pins</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\Analog</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\Clocks</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\Interrupts</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\DMA</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\System</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\Directives</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\Flash Security</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\EEPROM</v>
+<v>BE_systemes_embarques\Counter_exemple\Header Files</v>
+<v>BE_systemes_embarques\Counter_exemple\Header Files\cyapicallbacks.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Source Files</v>
+<v>BE_systemes_embarques\Counter_exemple\Source Files\main.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter.pdf</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1\CharLCD_1.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1\CharLCD_1.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1\CharLCD_1_CustChars.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1\CharLCD_1_PM.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1_LCDPort</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1_LCDPort\CharLCD_1_LCDPort.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1_LCDPort\CharLCD_1_LCDPort.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1_LCDPort\CharLCD_1_LCDPort_aliases.h</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BE_systemes_embarques">
+<ExpandedNodeIds>
+<v>BE_systemes_embarques</v>
+<v>BE_systemes_embarques\capteur_us</v>
+<v>BE_systemes_embarques\capteur_us\TopDesign</v>
+<v>BE_systemes_embarques\capteur_us\TopDesign\TopDesign.cysch</v>
+<v>BE_systemes_embarques\Counter_exemple</v>
+<v>BE_systemes_embarques\Counter_exemple\TopDesign</v>
+<v>BE_systemes_embarques\Counter_exemple\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>BE_systemes_embarques</v>
+<v>BE_systemes_embarques\capteur_us</v>
+<v>BE_systemes_embarques\capteur_us\TopDesign</v>
+<v>BE_systemes_embarques\capteur_us\TopDesign\TopDesign.cysch</v>
+<v>BE_systemes_embarques\Counter_exemple</v>
+<v>BE_systemes_embarques\Counter_exemple\TopDesign</v>
+<v>BE_systemes_embarques\Counter_exemple\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BE_systemes_embarques">
+<ExpandedNodeIds>
+<v>BE_systemes_embarques</v>
+<v>BE_systemes_embarques\capteur_us</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Ampli_Recept.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Ampli_Recept_PM.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Clock_1.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Detect_Seuil_Recept.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Detect_Seuil_Recept_PM.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_1.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_2.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_3.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Timer_US.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Timer_US_PM.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\TimerISR.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\US_40kHz.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\US_40kHz_PM.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\V_seuil.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\V_seuil_PM.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\capteur_us.elf</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\capteur_us.hex</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\capteur_us.map</v>
+<v>BE_systemes_embarques\capteur_us\capteur_us.gpdsc</v>
+<v>BE_systemes_embarques\capteur_us\capteur_us.rpt</v>
+<v>BE_systemes_embarques\capteur_us\capteur_us_timing.html</v>
+<v>BE_systemes_embarques\Counter_exemple</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1_CustChars.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1_LCDPort.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1_PM.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\clock_1.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\clock_2.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\Counter_1.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\Counter_1_PM.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CounterISR.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\P0_4.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\P0_5.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Counter_exemple.elf</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Counter_exemple.hex</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Counter_exemple.map</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.gpdsc</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.rpt</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>BE_systemes_embarques</v>
+<v>BE_systemes_embarques\capteur_us</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Ampli_Recept.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Ampli_Recept_PM.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Clock_1.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Detect_Seuil_Recept.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Detect_Seuil_Recept_PM.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_1.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_2.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_3.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Timer_US.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Timer_US_PM.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\TimerISR.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\US_40kHz.lst</v>
+<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\US_40kHz_PM.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BE_systemes_embarques">
+<ExpandedNodeIds>
+<v>BE_systemes_embarques</v>
+<v>BE_systemes_embarques\capteur_us</v>
+<v>BE_systemes_embarques\capteur_us\PSoC 5LP Architecture TRM</v>
+<v>BE_systemes_embarques\capteur_us\CY8C58LP Family Datasheet</v>
+<v>BE_systemes_embarques\capteur_us\System Reference Guides</v>
+<v>BE_systemes_embarques\capteur_us\System Reference Guides\cy_boot_v5_50</v>
+<v>BE_systemes_embarques\capteur_us\CharLCD_v2_20.pdf</v>
+<v>BE_systemes_embarques\capteur_us\Comp_v2_0.pdf</v>
+<v>BE_systemes_embarques\capteur_us\cy_clock_v2_20</v>
+<v>BE_systemes_embarques\capteur_us\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>BE_systemes_embarques\capteur_us\cy_isr_v1_70.pdf</v>
+<v>BE_systemes_embarques\capteur_us\cy_pins_v2_20</v>
+<v>BE_systemes_embarques\capteur_us\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>BE_systemes_embarques\capteur_us\cy_vref_v1_70.pdf</v>
+<v>BE_systemes_embarques\capteur_us\PGA_Inv_v2_0.pdf</v>
+<v>BE_systemes_embarques\capteur_us\PWM_v3_30.pdf</v>
+<v>BE_systemes_embarques\capteur_us\Speaker_v1_0.pdf</v>
+<v>BE_systemes_embarques\capteur_us\Timer_v2_70.pdf</v>
+<v>BE_systemes_embarques\capteur_us\VDAC8_v1_90.pdf</v>
+<v>BE_systemes_embarques\capteur_us\ZeroTerminal.pdf</v>
+<v>BE_systemes_embarques\Counter_exemple</v>
+<v>BE_systemes_embarques\Counter_exemple\PSoC 5LP Architecture TRM</v>
+<v>BE_systemes_embarques\Counter_exemple\CY8C58LP Family Datasheet</v>
+<v>BE_systemes_embarques\Counter_exemple\System Reference Guides</v>
+<v>BE_systemes_embarques\Counter_exemple\System Reference Guides\cy_boot_v5_50</v>
+<v>BE_systemes_embarques\Counter_exemple\CharLCD_v2_20.pdf</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_v3_0.pdf</v>
+<v>BE_systemes_embarques\Counter_exemple\cy_clock_v2_20</v>
+<v>BE_systemes_embarques\Counter_exemple\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>BE_systemes_embarques\Counter_exemple\cy_isr_v1_70.pdf</v>
+<v>BE_systemes_embarques\Counter_exemple\cy_pins_v2_20</v>
+<v>BE_systemes_embarques\Counter_exemple\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>BE_systemes_embarques\Counter_exemple\cy_sync_v1_0.pdf</v>
+<v>BE_systemes_embarques\Counter_exemple\cy_tff_v1_0.pdf</v>
+<v>BE_systemes_embarques\Counter_exemple\OneTerminal.pdf</v>
+<v>BE_systemes_embarques\Counter_exemple\ZeroTerminal.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>BE_systemes_embarques</v>
+<v>BE_systemes_embarques\capteur_us</v>
+<v>BE_systemes_embarques\capteur_us\PSoC 5LP Architecture TRM</v>
+<v>BE_systemes_embarques\capteur_us\CY8C58LP Family Datasheet</v>
+<v>BE_systemes_embarques\capteur_us\System Reference Guides</v>
+<v>BE_systemes_embarques\capteur_us\System Reference Guides\cy_boot_v5_50</v>
+<v>BE_systemes_embarques\capteur_us\CharLCD_v2_20.pdf</v>
+<v>BE_systemes_embarques\capteur_us\Comp_v2_0.pdf</v>
+<v>BE_systemes_embarques\capteur_us\cy_clock_v2_20</v>
+<v>BE_systemes_embarques\capteur_us\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>BE_systemes_embarques\capteur_us\cy_isr_v1_70.pdf</v>
+<v>BE_systemes_embarques\capteur_us\cy_pins_v2_20</v>
+<v>BE_systemes_embarques\capteur_us\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>BE_systemes_embarques\capteur_us\cy_vref_v1_70.pdf</v>
+<v>BE_systemes_embarques\capteur_us\PGA_Inv_v2_0.pdf</v>
+<v>BE_systemes_embarques\capteur_us\PWM_v3_30.pdf</v>
+<v>BE_systemes_embarques\capteur_us\Speaker_v1_0.pdf</v>
+<v>BE_systemes_embarques\capteur_us\Timer_v2_70.pdf</v>
+<v>BE_systemes_embarques\capteur_us\VDAC8_v1_90.pdf</v>
+<v>BE_systemes_embarques\capteur_us\ZeroTerminal.pdf</v>
+<v>BE_systemes_embarques\Counter_exemple</v>
+<v>BE_systemes_embarques\Counter_exemple\PSoC 5LP Architecture TRM</v>
+<v>BE_systemes_embarques\Counter_exemple\CY8C58LP Family Datasheet</v>
+<v>BE_systemes_embarques\Counter_exemple\System Reference Guides</v>
+<v>BE_systemes_embarques\Counter_exemple\System Reference Guides\cy_boot_v5_50</v>
+<v>BE_systemes_embarques\Counter_exemple\CharLCD_v2_20.pdf</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_v3_0.pdf</v>
+<v>BE_systemes_embarques\Counter_exemple\cy_clock_v2_20</v>
+<v>BE_systemes_embarques\Counter_exemple\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>BE_systemes_embarques\Counter_exemple\cy_isr_v1_70.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\capteur_us.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\capteur_us.cydsn\main.c" />
+<name v=".\capteur_us.cydsn\capteur_us.cydwr" />
+<name v=".\Counter_exemple.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Counter_exemple.cydsn\main.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="714, 404" SelectedTabbedMdiWindow="9e8df0db-00e9-46de-9fe7-083c950c7853"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="6d0653a0-27c7-43e1-8e8c-eea05ee190dd" /><DocumentWindow Key="7598ea94-0f4e-4e12-975a-0890ef685552" Guid="9e8df0db-00e9-46de-9fe7-083c950c7853" /><DocumentWindow Key="8a298ead-a800-4627-bebc-a86b30630854" Guid="77d173f3-d065-4fe3-a9e2-000d46914252" /><DocumentWindow Key="65792fb0-d09b-427b-9518-a5f8f45483f6" Guid="ec1bee81-5e31-4584-bb7a-0cd70db2a701" /><DocumentWindow Key="a6a10997-b7da-495b-909d-e926d7471d24" Guid="b96b7bfa-bfc0-4949-add5-7a3426839b2c" /><DocumentWindow Key="d862d807-bd19-4aad-a2d6-ffb49a041afb" Guid="2deba146-618a-4e26-b2e9-5a3e897bba25" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>

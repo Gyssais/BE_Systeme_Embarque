@@ -1,0 +1,8 @@
+C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\capteur_us.cyprj|847f784f-b51c-4f10-bede-7982da21525f
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|fe7ce1ba-3f5e-4514-9fb0-0c0b75fddc61
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|1f2c961e-531f-4321-83b6-07094b707b5b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|8ba1ccb5-1eaa-4cb7-bca4-490148e10256
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|e9428ddf-89fd-4191-8983-45bb1daadfe3
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\dev\psoc3\AnalogDevice\PSoC35AnalogDevice.cylib\PSoC35AnalogDevice.cyprj|49d82b0f-c412-404f-8cbd-34ea44871add
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|b0d8d94f-f429-414c-981c-c4b414ced7c2
+C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\Counter_exemple.cydsn\Counter_exemple.cyprj|edec549a-ba17-4e78-bbe0-12dedaeadb15

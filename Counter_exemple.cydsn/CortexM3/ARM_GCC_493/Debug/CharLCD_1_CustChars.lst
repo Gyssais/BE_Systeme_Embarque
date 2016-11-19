@@ -1,0 +1,704 @@
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccWBgUjj.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"CharLCD_1_CustChars.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	CharLCD_1_customFonts
+  19              		.section	.rodata
+  20              		.align	2
+  21              		.type	CharLCD_1_customFonts, %object
+  22              		.size	CharLCD_1_customFonts, 64
+  23              	CharLCD_1_customFonts:
+  24 0000 00       		.byte	0
+  25 0001 0E       		.byte	14
+  26 0002 08       		.byte	8
+  27 0003 08       		.byte	8
+  28 0004 08       		.byte	8
+  29 0005 0E       		.byte	14
+  30 0006 00       		.byte	0
+  31 0007 00       		.byte	0
+  32 0008 00       		.byte	0
+  33 0009 0A       		.byte	10
+  34 000a 0A       		.byte	10
+  35 000b 04       		.byte	4
+  36 000c 04       		.byte	4
+  37 000d 04       		.byte	4
+  38 000e 00       		.byte	0
+  39 000f 00       		.byte	0
+  40 0010 00       		.byte	0
+  41 0011 0E       		.byte	14
+  42 0012 0A       		.byte	10
+  43 0013 0E       		.byte	14
+  44 0014 08       		.byte	8
+  45 0015 08       		.byte	8
+  46 0016 00       		.byte	0
+  47 0017 00       		.byte	0
+  48 0018 00       		.byte	0
+  49 0019 0E       		.byte	14
+  50 001a 0A       		.byte	10
+  51 001b 0C       		.byte	12
+  52 001c 0A       		.byte	10
+  53 001d 0A       		.byte	10
+  54 001e 00       		.byte	0
+  55 001f 00       		.byte	0
+  56 0020 00       		.byte	0
+  57 0021 0E       		.byte	14
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccWBgUjj.s 			page 2
+
+
+  58 0022 08       		.byte	8
+  59 0023 0C       		.byte	12
+  60 0024 08       		.byte	8
+  61 0025 0E       		.byte	14
+  62 0026 00       		.byte	0
+  63 0027 00       		.byte	0
+  64 0028 00       		.byte	0
+  65 0029 0E       		.byte	14
+  66 002a 08       		.byte	8
+  67 002b 0E       		.byte	14
+  68 002c 02       		.byte	2
+  69 002d 0E       		.byte	14
+  70 002e 00       		.byte	0
+  71 002f 00       		.byte	0
+  72 0030 00       		.byte	0
+  73 0031 0E       		.byte	14
+  74 0032 08       		.byte	8
+  75 0033 0E       		.byte	14
+  76 0034 02       		.byte	2
+  77 0035 0E       		.byte	14
+  78 0036 00       		.byte	0
+  79 0037 00       		.byte	0
+  80 0038 00       		.byte	0
+  81 0039 04       		.byte	4
+  82 003a 04       		.byte	4
+  83 003b 04       		.byte	4
+  84 003c 00       		.byte	0
+  85 003d 04       		.byte	4
+  86 003e 00       		.byte	0
+  87 003f 00       		.byte	0
+  88              		.section	.text.CharLCD_1_LoadCustomFonts,"ax",%progbits
+  89              		.align	2
+  90              		.global	CharLCD_1_LoadCustomFonts
+  91              		.thumb
+  92              		.thumb_func
+  93              		.type	CharLCD_1_LoadCustomFonts, %function
+  94              	CharLCD_1_LoadCustomFonts:
+  95              	.LFB0:
+  96              		.file 1 "Generated_Source\\PSoC5\\CharLCD_1_CustChars.c"
+   1:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** /*******************************************************************************
+   2:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** * File Name: CharLCD_1_CustChars.c
+   3:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** * Version 2.20
+   4:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *
+   5:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** * Description:
+   6:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *  This file provides the source code for the Character LCD custom character
+   7:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *  API.
+   8:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *
+   9:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** * Note:
+  10:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *
+  11:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** ********************************************************************************
+  12:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** * Copyright 2008-2014, Cypress Semiconductor Corporation.  All rights reserved.
+  13:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** * You may use this file only in accordance with the license, terms, conditions,
+  14:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  15:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** * the software package with which this file was provided.
+  16:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *******************************************************************************/
+  17:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** 
+  18:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** #include "CharLCD_1.h"
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccWBgUjj.s 			page 3
+
+
+  19:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** 
+  20:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** 
+  21:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** uint8 const CYCODE CharLCD_1_customFonts[] = \
+  22:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** {
+  23:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     /* Character CharLCD_1_CUSTOM_0   */
+  24:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****         0x00u,    0x0Eu,    0x08u,    0x08u,    0x08u,    0x0Eu,    0x00u,    0x00u, \
+  25:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     /* Character CharLCD_1_CUSTOM_1   */
+  26:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****         0x00u,    0x0Au,    0x0Au,    0x04u,    0x04u,    0x04u,    0x00u,    0x00u, \
+  27:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     /* Character CharLCD_1_CUSTOM_2   */
+  28:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****         0x00u,    0x0Eu,    0x0Au,    0x0Eu,    0x08u,    0x08u,    0x00u,    0x00u, \
+  29:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     /* Character CharLCD_1_CUSTOM_3   */
+  30:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****         0x00u,    0x0Eu,    0x0Au,    0x0Cu,    0x0Au,    0x0Au,    0x00u,    0x00u, \
+  31:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     /* Character CharLCD_1_CUSTOM_4   */
+  32:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****         0x00u,    0x0Eu,    0x08u,    0x0Cu,    0x08u,    0x0Eu,    0x00u,    0x00u, \
+  33:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     /* Character CharLCD_1_CUSTOM_5   */
+  34:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****         0x00u,    0x0Eu,    0x08u,    0x0Eu,    0x02u,    0x0Eu,    0x00u,    0x00u, \
+  35:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     /* Character CharLCD_1_CUSTOM_6   */
+  36:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****         0x00u,    0x0Eu,    0x08u,    0x0Eu,    0x02u,    0x0Eu,    0x00u,    0x00u, \
+  37:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     /* Character CharLCD_1_CUSTOM_7   */
+  38:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****         0x00u,    0x04u,    0x04u,    0x04u,    0x00u,    0x04u,    0x00u,    0x00u \
+  39:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****  };
+  40:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** 
+  41:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** 
+  42:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** /*******************************************************************************
+  43:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** * Function Name: CharLCD_1_LoadCustomFonts
+  44:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** ********************************************************************************
+  45:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *
+  46:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** * Summary:
+  47:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *  Loads 8 custom font characters into the LCD Module for use.  Cannot use
+  48:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *  characters from two different font sets at once, but font sets can be
+  49:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *  switched out during runtime.
+  50:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *
+  51:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** * Parameters:
+  52:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *  customData:  pointer to a constant array of 64 bytes representing 8 custom
+  53:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *               font characters.
+  54:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** * Return:
+  55:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *  None.
+  56:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *
+  57:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** * Theory:
+  58:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *  Prior to using this function user need to import the pointer to custom
+  59:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *  font array to your project by writting the following in the source code file
+  60:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *  where custom font will be used:
+  61:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *       extern uint8 const CYCODE LCD_Char_customFonts[];
+  62:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *  This function is not automatically called by the Start() routine and must be
+  63:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *  called manually by the user.
+  64:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *
+  65:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** *******************************************************************************/
+  66:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** void CharLCD_1_LoadCustomFonts(uint8 const customData[]) 
+  67:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** {
+  97              		.loc 1 67 0
+  98              		.cfi_startproc
+  99              		@ args = 0, pretend = 0, frame = 16
+ 100              		@ frame_needed = 1, uses_anonymous_args = 0
+ 101 0000 80B5     		push	{r7, lr}
+ 102              		.cfi_def_cfa_offset 8
+ 103              		.cfi_offset 7, -8
+ 104              		.cfi_offset 14, -4
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccWBgUjj.s 			page 4
+
+
+ 105 0002 84B0     		sub	sp, sp, #16
+ 106              		.cfi_def_cfa_offset 24
+ 107 0004 00AF     		add	r7, sp, #0
+ 108              		.cfi_def_cfa_register 7
+ 109 0006 7860     		str	r0, [r7, #4]
+  68:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     uint8 indexU8;
+  69:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** 
+  70:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     CharLCD_1_IsReady();
+ 110              		.loc 1 70 0
+ 111 0008 FFF7FEFF 		bl	CharLCD_1_IsReady
+  71:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** 
+  72:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     /* Set starting address in the LCD Module.
+  73:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     * Optionally: Read the current address to restore at a later time.
+  74:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     */
+  75:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     CharLCD_1_WriteControl(CharLCD_1_CGRAM_0);
+ 112              		.loc 1 75 0
+ 113 000c 4020     		movs	r0, #64
+ 114 000e FFF7FEFF 		bl	CharLCD_1_WriteControl
+  76:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** 
+  77:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     /* Load in the 64 bytes of CustomChar Data */
+  78:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     for(indexU8 = 0u; indexU8 < CharLCD_1_CUSTOM_CHAR_SET_LEN; indexU8++)
+ 115              		.loc 1 78 0
+ 116 0012 0023     		movs	r3, #0
+ 117 0014 FB73     		strb	r3, [r7, #15]
+ 118 0016 09E0     		b	.L2
+ 119              	.L3:
+  79:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     {
+  80:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****         CharLCD_1_WriteData(customData[indexU8]);
+ 120              		.loc 1 80 0 discriminator 3
+ 121 0018 FB7B     		ldrb	r3, [r7, #15]	@ zero_extendqisi2
+ 122 001a 7A68     		ldr	r2, [r7, #4]
+ 123 001c 1344     		add	r3, r3, r2
+ 124 001e 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 125 0020 1846     		mov	r0, r3
+ 126 0022 FFF7FEFF 		bl	CharLCD_1_WriteData
+  78:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     {
+ 127              		.loc 1 78 0 discriminator 3
+ 128 0026 FB7B     		ldrb	r3, [r7, #15]	@ zero_extendqisi2
+ 129 0028 0133     		adds	r3, r3, #1
+ 130 002a FB73     		strb	r3, [r7, #15]
+ 131              	.L2:
+  78:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     {
+ 132              		.loc 1 78 0 is_stmt 0 discriminator 1
+ 133 002c FB7B     		ldrb	r3, [r7, #15]	@ zero_extendqisi2
+ 134 002e 3F2B     		cmp	r3, #63
+ 135 0030 F2D9     		bls	.L3
+  81:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     }
+  82:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** 
+  83:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     CharLCD_1_IsReady();
+ 136              		.loc 1 83 0 is_stmt 1
+ 137 0032 FFF7FEFF 		bl	CharLCD_1_IsReady
+  84:Generated_Source\PSoC5/CharLCD_1_CustChars.c ****     CharLCD_1_WriteControl(CharLCD_1_DDRAM_0);
+ 138              		.loc 1 84 0
+ 139 0036 8020     		movs	r0, #128
+ 140 0038 FFF7FEFF 		bl	CharLCD_1_WriteControl
+  85:Generated_Source\PSoC5/CharLCD_1_CustChars.c **** }
+ 141              		.loc 1 85 0
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccWBgUjj.s 			page 5
+
+
+ 142 003c 1037     		adds	r7, r7, #16
+ 143              		.cfi_def_cfa_offset 8
+ 144 003e BD46     		mov	sp, r7
+ 145              		.cfi_def_cfa_register 13
+ 146              		@ sp needed
+ 147 0040 80BD     		pop	{r7, pc}
+ 148              		.cfi_endproc
+ 149              	.LFE0:
+ 150              		.size	CharLCD_1_LoadCustomFonts, .-CharLCD_1_LoadCustomFonts
+ 151 0042 00BF     		.text
+ 152              	.Letext0:
+ 153              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 154              		.section	.debug_info,"",%progbits
+ 155              	.Ldebug_info0:
+ 156 0000 F3000000 		.4byte	0xf3
+ 157 0004 0400     		.2byte	0x4
+ 158 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 159 000a 04       		.byte	0x4
+ 160 000b 01       		.uleb128 0x1
+ 161 000c 00000000 		.4byte	.LASF13
+ 162 0010 01       		.byte	0x1
+ 163 0011 1B010000 		.4byte	.LASF14
+ 164 0015 A3010000 		.4byte	.LASF15
+ 165 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 166 001d 00000000 		.4byte	0
+ 167 0021 00000000 		.4byte	.Ldebug_line0
+ 168 0025 02       		.uleb128 0x2
+ 169 0026 01       		.byte	0x1
+ 170 0027 06       		.byte	0x6
+ 171 0028 97010000 		.4byte	.LASF0
+ 172 002c 02       		.uleb128 0x2
+ 173 002d 01       		.byte	0x1
+ 174 002e 08       		.byte	0x8
+ 175 002f A7000000 		.4byte	.LASF1
+ 176 0033 02       		.uleb128 0x2
+ 177 0034 02       		.byte	0x2
+ 178 0035 05       		.byte	0x5
+ 179 0036 7E010000 		.4byte	.LASF2
+ 180 003a 02       		.uleb128 0x2
+ 181 003b 02       		.byte	0x2
+ 182 003c 07       		.byte	0x7
+ 183 003d C7000000 		.4byte	.LASF3
+ 184 0041 02       		.uleb128 0x2
+ 185 0042 04       		.byte	0x4
+ 186 0043 05       		.byte	0x5
+ 187 0044 8E010000 		.4byte	.LASF4
+ 188 0048 02       		.uleb128 0x2
+ 189 0049 04       		.byte	0x4
+ 190 004a 07       		.byte	0x7
+ 191 004b B5000000 		.4byte	.LASF5
+ 192 004f 02       		.uleb128 0x2
+ 193 0050 08       		.byte	0x8
+ 194 0051 05       		.byte	0x5
+ 195 0052 6B010000 		.4byte	.LASF6
+ 196 0056 02       		.uleb128 0x2
+ 197 0057 08       		.byte	0x8
+ 198 0058 07       		.byte	0x7
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccWBgUjj.s 			page 6
+
+
+ 199 0059 04010000 		.4byte	.LASF7
+ 200 005d 03       		.uleb128 0x3
+ 201 005e 04       		.byte	0x4
+ 202 005f 05       		.byte	0x5
+ 203 0060 696E7400 		.ascii	"int\000"
+ 204 0064 02       		.uleb128 0x2
+ 205 0065 04       		.byte	0x4
+ 206 0066 07       		.byte	0x7
+ 207 0067 F7000000 		.4byte	.LASF8
+ 208 006b 04       		.uleb128 0x4
+ 209 006c 88010000 		.4byte	.LASF16
+ 210 0070 02       		.byte	0x2
+ 211 0071 9201     		.2byte	0x192
+ 212 0073 2C000000 		.4byte	0x2c
+ 213 0077 02       		.uleb128 0x2
+ 214 0078 04       		.byte	0x4
+ 215 0079 04       		.byte	0x4
+ 216 007a A1000000 		.4byte	.LASF9
+ 217 007e 02       		.uleb128 0x2
+ 218 007f 08       		.byte	0x8
+ 219 0080 04       		.byte	0x4
+ 220 0081 F0000000 		.4byte	.LASF10
+ 221 0085 02       		.uleb128 0x2
+ 222 0086 01       		.byte	0x1
+ 223 0087 08       		.byte	0x8
+ 224 0088 79010000 		.4byte	.LASF11
+ 225 008c 05       		.uleb128 0x5
+ 226 008d 48010000 		.4byte	.LASF17
+ 227 0091 01       		.byte	0x1
+ 228 0092 42       		.byte	0x42
+ 229 0093 00000000 		.4byte	.LFB0
+ 230 0097 42000000 		.4byte	.LFE0-.LFB0
+ 231 009b 01       		.uleb128 0x1
+ 232 009c 9C       		.byte	0x9c
+ 233 009d BE000000 		.4byte	0xbe
+ 234 00a1 06       		.uleb128 0x6
+ 235 00a2 96000000 		.4byte	.LASF18
+ 236 00a6 01       		.byte	0x1
+ 237 00a7 42       		.byte	0x42
+ 238 00a8 BE000000 		.4byte	0xbe
+ 239 00ac 02       		.uleb128 0x2
+ 240 00ad 91       		.byte	0x91
+ 241 00ae 6C       		.sleb128 -20
+ 242 00af 07       		.uleb128 0x7
+ 243 00b0 8E000000 		.4byte	.LASF19
+ 244 00b4 01       		.byte	0x1
+ 245 00b5 44       		.byte	0x44
+ 246 00b6 6B000000 		.4byte	0x6b
+ 247 00ba 02       		.uleb128 0x2
+ 248 00bb 91       		.byte	0x91
+ 249 00bc 77       		.sleb128 -9
+ 250 00bd 00       		.byte	0
+ 251 00be 08       		.uleb128 0x8
+ 252 00bf 04       		.byte	0x4
+ 253 00c0 C4000000 		.4byte	0xc4
+ 254 00c4 09       		.uleb128 0x9
+ 255 00c5 6B000000 		.4byte	0x6b
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccWBgUjj.s 			page 7
+
+
+ 256 00c9 0A       		.uleb128 0xa
+ 257 00ca 6B000000 		.4byte	0x6b
+ 258 00ce D9000000 		.4byte	0xd9
+ 259 00d2 0B       		.uleb128 0xb
+ 260 00d3 D9000000 		.4byte	0xd9
+ 261 00d7 3F       		.byte	0x3f
+ 262 00d8 00       		.byte	0
+ 263 00d9 02       		.uleb128 0x2
+ 264 00da 04       		.byte	0x4
+ 265 00db 07       		.byte	0x7
+ 266 00dc 62010000 		.4byte	.LASF12
+ 267 00e0 0C       		.uleb128 0xc
+ 268 00e1 DA000000 		.4byte	.LASF20
+ 269 00e5 01       		.byte	0x1
+ 270 00e6 15       		.byte	0x15
+ 271 00e7 F1000000 		.4byte	0xf1
+ 272 00eb 05       		.uleb128 0x5
+ 273 00ec 03       		.byte	0x3
+ 274 00ed 00000000 		.4byte	CharLCD_1_customFonts
+ 275 00f1 09       		.uleb128 0x9
+ 276 00f2 C9000000 		.4byte	0xc9
+ 277 00f6 00       		.byte	0
+ 278              		.section	.debug_abbrev,"",%progbits
+ 279              	.Ldebug_abbrev0:
+ 280 0000 01       		.uleb128 0x1
+ 281 0001 11       		.uleb128 0x11
+ 282 0002 01       		.byte	0x1
+ 283 0003 25       		.uleb128 0x25
+ 284 0004 0E       		.uleb128 0xe
+ 285 0005 13       		.uleb128 0x13
+ 286 0006 0B       		.uleb128 0xb
+ 287 0007 03       		.uleb128 0x3
+ 288 0008 0E       		.uleb128 0xe
+ 289 0009 1B       		.uleb128 0x1b
+ 290 000a 0E       		.uleb128 0xe
+ 291 000b 55       		.uleb128 0x55
+ 292 000c 17       		.uleb128 0x17
+ 293 000d 11       		.uleb128 0x11
+ 294 000e 01       		.uleb128 0x1
+ 295 000f 10       		.uleb128 0x10
+ 296 0010 17       		.uleb128 0x17
+ 297 0011 00       		.byte	0
+ 298 0012 00       		.byte	0
+ 299 0013 02       		.uleb128 0x2
+ 300 0014 24       		.uleb128 0x24
+ 301 0015 00       		.byte	0
+ 302 0016 0B       		.uleb128 0xb
+ 303 0017 0B       		.uleb128 0xb
+ 304 0018 3E       		.uleb128 0x3e
+ 305 0019 0B       		.uleb128 0xb
+ 306 001a 03       		.uleb128 0x3
+ 307 001b 0E       		.uleb128 0xe
+ 308 001c 00       		.byte	0
+ 309 001d 00       		.byte	0
+ 310 001e 03       		.uleb128 0x3
+ 311 001f 24       		.uleb128 0x24
+ 312 0020 00       		.byte	0
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccWBgUjj.s 			page 8
+
+
+ 313 0021 0B       		.uleb128 0xb
+ 314 0022 0B       		.uleb128 0xb
+ 315 0023 3E       		.uleb128 0x3e
+ 316 0024 0B       		.uleb128 0xb
+ 317 0025 03       		.uleb128 0x3
+ 318 0026 08       		.uleb128 0x8
+ 319 0027 00       		.byte	0
+ 320 0028 00       		.byte	0
+ 321 0029 04       		.uleb128 0x4
+ 322 002a 16       		.uleb128 0x16
+ 323 002b 00       		.byte	0
+ 324 002c 03       		.uleb128 0x3
+ 325 002d 0E       		.uleb128 0xe
+ 326 002e 3A       		.uleb128 0x3a
+ 327 002f 0B       		.uleb128 0xb
+ 328 0030 3B       		.uleb128 0x3b
+ 329 0031 05       		.uleb128 0x5
+ 330 0032 49       		.uleb128 0x49
+ 331 0033 13       		.uleb128 0x13
+ 332 0034 00       		.byte	0
+ 333 0035 00       		.byte	0
+ 334 0036 05       		.uleb128 0x5
+ 335 0037 2E       		.uleb128 0x2e
+ 336 0038 01       		.byte	0x1
+ 337 0039 3F       		.uleb128 0x3f
+ 338 003a 19       		.uleb128 0x19
+ 339 003b 03       		.uleb128 0x3
+ 340 003c 0E       		.uleb128 0xe
+ 341 003d 3A       		.uleb128 0x3a
+ 342 003e 0B       		.uleb128 0xb
+ 343 003f 3B       		.uleb128 0x3b
+ 344 0040 0B       		.uleb128 0xb
+ 345 0041 27       		.uleb128 0x27
+ 346 0042 19       		.uleb128 0x19
+ 347 0043 11       		.uleb128 0x11
+ 348 0044 01       		.uleb128 0x1
+ 349 0045 12       		.uleb128 0x12
+ 350 0046 06       		.uleb128 0x6
+ 351 0047 40       		.uleb128 0x40
+ 352 0048 18       		.uleb128 0x18
+ 353 0049 9642     		.uleb128 0x2116
+ 354 004b 19       		.uleb128 0x19
+ 355 004c 01       		.uleb128 0x1
+ 356 004d 13       		.uleb128 0x13
+ 357 004e 00       		.byte	0
+ 358 004f 00       		.byte	0
+ 359 0050 06       		.uleb128 0x6
+ 360 0051 05       		.uleb128 0x5
+ 361 0052 00       		.byte	0
+ 362 0053 03       		.uleb128 0x3
+ 363 0054 0E       		.uleb128 0xe
+ 364 0055 3A       		.uleb128 0x3a
+ 365 0056 0B       		.uleb128 0xb
+ 366 0057 3B       		.uleb128 0x3b
+ 367 0058 0B       		.uleb128 0xb
+ 368 0059 49       		.uleb128 0x49
+ 369 005a 13       		.uleb128 0x13
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccWBgUjj.s 			page 9
+
+
+ 370 005b 02       		.uleb128 0x2
+ 371 005c 18       		.uleb128 0x18
+ 372 005d 00       		.byte	0
+ 373 005e 00       		.byte	0
+ 374 005f 07       		.uleb128 0x7
+ 375 0060 34       		.uleb128 0x34
+ 376 0061 00       		.byte	0
+ 377 0062 03       		.uleb128 0x3
+ 378 0063 0E       		.uleb128 0xe
+ 379 0064 3A       		.uleb128 0x3a
+ 380 0065 0B       		.uleb128 0xb
+ 381 0066 3B       		.uleb128 0x3b
+ 382 0067 0B       		.uleb128 0xb
+ 383 0068 49       		.uleb128 0x49
+ 384 0069 13       		.uleb128 0x13
+ 385 006a 02       		.uleb128 0x2
+ 386 006b 18       		.uleb128 0x18
+ 387 006c 00       		.byte	0
+ 388 006d 00       		.byte	0
+ 389 006e 08       		.uleb128 0x8
+ 390 006f 0F       		.uleb128 0xf
+ 391 0070 00       		.byte	0
+ 392 0071 0B       		.uleb128 0xb
+ 393 0072 0B       		.uleb128 0xb
+ 394 0073 49       		.uleb128 0x49
+ 395 0074 13       		.uleb128 0x13
+ 396 0075 00       		.byte	0
+ 397 0076 00       		.byte	0
+ 398 0077 09       		.uleb128 0x9
+ 399 0078 26       		.uleb128 0x26
+ 400 0079 00       		.byte	0
+ 401 007a 49       		.uleb128 0x49
+ 402 007b 13       		.uleb128 0x13
+ 403 007c 00       		.byte	0
+ 404 007d 00       		.byte	0
+ 405 007e 0A       		.uleb128 0xa
+ 406 007f 01       		.uleb128 0x1
+ 407 0080 01       		.byte	0x1
+ 408 0081 49       		.uleb128 0x49
+ 409 0082 13       		.uleb128 0x13
+ 410 0083 01       		.uleb128 0x1
+ 411 0084 13       		.uleb128 0x13
+ 412 0085 00       		.byte	0
+ 413 0086 00       		.byte	0
+ 414 0087 0B       		.uleb128 0xb
+ 415 0088 21       		.uleb128 0x21
+ 416 0089 00       		.byte	0
+ 417 008a 49       		.uleb128 0x49
+ 418 008b 13       		.uleb128 0x13
+ 419 008c 2F       		.uleb128 0x2f
+ 420 008d 0B       		.uleb128 0xb
+ 421 008e 00       		.byte	0
+ 422 008f 00       		.byte	0
+ 423 0090 0C       		.uleb128 0xc
+ 424 0091 34       		.uleb128 0x34
+ 425 0092 00       		.byte	0
+ 426 0093 03       		.uleb128 0x3
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccWBgUjj.s 			page 10
+
+
+ 427 0094 0E       		.uleb128 0xe
+ 428 0095 3A       		.uleb128 0x3a
+ 429 0096 0B       		.uleb128 0xb
+ 430 0097 3B       		.uleb128 0x3b
+ 431 0098 0B       		.uleb128 0xb
+ 432 0099 49       		.uleb128 0x49
+ 433 009a 13       		.uleb128 0x13
+ 434 009b 3F       		.uleb128 0x3f
+ 435 009c 19       		.uleb128 0x19
+ 436 009d 02       		.uleb128 0x2
+ 437 009e 18       		.uleb128 0x18
+ 438 009f 00       		.byte	0
+ 439 00a0 00       		.byte	0
+ 440 00a1 00       		.byte	0
+ 441              		.section	.debug_aranges,"",%progbits
+ 442 0000 1C000000 		.4byte	0x1c
+ 443 0004 0200     		.2byte	0x2
+ 444 0006 00000000 		.4byte	.Ldebug_info0
+ 445 000a 04       		.byte	0x4
+ 446 000b 00       		.byte	0
+ 447 000c 0000     		.2byte	0
+ 448 000e 0000     		.2byte	0
+ 449 0010 00000000 		.4byte	.LFB0
+ 450 0014 42000000 		.4byte	.LFE0-.LFB0
+ 451 0018 00000000 		.4byte	0
+ 452 001c 00000000 		.4byte	0
+ 453              		.section	.debug_ranges,"",%progbits
+ 454              	.Ldebug_ranges0:
+ 455 0000 00000000 		.4byte	.LFB0
+ 456 0004 42000000 		.4byte	.LFE0
+ 457 0008 00000000 		.4byte	0
+ 458 000c 00000000 		.4byte	0
+ 459              		.section	.debug_line,"",%progbits
+ 460              	.Ldebug_line0:
+ 461 0000 7D000000 		.section	.debug_str,"MS",%progbits,1
+ 461      02005000 
+ 461      00000201 
+ 461      FB0E0D00 
+ 461      01010101 
+ 462              	.LASF13:
+ 463 0000 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 463      4320342E 
+ 463      392E3320 
+ 463      32303135 
+ 463      30333033 
+ 464 0033 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 464      20726576 
+ 464      6973696F 
+ 464      6E203232 
+ 464      31323230 
+ 465 0066 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 465      66756E63 
+ 465      74696F6E 
+ 465      2D736563 
+ 465      74696F6E 
+ 466              	.LASF19:
+ 467 008e 696E6465 		.ascii	"indexU8\000"
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccWBgUjj.s 			page 11
+
+
+ 467      78553800 
+ 468              	.LASF18:
+ 469 0096 63757374 		.ascii	"customData\000"
+ 469      6F6D4461 
+ 469      746100
+ 470              	.LASF9:
+ 471 00a1 666C6F61 		.ascii	"float\000"
+ 471      7400
+ 472              	.LASF1:
+ 473 00a7 756E7369 		.ascii	"unsigned char\000"
+ 473      676E6564 
+ 473      20636861 
+ 473      7200
+ 474              	.LASF5:
+ 475 00b5 6C6F6E67 		.ascii	"long unsigned int\000"
+ 475      20756E73 
+ 475      69676E65 
+ 475      6420696E 
+ 475      7400
+ 476              	.LASF3:
+ 477 00c7 73686F72 		.ascii	"short unsigned int\000"
+ 477      7420756E 
+ 477      7369676E 
+ 477      65642069 
+ 477      6E7400
+ 478              	.LASF20:
+ 479 00da 43686172 		.ascii	"CharLCD_1_customFonts\000"
+ 479      4C43445F 
+ 479      315F6375 
+ 479      73746F6D 
+ 479      466F6E74 
+ 480              	.LASF10:
+ 481 00f0 646F7562 		.ascii	"double\000"
+ 481      6C6500
+ 482              	.LASF8:
+ 483 00f7 756E7369 		.ascii	"unsigned int\000"
+ 483      676E6564 
+ 483      20696E74 
+ 483      00
+ 484              	.LASF7:
+ 485 0104 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 485      206C6F6E 
+ 485      6720756E 
+ 485      7369676E 
+ 485      65642069 
+ 486              	.LASF14:
+ 487 011b 47656E65 		.ascii	"Generated_Source\\PSoC5\\CharLCD_1_CustChars.c\000"
+ 487      72617465 
+ 487      645F536F 
+ 487      75726365 
+ 487      5C50536F 
+ 488              	.LASF17:
+ 489 0148 43686172 		.ascii	"CharLCD_1_LoadCustomFonts\000"
+ 489      4C43445F 
+ 489      315F4C6F 
+ 489      61644375 
+ 489      73746F6D 
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccWBgUjj.s 			page 12
+
+
+ 490              	.LASF12:
+ 491 0162 73697A65 		.ascii	"sizetype\000"
+ 491      74797065 
+ 491      00
+ 492              	.LASF6:
+ 493 016b 6C6F6E67 		.ascii	"long long int\000"
+ 493      206C6F6E 
+ 493      6720696E 
+ 493      7400
+ 494              	.LASF11:
+ 495 0179 63686172 		.ascii	"char\000"
+ 495      00
+ 496              	.LASF2:
+ 497 017e 73686F72 		.ascii	"short int\000"
+ 497      7420696E 
+ 497      7400
+ 498              	.LASF16:
+ 499 0188 75696E74 		.ascii	"uint8\000"
+ 499      3800
+ 500              	.LASF4:
+ 501 018e 6C6F6E67 		.ascii	"long int\000"
+ 501      20696E74 
+ 501      00
+ 502              	.LASF0:
+ 503 0197 7369676E 		.ascii	"signed char\000"
+ 503      65642063 
+ 503      68617200 
+ 504              	.LASF15:
+ 505 01a3 433A5C55 		.ascii	"C:\\Users\\Julien\\Documents\\INSA\\5A\\BE_systemes"
+ 505      73657273 
+ 505      5C4A756C 
+ 505      69656E5C 
+ 505      446F6375 
+ 506 01d0 5F656D62 		.ascii	"_embarques\\BE_systemes_embarques\\Counter_exemple."
+ 506      61727175 
+ 506      65735C42 
+ 506      455F7379 
+ 506      7374656D 
+ 507 0201 63796473 		.ascii	"cydsn\000"
+ 507      6E00
+ 508              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
