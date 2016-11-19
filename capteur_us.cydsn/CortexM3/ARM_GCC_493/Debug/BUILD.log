@@ -1,9 +1,10 @@
---------------- Build Started: 11/17/2016 11:47:10 Project: capteur_us, Configuration: ARM GCC 4.9-2015-q1-update Debug ---------------
+--------------- Build Started: 11/19/2016 16:41:20 Project: capteur_us, Configuration: ARM GCC 4.9-2015-q1-update Debug ---------------
 cydsfit.exe -.appdatapath "C:\Users\Julien\AppData\Local\Cypress Semiconductor\PSoC Creator\4.0" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\capteur_us.cyprj -d CY8C5868AXI-LP035 -s C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 Elaborating Design...
 HDL Generation...
 Synthesis...
 Tech Mapping...
+ADD: pft.M0040: information: The following 7 pin(s) will be assigned a location by the fitter: \CharLCD_1:LCDPort(0)\, \CharLCD_1:LCDPort(1)\, \CharLCD_1:LCDPort(2)\, \CharLCD_1:LCDPort(3)\, \CharLCD_1:LCDPort(4)\, \CharLCD_1:LCDPort(5)\, \CharLCD_1:LCDPort(6)\
 Analog Placement...
 Log: apr.M0058: The analog placement iterative improvement is 55% done. (App=cydsfit)
 Analog Routing...
@@ -17,6 +18,13 @@ API Generation...
 Dependency Generation...
 Cleanup...
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/main.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c main.c -o .\CortexM3\ARM_GCC_493\Debug\main.o
+main.c: In function 'main':
+main.c:44:5: warning: implicit declaration of function 'Counter_1_ReadPeriod' [-Wimplicit-function-declaration]
+     CharLCD_1_PrintInt8(Counter_1_ReadPeriod());
+     ^
+main.c:47:5: warning: implicit declaration of function 'Counter_1_ReadCompare' [-Wimplicit-function-declaration]
+     CharLCD_1_PrintInt8(Counter_1_ReadCompare());
+     ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/cyfitter_cfg.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c Generated_Source\PSoC5\cyfitter_cfg.c -o .\CortexM3\ARM_GCC_493\Debug\cyfitter_cfg.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/cymetadata.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c Generated_Source\PSoC5\cymetadata.c -o .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/Pin_1.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c Generated_Source\PSoC5\Pin_1.c -o .\CortexM3\ARM_GCC_493\Debug\Pin_1.o
@@ -41,12 +49,17 @@ arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/Ampli_Recept.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c Generated_Source\PSoC5\Ampli_Recept.c -o .\CortexM3\ARM_GCC_493\Debug\Ampli_Recept.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/Ampli_Recept_PM.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c Generated_Source\PSoC5\Ampli_Recept_PM.c -o .\CortexM3\ARM_GCC_493\Debug\Ampli_Recept_PM.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/TimerISR.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c Generated_Source\PSoC5\TimerISR.c -o .\CortexM3\ARM_GCC_493\Debug\TimerISR.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/CharLCD_1.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c Generated_Source\PSoC5\CharLCD_1.c -o .\CortexM3\ARM_GCC_493\Debug\CharLCD_1.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/CharLCD_1_PM.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c Generated_Source\PSoC5\CharLCD_1_PM.c -o .\CortexM3\ARM_GCC_493\Debug\CharLCD_1_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/CharLCD_1_CustChars.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c Generated_Source\PSoC5\CharLCD_1_CustChars.c -o .\CortexM3\ARM_GCC_493\Debug\CharLCD_1_CustChars.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/CharLCD_1_LCDPort.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c Generated_Source\PSoC5\CharLCD_1_LCDPort.c -o .\CortexM3\ARM_GCC_493\Debug\CharLCD_1_LCDPort.o
 arm-none-eabi-as.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -alh=.\CortexM3\ARM_GCC_493\Debug/CyBootAsmGnu.lst -g -W -o .\CortexM3\ARM_GCC_493\Debug\CyBootAsmGnu.o Generated_Source\PSoC5\CyBootAsmGnu.s
-arm-none-eabi-ar.exe -rs .\CortexM3\ARM_GCC_493\Debug\capteur_us.a .\CortexM3\ARM_GCC_493\Debug\cyfitter_cfg.o .\CortexM3\ARM_GCC_493\Debug\Pin_1.o .\CortexM3\ARM_GCC_493\Debug\Pin_2.o .\CortexM3\ARM_GCC_493\Debug\Pin_3.o .\CortexM3\ARM_GCC_493\Debug\CyDmac.o .\CortexM3\ARM_GCC_493\Debug\CyFlash.o .\CortexM3\ARM_GCC_493\Debug\CyLib.o .\CortexM3\ARM_GCC_493\Debug\cyPm.o .\CortexM3\ARM_GCC_493\Debug\CySpc.o .\CortexM3\ARM_GCC_493\Debug\cyutils.o .\CortexM3\ARM_GCC_493\Debug\Clock_1.o .\CortexM3\ARM_GCC_493\Debug\US_40kHz.o .\CortexM3\ARM_GCC_493\Debug\US_40kHz_PM.o .\CortexM3\ARM_GCC_493\Debug\Detect_Seuil_Recept.o .\CortexM3\ARM_GCC_493\Debug\Detect_Seuil_Recept_PM.o .\CortexM3\ARM_GCC_493\Debug\V_seuil.o .\CortexM3\ARM_GCC_493\Debug\V_seuil_PM.o .\CortexM3\ARM_GCC_493\Debug\Timer_US.o .\CortexM3\ARM_GCC_493\Debug\Timer_US_PM.o .\CortexM3\ARM_GCC_493\Debug\Ampli_Recept.o .\CortexM3\ARM_GCC_493\Debug\Ampli_Recept_PM.o .\CortexM3\ARM_GCC_493\Debug\TimerISR.o .\CortexM3\ARM_GCC_493\Debug\CyBootAsmGnu.o
+arm-none-eabi-ar.exe -rs .\CortexM3\ARM_GCC_493\Debug\capteur_us.a .\CortexM3\ARM_GCC_493\Debug\cyfitter_cfg.o .\CortexM3\ARM_GCC_493\Debug\Pin_1.o .\CortexM3\ARM_GCC_493\Debug\Pin_2.o .\CortexM3\ARM_GCC_493\Debug\Pin_3.o .\CortexM3\ARM_GCC_493\Debug\CyDmac.o .\CortexM3\ARM_GCC_493\Debug\CyFlash.o .\CortexM3\ARM_GCC_493\Debug\CyLib.o .\CortexM3\ARM_GCC_493\Debug\cyPm.o .\CortexM3\ARM_GCC_493\Debug\CySpc.o .\CortexM3\ARM_GCC_493\Debug\cyutils.o .\CortexM3\ARM_GCC_493\Debug\Clock_1.o .\CortexM3\ARM_GCC_493\Debug\US_40kHz.o .\CortexM3\ARM_GCC_493\Debug\US_40kHz_PM.o .\CortexM3\ARM_GCC_493\Debug\Detect_Seuil_Recept.o .\CortexM3\ARM_GCC_493\Debug\Detect_Seuil_Recept_PM.o .\CortexM3\ARM_GCC_493\Debug\V_seuil.o .\CortexM3\ARM_GCC_493\Debug\V_seuil_PM.o .\CortexM3\ARM_GCC_493\Debug\Timer_US.o .\CortexM3\ARM_GCC_493\Debug\Timer_US_PM.o .\CortexM3\ARM_GCC_493\Debug\Ampli_Recept.o .\CortexM3\ARM_GCC_493\Debug\Ampli_Recept_PM.o .\CortexM3\ARM_GCC_493\Debug\TimerISR.o .\CortexM3\ARM_GCC_493\Debug\CharLCD_1.o .\CortexM3\ARM_GCC_493\Debug\CharLCD_1_PM.o .\CortexM3\ARM_GCC_493\Debug\CharLCD_1_CustChars.o .\CortexM3\ARM_GCC_493\Debug\CharLCD_1_LCDPort.o .\CortexM3\ARM_GCC_493\Debug\CyBootAsmGnu.o
 arm-none-eabi-ar.exe: creating .\CortexM3\ARM_GCC_493\Debug\capteur_us.a
 arm-none-eabi-gcc.exe -Wl,--start-group -o .\CortexM3\ARM_GCC_493\Debug\capteur_us.elf .\CortexM3\ARM_GCC_493\Debug\main.o .\CortexM3\ARM_GCC_493\Debug\cymetadata.o .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o .\CortexM3\ARM_GCC_493\Debug\capteur_us.a "C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_493\Debug\CyComponentLibrary.a" -mcpu=cortex-m3 -mthumb -g -ffunction-sections -Og -ffat-lto-objects -L Generated_Source\PSoC5 -Wl,-Map,.\CortexM3\ARM_GCC_493\Debug/capteur_us.map -T C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -Wl,--end-group
-cyelftool.exe -C C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\CortexM3\ARM_GCC_493\Debug\capteur_us.elf --flash_row_size 256 --flash_size 262144
-cyelftool.exe -S C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\CortexM3\ARM_GCC_493\Debug\capteur_us.elf
-Flash used: 2526 of 262144 bytes (1,0 %).
-SRAM used: 2581 of 65536 bytes (3,9 %). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Build Succeeded: 11/17/2016 11:47:32 ---------------
+.\CortexM3\ARM_GCC_493\Debug\main.o: In function `main':
+C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn/main.c:44: undefined reference to `Counter_1_ReadPeriod'
+C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn/main.c:47: undefined reference to `Counter_1_ReadCompare'
+collect2.exe: error: ld returned 1 exit status
+The command 'arm-none-eabi-gcc.exe' failed with exit code '1'.
+--------------- Build Failed: 11/19/2016 16:42:06 ---------------

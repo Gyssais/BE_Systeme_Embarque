@@ -99,7 +99,7 @@ void Ampli_Recept_Enable(void)                ;
 *       Initialization Values
 ***************************************/
 
-#define Ampli_Recept_DEFAULT_GAIN             (1u)
+#define Ampli_Recept_DEFAULT_GAIN             (2u)
 #define Ampli_Recept_DEFAULT_POWER            (1u)
 
 
