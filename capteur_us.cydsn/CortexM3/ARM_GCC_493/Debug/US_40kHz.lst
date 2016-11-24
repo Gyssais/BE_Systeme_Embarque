@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
   29:Generated_Source\PSoC5/US_40kHz.c ****          constant 1 for reset. This will prevent the component from operating.
   30:Generated_Source\PSoC5/US_40kHz.c **** #endif /* US_40kHz_PWMUDB_genblk1_ctrlreg__REMOVED */
   31:Generated_Source\PSoC5/US_40kHz.c **** 
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 2
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 2
 
 
   32:Generated_Source\PSoC5/US_40kHz.c **** uint8 US_40kHz_initVar = 0u;
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
   86:Generated_Source\PSoC5/US_40kHz.c ****     #if (US_40kHz_UsingFixedFunction || US_40kHz_UseControl)
   87:Generated_Source\PSoC5/US_40kHz.c ****         uint8 ctrl;
   88:Generated_Source\PSoC5/US_40kHz.c ****     #endif /* (US_40kHz_UsingFixedFunction || US_40kHz_UseControl) */
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 3
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 3
 
 
   89:Generated_Source\PSoC5/US_40kHz.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  143:Generated_Source\PSoC5/US_40kHz.c ****         #endif /* (US_40kHz_UseOneCompareMode) */
  144:Generated_Source\PSoC5/US_40kHz.c **** 
  145:Generated_Source\PSoC5/US_40kHz.c ****         #if (US_40kHz_KillModeMinTime)
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 4
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 4
 
 
  146:Generated_Source\PSoC5/US_40kHz.c ****             US_40kHz_WriteKillTime(US_40kHz_MinimumKillTime);
@@ -238,12 +238,24 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  200:Generated_Source\PSoC5/US_40kHz.c **** {
   27              		.loc 1 200 0
   28              		.cfi_startproc
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 5
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 5
 
 
   29              		@ args = 0, pretend = 0, frame = 0
   30              		@ frame_needed = 0, uses_anonymous_args = 0
   31              		@ link register save eliminated.
+  32 0000 7047     		bx	lr
+  33              		.cfi_endproc
+  34              	.LFE2:
+  35              		.size	US_40kHz_Enable, .-US_40kHz_Enable
+  36 0002 00BF     		.section	.text.US_40kHz_Stop,"ax",%progbits
+  37              		.align	2
+  38              		.global	US_40kHz_Stop
+  39              		.thumb
+  40              		.thumb_func
+  41              		.type	US_40kHz_Stop, %function
+  42              	US_40kHz_Stop:
+  43              	.LFB3:
  201:Generated_Source\PSoC5/US_40kHz.c ****     /* Globally Enable the Fixed Function Block chosen */
  202:Generated_Source\PSoC5/US_40kHz.c ****     #if (US_40kHz_UsingFixedFunction)
  203:Generated_Source\PSoC5/US_40kHz.c ****         US_40kHz_GLOBAL_ENABLE |= US_40kHz_BLOCK_EN_MASK;
@@ -253,27 +265,6 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  207:Generated_Source\PSoC5/US_40kHz.c ****     /* Enable the PWM from the control register  */
  208:Generated_Source\PSoC5/US_40kHz.c ****     #if (US_40kHz_UseControl || US_40kHz_UsingFixedFunction)
  209:Generated_Source\PSoC5/US_40kHz.c ****         US_40kHz_CONTROL |= US_40kHz_CTRL_ENABLE;
-  32              		.loc 1 209 0
-  33 0000 024A     		ldr	r2, .L2
-  34 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
-  35 0004 43F08003 		orr	r3, r3, #128
-  36 0008 1370     		strb	r3, [r2]
-  37 000a 7047     		bx	lr
-  38              	.L3:
-  39              		.align	2
-  40              	.L2:
-  41 000c 7B650040 		.word	1073767803
-  42              		.cfi_endproc
-  43              	.LFE2:
-  44              		.size	US_40kHz_Enable, .-US_40kHz_Enable
-  45              		.section	.text.US_40kHz_Stop,"ax",%progbits
-  46              		.align	2
-  47              		.global	US_40kHz_Stop
-  48              		.thumb
-  49              		.thumb_func
-  50              		.type	US_40kHz_Stop, %function
-  51              	US_40kHz_Stop:
-  52              	.LFB3:
  210:Generated_Source\PSoC5/US_40kHz.c ****     #endif /* (US_40kHz_UseControl || US_40kHz_UsingFixedFunction) */
  211:Generated_Source\PSoC5/US_40kHz.c **** }
  212:Generated_Source\PSoC5/US_40kHz.c **** 
@@ -298,38 +289,29 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  231:Generated_Source\PSoC5/US_40kHz.c **** *
  232:Generated_Source\PSoC5/US_40kHz.c **** *******************************************************************************/
  233:Generated_Source\PSoC5/US_40kHz.c **** void US_40kHz_Stop(void) 
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 6
-
-
  234:Generated_Source\PSoC5/US_40kHz.c **** {
-  53              		.loc 1 234 0
-  54              		.cfi_startproc
-  55              		@ args = 0, pretend = 0, frame = 0
-  56              		@ frame_needed = 0, uses_anonymous_args = 0
-  57              		@ link register save eliminated.
+  44              		.loc 1 234 0
+  45              		.cfi_startproc
+  46              		@ args = 0, pretend = 0, frame = 0
+  47              		@ frame_needed = 0, uses_anonymous_args = 0
+  48              		@ link register save eliminated.
+  49 0000 7047     		bx	lr
+  50              		.cfi_endproc
+  51              	.LFE3:
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 6
+
+
+  52              		.size	US_40kHz_Stop, .-US_40kHz_Stop
+  53 0002 00BF     		.section	.text.US_40kHz_WriteCounter,"ax",%progbits
+  54              		.align	2
+  55              		.global	US_40kHz_WriteCounter
+  56              		.thumb
+  57              		.thumb_func
+  58              		.type	US_40kHz_WriteCounter, %function
+  59              	US_40kHz_WriteCounter:
+  60              	.LFB4:
  235:Generated_Source\PSoC5/US_40kHz.c ****     #if (US_40kHz_UseControl || US_40kHz_UsingFixedFunction)
  236:Generated_Source\PSoC5/US_40kHz.c ****         US_40kHz_CONTROL &= ((uint8)(~US_40kHz_CTRL_ENABLE));
-  58              		.loc 1 236 0
-  59 0000 024A     		ldr	r2, .L5
-  60 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
-  61 0004 03F07F03 		and	r3, r3, #127
-  62 0008 1370     		strb	r3, [r2]
-  63 000a 7047     		bx	lr
-  64              	.L6:
-  65              		.align	2
-  66              	.L5:
-  67 000c 7B650040 		.word	1073767803
-  68              		.cfi_endproc
-  69              	.LFE3:
-  70              		.size	US_40kHz_Stop, .-US_40kHz_Stop
-  71              		.section	.text.US_40kHz_WriteCounter,"ax",%progbits
-  72              		.align	2
-  73              		.global	US_40kHz_WriteCounter
-  74              		.thumb
-  75              		.thumb_func
-  76              		.type	US_40kHz_WriteCounter, %function
-  77              	US_40kHz_WriteCounter:
-  78              	.LFB4:
  237:Generated_Source\PSoC5/US_40kHz.c ****     #endif /* (US_40kHz_UseControl || US_40kHz_UsingFixedFunction) */
  238:Generated_Source\PSoC5/US_40kHz.c **** 
  239:Generated_Source\PSoC5/US_40kHz.c ****     /* Globally disable the Fixed Function Block chosen */
@@ -358,9 +340,6 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  262:Generated_Source\PSoC5/US_40kHz.c ****         * Return:
  263:Generated_Source\PSoC5/US_40kHz.c ****         *  None
  264:Generated_Source\PSoC5/US_40kHz.c ****         *
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 7
-
-
  265:Generated_Source\PSoC5/US_40kHz.c ****         *******************************************************************************/
  266:Generated_Source\PSoC5/US_40kHz.c ****         void US_40kHz_SetCompareMode(uint8 comparemode) 
  267:Generated_Source\PSoC5/US_40kHz.c ****         {
@@ -379,6 +358,9 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  280:Generated_Source\PSoC5/US_40kHz.c **** 
  281:Generated_Source\PSoC5/US_40kHz.c ****                 #if(0 != US_40kHz_CTRL_CMPMODE1_SHIFT)
  282:Generated_Source\PSoC5/US_40kHz.c ****                     uint8 comparemode1masked = ((uint8)((uint8)comparemode << US_40kHz_CTRL_CMPMODE
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 7
+
+
  283:Generated_Source\PSoC5/US_40kHz.c ****                                                 US_40kHz_CTRL_CMPMODE1_MASK;
  284:Generated_Source\PSoC5/US_40kHz.c ****                 #else
  285:Generated_Source\PSoC5/US_40kHz.c ****                     uint8 comparemode1masked = comparemode & US_40kHz_CTRL_CMPMODE1_MASK;
@@ -418,9 +400,6 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  319:Generated_Source\PSoC5/US_40kHz.c ****         *  comparemode:  The new compare mode for the PWM output. Use the compare types
  320:Generated_Source\PSoC5/US_40kHz.c ****         *                defined in the H file as input arguments.
  321:Generated_Source\PSoC5/US_40kHz.c ****         *
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 8
-
-
  322:Generated_Source\PSoC5/US_40kHz.c ****         * Return:
  323:Generated_Source\PSoC5/US_40kHz.c ****         *  None
  324:Generated_Source\PSoC5/US_40kHz.c ****         *
@@ -439,6 +418,9 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  337:Generated_Source\PSoC5/US_40kHz.c ****                 US_40kHz_CONTROL |= comparemodemasked;
  338:Generated_Source\PSoC5/US_40kHz.c ****             #endif /* (US_40kHz_UseControl) */
  339:Generated_Source\PSoC5/US_40kHz.c ****         }
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 8
+
+
  340:Generated_Source\PSoC5/US_40kHz.c ****     #endif /* US_40kHz_CompareMode1SW */
  341:Generated_Source\PSoC5/US_40kHz.c **** 
  342:Generated_Source\PSoC5/US_40kHz.c **** #if (US_40kHz_CompareMode2SW)
@@ -478,9 +460,6 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  376:Generated_Source\PSoC5/US_40kHz.c **** 
  377:Generated_Source\PSoC5/US_40kHz.c **** #endif /* UseOneCompareMode */
  378:Generated_Source\PSoC5/US_40kHz.c **** 
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 9
-
-
  379:Generated_Source\PSoC5/US_40kHz.c **** 
  380:Generated_Source\PSoC5/US_40kHz.c **** #if (!US_40kHz_UsingFixedFunction)
  381:Generated_Source\PSoC5/US_40kHz.c **** 
@@ -499,48 +478,48 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  394:Generated_Source\PSoC5/US_40kHz.c ****     *  counter:  The period new period counter value.
  395:Generated_Source\PSoC5/US_40kHz.c ****     *
  396:Generated_Source\PSoC5/US_40kHz.c ****     * Return:
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 9
+
+
  397:Generated_Source\PSoC5/US_40kHz.c ****     *  None
  398:Generated_Source\PSoC5/US_40kHz.c ****     *
  399:Generated_Source\PSoC5/US_40kHz.c ****     * Side Effects:
  400:Generated_Source\PSoC5/US_40kHz.c ****     *  The PWM Period will be reloaded when a counter value will be a zero
  401:Generated_Source\PSoC5/US_40kHz.c ****     *
  402:Generated_Source\PSoC5/US_40kHz.c ****     *******************************************************************************/
- 403:Generated_Source\PSoC5/US_40kHz.c ****     void US_40kHz_WriteCounter(uint8 counter) \
+ 403:Generated_Source\PSoC5/US_40kHz.c ****     void US_40kHz_WriteCounter(uint16 counter) \
  404:Generated_Source\PSoC5/US_40kHz.c ****                                        
  405:Generated_Source\PSoC5/US_40kHz.c ****     {
-  79              		.loc 1 405 0
-  80              		.cfi_startproc
-  81              		@ args = 0, pretend = 0, frame = 0
-  82              		@ frame_needed = 0, uses_anonymous_args = 0
-  83              		@ link register save eliminated.
-  84              	.LVL0:
- 406:Generated_Source\PSoC5/US_40kHz.c ****         CY_SET_REG8(US_40kHz_COUNTER_LSB_PTR, counter);
-  85              		.loc 1 406 0
-  86 0000 014B     		ldr	r3, .L8
-  87 0002 1870     		strb	r0, [r3]
-  88 0004 7047     		bx	lr
-  89              	.L9:
-  90 0006 00BF     		.align	2
-  91              	.L8:
-  92 0008 0B650040 		.word	1073767691
-  93              		.cfi_endproc
-  94              	.LFE4:
-  95              		.size	US_40kHz_WriteCounter, .-US_40kHz_WriteCounter
-  96              		.section	.text.US_40kHz_ReadCounter,"ax",%progbits
-  97              		.align	2
-  98              		.global	US_40kHz_ReadCounter
-  99              		.thumb
- 100              		.thumb_func
- 101              		.type	US_40kHz_ReadCounter, %function
- 102              	US_40kHz_ReadCounter:
- 103              	.LFB5:
+  61              		.loc 1 405 0
+  62              		.cfi_startproc
+  63              		@ args = 0, pretend = 0, frame = 0
+  64              		@ frame_needed = 0, uses_anonymous_args = 0
+  65              		@ link register save eliminated.
+  66              	.LVL0:
+ 406:Generated_Source\PSoC5/US_40kHz.c ****         CY_SET_REG16(US_40kHz_COUNTER_LSB_PTR, counter);
+  67              		.loc 1 406 0
+  68 0000 014B     		ldr	r3, .L4
+  69 0002 1880     		strh	r0, [r3]	@ movhi
+  70 0004 7047     		bx	lr
+  71              	.L5:
+  72 0006 00BF     		.align	2
+  73              	.L4:
+  74 0008 106A0040 		.word	1073768976
+  75              		.cfi_endproc
+  76              	.LFE4:
+  77              		.size	US_40kHz_WriteCounter, .-US_40kHz_WriteCounter
+  78              		.section	.text.US_40kHz_ReadCounter,"ax",%progbits
+  79              		.align	2
+  80              		.global	US_40kHz_ReadCounter
+  81              		.thumb
+  82              		.thumb_func
+  83              		.type	US_40kHz_ReadCounter, %function
+  84              	US_40kHz_ReadCounter:
+  85              	.LFB5:
  407:Generated_Source\PSoC5/US_40kHz.c ****     }
  408:Generated_Source\PSoC5/US_40kHz.c **** 
  409:Generated_Source\PSoC5/US_40kHz.c **** 
  410:Generated_Source\PSoC5/US_40kHz.c ****     /*******************************************************************************
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 10
-
-
  411:Generated_Source\PSoC5/US_40kHz.c ****     * Function Name: US_40kHz_ReadCounter
  412:Generated_Source\PSoC5/US_40kHz.c ****     ********************************************************************************
  413:Generated_Source\PSoC5/US_40kHz.c ****     *
@@ -555,52 +534,53 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  422:Generated_Source\PSoC5/US_40kHz.c ****     *  The current value of the counter.
  423:Generated_Source\PSoC5/US_40kHz.c ****     *
  424:Generated_Source\PSoC5/US_40kHz.c ****     *******************************************************************************/
- 425:Generated_Source\PSoC5/US_40kHz.c ****     uint8 US_40kHz_ReadCounter(void) 
+ 425:Generated_Source\PSoC5/US_40kHz.c ****     uint16 US_40kHz_ReadCounter(void) 
  426:Generated_Source\PSoC5/US_40kHz.c ****     {
- 104              		.loc 1 426 0
- 105              		.cfi_startproc
- 106              		@ args = 0, pretend = 0, frame = 0
- 107              		@ frame_needed = 0, uses_anonymous_args = 0
- 108              		@ link register save eliminated.
+  86              		.loc 1 426 0
+  87              		.cfi_startproc
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 10
+
+
+  88              		@ args = 0, pretend = 0, frame = 0
+  89              		@ frame_needed = 0, uses_anonymous_args = 0
+  90              		@ link register save eliminated.
  427:Generated_Source\PSoC5/US_40kHz.c ****         /* Force capture by reading Accumulator */
  428:Generated_Source\PSoC5/US_40kHz.c ****         /* Must first do a software capture to be able to read the counter */
  429:Generated_Source\PSoC5/US_40kHz.c ****         /* It is up to the user code to make sure there isn't already captured data in the FIFO */
  430:Generated_Source\PSoC5/US_40kHz.c ****           (void)CY_GET_REG8(US_40kHz_COUNTERCAP_LSB_PTR_8BIT);
- 109              		.loc 1 430 0
- 110 0000 024B     		ldr	r3, .L11
- 111 0002 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+  91              		.loc 1 430 0
+  92 0000 024B     		ldr	r3, .L7
+  93 0002 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  431:Generated_Source\PSoC5/US_40kHz.c **** 
  432:Generated_Source\PSoC5/US_40kHz.c ****         /* Read the data from the FIFO */
- 433:Generated_Source\PSoC5/US_40kHz.c ****         return (CY_GET_REG8(US_40kHz_CAPTURE_LSB_PTR));
- 112              		.loc 1 433 0
- 113 0004 024B     		ldr	r3, .L11+4
- 114 0006 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 433:Generated_Source\PSoC5/US_40kHz.c ****         return (CY_GET_REG16(US_40kHz_CAPTURE_LSB_PTR));
+  94              		.loc 1 433 0
+  95 0004 024B     		ldr	r3, .L7+4
+  96 0006 1888     		ldrh	r0, [r3]
  434:Generated_Source\PSoC5/US_40kHz.c ****     }
- 115              		.loc 1 434 0
- 116 0008 7047     		bx	lr
- 117              	.L12:
- 118 000a 00BF     		.align	2
- 119              	.L11:
- 120 000c 1B650040 		.word	1073767707
- 121 0010 5B650040 		.word	1073767771
- 122              		.cfi_endproc
- 123              	.LFE5:
- 124              		.size	US_40kHz_ReadCounter, .-US_40kHz_ReadCounter
- 125              		.section	.text.US_40kHz_WritePeriod,"ax",%progbits
- 126              		.align	2
- 127              		.global	US_40kHz_WritePeriod
- 128              		.thumb
- 129              		.thumb_func
- 130              		.type	US_40kHz_WritePeriod, %function
- 131              	US_40kHz_WritePeriod:
- 132              	.LFB7:
+  97              		.loc 1 434 0
+  98 0008 80B2     		uxth	r0, r0
+  99 000a 7047     		bx	lr
+ 100              	.L8:
+ 101              		.align	2
+ 102              	.L7:
+ 103 000c 18650040 		.word	1073767704
+ 104 0010 B06A0040 		.word	1073769136
+ 105              		.cfi_endproc
+ 106              	.LFE5:
+ 107              		.size	US_40kHz_ReadCounter, .-US_40kHz_ReadCounter
+ 108              		.section	.text.US_40kHz_WritePeriod,"ax",%progbits
+ 109              		.align	2
+ 110              		.global	US_40kHz_WritePeriod
+ 111              		.thumb
+ 112              		.thumb_func
+ 113              		.type	US_40kHz_WritePeriod, %function
+ 114              	US_40kHz_WritePeriod:
+ 115              	.LFB7:
  435:Generated_Source\PSoC5/US_40kHz.c **** 
  436:Generated_Source\PSoC5/US_40kHz.c ****     #if (US_40kHz_UseStatus)
  437:Generated_Source\PSoC5/US_40kHz.c **** 
  438:Generated_Source\PSoC5/US_40kHz.c **** 
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 11
-
-
  439:Generated_Source\PSoC5/US_40kHz.c ****         /*******************************************************************************
  440:Generated_Source\PSoC5/US_40kHz.c ****         * Function Name: US_40kHz_ClearFIFO
  441:Generated_Source\PSoC5/US_40kHz.c ****         ********************************************************************************
@@ -618,6 +598,9 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  453:Generated_Source\PSoC5/US_40kHz.c ****         void US_40kHz_ClearFIFO(void) 
  454:Generated_Source\PSoC5/US_40kHz.c ****         {
  455:Generated_Source\PSoC5/US_40kHz.c ****             while(0u != (US_40kHz_ReadStatusRegister() & US_40kHz_STATUS_FIFONEMPTY))
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 11
+
+
  456:Generated_Source\PSoC5/US_40kHz.c ****             {
  457:Generated_Source\PSoC5/US_40kHz.c ****                 (void)US_40kHz_ReadCapture();
  458:Generated_Source\PSoC5/US_40kHz.c ****             }
@@ -644,40 +627,40 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  479:Generated_Source\PSoC5/US_40kHz.c **** *  None
  480:Generated_Source\PSoC5/US_40kHz.c **** *
  481:Generated_Source\PSoC5/US_40kHz.c **** *******************************************************************************/
- 482:Generated_Source\PSoC5/US_40kHz.c **** void US_40kHz_WritePeriod(uint8 period) 
+ 482:Generated_Source\PSoC5/US_40kHz.c **** void US_40kHz_WritePeriod(uint16 period) 
  483:Generated_Source\PSoC5/US_40kHz.c **** {
- 133              		.loc 1 483 0
- 134              		.cfi_startproc
- 135              		@ args = 0, pretend = 0, frame = 0
- 136              		@ frame_needed = 0, uses_anonymous_args = 0
- 137              		@ link register save eliminated.
- 138              	.LVL1:
+ 116              		.loc 1 483 0
+ 117              		.cfi_startproc
+ 118              		@ args = 0, pretend = 0, frame = 0
+ 119              		@ frame_needed = 0, uses_anonymous_args = 0
+ 120              		@ link register save eliminated.
+ 121              	.LVL1:
  484:Generated_Source\PSoC5/US_40kHz.c ****     #if(US_40kHz_UsingFixedFunction)
  485:Generated_Source\PSoC5/US_40kHz.c ****         CY_SET_REG16(US_40kHz_PERIOD_LSB_PTR, (uint16)period);
  486:Generated_Source\PSoC5/US_40kHz.c ****     #else
- 487:Generated_Source\PSoC5/US_40kHz.c ****         CY_SET_REG8(US_40kHz_PERIOD_LSB_PTR, period);
- 139              		.loc 1 487 0
- 140 0000 014B     		ldr	r3, .L14
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 12
+ 487:Generated_Source\PSoC5/US_40kHz.c ****         CY_SET_REG16(US_40kHz_PERIOD_LSB_PTR, period);
+ 122              		.loc 1 487 0
+ 123 0000 014B     		ldr	r3, .L10
+ 124 0002 1880     		strh	r0, [r3]	@ movhi
+ 125 0004 7047     		bx	lr
+ 126              	.L11:
+ 127 0006 00BF     		.align	2
+ 128              	.L10:
+ 129 0008 906A0040 		.word	1073769104
+ 130              		.cfi_endproc
+ 131              	.LFE7:
+ 132              		.size	US_40kHz_WritePeriod, .-US_40kHz_WritePeriod
+ 133              		.section	.text.US_40kHz_WriteCompare1,"ax",%progbits
+ 134              		.align	2
+ 135              		.global	US_40kHz_WriteCompare1
+ 136              		.thumb
+ 137              		.thumb_func
+ 138              		.type	US_40kHz_WriteCompare1, %function
+ 139              	US_40kHz_WriteCompare1:
+ 140              	.LFB8:
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 12
 
 
- 141 0002 1870     		strb	r0, [r3]
- 142 0004 7047     		bx	lr
- 143              	.L15:
- 144 0006 00BF     		.align	2
- 145              	.L14:
- 146 0008 4B650040 		.word	1073767755
- 147              		.cfi_endproc
- 148              	.LFE7:
- 149              		.size	US_40kHz_WritePeriod, .-US_40kHz_WritePeriod
- 150              		.section	.text.US_40kHz_WriteCompare1,"ax",%progbits
- 151              		.align	2
- 152              		.global	US_40kHz_WriteCompare1
- 153              		.thumb
- 154              		.thumb_func
- 155              		.type	US_40kHz_WriteCompare1, %function
- 156              	US_40kHz_WriteCompare1:
- 157              	.LFB8:
  488:Generated_Source\PSoC5/US_40kHz.c ****     #endif /* (US_40kHz_UsingFixedFunction) */
  489:Generated_Source\PSoC5/US_40kHz.c **** }
  490:Generated_Source\PSoC5/US_40kHz.c **** 
@@ -706,23 +689,20 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  513:Generated_Source\PSoC5/US_40kHz.c ****     *  Dither Mode, Center Aligned Mode or One Output Mode
  514:Generated_Source\PSoC5/US_40kHz.c ****     *
  515:Generated_Source\PSoC5/US_40kHz.c ****     *******************************************************************************/
- 516:Generated_Source\PSoC5/US_40kHz.c ****     void US_40kHz_WriteCompare(uint8 compare) \
+ 516:Generated_Source\PSoC5/US_40kHz.c ****     void US_40kHz_WriteCompare(uint16 compare) \
  517:Generated_Source\PSoC5/US_40kHz.c ****                                        
  518:Generated_Source\PSoC5/US_40kHz.c ****     {
  519:Generated_Source\PSoC5/US_40kHz.c ****         #if(US_40kHz_UsingFixedFunction)
  520:Generated_Source\PSoC5/US_40kHz.c ****             CY_SET_REG16(US_40kHz_COMPARE1_LSB_PTR, (uint16)compare);
  521:Generated_Source\PSoC5/US_40kHz.c ****         #else
- 522:Generated_Source\PSoC5/US_40kHz.c ****             CY_SET_REG8(US_40kHz_COMPARE1_LSB_PTR, compare);
+ 522:Generated_Source\PSoC5/US_40kHz.c ****             CY_SET_REG16(US_40kHz_COMPARE1_LSB_PTR, compare);
  523:Generated_Source\PSoC5/US_40kHz.c ****         #endif /* (US_40kHz_UsingFixedFunction) */
  524:Generated_Source\PSoC5/US_40kHz.c **** 
  525:Generated_Source\PSoC5/US_40kHz.c ****         #if (US_40kHz_PWMMode == US_40kHz__B_PWM__DITHER)
  526:Generated_Source\PSoC5/US_40kHz.c ****             #if(US_40kHz_UsingFixedFunction)
  527:Generated_Source\PSoC5/US_40kHz.c ****                 CY_SET_REG16(US_40kHz_COMPARE2_LSB_PTR, (uint16)(compare + 1u));
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 13
-
-
  528:Generated_Source\PSoC5/US_40kHz.c ****             #else
- 529:Generated_Source\PSoC5/US_40kHz.c ****                 CY_SET_REG8(US_40kHz_COMPARE2_LSB_PTR, (compare + 1u));
+ 529:Generated_Source\PSoC5/US_40kHz.c ****                 CY_SET_REG16(US_40kHz_COMPARE2_LSB_PTR, (compare + 1u));
  530:Generated_Source\PSoC5/US_40kHz.c ****             #endif /* (US_40kHz_UsingFixedFunction) */
  531:Generated_Source\PSoC5/US_40kHz.c ****         #endif /* (US_40kHz_PWMMode == US_40kHz__B_PWM__DITHER) */
  532:Generated_Source\PSoC5/US_40kHz.c ****     }
@@ -738,6 +718,9 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  542:Generated_Source\PSoC5/US_40kHz.c ****     * Summary:
  543:Generated_Source\PSoC5/US_40kHz.c ****     *  This funtion is used to change the compare1 value.  The compare output will
  544:Generated_Source\PSoC5/US_40kHz.c ****     *  reflect the new value on the next UDB clock.  The compare output will be
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 13
+
+
  545:Generated_Source\PSoC5/US_40kHz.c ****     *  driven high when the present counter value is less than or less than or
  546:Generated_Source\PSoC5/US_40kHz.c ****     *  equal to the compare register, depending on the mode.
  547:Generated_Source\PSoC5/US_40kHz.c ****     *
@@ -748,41 +731,38 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  552:Generated_Source\PSoC5/US_40kHz.c ****     *  None
  553:Generated_Source\PSoC5/US_40kHz.c ****     *
  554:Generated_Source\PSoC5/US_40kHz.c ****     *******************************************************************************/
- 555:Generated_Source\PSoC5/US_40kHz.c ****     void US_40kHz_WriteCompare1(uint8 compare) \
+ 555:Generated_Source\PSoC5/US_40kHz.c ****     void US_40kHz_WriteCompare1(uint16 compare) \
  556:Generated_Source\PSoC5/US_40kHz.c ****                                         
  557:Generated_Source\PSoC5/US_40kHz.c ****     {
- 158              		.loc 1 557 0
- 159              		.cfi_startproc
- 160              		@ args = 0, pretend = 0, frame = 0
- 161              		@ frame_needed = 0, uses_anonymous_args = 0
- 162              		@ link register save eliminated.
- 163              	.LVL2:
+ 141              		.loc 1 557 0
+ 142              		.cfi_startproc
+ 143              		@ args = 0, pretend = 0, frame = 0
+ 144              		@ frame_needed = 0, uses_anonymous_args = 0
+ 145              		@ link register save eliminated.
+ 146              	.LVL2:
  558:Generated_Source\PSoC5/US_40kHz.c ****         #if(US_40kHz_UsingFixedFunction)
  559:Generated_Source\PSoC5/US_40kHz.c ****             CY_SET_REG16(US_40kHz_COMPARE1_LSB_PTR, (uint16)compare);
  560:Generated_Source\PSoC5/US_40kHz.c ****         #else
- 561:Generated_Source\PSoC5/US_40kHz.c ****             CY_SET_REG8(US_40kHz_COMPARE1_LSB_PTR, compare);
- 164              		.loc 1 561 0
- 165 0000 014B     		ldr	r3, .L17
- 166 0002 1870     		strb	r0, [r3]
- 167 0004 7047     		bx	lr
- 168              	.L18:
- 169 0006 00BF     		.align	2
- 170              	.L17:
- 171 0008 2B650040 		.word	1073767723
- 172              		.cfi_endproc
- 173              	.LFE8:
- 174              		.size	US_40kHz_WriteCompare1, .-US_40kHz_WriteCompare1
- 175              		.section	.text.US_40kHz_WriteCompare2,"ax",%progbits
- 176              		.align	2
- 177              		.global	US_40kHz_WriteCompare2
- 178              		.thumb
- 179              		.thumb_func
- 180              		.type	US_40kHz_WriteCompare2, %function
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 14
-
-
- 181              	US_40kHz_WriteCompare2:
- 182              	.LFB9:
+ 561:Generated_Source\PSoC5/US_40kHz.c ****             CY_SET_REG16(US_40kHz_COMPARE1_LSB_PTR, compare);
+ 147              		.loc 1 561 0
+ 148 0000 014B     		ldr	r3, .L13
+ 149 0002 1880     		strh	r0, [r3]	@ movhi
+ 150 0004 7047     		bx	lr
+ 151              	.L14:
+ 152 0006 00BF     		.align	2
+ 153              	.L13:
+ 154 0008 506A0040 		.word	1073769040
+ 155              		.cfi_endproc
+ 156              	.LFE8:
+ 157              		.size	US_40kHz_WriteCompare1, .-US_40kHz_WriteCompare1
+ 158              		.section	.text.US_40kHz_WriteCompare2,"ax",%progbits
+ 159              		.align	2
+ 160              		.global	US_40kHz_WriteCompare2
+ 161              		.thumb
+ 162              		.thumb_func
+ 163              		.type	US_40kHz_WriteCompare2, %function
+ 164              	US_40kHz_WriteCompare2:
+ 165              	.LFB9:
  562:Generated_Source\PSoC5/US_40kHz.c ****         #endif /* (US_40kHz_UsingFixedFunction) */
  563:Generated_Source\PSoC5/US_40kHz.c ****     }
  564:Generated_Source\PSoC5/US_40kHz.c **** 
@@ -798,6 +778,9 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  574:Generated_Source\PSoC5/US_40kHz.c ****     *  less than or less than or equal to the compare register, depending on the
  575:Generated_Source\PSoC5/US_40kHz.c ****     *  mode.
  576:Generated_Source\PSoC5/US_40kHz.c ****     *
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 14
+
+
  577:Generated_Source\PSoC5/US_40kHz.c ****     * Parameters:
  578:Generated_Source\PSoC5/US_40kHz.c ****     *  compare:  New compare value.
  579:Generated_Source\PSoC5/US_40kHz.c ****     *
@@ -805,42 +788,39 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  581:Generated_Source\PSoC5/US_40kHz.c ****     *  None
  582:Generated_Source\PSoC5/US_40kHz.c ****     *
  583:Generated_Source\PSoC5/US_40kHz.c ****     *******************************************************************************/
- 584:Generated_Source\PSoC5/US_40kHz.c ****     void US_40kHz_WriteCompare2(uint8 compare) \
+ 584:Generated_Source\PSoC5/US_40kHz.c ****     void US_40kHz_WriteCompare2(uint16 compare) \
  585:Generated_Source\PSoC5/US_40kHz.c ****                                         
  586:Generated_Source\PSoC5/US_40kHz.c ****     {
- 183              		.loc 1 586 0
- 184              		.cfi_startproc
- 185              		@ args = 0, pretend = 0, frame = 0
- 186              		@ frame_needed = 0, uses_anonymous_args = 0
- 187              		@ link register save eliminated.
- 188              	.LVL3:
+ 166              		.loc 1 586 0
+ 167              		.cfi_startproc
+ 168              		@ args = 0, pretend = 0, frame = 0
+ 169              		@ frame_needed = 0, uses_anonymous_args = 0
+ 170              		@ link register save eliminated.
+ 171              	.LVL3:
  587:Generated_Source\PSoC5/US_40kHz.c ****         #if(US_40kHz_UsingFixedFunction)
  588:Generated_Source\PSoC5/US_40kHz.c ****             CY_SET_REG16(US_40kHz_COMPARE2_LSB_PTR, compare);
  589:Generated_Source\PSoC5/US_40kHz.c ****         #else
- 590:Generated_Source\PSoC5/US_40kHz.c ****             CY_SET_REG8(US_40kHz_COMPARE2_LSB_PTR, compare);
- 189              		.loc 1 590 0
- 190 0000 014B     		ldr	r3, .L20
- 191 0002 1870     		strb	r0, [r3]
- 192 0004 7047     		bx	lr
- 193              	.L21:
- 194 0006 00BF     		.align	2
- 195              	.L20:
- 196 0008 3B650040 		.word	1073767739
- 197              		.cfi_endproc
- 198              	.LFE9:
- 199              		.size	US_40kHz_WriteCompare2, .-US_40kHz_WriteCompare2
- 200              		.section	.text.US_40kHz_SetInterruptMode,"ax",%progbits
- 201              		.align	2
- 202              		.global	US_40kHz_SetInterruptMode
- 203              		.thumb
- 204              		.thumb_func
- 205              		.type	US_40kHz_SetInterruptMode, %function
- 206              	US_40kHz_SetInterruptMode:
- 207              	.LFB10:
+ 590:Generated_Source\PSoC5/US_40kHz.c ****             CY_SET_REG16(US_40kHz_COMPARE2_LSB_PTR, compare);
+ 172              		.loc 1 590 0
+ 173 0000 014B     		ldr	r3, .L16
+ 174 0002 1880     		strh	r0, [r3]	@ movhi
+ 175 0004 7047     		bx	lr
+ 176              	.L17:
+ 177 0006 00BF     		.align	2
+ 178              	.L16:
+ 179 0008 706A0040 		.word	1073769072
+ 180              		.cfi_endproc
+ 181              	.LFE9:
+ 182              		.size	US_40kHz_WriteCompare2, .-US_40kHz_WriteCompare2
+ 183              		.section	.text.US_40kHz_SetInterruptMode,"ax",%progbits
+ 184              		.align	2
+ 185              		.global	US_40kHz_SetInterruptMode
+ 186              		.thumb
+ 187              		.thumb_func
+ 188              		.type	US_40kHz_SetInterruptMode, %function
+ 189              	US_40kHz_SetInterruptMode:
+ 190              	.LFB10:
  591:Generated_Source\PSoC5/US_40kHz.c ****         #endif /* (US_40kHz_UsingFixedFunction) */
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 15
-
-
  592:Generated_Source\PSoC5/US_40kHz.c ****     }
  593:Generated_Source\PSoC5/US_40kHz.c **** #endif /* UseOneCompareMode */
  594:Generated_Source\PSoC5/US_40kHz.c **** 
@@ -858,6 +838,9 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  606:Generated_Source\PSoC5/US_40kHz.c ****     *  deadtime:  Number of counts for dead time
  607:Generated_Source\PSoC5/US_40kHz.c ****     *
  608:Generated_Source\PSoC5/US_40kHz.c ****     * Return:
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 15
+
+
  609:Generated_Source\PSoC5/US_40kHz.c ****     *  None
  610:Generated_Source\PSoC5/US_40kHz.c ****     *
  611:Generated_Source\PSoC5/US_40kHz.c ****     *******************************************************************************/
@@ -898,9 +881,6 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  646:Generated_Source\PSoC5/US_40kHz.c ****     *
  647:Generated_Source\PSoC5/US_40kHz.c ****     *******************************************************************************/
  648:Generated_Source\PSoC5/US_40kHz.c ****     uint8 US_40kHz_ReadDeadTime(void) 
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 16
-
-
  649:Generated_Source\PSoC5/US_40kHz.c ****     {
  650:Generated_Source\PSoC5/US_40kHz.c ****         /* If using the Dead Band 1-255 mode then just read the register */
  651:Generated_Source\PSoC5/US_40kHz.c ****         #if(!US_40kHz_DeadBand2_4)
@@ -918,6 +898,9 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  663:Generated_Source\PSoC5/US_40kHz.c ****     }
  664:Generated_Source\PSoC5/US_40kHz.c **** #endif /* DeadBandUsed */
  665:Generated_Source\PSoC5/US_40kHz.c **** 
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 16
+
+
  666:Generated_Source\PSoC5/US_40kHz.c **** #if (US_40kHz_UseStatus || US_40kHz_UsingFixedFunction)
  667:Generated_Source\PSoC5/US_40kHz.c **** 
  668:Generated_Source\PSoC5/US_40kHz.c **** 
@@ -938,35 +921,32 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  683:Generated_Source\PSoC5/US_40kHz.c ****     *******************************************************************************/
  684:Generated_Source\PSoC5/US_40kHz.c ****     void US_40kHz_SetInterruptMode(uint8 interruptMode) 
  685:Generated_Source\PSoC5/US_40kHz.c ****     {
- 208              		.loc 1 685 0
- 209              		.cfi_startproc
- 210              		@ args = 0, pretend = 0, frame = 0
- 211              		@ frame_needed = 0, uses_anonymous_args = 0
- 212              		@ link register save eliminated.
- 213              	.LVL4:
+ 191              		.loc 1 685 0
+ 192              		.cfi_startproc
+ 193              		@ args = 0, pretend = 0, frame = 0
+ 194              		@ frame_needed = 0, uses_anonymous_args = 0
+ 195              		@ link register save eliminated.
+ 196              	.LVL4:
  686:Generated_Source\PSoC5/US_40kHz.c ****         CY_SET_REG8(US_40kHz_STATUS_MASK_PTR, interruptMode);
- 214              		.loc 1 686 0
- 215 0000 014B     		ldr	r3, .L23
- 216 0002 1870     		strb	r0, [r3]
- 217 0004 7047     		bx	lr
- 218              	.L24:
- 219 0006 00BF     		.align	2
- 220              	.L23:
- 221 0008 8B650040 		.word	1073767819
- 222              		.cfi_endproc
- 223              	.LFE10:
- 224              		.size	US_40kHz_SetInterruptMode, .-US_40kHz_SetInterruptMode
- 225              		.section	.text.US_40kHz_ReadStatusRegister,"ax",%progbits
- 226              		.align	2
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 17
-
-
- 227              		.global	US_40kHz_ReadStatusRegister
- 228              		.thumb
- 229              		.thumb_func
- 230              		.type	US_40kHz_ReadStatusRegister, %function
- 231              	US_40kHz_ReadStatusRegister:
- 232              	.LFB11:
+ 197              		.loc 1 686 0
+ 198 0000 014B     		ldr	r3, .L19
+ 199 0002 1870     		strb	r0, [r3]
+ 200 0004 7047     		bx	lr
+ 201              	.L20:
+ 202 0006 00BF     		.align	2
+ 203              	.L19:
+ 204 0008 89650040 		.word	1073767817
+ 205              		.cfi_endproc
+ 206              	.LFE10:
+ 207              		.size	US_40kHz_SetInterruptMode, .-US_40kHz_SetInterruptMode
+ 208              		.section	.text.US_40kHz_ReadStatusRegister,"ax",%progbits
+ 209              		.align	2
+ 210              		.global	US_40kHz_ReadStatusRegister
+ 211              		.thumb
+ 212              		.thumb_func
+ 213              		.type	US_40kHz_ReadStatusRegister, %function
+ 214              	US_40kHz_ReadStatusRegister:
+ 215              	.LFB11:
  687:Generated_Source\PSoC5/US_40kHz.c ****     }
  688:Generated_Source\PSoC5/US_40kHz.c **** 
  689:Generated_Source\PSoC5/US_40kHz.c **** 
@@ -978,6 +958,9 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  695:Generated_Source\PSoC5/US_40kHz.c ****     *  This function returns the current state of the status register.
  696:Generated_Source\PSoC5/US_40kHz.c ****     *
  697:Generated_Source\PSoC5/US_40kHz.c ****     * Parameters:
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 17
+
+
  698:Generated_Source\PSoC5/US_40kHz.c ****     *  None
  699:Generated_Source\PSoC5/US_40kHz.c ****     *
  700:Generated_Source\PSoC5/US_40kHz.c ****     * Return:
@@ -993,36 +976,33 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  710:Generated_Source\PSoC5/US_40kHz.c ****     *******************************************************************************/
  711:Generated_Source\PSoC5/US_40kHz.c ****     uint8 US_40kHz_ReadStatusRegister(void) 
  712:Generated_Source\PSoC5/US_40kHz.c ****     {
- 233              		.loc 1 712 0
- 234              		.cfi_startproc
- 235              		@ args = 0, pretend = 0, frame = 0
- 236              		@ frame_needed = 0, uses_anonymous_args = 0
- 237              		@ link register save eliminated.
+ 216              		.loc 1 712 0
+ 217              		.cfi_startproc
+ 218              		@ args = 0, pretend = 0, frame = 0
+ 219              		@ frame_needed = 0, uses_anonymous_args = 0
+ 220              		@ link register save eliminated.
  713:Generated_Source\PSoC5/US_40kHz.c ****         return (CY_GET_REG8(US_40kHz_STATUS_PTR));
- 238              		.loc 1 713 0
- 239 0000 014B     		ldr	r3, .L26
- 240 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 221              		.loc 1 713 0
+ 222 0000 014B     		ldr	r3, .L22
+ 223 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
  714:Generated_Source\PSoC5/US_40kHz.c ****     }
- 241              		.loc 1 714 0
- 242 0004 7047     		bx	lr
- 243              	.L27:
- 244 0006 00BF     		.align	2
- 245              	.L26:
- 246 0008 6B650040 		.word	1073767787
- 247              		.cfi_endproc
- 248              	.LFE11:
- 249              		.size	US_40kHz_ReadStatusRegister, .-US_40kHz_ReadStatusRegister
- 250              		.section	.text.US_40kHz_ReadControlRegister,"ax",%progbits
- 251              		.align	2
- 252              		.global	US_40kHz_ReadControlRegister
- 253              		.thumb
- 254              		.thumb_func
- 255              		.type	US_40kHz_ReadControlRegister, %function
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 18
-
-
- 256              	US_40kHz_ReadControlRegister:
- 257              	.LFB12:
+ 224              		.loc 1 714 0
+ 225 0004 7047     		bx	lr
+ 226              	.L23:
+ 227 0006 00BF     		.align	2
+ 228              	.L22:
+ 229 0008 69650040 		.word	1073767785
+ 230              		.cfi_endproc
+ 231              	.LFE11:
+ 232              		.size	US_40kHz_ReadStatusRegister, .-US_40kHz_ReadStatusRegister
+ 233              		.section	.text.US_40kHz_ReadCapture,"ax",%progbits
+ 234              		.align	2
+ 235              		.global	US_40kHz_ReadCapture
+ 236              		.thumb
+ 237              		.thumb_func
+ 238              		.type	US_40kHz_ReadCapture, %function
+ 239              	US_40kHz_ReadCapture:
+ 240              	.LFB12:
  715:Generated_Source\PSoC5/US_40kHz.c **** 
  716:Generated_Source\PSoC5/US_40kHz.c **** #endif /* (US_40kHz_UseStatus || US_40kHz_UsingFixedFunction) */
  717:Generated_Source\PSoC5/US_40kHz.c **** 
@@ -1038,6 +1018,9 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  727:Generated_Source\PSoC5/US_40kHz.c ****     *  Returns the current state of the control register. This API is available
  728:Generated_Source\PSoC5/US_40kHz.c ****     *  only if the control register is not removed.
  729:Generated_Source\PSoC5/US_40kHz.c ****     *
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 18
+
+
  730:Generated_Source\PSoC5/US_40kHz.c ****     * Parameters:
  731:Generated_Source\PSoC5/US_40kHz.c ****     *  None
  732:Generated_Source\PSoC5/US_40kHz.c ****     *
@@ -1047,40 +1030,11 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  736:Generated_Source\PSoC5/US_40kHz.c ****     *******************************************************************************/
  737:Generated_Source\PSoC5/US_40kHz.c ****     uint8 US_40kHz_ReadControlRegister(void) 
  738:Generated_Source\PSoC5/US_40kHz.c ****     {
- 258              		.loc 1 738 0
- 259              		.cfi_startproc
- 260              		@ args = 0, pretend = 0, frame = 0
- 261              		@ frame_needed = 0, uses_anonymous_args = 0
- 262              		@ link register save eliminated.
  739:Generated_Source\PSoC5/US_40kHz.c ****         uint8 result;
  740:Generated_Source\PSoC5/US_40kHz.c **** 
  741:Generated_Source\PSoC5/US_40kHz.c ****         result = CY_GET_REG8(US_40kHz_CONTROL_PTR);
- 263              		.loc 1 741 0
- 264 0000 014B     		ldr	r3, .L29
- 265 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
- 266              	.LVL5:
  742:Generated_Source\PSoC5/US_40kHz.c ****         return (result);
  743:Generated_Source\PSoC5/US_40kHz.c ****     }
- 267              		.loc 1 743 0
- 268 0004 7047     		bx	lr
- 269              	.L30:
- 270 0006 00BF     		.align	2
- 271              	.L29:
- 272 0008 7B650040 		.word	1073767803
- 273              		.cfi_endproc
- 274              	.LFE12:
- 275              		.size	US_40kHz_ReadControlRegister, .-US_40kHz_ReadControlRegister
- 276              		.section	.text.US_40kHz_WriteControlRegister,"ax",%progbits
- 277              		.align	2
- 278              		.global	US_40kHz_WriteControlRegister
- 279              		.thumb
- 280              		.thumb_func
- 281              		.type	US_40kHz_WriteControlRegister, %function
- 282              	US_40kHz_WriteControlRegister:
- 283              	.LFB13:
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 19
-
-
  744:Generated_Source\PSoC5/US_40kHz.c **** 
  745:Generated_Source\PSoC5/US_40kHz.c **** 
  746:Generated_Source\PSoC5/US_40kHz.c ****     /*******************************************************************************
@@ -1104,32 +1058,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  764:Generated_Source\PSoC5/US_40kHz.c ****     *******************************************************************************/
  765:Generated_Source\PSoC5/US_40kHz.c ****     void US_40kHz_WriteControlRegister(uint8 control) 
  766:Generated_Source\PSoC5/US_40kHz.c ****     {
- 284              		.loc 1 766 0
- 285              		.cfi_startproc
- 286              		@ args = 0, pretend = 0, frame = 0
- 287              		@ frame_needed = 0, uses_anonymous_args = 0
- 288              		@ link register save eliminated.
- 289              	.LVL6:
  767:Generated_Source\PSoC5/US_40kHz.c ****         CY_SET_REG8(US_40kHz_CONTROL_PTR, control);
- 290              		.loc 1 767 0
- 291 0000 014B     		ldr	r3, .L32
- 292 0002 1870     		strb	r0, [r3]
- 293 0004 7047     		bx	lr
- 294              	.L33:
- 295 0006 00BF     		.align	2
- 296              	.L32:
- 297 0008 7B650040 		.word	1073767803
- 298              		.cfi_endproc
- 299              	.LFE13:
- 300              		.size	US_40kHz_WriteControlRegister, .-US_40kHz_WriteControlRegister
- 301              		.section	.text.US_40kHz_ReadCapture,"ax",%progbits
- 302              		.align	2
- 303              		.global	US_40kHz_ReadCapture
- 304              		.thumb
- 305              		.thumb_func
- 306              		.type	US_40kHz_ReadCapture, %function
- 307              	US_40kHz_ReadCapture:
- 308              	.LFB14:
  768:Generated_Source\PSoC5/US_40kHz.c ****     }
  769:Generated_Source\PSoC5/US_40kHz.c **** 
  770:Generated_Source\PSoC5/US_40kHz.c **** #endif /* (US_40kHz_UseControl) */
@@ -1138,9 +1067,6 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  773:Generated_Source\PSoC5/US_40kHz.c **** #if (!US_40kHz_UsingFixedFunction)
  774:Generated_Source\PSoC5/US_40kHz.c **** 
  775:Generated_Source\PSoC5/US_40kHz.c **** 
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 20
-
-
  776:Generated_Source\PSoC5/US_40kHz.c ****     /*******************************************************************************
  777:Generated_Source\PSoC5/US_40kHz.c ****     * Function Name: US_40kHz_ReadCapture
  778:Generated_Source\PSoC5/US_40kHz.c ****     ********************************************************************************
@@ -1152,214 +1078,209 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  784:Generated_Source\PSoC5/US_40kHz.c ****     *  None
  785:Generated_Source\PSoC5/US_40kHz.c ****     *
  786:Generated_Source\PSoC5/US_40kHz.c ****     * Return:
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 19
+
+
  787:Generated_Source\PSoC5/US_40kHz.c ****     *  uint8/uint16: The current capture value
  788:Generated_Source\PSoC5/US_40kHz.c ****     *
  789:Generated_Source\PSoC5/US_40kHz.c ****     *******************************************************************************/
- 790:Generated_Source\PSoC5/US_40kHz.c ****     uint8 US_40kHz_ReadCapture(void) 
+ 790:Generated_Source\PSoC5/US_40kHz.c ****     uint16 US_40kHz_ReadCapture(void) 
  791:Generated_Source\PSoC5/US_40kHz.c ****     {
- 309              		.loc 1 791 0
- 310              		.cfi_startproc
- 311              		@ args = 0, pretend = 0, frame = 0
- 312              		@ frame_needed = 0, uses_anonymous_args = 0
- 313              		@ link register save eliminated.
- 792:Generated_Source\PSoC5/US_40kHz.c ****         return (CY_GET_REG8(US_40kHz_CAPTURE_LSB_PTR));
- 314              		.loc 1 792 0
- 315 0000 014B     		ldr	r3, .L35
- 316 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 241              		.loc 1 791 0
+ 242              		.cfi_startproc
+ 243              		@ args = 0, pretend = 0, frame = 0
+ 244              		@ frame_needed = 0, uses_anonymous_args = 0
+ 245              		@ link register save eliminated.
+ 792:Generated_Source\PSoC5/US_40kHz.c ****         return (CY_GET_REG16(US_40kHz_CAPTURE_LSB_PTR));
+ 246              		.loc 1 792 0
+ 247 0000 014B     		ldr	r3, .L25
+ 248 0002 1888     		ldrh	r0, [r3]
  793:Generated_Source\PSoC5/US_40kHz.c ****     }
- 317              		.loc 1 793 0
- 318 0004 7047     		bx	lr
- 319              	.L36:
- 320 0006 00BF     		.align	2
- 321              	.L35:
- 322 0008 5B650040 		.word	1073767771
- 323              		.cfi_endproc
- 324              	.LFE14:
- 325              		.size	US_40kHz_ReadCapture, .-US_40kHz_ReadCapture
- 326              		.section	.text.US_40kHz_ClearFIFO,"ax",%progbits
- 327              		.align	2
- 328              		.global	US_40kHz_ClearFIFO
- 329              		.thumb
- 330              		.thumb_func
- 331              		.type	US_40kHz_ClearFIFO, %function
- 332              	US_40kHz_ClearFIFO:
- 333              	.LFB6:
+ 249              		.loc 1 793 0
+ 250 0004 80B2     		uxth	r0, r0
+ 251 0006 7047     		bx	lr
+ 252              	.L26:
+ 253              		.align	2
+ 254              	.L25:
+ 255 0008 B06A0040 		.word	1073769136
+ 256              		.cfi_endproc
+ 257              	.LFE12:
+ 258              		.size	US_40kHz_ReadCapture, .-US_40kHz_ReadCapture
+ 259              		.section	.text.US_40kHz_ClearFIFO,"ax",%progbits
+ 260              		.align	2
+ 261              		.global	US_40kHz_ClearFIFO
+ 262              		.thumb
+ 263              		.thumb_func
+ 264              		.type	US_40kHz_ClearFIFO, %function
+ 265              	US_40kHz_ClearFIFO:
+ 266              	.LFB6:
  454:Generated_Source\PSoC5/US_40kHz.c ****             while(0u != (US_40kHz_ReadStatusRegister() & US_40kHz_STATUS_FIFONEMPTY))
- 334              		.loc 1 454 0
- 335              		.cfi_startproc
- 336              		@ args = 0, pretend = 0, frame = 0
- 337              		@ frame_needed = 0, uses_anonymous_args = 0
- 338 0000 08B5     		push	{r3, lr}
- 339              		.cfi_def_cfa_offset 8
- 340              		.cfi_offset 3, -8
- 341              		.cfi_offset 14, -4
+ 267              		.loc 1 454 0
+ 268              		.cfi_startproc
+ 269              		@ args = 0, pretend = 0, frame = 0
+ 270              		@ frame_needed = 0, uses_anonymous_args = 0
+ 271 0000 08B5     		push	{r3, lr}
+ 272              		.cfi_def_cfa_offset 8
+ 273              		.cfi_offset 3, -8
+ 274              		.cfi_offset 14, -4
  455:Generated_Source\PSoC5/US_40kHz.c ****             {
- 342              		.loc 1 455 0
- 343 0002 01E0     		b	.L38
- 344              	.L39:
+ 275              		.loc 1 455 0
+ 276 0002 01E0     		b	.L28
+ 277              	.L29:
  457:Generated_Source\PSoC5/US_40kHz.c ****             }
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 21
-
-
- 345              		.loc 1 457 0
- 346 0004 FFF7FEFF 		bl	US_40kHz_ReadCapture
- 347              	.LVL7:
- 348              	.L38:
+ 278              		.loc 1 457 0
+ 279 0004 FFF7FEFF 		bl	US_40kHz_ReadCapture
+ 280              	.LVL5:
+ 281              	.L28:
  455:Generated_Source\PSoC5/US_40kHz.c ****             {
- 349              		.loc 1 455 0
- 350 0008 FFF7FEFF 		bl	US_40kHz_ReadStatusRegister
- 351              	.LVL8:
- 352 000c 10F0100F 		tst	r0, #16
- 353 0010 F8D1     		bne	.L39
+ 282              		.loc 1 455 0
+ 283 0008 FFF7FEFF 		bl	US_40kHz_ReadStatusRegister
+ 284              	.LVL6:
+ 285 000c 10F0100F 		tst	r0, #16
+ 286 0010 F8D1     		bne	.L29
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 20
+
+
  459:Generated_Source\PSoC5/US_40kHz.c **** 
- 354              		.loc 1 459 0
- 355 0012 08BD     		pop	{r3, pc}
- 356              		.cfi_endproc
- 357              	.LFE6:
- 358              		.size	US_40kHz_ClearFIFO, .-US_40kHz_ClearFIFO
- 359              		.section	.text.US_40kHz_Init,"ax",%progbits
- 360              		.align	2
- 361              		.global	US_40kHz_Init
- 362              		.thumb
- 363              		.thumb_func
- 364              		.type	US_40kHz_Init, %function
- 365              	US_40kHz_Init:
- 366              	.LFB1:
+ 287              		.loc 1 459 0
+ 288 0012 08BD     		pop	{r3, pc}
+ 289              		.cfi_endproc
+ 290              	.LFE6:
+ 291              		.size	US_40kHz_ClearFIFO, .-US_40kHz_ClearFIFO
+ 292              		.section	.text.US_40kHz_Init,"ax",%progbits
+ 293              		.align	2
+ 294              		.global	US_40kHz_Init
+ 295              		.thumb
+ 296              		.thumb_func
+ 297              		.type	US_40kHz_Init, %function
+ 298              	US_40kHz_Init:
+ 299              	.LFB1:
   85:Generated_Source\PSoC5/US_40kHz.c ****     #if (US_40kHz_UsingFixedFunction || US_40kHz_UseControl)
- 367              		.loc 1 85 0
- 368              		.cfi_startproc
- 369              		@ args = 0, pretend = 0, frame = 0
- 370              		@ frame_needed = 0, uses_anonymous_args = 0
- 371 0000 10B5     		push	{r4, lr}
- 372              		.cfi_def_cfa_offset 8
- 373              		.cfi_offset 4, -8
- 374              		.cfi_offset 14, -4
- 117:Generated_Source\PSoC5/US_40kHz.c ****                 ((uint8)(~US_40kHz_CTRL_CMPMODE1_MASK));
- 375              		.loc 1 117 0
- 376 0002 134A     		ldr	r2, .L43
- 377 0004 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
- 378 0006 03F0C003 		and	r3, r3, #192
- 379              	.LVL9:
- 119:Generated_Source\PSoC5/US_40kHz.c ****                                    US_40kHz_DEFAULT_COMPARE1_MODE;
- 380              		.loc 1 119 0
- 381 000a 43F01903 		orr	r3, r3, #25
- 382              	.LVL10:
- 383 000e 1370     		strb	r3, [r2]
- 126:Generated_Source\PSoC5/US_40kHz.c ****         #else /* (US_40kHz_Resolution == 16)*/
- 384              		.loc 1 126 0
- 385 0010 104C     		ldr	r4, .L43+4
- 386 0012 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
- 387 0014 43F00103 		orr	r3, r3, #1
- 388 0018 2370     		strb	r3, [r4]
+ 300              		.loc 1 85 0
+ 301              		.cfi_startproc
+ 302              		@ args = 0, pretend = 0, frame = 0
+ 303              		@ frame_needed = 0, uses_anonymous_args = 0
+ 304 0000 10B5     		push	{r4, lr}
+ 305              		.cfi_def_cfa_offset 8
+ 306              		.cfi_offset 4, -8
+ 307              		.cfi_offset 14, -4
+ 129:Generated_Source\PSoC5/US_40kHz.c ****             US_40kHz_AUX_CONTROLDP1 |= (US_40kHz_AUX_CTRL_FIFO0_CLR);
+ 308              		.loc 1 129 0
+ 309 0002 134A     		ldr	r2, .L33
+ 310 0004 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 311 0006 43F00103 		orr	r3, r3, #1
+ 312 000a 1370     		strb	r3, [r2]
+ 130:Generated_Source\PSoC5/US_40kHz.c ****         #endif /* (US_40kHz_Resolution == 8) */
+ 313              		.loc 1 130 0
+ 314 000c 114C     		ldr	r4, .L33+4
+ 315 000e 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
+ 316 0010 43F00103 		orr	r3, r3, #1
+ 317 0014 2370     		strb	r3, [r4]
  133:Generated_Source\PSoC5/US_40kHz.c ****     #endif /* (!US_40kHz_UsingFixedFunction) */
- 389              		.loc 1 133 0
- 390 001a FF20     		movs	r0, #255
- 391 001c FFF7FEFF 		bl	US_40kHz_WriteCounter
- 392              	.LVL11:
+ 318              		.loc 1 133 0
+ 319 0016 40F22B10 		movw	r0, #299
+ 320 001a FFF7FEFF 		bl	US_40kHz_WriteCounter
+ 321              	.LVL7:
  136:Generated_Source\PSoC5/US_40kHz.c **** 
- 393              		.loc 1 136 0
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 22
-
-
- 394 0020 FF20     		movs	r0, #255
- 395 0022 FFF7FEFF 		bl	US_40kHz_WritePeriod
- 396              	.LVL12:
+ 322              		.loc 1 136 0
+ 323 001e 40F22B10 		movw	r0, #299
+ 324 0022 FFF7FEFF 		bl	US_40kHz_WritePeriod
+ 325              	.LVL8:
  141:Generated_Source\PSoC5/US_40kHz.c ****             US_40kHz_WriteCompare2(US_40kHz_INIT_COMPARE_VALUE2);
- 397              		.loc 1 141 0
- 398 0026 7F20     		movs	r0, #127
- 399 0028 FFF7FEFF 		bl	US_40kHz_WriteCompare1
- 400              	.LVL13:
+ 326              		.loc 1 141 0
+ 327 0026 9620     		movs	r0, #150
+ 328 0028 FFF7FEFF 		bl	US_40kHz_WriteCompare1
+ 329              	.LVL9:
  142:Generated_Source\PSoC5/US_40kHz.c ****         #endif /* (US_40kHz_UseOneCompareMode) */
- 401              		.loc 1 142 0
- 402 002c 7F20     		movs	r0, #127
- 403 002e FFF7FEFF 		bl	US_40kHz_WriteCompare2
- 404              	.LVL14:
+ 330              		.loc 1 142 0
+ 331 002c 9620     		movs	r0, #150
+ 332 002e FFF7FEFF 		bl	US_40kHz_WriteCompare2
+ 333              	.LVL10:
  154:Generated_Source\PSoC5/US_40kHz.c ****     #endif /* (US_40kHz_UseStatus || US_40kHz_UsingFixedFunction) */
- 405              		.loc 1 154 0
- 406 0032 0020     		movs	r0, #0
- 407 0034 FFF7FEFF 		bl	US_40kHz_SetInterruptMode
- 408              	.LVL15:
+ 334              		.loc 1 154 0
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 21
+
+
+ 335 0032 0020     		movs	r0, #0
+ 336 0034 FFF7FEFF 		bl	US_40kHz_SetInterruptMode
+ 337              	.LVL11:
  167:Generated_Source\PSoC5/US_40kHz.c ****             /* Use the interrupt output of the status register for IRQ output */
- 409              		.loc 1 167 0
- 410 0038 FFF7FEFF 		bl	CyEnterCriticalSection
- 411              	.LVL16:
+ 338              		.loc 1 167 0
+ 339 0038 FFF7FEFF 		bl	CyEnterCriticalSection
+ 340              	.LVL12:
  169:Generated_Source\PSoC5/US_40kHz.c **** 
- 412              		.loc 1 169 0
- 413 003c 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
- 414 003e 43F01003 		orr	r3, r3, #16
- 415 0042 2370     		strb	r3, [r4]
+ 341              		.loc 1 169 0
+ 342 003c 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
+ 343 003e 43F01003 		orr	r3, r3, #16
+ 344 0042 2370     		strb	r3, [r4]
  172:Generated_Source\PSoC5/US_40kHz.c **** 
- 416              		.loc 1 172 0
- 417 0044 FFF7FEFF 		bl	CyExitCriticalSection
- 418              	.LVL17:
+ 345              		.loc 1 172 0
+ 346 0044 FFF7FEFF 		bl	CyExitCriticalSection
+ 347              	.LVL13:
  176:Generated_Source\PSoC5/US_40kHz.c ****         #endif /* (US_40kHz_UseStatus) */
- 419              		.loc 1 176 0
- 420 0048 FFF7FEFF 		bl	US_40kHz_ClearFIFO
- 421              	.LVL18:
- 422 004c 10BD     		pop	{r4, pc}
- 423              	.L44:
- 424 004e 00BF     		.align	2
- 425              	.L43:
- 426 0050 7B650040 		.word	1073767803
- 427 0054 9B650040 		.word	1073767835
- 428              		.cfi_endproc
- 429              	.LFE1:
- 430              		.size	US_40kHz_Init, .-US_40kHz_Init
- 431              		.section	.text.US_40kHz_Start,"ax",%progbits
- 432              		.align	2
- 433              		.global	US_40kHz_Start
- 434              		.thumb
- 435              		.thumb_func
- 436              		.type	US_40kHz_Start, %function
- 437              	US_40kHz_Start:
- 438              	.LFB0:
+ 348              		.loc 1 176 0
+ 349 0048 FFF7FEFF 		bl	US_40kHz_ClearFIFO
+ 350              	.LVL14:
+ 351 004c 10BD     		pop	{r4, pc}
+ 352              	.L34:
+ 353 004e 00BF     		.align	2
+ 354              	.L33:
+ 355 0050 98650040 		.word	1073767832
+ 356 0054 99650040 		.word	1073767833
+ 357              		.cfi_endproc
+ 358              	.LFE1:
+ 359              		.size	US_40kHz_Init, .-US_40kHz_Init
+ 360              		.section	.text.US_40kHz_Start,"ax",%progbits
+ 361              		.align	2
+ 362              		.global	US_40kHz_Start
+ 363              		.thumb
+ 364              		.thumb_func
+ 365              		.type	US_40kHz_Start, %function
+ 366              	US_40kHz_Start:
+ 367              	.LFB0:
   56:Generated_Source\PSoC5/US_40kHz.c ****     /* If not Initialized then initialize all required hardware and software */
- 439              		.loc 1 56 0
- 440              		.cfi_startproc
- 441              		@ args = 0, pretend = 0, frame = 0
- 442              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 23
-
-
- 443 0000 08B5     		push	{r3, lr}
- 444              		.cfi_def_cfa_offset 8
- 445              		.cfi_offset 3, -8
- 446              		.cfi_offset 14, -4
+ 368              		.loc 1 56 0
+ 369              		.cfi_startproc
+ 370              		@ args = 0, pretend = 0, frame = 0
+ 371              		@ frame_needed = 0, uses_anonymous_args = 0
+ 372 0000 08B5     		push	{r3, lr}
+ 373              		.cfi_def_cfa_offset 8
+ 374              		.cfi_offset 3, -8
+ 375              		.cfi_offset 14, -4
   58:Generated_Source\PSoC5/US_40kHz.c ****     {
- 447              		.loc 1 58 0
- 448 0002 054B     		ldr	r3, .L48
- 449 0004 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 450 0006 23B9     		cbnz	r3, .L46
+ 376              		.loc 1 58 0
+ 377 0002 044B     		ldr	r3, .L38
+ 378 0004 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 379 0006 23B9     		cbnz	r3, .L35
   60:Generated_Source\PSoC5/US_40kHz.c ****         US_40kHz_initVar = 1u;
- 451              		.loc 1 60 0
- 452 0008 FFF7FEFF 		bl	US_40kHz_Init
- 453              	.LVL19:
+ 380              		.loc 1 60 0
+ 381 0008 FFF7FEFF 		bl	US_40kHz_Init
+ 382              	.LVL15:
   61:Generated_Source\PSoC5/US_40kHz.c ****     }
- 454              		.loc 1 61 0
- 455 000c 0122     		movs	r2, #1
- 456 000e 024B     		ldr	r3, .L48
- 457 0010 1A70     		strb	r2, [r3]
- 458              	.L46:
-  63:Generated_Source\PSoC5/US_40kHz.c **** 
- 459              		.loc 1 63 0
- 460 0012 FFF7FEFF 		bl	US_40kHz_Enable
- 461              	.LVL20:
- 462 0016 08BD     		pop	{r3, pc}
- 463              	.L49:
- 464              		.align	2
- 465              	.L48:
- 466 0018 00000000 		.word	.LANCHOR0
- 467              		.cfi_endproc
- 468              	.LFE0:
- 469              		.size	US_40kHz_Start, .-US_40kHz_Start
- 470              		.section	.text.US_40kHz_ReadCompare1,"ax",%progbits
- 471              		.align	2
- 472              		.global	US_40kHz_ReadCompare1
- 473              		.thumb
- 474              		.thumb_func
- 475              		.type	US_40kHz_ReadCompare1, %function
- 476              	US_40kHz_ReadCompare1:
- 477              	.LFB15:
+ 383              		.loc 1 61 0
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 22
+
+
+ 384 000c 0122     		movs	r2, #1
+ 385 000e 014B     		ldr	r3, .L38
+ 386 0010 1A70     		strb	r2, [r3]
+ 387              	.L35:
+ 388 0012 08BD     		pop	{r3, pc}
+ 389              	.L39:
+ 390              		.align	2
+ 391              	.L38:
+ 392 0014 00000000 		.word	.LANCHOR0
+ 393              		.cfi_endproc
+ 394              	.LFE0:
+ 395              		.size	US_40kHz_Start, .-US_40kHz_Start
+ 396              		.section	.text.US_40kHz_ReadCompare1,"ax",%progbits
+ 397              		.align	2
+ 398              		.global	US_40kHz_ReadCompare1
+ 399              		.thumb
+ 400              		.thumb_func
+ 401              		.type	US_40kHz_ReadCompare1, %function
+ 402              	US_40kHz_ReadCompare1:
+ 403              	.LFB13:
  794:Generated_Source\PSoC5/US_40kHz.c **** 
  795:Generated_Source\PSoC5/US_40kHz.c **** #endif /* (!US_40kHz_UsingFixedFunction) */
  796:Generated_Source\PSoC5/US_40kHz.c **** 
@@ -1378,19 +1299,16 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  809:Generated_Source\PSoC5/US_40kHz.c ****     * Parameters:
  810:Generated_Source\PSoC5/US_40kHz.c ****     *  None
  811:Generated_Source\PSoC5/US_40kHz.c ****     *
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 24
-
-
  812:Generated_Source\PSoC5/US_40kHz.c ****     * Return:
  813:Generated_Source\PSoC5/US_40kHz.c ****     *  uint8/uint16: Current compare value
  814:Generated_Source\PSoC5/US_40kHz.c ****     *
  815:Generated_Source\PSoC5/US_40kHz.c ****     *******************************************************************************/
- 816:Generated_Source\PSoC5/US_40kHz.c ****     uint8 US_40kHz_ReadCompare(void) 
+ 816:Generated_Source\PSoC5/US_40kHz.c ****     uint16 US_40kHz_ReadCompare(void) 
  817:Generated_Source\PSoC5/US_40kHz.c ****     {
  818:Generated_Source\PSoC5/US_40kHz.c ****         #if(US_40kHz_UsingFixedFunction)
- 819:Generated_Source\PSoC5/US_40kHz.c ****             return ((uint8)CY_GET_REG16(US_40kHz_COMPARE1_LSB_PTR));
+ 819:Generated_Source\PSoC5/US_40kHz.c ****             return ((uint16)CY_GET_REG16(US_40kHz_COMPARE1_LSB_PTR));
  820:Generated_Source\PSoC5/US_40kHz.c ****         #else
- 821:Generated_Source\PSoC5/US_40kHz.c ****             return (CY_GET_REG8(US_40kHz_COMPARE1_LSB_PTR));
+ 821:Generated_Source\PSoC5/US_40kHz.c ****             return (CY_GET_REG16(US_40kHz_COMPARE1_LSB_PTR));
  822:Generated_Source\PSoC5/US_40kHz.c ****         #endif /* (US_40kHz_UsingFixedFunction) */
  823:Generated_Source\PSoC5/US_40kHz.c ****     }
  824:Generated_Source\PSoC5/US_40kHz.c **** 
@@ -1400,6 +1318,9 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  828:Generated_Source\PSoC5/US_40kHz.c ****     /*******************************************************************************
  829:Generated_Source\PSoC5/US_40kHz.c ****     * Function Name: US_40kHz_ReadCompare1
  830:Generated_Source\PSoC5/US_40kHz.c ****     ********************************************************************************
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 23
+
+
  831:Generated_Source\PSoC5/US_40kHz.c ****     *
  832:Generated_Source\PSoC5/US_40kHz.c ****     * Summary:
  833:Generated_Source\PSoC5/US_40kHz.c ****     *  Reads the compare value for the compare1 output.
@@ -1411,38 +1332,36 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  839:Generated_Source\PSoC5/US_40kHz.c ****     *  uint8/uint16: Current compare value.
  840:Generated_Source\PSoC5/US_40kHz.c ****     *
  841:Generated_Source\PSoC5/US_40kHz.c ****     *******************************************************************************/
- 842:Generated_Source\PSoC5/US_40kHz.c ****     uint8 US_40kHz_ReadCompare1(void) 
+ 842:Generated_Source\PSoC5/US_40kHz.c ****     uint16 US_40kHz_ReadCompare1(void) 
  843:Generated_Source\PSoC5/US_40kHz.c ****     {
- 478              		.loc 1 843 0
- 479              		.cfi_startproc
- 480              		@ args = 0, pretend = 0, frame = 0
- 481              		@ frame_needed = 0, uses_anonymous_args = 0
- 482              		@ link register save eliminated.
- 844:Generated_Source\PSoC5/US_40kHz.c ****         return (CY_GET_REG8(US_40kHz_COMPARE1_LSB_PTR));
- 483              		.loc 1 844 0
- 484 0000 014B     		ldr	r3, .L51
- 485 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 404              		.loc 1 843 0
+ 405              		.cfi_startproc
+ 406              		@ args = 0, pretend = 0, frame = 0
+ 407              		@ frame_needed = 0, uses_anonymous_args = 0
+ 408              		@ link register save eliminated.
+ 844:Generated_Source\PSoC5/US_40kHz.c ****         return (CY_GET_REG16(US_40kHz_COMPARE1_LSB_PTR));
+ 409              		.loc 1 844 0
+ 410 0000 014B     		ldr	r3, .L41
+ 411 0002 1888     		ldrh	r0, [r3]
  845:Generated_Source\PSoC5/US_40kHz.c ****     }
- 486              		.loc 1 845 0
- 487 0004 7047     		bx	lr
- 488              	.L52:
- 489 0006 00BF     		.align	2
- 490              	.L51:
- 491 0008 2B650040 		.word	1073767723
- 492              		.cfi_endproc
- 493              	.LFE15:
- 494              		.size	US_40kHz_ReadCompare1, .-US_40kHz_ReadCompare1
- 495              		.section	.text.US_40kHz_ReadCompare2,"ax",%progbits
- 496              		.align	2
- 497              		.global	US_40kHz_ReadCompare2
- 498              		.thumb
- 499              		.thumb_func
- 500              		.type	US_40kHz_ReadCompare2, %function
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 25
-
-
- 501              	US_40kHz_ReadCompare2:
- 502              	.LFB16:
+ 412              		.loc 1 845 0
+ 413 0004 80B2     		uxth	r0, r0
+ 414 0006 7047     		bx	lr
+ 415              	.L42:
+ 416              		.align	2
+ 417              	.L41:
+ 418 0008 506A0040 		.word	1073769040
+ 419              		.cfi_endproc
+ 420              	.LFE13:
+ 421              		.size	US_40kHz_ReadCompare1, .-US_40kHz_ReadCompare1
+ 422              		.section	.text.US_40kHz_ReadCompare2,"ax",%progbits
+ 423              		.align	2
+ 424              		.global	US_40kHz_ReadCompare2
+ 425              		.thumb
+ 426              		.thumb_func
+ 427              		.type	US_40kHz_ReadCompare2, %function
+ 428              	US_40kHz_ReadCompare2:
+ 429              	.LFB14:
  846:Generated_Source\PSoC5/US_40kHz.c **** 
  847:Generated_Source\PSoC5/US_40kHz.c **** 
  848:Generated_Source\PSoC5/US_40kHz.c ****     /*******************************************************************************
@@ -1459,35 +1378,39 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  859:Generated_Source\PSoC5/US_40kHz.c ****     *  uint8/uint16: Current compare value.
  860:Generated_Source\PSoC5/US_40kHz.c ****     *
  861:Generated_Source\PSoC5/US_40kHz.c ****     *******************************************************************************/
- 862:Generated_Source\PSoC5/US_40kHz.c ****     uint8 US_40kHz_ReadCompare2(void) 
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 24
+
+
+ 862:Generated_Source\PSoC5/US_40kHz.c ****     uint16 US_40kHz_ReadCompare2(void) 
  863:Generated_Source\PSoC5/US_40kHz.c ****     {
- 503              		.loc 1 863 0
- 504              		.cfi_startproc
- 505              		@ args = 0, pretend = 0, frame = 0
- 506              		@ frame_needed = 0, uses_anonymous_args = 0
- 507              		@ link register save eliminated.
- 864:Generated_Source\PSoC5/US_40kHz.c ****         return (CY_GET_REG8(US_40kHz_COMPARE2_LSB_PTR));
- 508              		.loc 1 864 0
- 509 0000 014B     		ldr	r3, .L54
- 510 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 430              		.loc 1 863 0
+ 431              		.cfi_startproc
+ 432              		@ args = 0, pretend = 0, frame = 0
+ 433              		@ frame_needed = 0, uses_anonymous_args = 0
+ 434              		@ link register save eliminated.
+ 864:Generated_Source\PSoC5/US_40kHz.c ****         return (CY_GET_REG16(US_40kHz_COMPARE2_LSB_PTR));
+ 435              		.loc 1 864 0
+ 436 0000 014B     		ldr	r3, .L44
+ 437 0002 1888     		ldrh	r0, [r3]
  865:Generated_Source\PSoC5/US_40kHz.c ****     }
- 511              		.loc 1 865 0
- 512 0004 7047     		bx	lr
- 513              	.L55:
- 514 0006 00BF     		.align	2
- 515              	.L54:
- 516 0008 3B650040 		.word	1073767739
- 517              		.cfi_endproc
- 518              	.LFE16:
- 519              		.size	US_40kHz_ReadCompare2, .-US_40kHz_ReadCompare2
- 520              		.section	.text.US_40kHz_ReadPeriod,"ax",%progbits
- 521              		.align	2
- 522              		.global	US_40kHz_ReadPeriod
- 523              		.thumb
- 524              		.thumb_func
- 525              		.type	US_40kHz_ReadPeriod, %function
- 526              	US_40kHz_ReadPeriod:
- 527              	.LFB17:
+ 438              		.loc 1 865 0
+ 439 0004 80B2     		uxth	r0, r0
+ 440 0006 7047     		bx	lr
+ 441              	.L45:
+ 442              		.align	2
+ 443              	.L44:
+ 444 0008 706A0040 		.word	1073769072
+ 445              		.cfi_endproc
+ 446              	.LFE14:
+ 447              		.size	US_40kHz_ReadCompare2, .-US_40kHz_ReadCompare2
+ 448              		.section	.text.US_40kHz_ReadPeriod,"ax",%progbits
+ 449              		.align	2
+ 450              		.global	US_40kHz_ReadPeriod
+ 451              		.thumb
+ 452              		.thumb_func
+ 453              		.type	US_40kHz_ReadPeriod, %function
+ 454              	US_40kHz_ReadPeriod:
+ 455              	.LFB15:
  866:Generated_Source\PSoC5/US_40kHz.c **** 
  867:Generated_Source\PSoC5/US_40kHz.c **** #endif /* (US_40kHz_UseOneCompareMode) */
  868:Generated_Source\PSoC5/US_40kHz.c **** 
@@ -1498,9 +1421,6 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  873:Generated_Source\PSoC5/US_40kHz.c **** *
  874:Generated_Source\PSoC5/US_40kHz.c **** * Summary:
  875:Generated_Source\PSoC5/US_40kHz.c **** *  Reads the period value used by the PWM hardware.
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 26
-
-
  876:Generated_Source\PSoC5/US_40kHz.c **** *
  877:Generated_Source\PSoC5/US_40kHz.c **** * Parameters:
  878:Generated_Source\PSoC5/US_40kHz.c **** *  None
@@ -1509,1188 +1429,1082 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 1
  881:Generated_Source\PSoC5/US_40kHz.c **** *  uint8/16: Period value
  882:Generated_Source\PSoC5/US_40kHz.c **** *
  883:Generated_Source\PSoC5/US_40kHz.c **** *******************************************************************************/
- 884:Generated_Source\PSoC5/US_40kHz.c **** uint8 US_40kHz_ReadPeriod(void) 
+ 884:Generated_Source\PSoC5/US_40kHz.c **** uint16 US_40kHz_ReadPeriod(void) 
  885:Generated_Source\PSoC5/US_40kHz.c **** {
- 528              		.loc 1 885 0
- 529              		.cfi_startproc
- 530              		@ args = 0, pretend = 0, frame = 0
- 531              		@ frame_needed = 0, uses_anonymous_args = 0
- 532              		@ link register save eliminated.
+ 456              		.loc 1 885 0
+ 457              		.cfi_startproc
+ 458              		@ args = 0, pretend = 0, frame = 0
+ 459              		@ frame_needed = 0, uses_anonymous_args = 0
+ 460              		@ link register save eliminated.
  886:Generated_Source\PSoC5/US_40kHz.c ****     #if(US_40kHz_UsingFixedFunction)
- 887:Generated_Source\PSoC5/US_40kHz.c ****         return ((uint8)CY_GET_REG16(US_40kHz_PERIOD_LSB_PTR));
+ 887:Generated_Source\PSoC5/US_40kHz.c ****         return ((uint16)CY_GET_REG16(US_40kHz_PERIOD_LSB_PTR));
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 25
+
+
  888:Generated_Source\PSoC5/US_40kHz.c ****     #else
- 889:Generated_Source\PSoC5/US_40kHz.c ****         return (CY_GET_REG8(US_40kHz_PERIOD_LSB_PTR));
- 533              		.loc 1 889 0
- 534 0000 014B     		ldr	r3, .L57
- 535 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 889:Generated_Source\PSoC5/US_40kHz.c ****         return (CY_GET_REG16(US_40kHz_PERIOD_LSB_PTR));
+ 461              		.loc 1 889 0
+ 462 0000 014B     		ldr	r3, .L47
+ 463 0002 1888     		ldrh	r0, [r3]
  890:Generated_Source\PSoC5/US_40kHz.c ****     #endif /* (US_40kHz_UsingFixedFunction) */
  891:Generated_Source\PSoC5/US_40kHz.c **** }
- 536              		.loc 1 891 0
- 537 0004 7047     		bx	lr
- 538              	.L58:
- 539 0006 00BF     		.align	2
- 540              	.L57:
- 541 0008 4B650040 		.word	1073767755
- 542              		.cfi_endproc
- 543              	.LFE17:
- 544              		.size	US_40kHz_ReadPeriod, .-US_40kHz_ReadPeriod
- 545              		.global	US_40kHz_initVar
- 546              		.bss
- 547              		.set	.LANCHOR0,. + 0
- 548              		.type	US_40kHz_initVar, %object
- 549              		.size	US_40kHz_initVar, 1
- 550              	US_40kHz_initVar:
- 551 0000 00       		.space	1
- 552              		.text
- 553              	.Letext0:
- 554              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
- 555              		.file 3 "Generated_Source\\PSoC5\\CyLib.h"
- 556              		.section	.debug_info,"",%progbits
- 557              	.Ldebug_info0:
- 558 0000 7A030000 		.4byte	0x37a
- 559 0004 0400     		.2byte	0x4
- 560 0006 00000000 		.4byte	.Ldebug_abbrev0
- 561 000a 04       		.byte	0x4
- 562 000b 01       		.uleb128 0x1
- 563 000c 0A020000 		.4byte	.LASF40
- 564 0010 01       		.byte	0x1
- 565 0011 17000000 		.4byte	.LASF41
- 566 0015 FB020000 		.4byte	.LASF42
- 567 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 568 001d 00000000 		.4byte	0
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 27
+ 464              		.loc 1 891 0
+ 465 0004 80B2     		uxth	r0, r0
+ 466 0006 7047     		bx	lr
+ 467              	.L48:
+ 468              		.align	2
+ 469              	.L47:
+ 470 0008 906A0040 		.word	1073769104
+ 471              		.cfi_endproc
+ 472              	.LFE15:
+ 473              		.size	US_40kHz_ReadPeriod, .-US_40kHz_ReadPeriod
+ 474              		.global	US_40kHz_initVar
+ 475              		.bss
+ 476              		.set	.LANCHOR0,. + 0
+ 477              		.type	US_40kHz_initVar, %object
+ 478              		.size	US_40kHz_initVar, 1
+ 479              	US_40kHz_initVar:
+ 480 0000 00       		.space	1
+ 481              		.text
+ 482              	.Letext0:
+ 483              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 484              		.file 3 "Generated_Source\\PSoC5\\CyLib.h"
+ 485              		.section	.debug_info,"",%progbits
+ 486              	.Ldebug_info0:
+ 487 0000 33030000 		.4byte	0x333
+ 488 0004 0400     		.2byte	0x4
+ 489 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 490 000a 04       		.byte	0x4
+ 491 000b 01       		.uleb128 0x1
+ 492 000c CD010000 		.4byte	.LASF37
+ 493 0010 01       		.byte	0x1
+ 494 0011 1D000000 		.4byte	.LASF38
+ 495 0015 BE020000 		.4byte	.LASF39
+ 496 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 497 001d 00000000 		.4byte	0
+ 498 0021 00000000 		.4byte	.Ldebug_line0
+ 499 0025 02       		.uleb128 0x2
+ 500 0026 01       		.byte	0x1
+ 501 0027 06       		.byte	0x6
+ 502 0028 5F030000 		.4byte	.LASF0
+ 503 002c 02       		.uleb128 0x2
+ 504 002d 01       		.byte	0x1
+ 505 002e 08       		.byte	0x8
+ 506 002f 2C010000 		.4byte	.LASF1
+ 507 0033 02       		.uleb128 0x2
+ 508 0034 02       		.byte	0x2
+ 509 0035 05       		.byte	0x5
+ 510 0036 47030000 		.4byte	.LASF2
+ 511 003a 02       		.uleb128 0x2
+ 512 003b 02       		.byte	0x2
+ 513 003c 07       		.byte	0x7
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 26
 
 
- 569 0021 00000000 		.4byte	.Ldebug_line0
- 570 0025 02       		.uleb128 0x2
- 571 0026 01       		.byte	0x1
- 572 0027 06       		.byte	0x6
- 573 0028 A1030000 		.4byte	.LASF0
- 574 002c 02       		.uleb128 0x2
- 575 002d 01       		.byte	0x1
- 576 002e 08       		.byte	0x8
- 577 002f 2D010000 		.4byte	.LASF1
- 578 0033 02       		.uleb128 0x2
- 579 0034 02       		.byte	0x2
- 580 0035 05       		.byte	0x5
- 581 0036 84030000 		.4byte	.LASF2
- 582 003a 02       		.uleb128 0x2
- 583 003b 02       		.byte	0x2
- 584 003c 07       		.byte	0x7
- 585 003d 99000000 		.4byte	.LASF3
- 586 0041 02       		.uleb128 0x2
- 587 0042 04       		.byte	0x4
- 588 0043 05       		.byte	0x5
- 589 0044 93030000 		.4byte	.LASF4
- 590 0048 02       		.uleb128 0x2
- 591 0049 04       		.byte	0x4
- 592 004a 07       		.byte	0x7
- 593 004b 80010000 		.4byte	.LASF5
- 594 004f 02       		.uleb128 0x2
- 595 0050 08       		.byte	0x8
- 596 0051 05       		.byte	0x5
- 597 0052 68030000 		.4byte	.LASF6
- 598 0056 02       		.uleb128 0x2
- 599 0057 08       		.byte	0x8
- 600 0058 07       		.byte	0x7
- 601 0059 16010000 		.4byte	.LASF7
- 602 005d 03       		.uleb128 0x3
- 603 005e 04       		.byte	0x4
- 604 005f 05       		.byte	0x5
- 605 0060 696E7400 		.ascii	"int\000"
- 606 0064 02       		.uleb128 0x2
- 607 0065 04       		.byte	0x4
- 608 0066 07       		.byte	0x7
- 609 0067 AF020000 		.4byte	.LASF8
- 610 006b 04       		.uleb128 0x4
- 611 006c A6010000 		.4byte	.LASF12
- 612 0070 02       		.byte	0x2
- 613 0071 9201     		.2byte	0x192
- 614 0073 2C000000 		.4byte	0x2c
- 615 0077 02       		.uleb128 0x2
- 616 0078 04       		.byte	0x4
- 617 0079 04       		.byte	0x4
- 618 007a 08010000 		.4byte	.LASF9
- 619 007e 02       		.uleb128 0x2
- 620 007f 08       		.byte	0x8
- 621 0080 04       		.byte	0x4
- 622 0081 03020000 		.4byte	.LASF10
- 623 0085 02       		.uleb128 0x2
- 624 0086 01       		.byte	0x1
- 625 0087 08       		.byte	0x8
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 28
+ 514 003d 98000000 		.4byte	.LASF3
+ 515 0041 02       		.uleb128 0x2
+ 516 0042 04       		.byte	0x4
+ 517 0043 05       		.byte	0x5
+ 518 0044 51030000 		.4byte	.LASF4
+ 519 0048 02       		.uleb128 0x2
+ 520 0049 04       		.byte	0x4
+ 521 004a 07       		.byte	0x7
+ 522 004b 62010000 		.4byte	.LASF5
+ 523 004f 02       		.uleb128 0x2
+ 524 0050 08       		.byte	0x8
+ 525 0051 05       		.byte	0x5
+ 526 0052 2B030000 		.4byte	.LASF6
+ 527 0056 02       		.uleb128 0x2
+ 528 0057 08       		.byte	0x8
+ 529 0058 07       		.byte	0x7
+ 530 0059 15010000 		.4byte	.LASF7
+ 531 005d 03       		.uleb128 0x3
+ 532 005e 04       		.byte	0x4
+ 533 005f 05       		.byte	0x5
+ 534 0060 696E7400 		.ascii	"int\000"
+ 535 0064 02       		.uleb128 0x2
+ 536 0065 04       		.byte	0x4
+ 537 0066 07       		.byte	0x7
+ 538 0067 72020000 		.4byte	.LASF8
+ 539 006b 04       		.uleb128 0x4
+ 540 006c 88010000 		.4byte	.LASF9
+ 541 0070 02       		.byte	0x2
+ 542 0071 9201     		.2byte	0x192
+ 543 0073 2C000000 		.4byte	0x2c
+ 544 0077 04       		.uleb128 0x4
+ 545 0078 C6010000 		.4byte	.LASF10
+ 546 007c 02       		.byte	0x2
+ 547 007d 9301     		.2byte	0x193
+ 548 007f 3A000000 		.4byte	0x3a
+ 549 0083 02       		.uleb128 0x2
+ 550 0084 04       		.byte	0x4
+ 551 0085 04       		.byte	0x4
+ 552 0086 07010000 		.4byte	.LASF11
+ 553 008a 02       		.uleb128 0x2
+ 554 008b 08       		.byte	0x8
+ 555 008c 04       		.byte	0x4
+ 556 008d BF010000 		.4byte	.LASF12
+ 557 0091 02       		.uleb128 0x2
+ 558 0092 01       		.byte	0x1
+ 559 0093 08       		.byte	0x8
+ 560 0094 5A030000 		.4byte	.LASF13
+ 561 0098 04       		.uleb128 0x4
+ 562 0099 1D030000 		.4byte	.LASF14
+ 563 009d 02       		.byte	0x2
+ 564 009e 3C02     		.2byte	0x23c
+ 565 00a0 A4000000 		.4byte	0xa4
+ 566 00a4 05       		.uleb128 0x5
+ 567 00a5 6B000000 		.4byte	0x6b
+ 568 00a9 04       		.uleb128 0x4
+ 569 00aa 00000000 		.4byte	.LASF15
+ 570 00ae 02       		.byte	0x2
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 27
 
 
- 626 0088 9C030000 		.4byte	.LASF11
- 627 008c 04       		.uleb128 0x4
- 628 008d 5A030000 		.4byte	.LASF13
- 629 0091 02       		.byte	0x2
- 630 0092 3C02     		.2byte	0x23c
- 631 0094 98000000 		.4byte	0x98
- 632 0098 05       		.uleb128 0x5
- 633 0099 6B000000 		.4byte	0x6b
- 634 009d 02       		.uleb128 0x2
- 635 009e 04       		.byte	0x4
- 636 009f 07       		.byte	0x7
- 637 00a0 5F030000 		.4byte	.LASF14
- 638 00a4 06       		.uleb128 0x6
- 639 00a5 53010000 		.4byte	.LASF15
- 640 00a9 01       		.byte	0x1
- 641 00aa C7       		.byte	0xc7
- 642 00ab 00000000 		.4byte	.LFB2
- 643 00af 10000000 		.4byte	.LFE2-.LFB2
- 644 00b3 01       		.uleb128 0x1
- 645 00b4 9C       		.byte	0x9c
- 646 00b5 06       		.uleb128 0x6
- 647 00b6 FA000000 		.4byte	.LASF16
- 648 00ba 01       		.byte	0x1
- 649 00bb E9       		.byte	0xe9
- 650 00bc 00000000 		.4byte	.LFB3
- 651 00c0 10000000 		.4byte	.LFE3-.LFB3
- 652 00c4 01       		.uleb128 0x1
- 653 00c5 9C       		.byte	0x9c
- 654 00c6 07       		.uleb128 0x7
- 655 00c7 39000000 		.4byte	.LASF17
- 656 00cb 01       		.byte	0x1
- 657 00cc 9301     		.2byte	0x193
- 658 00ce 00000000 		.4byte	.LFB4
- 659 00d2 0C000000 		.4byte	.LFE4-.LFB4
- 660 00d6 01       		.uleb128 0x1
- 661 00d7 9C       		.byte	0x9c
- 662 00d8 EB000000 		.4byte	0xeb
- 663 00dc 08       		.uleb128 0x8
- 664 00dd 0E010000 		.4byte	.LASF19
- 665 00e1 01       		.byte	0x1
- 666 00e2 9301     		.2byte	0x193
- 667 00e4 6B000000 		.4byte	0x6b
- 668 00e8 01       		.uleb128 0x1
- 669 00e9 50       		.byte	0x50
- 670 00ea 00       		.byte	0
- 671 00eb 09       		.uleb128 0x9
- 672 00ec 67000000 		.4byte	.LASF26
- 673 00f0 01       		.byte	0x1
- 674 00f1 A901     		.2byte	0x1a9
- 675 00f3 6B000000 		.4byte	0x6b
- 676 00f7 00000000 		.4byte	.LFB5
- 677 00fb 14000000 		.4byte	.LFE5-.LFB5
- 678 00ff 01       		.uleb128 0x1
- 679 0100 9C       		.byte	0x9c
- 680 0101 07       		.uleb128 0x7
- 681 0102 D0010000 		.4byte	.LASF18
- 682 0106 01       		.byte	0x1
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 29
+ 571 00af 3D02     		.2byte	0x23d
+ 572 00b1 B5000000 		.4byte	0xb5
+ 573 00b5 05       		.uleb128 0x5
+ 574 00b6 77000000 		.4byte	0x77
+ 575 00ba 02       		.uleb128 0x2
+ 576 00bb 04       		.byte	0x4
+ 577 00bc 07       		.byte	0x7
+ 578 00bd 22030000 		.4byte	.LASF16
+ 579 00c1 06       		.uleb128 0x6
+ 580 00c2 52010000 		.4byte	.LASF17
+ 581 00c6 01       		.byte	0x1
+ 582 00c7 C7       		.byte	0xc7
+ 583 00c8 00000000 		.4byte	.LFB2
+ 584 00cc 02000000 		.4byte	.LFE2-.LFB2
+ 585 00d0 01       		.uleb128 0x1
+ 586 00d1 9C       		.byte	0x9c
+ 587 00d2 06       		.uleb128 0x6
+ 588 00d3 F9000000 		.4byte	.LASF18
+ 589 00d7 01       		.byte	0x1
+ 590 00d8 E9       		.byte	0xe9
+ 591 00d9 00000000 		.4byte	.LFB3
+ 592 00dd 02000000 		.4byte	.LFE3-.LFB3
+ 593 00e1 01       		.uleb128 0x1
+ 594 00e2 9C       		.byte	0x9c
+ 595 00e3 07       		.uleb128 0x7
+ 596 00e4 3F000000 		.4byte	.LASF19
+ 597 00e8 01       		.byte	0x1
+ 598 00e9 9301     		.2byte	0x193
+ 599 00eb 00000000 		.4byte	.LFB4
+ 600 00ef 0C000000 		.4byte	.LFE4-.LFB4
+ 601 00f3 01       		.uleb128 0x1
+ 602 00f4 9C       		.byte	0x9c
+ 603 00f5 08010000 		.4byte	0x108
+ 604 00f9 08       		.uleb128 0x8
+ 605 00fa 0D010000 		.4byte	.LASF21
+ 606 00fe 01       		.byte	0x1
+ 607 00ff 9301     		.2byte	0x193
+ 608 0101 77000000 		.4byte	0x77
+ 609 0105 01       		.uleb128 0x1
+ 610 0106 50       		.byte	0x50
+ 611 0107 00       		.byte	0
+ 612 0108 09       		.uleb128 0x9
+ 613 0109 66000000 		.4byte	.LASF28
+ 614 010d 01       		.byte	0x1
+ 615 010e A901     		.2byte	0x1a9
+ 616 0110 77000000 		.4byte	0x77
+ 617 0114 00000000 		.4byte	.LFB5
+ 618 0118 14000000 		.4byte	.LFE5-.LFB5
+ 619 011c 01       		.uleb128 0x1
+ 620 011d 9C       		.byte	0x9c
+ 621 011e 07       		.uleb128 0x7
+ 622 011f AA010000 		.4byte	.LASF20
+ 623 0123 01       		.byte	0x1
+ 624 0124 E201     		.2byte	0x1e2
+ 625 0126 00000000 		.4byte	.LFB7
+ 626 012a 0C000000 		.4byte	.LFE7-.LFB7
+ 627 012e 01       		.uleb128 0x1
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 28
 
 
- 683 0107 E201     		.2byte	0x1e2
- 684 0109 00000000 		.4byte	.LFB7
- 685 010d 0C000000 		.4byte	.LFE7-.LFB7
- 686 0111 01       		.uleb128 0x1
- 687 0112 9C       		.byte	0x9c
- 688 0113 26010000 		.4byte	0x126
- 689 0117 08       		.uleb128 0x8
- 690 0118 7C000000 		.4byte	.LASF20
- 691 011c 01       		.byte	0x1
- 692 011d E201     		.2byte	0x1e2
- 693 011f 6B000000 		.4byte	0x6b
- 694 0123 01       		.uleb128 0x1
- 695 0124 50       		.byte	0x50
- 696 0125 00       		.byte	0
- 697 0126 07       		.uleb128 0x7
- 698 0127 00000000 		.4byte	.LASF21
- 699 012b 01       		.byte	0x1
- 700 012c 2B02     		.2byte	0x22b
- 701 012e 00000000 		.4byte	.LFB8
- 702 0132 0C000000 		.4byte	.LFE8-.LFB8
- 703 0136 01       		.uleb128 0x1
- 704 0137 9C       		.byte	0x9c
- 705 0138 4B010000 		.4byte	0x14b
- 706 013c 08       		.uleb128 0x8
- 707 013d AD030000 		.4byte	.LASF22
- 708 0141 01       		.byte	0x1
- 709 0142 2B02     		.2byte	0x22b
- 710 0144 6B000000 		.4byte	0x6b
- 711 0148 01       		.uleb128 0x1
- 712 0149 50       		.byte	0x50
- 713 014a 00       		.byte	0
- 714 014b 07       		.uleb128 0x7
- 715 014c C6000000 		.4byte	.LASF23
- 716 0150 01       		.byte	0x1
- 717 0151 4802     		.2byte	0x248
- 718 0153 00000000 		.4byte	.LFB9
- 719 0157 0C000000 		.4byte	.LFE9-.LFB9
- 720 015b 01       		.uleb128 0x1
- 721 015c 9C       		.byte	0x9c
- 722 015d 70010000 		.4byte	0x170
- 723 0161 08       		.uleb128 0x8
- 724 0162 AD030000 		.4byte	.LASF22
- 725 0166 01       		.byte	0x1
- 726 0167 4802     		.2byte	0x248
- 727 0169 6B000000 		.4byte	0x6b
- 728 016d 01       		.uleb128 0x1
- 729 016e 50       		.byte	0x50
- 730 016f 00       		.byte	0
- 731 0170 07       		.uleb128 0x7
- 732 0171 AC000000 		.4byte	.LASF24
- 733 0175 01       		.byte	0x1
- 734 0176 AC02     		.2byte	0x2ac
- 735 0178 00000000 		.4byte	.LFB10
- 736 017c 0C000000 		.4byte	.LFE10-.LFB10
- 737 0180 01       		.uleb128 0x1
- 738 0181 9C       		.byte	0x9c
- 739 0182 95010000 		.4byte	0x195
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 30
+ 628 012f 9C       		.byte	0x9c
+ 629 0130 43010000 		.4byte	0x143
+ 630 0134 08       		.uleb128 0x8
+ 631 0135 7B000000 		.4byte	.LASF22
+ 632 0139 01       		.byte	0x1
+ 633 013a E201     		.2byte	0x1e2
+ 634 013c 77000000 		.4byte	0x77
+ 635 0140 01       		.uleb128 0x1
+ 636 0141 50       		.byte	0x50
+ 637 0142 00       		.byte	0
+ 638 0143 07       		.uleb128 0x7
+ 639 0144 06000000 		.4byte	.LASF23
+ 640 0148 01       		.byte	0x1
+ 641 0149 2B02     		.2byte	0x22b
+ 642 014b 00000000 		.4byte	.LFB8
+ 643 014f 0C000000 		.4byte	.LFE8-.LFB8
+ 644 0153 01       		.uleb128 0x1
+ 645 0154 9C       		.byte	0x9c
+ 646 0155 68010000 		.4byte	0x168
+ 647 0159 08       		.uleb128 0x8
+ 648 015a 6B030000 		.4byte	.LASF24
+ 649 015e 01       		.byte	0x1
+ 650 015f 2B02     		.2byte	0x22b
+ 651 0161 77000000 		.4byte	0x77
+ 652 0165 01       		.uleb128 0x1
+ 653 0166 50       		.byte	0x50
+ 654 0167 00       		.byte	0
+ 655 0168 07       		.uleb128 0x7
+ 656 0169 C5000000 		.4byte	.LASF25
+ 657 016d 01       		.byte	0x1
+ 658 016e 4802     		.2byte	0x248
+ 659 0170 00000000 		.4byte	.LFB9
+ 660 0174 0C000000 		.4byte	.LFE9-.LFB9
+ 661 0178 01       		.uleb128 0x1
+ 662 0179 9C       		.byte	0x9c
+ 663 017a 8D010000 		.4byte	0x18d
+ 664 017e 08       		.uleb128 0x8
+ 665 017f 6B030000 		.4byte	.LASF24
+ 666 0183 01       		.byte	0x1
+ 667 0184 4802     		.2byte	0x248
+ 668 0186 77000000 		.4byte	0x77
+ 669 018a 01       		.uleb128 0x1
+ 670 018b 50       		.byte	0x50
+ 671 018c 00       		.byte	0
+ 672 018d 07       		.uleb128 0x7
+ 673 018e AB000000 		.4byte	.LASF26
+ 674 0192 01       		.byte	0x1
+ 675 0193 AC02     		.2byte	0x2ac
+ 676 0195 00000000 		.4byte	.LFB10
+ 677 0199 0C000000 		.4byte	.LFE10-.LFB10
+ 678 019d 01       		.uleb128 0x1
+ 679 019e 9C       		.byte	0x9c
+ 680 019f B2010000 		.4byte	0x1b2
+ 681 01a3 08       		.uleb128 0x8
+ 682 01a4 39030000 		.4byte	.LASF27
+ 683 01a8 01       		.byte	0x1
+ 684 01a9 AC02     		.2byte	0x2ac
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 29
 
 
- 740 0186 08       		.uleb128 0x8
- 741 0187 76030000 		.4byte	.LASF25
- 742 018b 01       		.byte	0x1
- 743 018c AC02     		.2byte	0x2ac
- 744 018e 6B000000 		.4byte	0x6b
- 745 0192 01       		.uleb128 0x1
- 746 0193 50       		.byte	0x50
- 747 0194 00       		.byte	0
- 748 0195 09       		.uleb128 0x9
- 749 0196 B4010000 		.4byte	.LASF27
- 750 019a 01       		.byte	0x1
- 751 019b C702     		.2byte	0x2c7
- 752 019d 6B000000 		.4byte	0x6b
- 753 01a1 00000000 		.4byte	.LFB11
- 754 01a5 0C000000 		.4byte	.LFE11-.LFB11
- 755 01a9 01       		.uleb128 0x1
- 756 01aa 9C       		.byte	0x9c
- 757 01ab 0A       		.uleb128 0xa
- 758 01ac 63010000 		.4byte	.LASF43
- 759 01b0 01       		.byte	0x1
- 760 01b1 E102     		.2byte	0x2e1
- 761 01b3 6B000000 		.4byte	0x6b
- 762 01b7 00000000 		.4byte	.LFB12
- 763 01bb 0C000000 		.4byte	.LFE12-.LFB12
- 764 01bf 01       		.uleb128 0x1
- 765 01c0 9C       		.byte	0x9c
- 766 01c1 D4010000 		.4byte	0x1d4
- 767 01c5 0B       		.uleb128 0xb
- 768 01c6 4F000000 		.4byte	.LASF33
- 769 01ca 01       		.byte	0x1
- 770 01cb E302     		.2byte	0x2e3
- 771 01cd 6B000000 		.4byte	0x6b
- 772 01d1 01       		.uleb128 0x1
- 773 01d2 50       		.byte	0x50
- 774 01d3 00       		.byte	0
- 775 01d4 07       		.uleb128 0x7
- 776 01d5 E5010000 		.4byte	.LASF28
- 777 01d9 01       		.byte	0x1
- 778 01da FD02     		.2byte	0x2fd
- 779 01dc 00000000 		.4byte	.LFB13
- 780 01e0 0C000000 		.4byte	.LFE13-.LFB13
- 781 01e4 01       		.uleb128 0x1
- 782 01e5 9C       		.byte	0x9c
- 783 01e6 F9010000 		.4byte	0x1f9
- 784 01ea 08       		.uleb128 0x8
- 785 01eb AC010000 		.4byte	.LASF29
- 786 01ef 01       		.byte	0x1
- 787 01f0 FD02     		.2byte	0x2fd
- 788 01f2 6B000000 		.4byte	0x6b
- 789 01f6 01       		.uleb128 0x1
- 790 01f7 50       		.byte	0x50
- 791 01f8 00       		.byte	0
- 792 01f9 09       		.uleb128 0x9
- 793 01fa B5030000 		.4byte	.LASF30
- 794 01fe 01       		.byte	0x1
- 795 01ff 1603     		.2byte	0x316
- 796 0201 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 31
+ 685 01ab 6B000000 		.4byte	0x6b
+ 686 01af 01       		.uleb128 0x1
+ 687 01b0 50       		.byte	0x50
+ 688 01b1 00       		.byte	0
+ 689 01b2 09       		.uleb128 0x9
+ 690 01b3 8E010000 		.4byte	.LASF29
+ 691 01b7 01       		.byte	0x1
+ 692 01b8 C702     		.2byte	0x2c7
+ 693 01ba 6B000000 		.4byte	0x6b
+ 694 01be 00000000 		.4byte	.LFB11
+ 695 01c2 0C000000 		.4byte	.LFE11-.LFB11
+ 696 01c6 01       		.uleb128 0x1
+ 697 01c7 9C       		.byte	0x9c
+ 698 01c8 09       		.uleb128 0x9
+ 699 01c9 73030000 		.4byte	.LASF30
+ 700 01cd 01       		.byte	0x1
+ 701 01ce 1603     		.2byte	0x316
+ 702 01d0 77000000 		.4byte	0x77
+ 703 01d4 00000000 		.4byte	.LFB12
+ 704 01d8 0C000000 		.4byte	.LFE12-.LFB12
+ 705 01dc 01       		.uleb128 0x1
+ 706 01dd 9C       		.byte	0x9c
+ 707 01de 07       		.uleb128 0x7
+ 708 01df AB020000 		.4byte	.LASF31
+ 709 01e3 01       		.byte	0x1
+ 710 01e4 C501     		.2byte	0x1c5
+ 711 01e6 00000000 		.4byte	.LFB6
+ 712 01ea 14000000 		.4byte	.LFE6-.LFB6
+ 713 01ee 01       		.uleb128 0x1
+ 714 01ef 9C       		.byte	0x9c
+ 715 01f0 07020000 		.4byte	0x207
+ 716 01f4 0A       		.uleb128 0xa
+ 717 01f5 08000000 		.4byte	.LVL5
+ 718 01f9 C8010000 		.4byte	0x1c8
+ 719 01fd 0A       		.uleb128 0xa
+ 720 01fe 0C000000 		.4byte	.LVL6
+ 721 0202 B2010000 		.4byte	0x1b2
+ 722 0206 00       		.byte	0
+ 723 0207 0B       		.uleb128 0xb
+ 724 0208 DC000000 		.4byte	.LASF32
+ 725 020c 01       		.byte	0x1
+ 726 020d 54       		.byte	0x54
+ 727 020e 00000000 		.4byte	.LFB1
+ 728 0212 58000000 		.4byte	.LFE1-.LFB1
+ 729 0216 01       		.uleb128 0x1
+ 730 0217 9C       		.byte	0x9c
+ 731 0218 AC020000 		.4byte	0x2ac
+ 732 021c 0C       		.uleb128 0xc
+ 733 021d 3A010000 		.4byte	.LASF40
+ 734 0221 01       		.byte	0x1
+ 735 0222 5D       		.byte	0x5d
+ 736 0223 6B000000 		.4byte	0x6b
+ 737 0227 00000000 		.4byte	.LLST0
+ 738 022b 0D       		.uleb128 0xd
+ 739 022c 1E000000 		.4byte	.LVL7
+ 740 0230 E3000000 		.4byte	0xe3
+ 741 0234 40020000 		.4byte	0x240
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 30
 
 
- 797 0205 00000000 		.4byte	.LFB14
- 798 0209 0C000000 		.4byte	.LFE14-.LFB14
- 799 020d 01       		.uleb128 0x1
- 800 020e 9C       		.byte	0x9c
- 801 020f 07       		.uleb128 0x7
- 802 0210 E8020000 		.4byte	.LASF31
- 803 0214 01       		.byte	0x1
- 804 0215 C501     		.2byte	0x1c5
- 805 0217 00000000 		.4byte	.LFB6
- 806 021b 14000000 		.4byte	.LFE6-.LFB6
- 807 021f 01       		.uleb128 0x1
- 808 0220 9C       		.byte	0x9c
- 809 0221 38020000 		.4byte	0x238
- 810 0225 0C       		.uleb128 0xc
- 811 0226 08000000 		.4byte	.LVL7
- 812 022a F9010000 		.4byte	0x1f9
- 813 022e 0C       		.uleb128 0xc
- 814 022f 0C000000 		.4byte	.LVL8
- 815 0233 95010000 		.4byte	0x195
- 816 0237 00       		.byte	0
- 817 0238 0D       		.uleb128 0xd
- 818 0239 DD000000 		.4byte	.LASF32
- 819 023d 01       		.byte	0x1
- 820 023e 54       		.byte	0x54
- 821 023f 00000000 		.4byte	.LFB1
- 822 0243 58000000 		.4byte	.LFE1-.LFB1
- 823 0247 01       		.uleb128 0x1
- 824 0248 9C       		.byte	0x9c
- 825 0249 EA020000 		.4byte	0x2ea
- 826 024d 0E       		.uleb128 0xe
- 827 024e 8E030000 		.4byte	.LASF34
- 828 0252 01       		.byte	0x1
- 829 0253 57       		.byte	0x57
- 830 0254 6B000000 		.4byte	0x6b
- 831 0258 00000000 		.4byte	.LLST0
- 832 025c 0E       		.uleb128 0xe
- 833 025d 3B010000 		.4byte	.LASF35
- 834 0261 01       		.byte	0x1
- 835 0262 5D       		.byte	0x5d
- 836 0263 6B000000 		.4byte	0x6b
- 837 0267 13000000 		.4byte	.LLST1
- 838 026b 0F       		.uleb128 0xf
- 839 026c 20000000 		.4byte	.LVL11
- 840 0270 C6000000 		.4byte	0xc6
- 841 0274 7F020000 		.4byte	0x27f
- 842 0278 10       		.uleb128 0x10
- 843 0279 01       		.uleb128 0x1
- 844 027a 50       		.byte	0x50
- 845 027b 02       		.uleb128 0x2
- 846 027c 09       		.byte	0x9
- 847 027d FF       		.byte	0xff
- 848 027e 00       		.byte	0
- 849 027f 0F       		.uleb128 0xf
- 850 0280 26000000 		.4byte	.LVL12
- 851 0284 01010000 		.4byte	0x101
- 852 0288 93020000 		.4byte	0x293
- 853 028c 10       		.uleb128 0x10
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 32
+ 742 0238 0E       		.uleb128 0xe
+ 743 0239 01       		.uleb128 0x1
+ 744 023a 50       		.byte	0x50
+ 745 023b 03       		.uleb128 0x3
+ 746 023c 0A       		.byte	0xa
+ 747 023d 2B01     		.2byte	0x12b
+ 748 023f 00       		.byte	0
+ 749 0240 0D       		.uleb128 0xd
+ 750 0241 26000000 		.4byte	.LVL8
+ 751 0245 1E010000 		.4byte	0x11e
+ 752 0249 55020000 		.4byte	0x255
+ 753 024d 0E       		.uleb128 0xe
+ 754 024e 01       		.uleb128 0x1
+ 755 024f 50       		.byte	0x50
+ 756 0250 03       		.uleb128 0x3
+ 757 0251 0A       		.byte	0xa
+ 758 0252 2B01     		.2byte	0x12b
+ 759 0254 00       		.byte	0
+ 760 0255 0D       		.uleb128 0xd
+ 761 0256 2C000000 		.4byte	.LVL9
+ 762 025a 43010000 		.4byte	0x143
+ 763 025e 69020000 		.4byte	0x269
+ 764 0262 0E       		.uleb128 0xe
+ 765 0263 01       		.uleb128 0x1
+ 766 0264 50       		.byte	0x50
+ 767 0265 02       		.uleb128 0x2
+ 768 0266 08       		.byte	0x8
+ 769 0267 96       		.byte	0x96
+ 770 0268 00       		.byte	0
+ 771 0269 0D       		.uleb128 0xd
+ 772 026a 32000000 		.4byte	.LVL10
+ 773 026e 68010000 		.4byte	0x168
+ 774 0272 7D020000 		.4byte	0x27d
+ 775 0276 0E       		.uleb128 0xe
+ 776 0277 01       		.uleb128 0x1
+ 777 0278 50       		.byte	0x50
+ 778 0279 02       		.uleb128 0x2
+ 779 027a 08       		.byte	0x8
+ 780 027b 96       		.byte	0x96
+ 781 027c 00       		.byte	0
+ 782 027d 0D       		.uleb128 0xd
+ 783 027e 38000000 		.4byte	.LVL11
+ 784 0282 8D010000 		.4byte	0x18d
+ 785 0286 90020000 		.4byte	0x290
+ 786 028a 0E       		.uleb128 0xe
+ 787 028b 01       		.uleb128 0x1
+ 788 028c 50       		.byte	0x50
+ 789 028d 01       		.uleb128 0x1
+ 790 028e 30       		.byte	0x30
+ 791 028f 00       		.byte	0
+ 792 0290 0A       		.uleb128 0xa
+ 793 0291 3C000000 		.4byte	.LVL12
+ 794 0295 1E030000 		.4byte	0x31e
+ 795 0299 0A       		.uleb128 0xa
+ 796 029a 48000000 		.4byte	.LVL13
+ 797 029e 29030000 		.4byte	0x329
+ 798 02a2 0A       		.uleb128 0xa
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 31
 
 
- 854 028d 01       		.uleb128 0x1
- 855 028e 50       		.byte	0x50
- 856 028f 02       		.uleb128 0x2
- 857 0290 09       		.byte	0x9
- 858 0291 FF       		.byte	0xff
- 859 0292 00       		.byte	0
- 860 0293 0F       		.uleb128 0xf
- 861 0294 2C000000 		.4byte	.LVL13
- 862 0298 26010000 		.4byte	0x126
- 863 029c A7020000 		.4byte	0x2a7
- 864 02a0 10       		.uleb128 0x10
- 865 02a1 01       		.uleb128 0x1
- 866 02a2 50       		.byte	0x50
- 867 02a3 02       		.uleb128 0x2
- 868 02a4 08       		.byte	0x8
- 869 02a5 7F       		.byte	0x7f
- 870 02a6 00       		.byte	0
- 871 02a7 0F       		.uleb128 0xf
- 872 02a8 32000000 		.4byte	.LVL14
- 873 02ac 4B010000 		.4byte	0x14b
- 874 02b0 BB020000 		.4byte	0x2bb
- 875 02b4 10       		.uleb128 0x10
- 876 02b5 01       		.uleb128 0x1
- 877 02b6 50       		.byte	0x50
- 878 02b7 02       		.uleb128 0x2
- 879 02b8 08       		.byte	0x8
- 880 02b9 7F       		.byte	0x7f
- 881 02ba 00       		.byte	0
- 882 02bb 0F       		.uleb128 0xf
- 883 02bc 38000000 		.4byte	.LVL15
- 884 02c0 70010000 		.4byte	0x170
- 885 02c4 CE020000 		.4byte	0x2ce
- 886 02c8 10       		.uleb128 0x10
- 887 02c9 01       		.uleb128 0x1
- 888 02ca 50       		.byte	0x50
- 889 02cb 01       		.uleb128 0x1
- 890 02cc 30       		.byte	0x30
- 891 02cd 00       		.byte	0
- 892 02ce 0C       		.uleb128 0xc
- 893 02cf 3C000000 		.4byte	.LVL16
- 894 02d3 65030000 		.4byte	0x365
- 895 02d7 0C       		.uleb128 0xc
- 896 02d8 48000000 		.4byte	.LVL17
- 897 02dc 70030000 		.4byte	0x370
- 898 02e0 0C       		.uleb128 0xc
- 899 02e1 4C000000 		.4byte	.LVL18
- 900 02e5 0F020000 		.4byte	0x20f
- 901 02e9 00       		.byte	0
- 902 02ea 0D       		.uleb128 0xd
- 903 02eb EB000000 		.4byte	.LASF36
- 904 02ef 01       		.byte	0x1
- 905 02f0 37       		.byte	0x37
- 906 02f1 00000000 		.4byte	.LFB0
- 907 02f5 1C000000 		.4byte	.LFE0-.LFB0
- 908 02f9 01       		.uleb128 0x1
- 909 02fa 9C       		.byte	0x9c
- 910 02fb 12030000 		.4byte	0x312
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 33
+ 799 02a3 4C000000 		.4byte	.LVL14
+ 800 02a7 DE010000 		.4byte	0x1de
+ 801 02ab 00       		.byte	0
+ 802 02ac 0B       		.uleb128 0xb
+ 803 02ad EA000000 		.4byte	.LASF33
+ 804 02b1 01       		.byte	0x1
+ 805 02b2 37       		.byte	0x37
+ 806 02b3 00000000 		.4byte	.LFB0
+ 807 02b7 18000000 		.4byte	.LFE0-.LFB0
+ 808 02bb 01       		.uleb128 0x1
+ 809 02bc 9C       		.byte	0x9c
+ 810 02bd CB020000 		.4byte	0x2cb
+ 811 02c1 0A       		.uleb128 0xa
+ 812 02c2 0C000000 		.4byte	.LVL15
+ 813 02c6 07020000 		.4byte	0x207
+ 814 02ca 00       		.byte	0
+ 815 02cb 09       		.uleb128 0x9
+ 816 02cc 95020000 		.4byte	.LASF34
+ 817 02d0 01       		.byte	0x1
+ 818 02d1 4A03     		.2byte	0x34a
+ 819 02d3 77000000 		.4byte	0x77
+ 820 02d7 00000000 		.4byte	.LFB13
+ 821 02db 0C000000 		.4byte	.LFE13-.LFB13
+ 822 02df 01       		.uleb128 0x1
+ 823 02e0 9C       		.byte	0x9c
+ 824 02e1 09       		.uleb128 0x9
+ 825 02e2 82000000 		.4byte	.LASF35
+ 826 02e6 01       		.byte	0x1
+ 827 02e7 5E03     		.2byte	0x35e
+ 828 02e9 77000000 		.4byte	0x77
+ 829 02ed 00000000 		.4byte	.LFB14
+ 830 02f1 0C000000 		.4byte	.LFE14-.LFB14
+ 831 02f5 01       		.uleb128 0x1
+ 832 02f6 9C       		.byte	0x9c
+ 833 02f7 09       		.uleb128 0x9
+ 834 02f8 74010000 		.4byte	.LASF36
+ 835 02fc 01       		.byte	0x1
+ 836 02fd 7403     		.2byte	0x374
+ 837 02ff 77000000 		.4byte	0x77
+ 838 0303 00000000 		.4byte	.LFB15
+ 839 0307 0C000000 		.4byte	.LFE15-.LFB15
+ 840 030b 01       		.uleb128 0x1
+ 841 030c 9C       		.byte	0x9c
+ 842 030d 0F       		.uleb128 0xf
+ 843 030e 55000000 		.4byte	.LASF41
+ 844 0312 01       		.byte	0x1
+ 845 0313 20       		.byte	0x20
+ 846 0314 6B000000 		.4byte	0x6b
+ 847 0318 05       		.uleb128 0x5
+ 848 0319 03       		.byte	0x3
+ 849 031a 00000000 		.4byte	US_40kHz_initVar
+ 850 031e 10       		.uleb128 0x10
+ 851 031f 5B020000 		.4byte	.LASF42
+ 852 0323 03       		.byte	0x3
+ 853 0324 7D       		.byte	0x7d
+ 854 0325 6B000000 		.4byte	0x6b
+ 855 0329 11       		.uleb128 0x11
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 32
 
 
- 911 02ff 0C       		.uleb128 0xc
- 912 0300 0C000000 		.4byte	.LVL19
- 913 0304 38020000 		.4byte	0x238
- 914 0308 0C       		.uleb128 0xc
- 915 0309 16000000 		.4byte	.LVL20
- 916 030d A4000000 		.4byte	0xa4
- 917 0311 00       		.byte	0
- 918 0312 09       		.uleb128 0x9
- 919 0313 D2020000 		.4byte	.LASF37
- 920 0317 01       		.byte	0x1
- 921 0318 4A03     		.2byte	0x34a
- 922 031a 6B000000 		.4byte	0x6b
- 923 031e 00000000 		.4byte	.LFB15
- 924 0322 0C000000 		.4byte	.LFE15-.LFB15
- 925 0326 01       		.uleb128 0x1
- 926 0327 9C       		.byte	0x9c
- 927 0328 09       		.uleb128 0x9
- 928 0329 83000000 		.4byte	.LASF38
- 929 032d 01       		.byte	0x1
- 930 032e 5E03     		.2byte	0x35e
- 931 0330 6B000000 		.4byte	0x6b
- 932 0334 00000000 		.4byte	.LFB16
- 933 0338 0C000000 		.4byte	.LFE16-.LFB16
- 934 033c 01       		.uleb128 0x1
- 935 033d 9C       		.byte	0x9c
- 936 033e 09       		.uleb128 0x9
- 937 033f 92010000 		.4byte	.LASF39
- 938 0343 01       		.byte	0x1
- 939 0344 7403     		.2byte	0x374
- 940 0346 6B000000 		.4byte	0x6b
- 941 034a 00000000 		.4byte	.LFB17
- 942 034e 0C000000 		.4byte	.LFE17-.LFB17
- 943 0352 01       		.uleb128 0x1
- 944 0353 9C       		.byte	0x9c
- 945 0354 11       		.uleb128 0x11
- 946 0355 56000000 		.4byte	.LASF44
- 947 0359 01       		.byte	0x1
- 948 035a 20       		.byte	0x20
- 949 035b 6B000000 		.4byte	0x6b
- 950 035f 05       		.uleb128 0x5
- 951 0360 03       		.byte	0x3
- 952 0361 00000000 		.4byte	US_40kHz_initVar
- 953 0365 12       		.uleb128 0x12
- 954 0366 98020000 		.4byte	.LASF45
- 955 036a 03       		.byte	0x3
- 956 036b 7D       		.byte	0x7d
- 957 036c 6B000000 		.4byte	0x6b
- 958 0370 13       		.uleb128 0x13
- 959 0371 BC020000 		.4byte	.LASF46
- 960 0375 03       		.byte	0x3
- 961 0376 7E       		.byte	0x7e
- 962 0377 14       		.uleb128 0x14
- 963 0378 6B000000 		.4byte	0x6b
- 964 037c 00       		.byte	0
- 965 037d 00       		.byte	0
- 966              		.section	.debug_abbrev,"",%progbits
- 967              	.Ldebug_abbrev0:
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 34
+ 856 032a 7F020000 		.4byte	.LASF43
+ 857 032e 03       		.byte	0x3
+ 858 032f 7E       		.byte	0x7e
+ 859 0330 12       		.uleb128 0x12
+ 860 0331 6B000000 		.4byte	0x6b
+ 861 0335 00       		.byte	0
+ 862 0336 00       		.byte	0
+ 863              		.section	.debug_abbrev,"",%progbits
+ 864              	.Ldebug_abbrev0:
+ 865 0000 01       		.uleb128 0x1
+ 866 0001 11       		.uleb128 0x11
+ 867 0002 01       		.byte	0x1
+ 868 0003 25       		.uleb128 0x25
+ 869 0004 0E       		.uleb128 0xe
+ 870 0005 13       		.uleb128 0x13
+ 871 0006 0B       		.uleb128 0xb
+ 872 0007 03       		.uleb128 0x3
+ 873 0008 0E       		.uleb128 0xe
+ 874 0009 1B       		.uleb128 0x1b
+ 875 000a 0E       		.uleb128 0xe
+ 876 000b 55       		.uleb128 0x55
+ 877 000c 17       		.uleb128 0x17
+ 878 000d 11       		.uleb128 0x11
+ 879 000e 01       		.uleb128 0x1
+ 880 000f 10       		.uleb128 0x10
+ 881 0010 17       		.uleb128 0x17
+ 882 0011 00       		.byte	0
+ 883 0012 00       		.byte	0
+ 884 0013 02       		.uleb128 0x2
+ 885 0014 24       		.uleb128 0x24
+ 886 0015 00       		.byte	0
+ 887 0016 0B       		.uleb128 0xb
+ 888 0017 0B       		.uleb128 0xb
+ 889 0018 3E       		.uleb128 0x3e
+ 890 0019 0B       		.uleb128 0xb
+ 891 001a 03       		.uleb128 0x3
+ 892 001b 0E       		.uleb128 0xe
+ 893 001c 00       		.byte	0
+ 894 001d 00       		.byte	0
+ 895 001e 03       		.uleb128 0x3
+ 896 001f 24       		.uleb128 0x24
+ 897 0020 00       		.byte	0
+ 898 0021 0B       		.uleb128 0xb
+ 899 0022 0B       		.uleb128 0xb
+ 900 0023 3E       		.uleb128 0x3e
+ 901 0024 0B       		.uleb128 0xb
+ 902 0025 03       		.uleb128 0x3
+ 903 0026 08       		.uleb128 0x8
+ 904 0027 00       		.byte	0
+ 905 0028 00       		.byte	0
+ 906 0029 04       		.uleb128 0x4
+ 907 002a 16       		.uleb128 0x16
+ 908 002b 00       		.byte	0
+ 909 002c 03       		.uleb128 0x3
+ 910 002d 0E       		.uleb128 0xe
+ 911 002e 3A       		.uleb128 0x3a
+ 912 002f 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 33
 
 
- 968 0000 01       		.uleb128 0x1
- 969 0001 11       		.uleb128 0x11
- 970 0002 01       		.byte	0x1
- 971 0003 25       		.uleb128 0x25
- 972 0004 0E       		.uleb128 0xe
- 973 0005 13       		.uleb128 0x13
- 974 0006 0B       		.uleb128 0xb
- 975 0007 03       		.uleb128 0x3
- 976 0008 0E       		.uleb128 0xe
- 977 0009 1B       		.uleb128 0x1b
- 978 000a 0E       		.uleb128 0xe
- 979 000b 55       		.uleb128 0x55
- 980 000c 17       		.uleb128 0x17
- 981 000d 11       		.uleb128 0x11
- 982 000e 01       		.uleb128 0x1
- 983 000f 10       		.uleb128 0x10
- 984 0010 17       		.uleb128 0x17
- 985 0011 00       		.byte	0
- 986 0012 00       		.byte	0
- 987 0013 02       		.uleb128 0x2
- 988 0014 24       		.uleb128 0x24
- 989 0015 00       		.byte	0
- 990 0016 0B       		.uleb128 0xb
- 991 0017 0B       		.uleb128 0xb
- 992 0018 3E       		.uleb128 0x3e
- 993 0019 0B       		.uleb128 0xb
- 994 001a 03       		.uleb128 0x3
- 995 001b 0E       		.uleb128 0xe
- 996 001c 00       		.byte	0
- 997 001d 00       		.byte	0
- 998 001e 03       		.uleb128 0x3
- 999 001f 24       		.uleb128 0x24
- 1000 0020 00       		.byte	0
- 1001 0021 0B       		.uleb128 0xb
- 1002 0022 0B       		.uleb128 0xb
- 1003 0023 3E       		.uleb128 0x3e
- 1004 0024 0B       		.uleb128 0xb
- 1005 0025 03       		.uleb128 0x3
- 1006 0026 08       		.uleb128 0x8
- 1007 0027 00       		.byte	0
- 1008 0028 00       		.byte	0
- 1009 0029 04       		.uleb128 0x4
- 1010 002a 16       		.uleb128 0x16
- 1011 002b 00       		.byte	0
- 1012 002c 03       		.uleb128 0x3
- 1013 002d 0E       		.uleb128 0xe
- 1014 002e 3A       		.uleb128 0x3a
- 1015 002f 0B       		.uleb128 0xb
- 1016 0030 3B       		.uleb128 0x3b
- 1017 0031 05       		.uleb128 0x5
- 1018 0032 49       		.uleb128 0x49
- 1019 0033 13       		.uleb128 0x13
- 1020 0034 00       		.byte	0
- 1021 0035 00       		.byte	0
- 1022 0036 05       		.uleb128 0x5
- 1023 0037 35       		.uleb128 0x35
- 1024 0038 00       		.byte	0
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 35
+ 913 0030 3B       		.uleb128 0x3b
+ 914 0031 05       		.uleb128 0x5
+ 915 0032 49       		.uleb128 0x49
+ 916 0033 13       		.uleb128 0x13
+ 917 0034 00       		.byte	0
+ 918 0035 00       		.byte	0
+ 919 0036 05       		.uleb128 0x5
+ 920 0037 35       		.uleb128 0x35
+ 921 0038 00       		.byte	0
+ 922 0039 49       		.uleb128 0x49
+ 923 003a 13       		.uleb128 0x13
+ 924 003b 00       		.byte	0
+ 925 003c 00       		.byte	0
+ 926 003d 06       		.uleb128 0x6
+ 927 003e 2E       		.uleb128 0x2e
+ 928 003f 00       		.byte	0
+ 929 0040 3F       		.uleb128 0x3f
+ 930 0041 19       		.uleb128 0x19
+ 931 0042 03       		.uleb128 0x3
+ 932 0043 0E       		.uleb128 0xe
+ 933 0044 3A       		.uleb128 0x3a
+ 934 0045 0B       		.uleb128 0xb
+ 935 0046 3B       		.uleb128 0x3b
+ 936 0047 0B       		.uleb128 0xb
+ 937 0048 27       		.uleb128 0x27
+ 938 0049 19       		.uleb128 0x19
+ 939 004a 11       		.uleb128 0x11
+ 940 004b 01       		.uleb128 0x1
+ 941 004c 12       		.uleb128 0x12
+ 942 004d 06       		.uleb128 0x6
+ 943 004e 40       		.uleb128 0x40
+ 944 004f 18       		.uleb128 0x18
+ 945 0050 9742     		.uleb128 0x2117
+ 946 0052 19       		.uleb128 0x19
+ 947 0053 00       		.byte	0
+ 948 0054 00       		.byte	0
+ 949 0055 07       		.uleb128 0x7
+ 950 0056 2E       		.uleb128 0x2e
+ 951 0057 01       		.byte	0x1
+ 952 0058 3F       		.uleb128 0x3f
+ 953 0059 19       		.uleb128 0x19
+ 954 005a 03       		.uleb128 0x3
+ 955 005b 0E       		.uleb128 0xe
+ 956 005c 3A       		.uleb128 0x3a
+ 957 005d 0B       		.uleb128 0xb
+ 958 005e 3B       		.uleb128 0x3b
+ 959 005f 05       		.uleb128 0x5
+ 960 0060 27       		.uleb128 0x27
+ 961 0061 19       		.uleb128 0x19
+ 962 0062 11       		.uleb128 0x11
+ 963 0063 01       		.uleb128 0x1
+ 964 0064 12       		.uleb128 0x12
+ 965 0065 06       		.uleb128 0x6
+ 966 0066 40       		.uleb128 0x40
+ 967 0067 18       		.uleb128 0x18
+ 968 0068 9742     		.uleb128 0x2117
+ 969 006a 19       		.uleb128 0x19
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 34
 
 
- 1025 0039 49       		.uleb128 0x49
- 1026 003a 13       		.uleb128 0x13
- 1027 003b 00       		.byte	0
- 1028 003c 00       		.byte	0
- 1029 003d 06       		.uleb128 0x6
- 1030 003e 2E       		.uleb128 0x2e
- 1031 003f 00       		.byte	0
- 1032 0040 3F       		.uleb128 0x3f
- 1033 0041 19       		.uleb128 0x19
- 1034 0042 03       		.uleb128 0x3
- 1035 0043 0E       		.uleb128 0xe
- 1036 0044 3A       		.uleb128 0x3a
- 1037 0045 0B       		.uleb128 0xb
- 1038 0046 3B       		.uleb128 0x3b
- 1039 0047 0B       		.uleb128 0xb
- 1040 0048 27       		.uleb128 0x27
- 1041 0049 19       		.uleb128 0x19
- 1042 004a 11       		.uleb128 0x11
- 1043 004b 01       		.uleb128 0x1
- 1044 004c 12       		.uleb128 0x12
- 1045 004d 06       		.uleb128 0x6
- 1046 004e 40       		.uleb128 0x40
- 1047 004f 18       		.uleb128 0x18
- 1048 0050 9742     		.uleb128 0x2117
- 1049 0052 19       		.uleb128 0x19
- 1050 0053 00       		.byte	0
- 1051 0054 00       		.byte	0
- 1052 0055 07       		.uleb128 0x7
- 1053 0056 2E       		.uleb128 0x2e
- 1054 0057 01       		.byte	0x1
- 1055 0058 3F       		.uleb128 0x3f
- 1056 0059 19       		.uleb128 0x19
- 1057 005a 03       		.uleb128 0x3
- 1058 005b 0E       		.uleb128 0xe
- 1059 005c 3A       		.uleb128 0x3a
- 1060 005d 0B       		.uleb128 0xb
- 1061 005e 3B       		.uleb128 0x3b
- 1062 005f 05       		.uleb128 0x5
- 1063 0060 27       		.uleb128 0x27
- 1064 0061 19       		.uleb128 0x19
- 1065 0062 11       		.uleb128 0x11
- 1066 0063 01       		.uleb128 0x1
- 1067 0064 12       		.uleb128 0x12
- 1068 0065 06       		.uleb128 0x6
- 1069 0066 40       		.uleb128 0x40
- 1070 0067 18       		.uleb128 0x18
- 1071 0068 9742     		.uleb128 0x2117
- 1072 006a 19       		.uleb128 0x19
- 1073 006b 01       		.uleb128 0x1
- 1074 006c 13       		.uleb128 0x13
- 1075 006d 00       		.byte	0
- 1076 006e 00       		.byte	0
- 1077 006f 08       		.uleb128 0x8
- 1078 0070 05       		.uleb128 0x5
- 1079 0071 00       		.byte	0
- 1080 0072 03       		.uleb128 0x3
- 1081 0073 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 36
+ 970 006b 01       		.uleb128 0x1
+ 971 006c 13       		.uleb128 0x13
+ 972 006d 00       		.byte	0
+ 973 006e 00       		.byte	0
+ 974 006f 08       		.uleb128 0x8
+ 975 0070 05       		.uleb128 0x5
+ 976 0071 00       		.byte	0
+ 977 0072 03       		.uleb128 0x3
+ 978 0073 0E       		.uleb128 0xe
+ 979 0074 3A       		.uleb128 0x3a
+ 980 0075 0B       		.uleb128 0xb
+ 981 0076 3B       		.uleb128 0x3b
+ 982 0077 05       		.uleb128 0x5
+ 983 0078 49       		.uleb128 0x49
+ 984 0079 13       		.uleb128 0x13
+ 985 007a 02       		.uleb128 0x2
+ 986 007b 18       		.uleb128 0x18
+ 987 007c 00       		.byte	0
+ 988 007d 00       		.byte	0
+ 989 007e 09       		.uleb128 0x9
+ 990 007f 2E       		.uleb128 0x2e
+ 991 0080 00       		.byte	0
+ 992 0081 3F       		.uleb128 0x3f
+ 993 0082 19       		.uleb128 0x19
+ 994 0083 03       		.uleb128 0x3
+ 995 0084 0E       		.uleb128 0xe
+ 996 0085 3A       		.uleb128 0x3a
+ 997 0086 0B       		.uleb128 0xb
+ 998 0087 3B       		.uleb128 0x3b
+ 999 0088 05       		.uleb128 0x5
+ 1000 0089 27       		.uleb128 0x27
+ 1001 008a 19       		.uleb128 0x19
+ 1002 008b 49       		.uleb128 0x49
+ 1003 008c 13       		.uleb128 0x13
+ 1004 008d 11       		.uleb128 0x11
+ 1005 008e 01       		.uleb128 0x1
+ 1006 008f 12       		.uleb128 0x12
+ 1007 0090 06       		.uleb128 0x6
+ 1008 0091 40       		.uleb128 0x40
+ 1009 0092 18       		.uleb128 0x18
+ 1010 0093 9742     		.uleb128 0x2117
+ 1011 0095 19       		.uleb128 0x19
+ 1012 0096 00       		.byte	0
+ 1013 0097 00       		.byte	0
+ 1014 0098 0A       		.uleb128 0xa
+ 1015 0099 898201   		.uleb128 0x4109
+ 1016 009c 00       		.byte	0
+ 1017 009d 11       		.uleb128 0x11
+ 1018 009e 01       		.uleb128 0x1
+ 1019 009f 31       		.uleb128 0x31
+ 1020 00a0 13       		.uleb128 0x13
+ 1021 00a1 00       		.byte	0
+ 1022 00a2 00       		.byte	0
+ 1023 00a3 0B       		.uleb128 0xb
+ 1024 00a4 2E       		.uleb128 0x2e
+ 1025 00a5 01       		.byte	0x1
+ 1026 00a6 3F       		.uleb128 0x3f
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 35
 
 
- 1082 0074 3A       		.uleb128 0x3a
- 1083 0075 0B       		.uleb128 0xb
- 1084 0076 3B       		.uleb128 0x3b
- 1085 0077 05       		.uleb128 0x5
- 1086 0078 49       		.uleb128 0x49
- 1087 0079 13       		.uleb128 0x13
- 1088 007a 02       		.uleb128 0x2
- 1089 007b 18       		.uleb128 0x18
- 1090 007c 00       		.byte	0
- 1091 007d 00       		.byte	0
- 1092 007e 09       		.uleb128 0x9
- 1093 007f 2E       		.uleb128 0x2e
- 1094 0080 00       		.byte	0
- 1095 0081 3F       		.uleb128 0x3f
- 1096 0082 19       		.uleb128 0x19
- 1097 0083 03       		.uleb128 0x3
- 1098 0084 0E       		.uleb128 0xe
- 1099 0085 3A       		.uleb128 0x3a
- 1100 0086 0B       		.uleb128 0xb
- 1101 0087 3B       		.uleb128 0x3b
- 1102 0088 05       		.uleb128 0x5
- 1103 0089 27       		.uleb128 0x27
- 1104 008a 19       		.uleb128 0x19
- 1105 008b 49       		.uleb128 0x49
- 1106 008c 13       		.uleb128 0x13
- 1107 008d 11       		.uleb128 0x11
- 1108 008e 01       		.uleb128 0x1
- 1109 008f 12       		.uleb128 0x12
- 1110 0090 06       		.uleb128 0x6
- 1111 0091 40       		.uleb128 0x40
- 1112 0092 18       		.uleb128 0x18
- 1113 0093 9742     		.uleb128 0x2117
- 1114 0095 19       		.uleb128 0x19
- 1115 0096 00       		.byte	0
- 1116 0097 00       		.byte	0
- 1117 0098 0A       		.uleb128 0xa
- 1118 0099 2E       		.uleb128 0x2e
- 1119 009a 01       		.byte	0x1
- 1120 009b 3F       		.uleb128 0x3f
- 1121 009c 19       		.uleb128 0x19
- 1122 009d 03       		.uleb128 0x3
- 1123 009e 0E       		.uleb128 0xe
- 1124 009f 3A       		.uleb128 0x3a
- 1125 00a0 0B       		.uleb128 0xb
- 1126 00a1 3B       		.uleb128 0x3b
- 1127 00a2 05       		.uleb128 0x5
- 1128 00a3 27       		.uleb128 0x27
- 1129 00a4 19       		.uleb128 0x19
- 1130 00a5 49       		.uleb128 0x49
- 1131 00a6 13       		.uleb128 0x13
- 1132 00a7 11       		.uleb128 0x11
- 1133 00a8 01       		.uleb128 0x1
- 1134 00a9 12       		.uleb128 0x12
- 1135 00aa 06       		.uleb128 0x6
- 1136 00ab 40       		.uleb128 0x40
- 1137 00ac 18       		.uleb128 0x18
- 1138 00ad 9742     		.uleb128 0x2117
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 37
+ 1027 00a7 19       		.uleb128 0x19
+ 1028 00a8 03       		.uleb128 0x3
+ 1029 00a9 0E       		.uleb128 0xe
+ 1030 00aa 3A       		.uleb128 0x3a
+ 1031 00ab 0B       		.uleb128 0xb
+ 1032 00ac 3B       		.uleb128 0x3b
+ 1033 00ad 0B       		.uleb128 0xb
+ 1034 00ae 27       		.uleb128 0x27
+ 1035 00af 19       		.uleb128 0x19
+ 1036 00b0 11       		.uleb128 0x11
+ 1037 00b1 01       		.uleb128 0x1
+ 1038 00b2 12       		.uleb128 0x12
+ 1039 00b3 06       		.uleb128 0x6
+ 1040 00b4 40       		.uleb128 0x40
+ 1041 00b5 18       		.uleb128 0x18
+ 1042 00b6 9742     		.uleb128 0x2117
+ 1043 00b8 19       		.uleb128 0x19
+ 1044 00b9 01       		.uleb128 0x1
+ 1045 00ba 13       		.uleb128 0x13
+ 1046 00bb 00       		.byte	0
+ 1047 00bc 00       		.byte	0
+ 1048 00bd 0C       		.uleb128 0xc
+ 1049 00be 34       		.uleb128 0x34
+ 1050 00bf 00       		.byte	0
+ 1051 00c0 03       		.uleb128 0x3
+ 1052 00c1 0E       		.uleb128 0xe
+ 1053 00c2 3A       		.uleb128 0x3a
+ 1054 00c3 0B       		.uleb128 0xb
+ 1055 00c4 3B       		.uleb128 0x3b
+ 1056 00c5 0B       		.uleb128 0xb
+ 1057 00c6 49       		.uleb128 0x49
+ 1058 00c7 13       		.uleb128 0x13
+ 1059 00c8 02       		.uleb128 0x2
+ 1060 00c9 17       		.uleb128 0x17
+ 1061 00ca 00       		.byte	0
+ 1062 00cb 00       		.byte	0
+ 1063 00cc 0D       		.uleb128 0xd
+ 1064 00cd 898201   		.uleb128 0x4109
+ 1065 00d0 01       		.byte	0x1
+ 1066 00d1 11       		.uleb128 0x11
+ 1067 00d2 01       		.uleb128 0x1
+ 1068 00d3 31       		.uleb128 0x31
+ 1069 00d4 13       		.uleb128 0x13
+ 1070 00d5 01       		.uleb128 0x1
+ 1071 00d6 13       		.uleb128 0x13
+ 1072 00d7 00       		.byte	0
+ 1073 00d8 00       		.byte	0
+ 1074 00d9 0E       		.uleb128 0xe
+ 1075 00da 8A8201   		.uleb128 0x410a
+ 1076 00dd 00       		.byte	0
+ 1077 00de 02       		.uleb128 0x2
+ 1078 00df 18       		.uleb128 0x18
+ 1079 00e0 9142     		.uleb128 0x2111
+ 1080 00e2 18       		.uleb128 0x18
+ 1081 00e3 00       		.byte	0
+ 1082 00e4 00       		.byte	0
+ 1083 00e5 0F       		.uleb128 0xf
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 36
 
 
- 1139 00af 19       		.uleb128 0x19
- 1140 00b0 01       		.uleb128 0x1
- 1141 00b1 13       		.uleb128 0x13
- 1142 00b2 00       		.byte	0
- 1143 00b3 00       		.byte	0
- 1144 00b4 0B       		.uleb128 0xb
- 1145 00b5 34       		.uleb128 0x34
- 1146 00b6 00       		.byte	0
- 1147 00b7 03       		.uleb128 0x3
- 1148 00b8 0E       		.uleb128 0xe
- 1149 00b9 3A       		.uleb128 0x3a
- 1150 00ba 0B       		.uleb128 0xb
- 1151 00bb 3B       		.uleb128 0x3b
- 1152 00bc 05       		.uleb128 0x5
- 1153 00bd 49       		.uleb128 0x49
- 1154 00be 13       		.uleb128 0x13
- 1155 00bf 02       		.uleb128 0x2
- 1156 00c0 18       		.uleb128 0x18
- 1157 00c1 00       		.byte	0
- 1158 00c2 00       		.byte	0
- 1159 00c3 0C       		.uleb128 0xc
- 1160 00c4 898201   		.uleb128 0x4109
- 1161 00c7 00       		.byte	0
- 1162 00c8 11       		.uleb128 0x11
- 1163 00c9 01       		.uleb128 0x1
- 1164 00ca 31       		.uleb128 0x31
- 1165 00cb 13       		.uleb128 0x13
- 1166 00cc 00       		.byte	0
- 1167 00cd 00       		.byte	0
- 1168 00ce 0D       		.uleb128 0xd
- 1169 00cf 2E       		.uleb128 0x2e
- 1170 00d0 01       		.byte	0x1
- 1171 00d1 3F       		.uleb128 0x3f
- 1172 00d2 19       		.uleb128 0x19
- 1173 00d3 03       		.uleb128 0x3
- 1174 00d4 0E       		.uleb128 0xe
- 1175 00d5 3A       		.uleb128 0x3a
- 1176 00d6 0B       		.uleb128 0xb
- 1177 00d7 3B       		.uleb128 0x3b
- 1178 00d8 0B       		.uleb128 0xb
- 1179 00d9 27       		.uleb128 0x27
- 1180 00da 19       		.uleb128 0x19
- 1181 00db 11       		.uleb128 0x11
- 1182 00dc 01       		.uleb128 0x1
- 1183 00dd 12       		.uleb128 0x12
- 1184 00de 06       		.uleb128 0x6
- 1185 00df 40       		.uleb128 0x40
- 1186 00e0 18       		.uleb128 0x18
- 1187 00e1 9742     		.uleb128 0x2117
- 1188 00e3 19       		.uleb128 0x19
- 1189 00e4 01       		.uleb128 0x1
- 1190 00e5 13       		.uleb128 0x13
- 1191 00e6 00       		.byte	0
- 1192 00e7 00       		.byte	0
- 1193 00e8 0E       		.uleb128 0xe
- 1194 00e9 34       		.uleb128 0x34
- 1195 00ea 00       		.byte	0
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 38
+ 1084 00e6 34       		.uleb128 0x34
+ 1085 00e7 00       		.byte	0
+ 1086 00e8 03       		.uleb128 0x3
+ 1087 00e9 0E       		.uleb128 0xe
+ 1088 00ea 3A       		.uleb128 0x3a
+ 1089 00eb 0B       		.uleb128 0xb
+ 1090 00ec 3B       		.uleb128 0x3b
+ 1091 00ed 0B       		.uleb128 0xb
+ 1092 00ee 49       		.uleb128 0x49
+ 1093 00ef 13       		.uleb128 0x13
+ 1094 00f0 3F       		.uleb128 0x3f
+ 1095 00f1 19       		.uleb128 0x19
+ 1096 00f2 02       		.uleb128 0x2
+ 1097 00f3 18       		.uleb128 0x18
+ 1098 00f4 00       		.byte	0
+ 1099 00f5 00       		.byte	0
+ 1100 00f6 10       		.uleb128 0x10
+ 1101 00f7 2E       		.uleb128 0x2e
+ 1102 00f8 00       		.byte	0
+ 1103 00f9 3F       		.uleb128 0x3f
+ 1104 00fa 19       		.uleb128 0x19
+ 1105 00fb 03       		.uleb128 0x3
+ 1106 00fc 0E       		.uleb128 0xe
+ 1107 00fd 3A       		.uleb128 0x3a
+ 1108 00fe 0B       		.uleb128 0xb
+ 1109 00ff 3B       		.uleb128 0x3b
+ 1110 0100 0B       		.uleb128 0xb
+ 1111 0101 27       		.uleb128 0x27
+ 1112 0102 19       		.uleb128 0x19
+ 1113 0103 49       		.uleb128 0x49
+ 1114 0104 13       		.uleb128 0x13
+ 1115 0105 3C       		.uleb128 0x3c
+ 1116 0106 19       		.uleb128 0x19
+ 1117 0107 00       		.byte	0
+ 1118 0108 00       		.byte	0
+ 1119 0109 11       		.uleb128 0x11
+ 1120 010a 2E       		.uleb128 0x2e
+ 1121 010b 01       		.byte	0x1
+ 1122 010c 3F       		.uleb128 0x3f
+ 1123 010d 19       		.uleb128 0x19
+ 1124 010e 03       		.uleb128 0x3
+ 1125 010f 0E       		.uleb128 0xe
+ 1126 0110 3A       		.uleb128 0x3a
+ 1127 0111 0B       		.uleb128 0xb
+ 1128 0112 3B       		.uleb128 0x3b
+ 1129 0113 0B       		.uleb128 0xb
+ 1130 0114 27       		.uleb128 0x27
+ 1131 0115 19       		.uleb128 0x19
+ 1132 0116 3C       		.uleb128 0x3c
+ 1133 0117 19       		.uleb128 0x19
+ 1134 0118 00       		.byte	0
+ 1135 0119 00       		.byte	0
+ 1136 011a 12       		.uleb128 0x12
+ 1137 011b 05       		.uleb128 0x5
+ 1138 011c 00       		.byte	0
+ 1139 011d 49       		.uleb128 0x49
+ 1140 011e 13       		.uleb128 0x13
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 37
 
 
- 1196 00eb 03       		.uleb128 0x3
- 1197 00ec 0E       		.uleb128 0xe
- 1198 00ed 3A       		.uleb128 0x3a
- 1199 00ee 0B       		.uleb128 0xb
- 1200 00ef 3B       		.uleb128 0x3b
- 1201 00f0 0B       		.uleb128 0xb
- 1202 00f1 49       		.uleb128 0x49
- 1203 00f2 13       		.uleb128 0x13
- 1204 00f3 02       		.uleb128 0x2
- 1205 00f4 17       		.uleb128 0x17
- 1206 00f5 00       		.byte	0
- 1207 00f6 00       		.byte	0
- 1208 00f7 0F       		.uleb128 0xf
- 1209 00f8 898201   		.uleb128 0x4109
- 1210 00fb 01       		.byte	0x1
- 1211 00fc 11       		.uleb128 0x11
- 1212 00fd 01       		.uleb128 0x1
- 1213 00fe 31       		.uleb128 0x31
- 1214 00ff 13       		.uleb128 0x13
- 1215 0100 01       		.uleb128 0x1
- 1216 0101 13       		.uleb128 0x13
- 1217 0102 00       		.byte	0
- 1218 0103 00       		.byte	0
- 1219 0104 10       		.uleb128 0x10
- 1220 0105 8A8201   		.uleb128 0x410a
- 1221 0108 00       		.byte	0
- 1222 0109 02       		.uleb128 0x2
- 1223 010a 18       		.uleb128 0x18
- 1224 010b 9142     		.uleb128 0x2111
- 1225 010d 18       		.uleb128 0x18
- 1226 010e 00       		.byte	0
- 1227 010f 00       		.byte	0
- 1228 0110 11       		.uleb128 0x11
- 1229 0111 34       		.uleb128 0x34
- 1230 0112 00       		.byte	0
- 1231 0113 03       		.uleb128 0x3
- 1232 0114 0E       		.uleb128 0xe
- 1233 0115 3A       		.uleb128 0x3a
- 1234 0116 0B       		.uleb128 0xb
- 1235 0117 3B       		.uleb128 0x3b
- 1236 0118 0B       		.uleb128 0xb
- 1237 0119 49       		.uleb128 0x49
- 1238 011a 13       		.uleb128 0x13
- 1239 011b 3F       		.uleb128 0x3f
- 1240 011c 19       		.uleb128 0x19
- 1241 011d 02       		.uleb128 0x2
- 1242 011e 18       		.uleb128 0x18
- 1243 011f 00       		.byte	0
- 1244 0120 00       		.byte	0
- 1245 0121 12       		.uleb128 0x12
- 1246 0122 2E       		.uleb128 0x2e
- 1247 0123 00       		.byte	0
- 1248 0124 3F       		.uleb128 0x3f
- 1249 0125 19       		.uleb128 0x19
- 1250 0126 03       		.uleb128 0x3
- 1251 0127 0E       		.uleb128 0xe
- 1252 0128 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 39
+ 1141 011f 00       		.byte	0
+ 1142 0120 00       		.byte	0
+ 1143 0121 00       		.byte	0
+ 1144              		.section	.debug_loc,"",%progbits
+ 1145              	.Ldebug_loc0:
+ 1146              	.LLST0:
+ 1147 0000 3C000000 		.4byte	.LVL12
+ 1148 0004 47000000 		.4byte	.LVL13-1
+ 1149 0008 0100     		.2byte	0x1
+ 1150 000a 50       		.byte	0x50
+ 1151 000b 00000000 		.4byte	0
+ 1152 000f 00000000 		.4byte	0
+ 1153              		.section	.debug_aranges,"",%progbits
+ 1154 0000 94000000 		.4byte	0x94
+ 1155 0004 0200     		.2byte	0x2
+ 1156 0006 00000000 		.4byte	.Ldebug_info0
+ 1157 000a 04       		.byte	0x4
+ 1158 000b 00       		.byte	0
+ 1159 000c 0000     		.2byte	0
+ 1160 000e 0000     		.2byte	0
+ 1161 0010 00000000 		.4byte	.LFB2
+ 1162 0014 02000000 		.4byte	.LFE2-.LFB2
+ 1163 0018 00000000 		.4byte	.LFB3
+ 1164 001c 02000000 		.4byte	.LFE3-.LFB3
+ 1165 0020 00000000 		.4byte	.LFB4
+ 1166 0024 0C000000 		.4byte	.LFE4-.LFB4
+ 1167 0028 00000000 		.4byte	.LFB5
+ 1168 002c 14000000 		.4byte	.LFE5-.LFB5
+ 1169 0030 00000000 		.4byte	.LFB7
+ 1170 0034 0C000000 		.4byte	.LFE7-.LFB7
+ 1171 0038 00000000 		.4byte	.LFB8
+ 1172 003c 0C000000 		.4byte	.LFE8-.LFB8
+ 1173 0040 00000000 		.4byte	.LFB9
+ 1174 0044 0C000000 		.4byte	.LFE9-.LFB9
+ 1175 0048 00000000 		.4byte	.LFB10
+ 1176 004c 0C000000 		.4byte	.LFE10-.LFB10
+ 1177 0050 00000000 		.4byte	.LFB11
+ 1178 0054 0C000000 		.4byte	.LFE11-.LFB11
+ 1179 0058 00000000 		.4byte	.LFB12
+ 1180 005c 0C000000 		.4byte	.LFE12-.LFB12
+ 1181 0060 00000000 		.4byte	.LFB6
+ 1182 0064 14000000 		.4byte	.LFE6-.LFB6
+ 1183 0068 00000000 		.4byte	.LFB1
+ 1184 006c 58000000 		.4byte	.LFE1-.LFB1
+ 1185 0070 00000000 		.4byte	.LFB0
+ 1186 0074 18000000 		.4byte	.LFE0-.LFB0
+ 1187 0078 00000000 		.4byte	.LFB13
+ 1188 007c 0C000000 		.4byte	.LFE13-.LFB13
+ 1189 0080 00000000 		.4byte	.LFB14
+ 1190 0084 0C000000 		.4byte	.LFE14-.LFB14
+ 1191 0088 00000000 		.4byte	.LFB15
+ 1192 008c 0C000000 		.4byte	.LFE15-.LFB15
+ 1193 0090 00000000 		.4byte	0
+ 1194 0094 00000000 		.4byte	0
+ 1195              		.section	.debug_ranges,"",%progbits
+ 1196              	.Ldebug_ranges0:
+ 1197 0000 00000000 		.4byte	.LFB2
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 38
 
 
- 1253 0129 0B       		.uleb128 0xb
- 1254 012a 3B       		.uleb128 0x3b
- 1255 012b 0B       		.uleb128 0xb
- 1256 012c 27       		.uleb128 0x27
- 1257 012d 19       		.uleb128 0x19
- 1258 012e 49       		.uleb128 0x49
- 1259 012f 13       		.uleb128 0x13
- 1260 0130 3C       		.uleb128 0x3c
- 1261 0131 19       		.uleb128 0x19
- 1262 0132 00       		.byte	0
- 1263 0133 00       		.byte	0
- 1264 0134 13       		.uleb128 0x13
- 1265 0135 2E       		.uleb128 0x2e
- 1266 0136 01       		.byte	0x1
- 1267 0137 3F       		.uleb128 0x3f
- 1268 0138 19       		.uleb128 0x19
- 1269 0139 03       		.uleb128 0x3
- 1270 013a 0E       		.uleb128 0xe
- 1271 013b 3A       		.uleb128 0x3a
- 1272 013c 0B       		.uleb128 0xb
- 1273 013d 3B       		.uleb128 0x3b
- 1274 013e 0B       		.uleb128 0xb
- 1275 013f 27       		.uleb128 0x27
- 1276 0140 19       		.uleb128 0x19
- 1277 0141 3C       		.uleb128 0x3c
- 1278 0142 19       		.uleb128 0x19
- 1279 0143 00       		.byte	0
- 1280 0144 00       		.byte	0
- 1281 0145 14       		.uleb128 0x14
- 1282 0146 05       		.uleb128 0x5
- 1283 0147 00       		.byte	0
- 1284 0148 49       		.uleb128 0x49
- 1285 0149 13       		.uleb128 0x13
- 1286 014a 00       		.byte	0
- 1287 014b 00       		.byte	0
- 1288 014c 00       		.byte	0
- 1289              		.section	.debug_loc,"",%progbits
- 1290              	.Ldebug_loc0:
- 1291              	.LLST0:
- 1292 0000 0A000000 		.4byte	.LVL9
- 1293 0004 0E000000 		.4byte	.LVL10
- 1294 0008 0100     		.2byte	0x1
- 1295 000a 53       		.byte	0x53
- 1296 000b 00000000 		.4byte	0
- 1297 000f 00000000 		.4byte	0
- 1298              	.LLST1:
- 1299 0013 3C000000 		.4byte	.LVL16
- 1300 0017 47000000 		.4byte	.LVL17-1
- 1301 001b 0100     		.2byte	0x1
- 1302 001d 50       		.byte	0x50
- 1303 001e 00000000 		.4byte	0
- 1304 0022 00000000 		.4byte	0
- 1305              		.section	.debug_aranges,"",%progbits
- 1306 0000 A4000000 		.4byte	0xa4
- 1307 0004 0200     		.2byte	0x2
- 1308 0006 00000000 		.4byte	.Ldebug_info0
- 1309 000a 04       		.byte	0x4
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 40
+ 1198 0004 02000000 		.4byte	.LFE2
+ 1199 0008 00000000 		.4byte	.LFB3
+ 1200 000c 02000000 		.4byte	.LFE3
+ 1201 0010 00000000 		.4byte	.LFB4
+ 1202 0014 0C000000 		.4byte	.LFE4
+ 1203 0018 00000000 		.4byte	.LFB5
+ 1204 001c 14000000 		.4byte	.LFE5
+ 1205 0020 00000000 		.4byte	.LFB7
+ 1206 0024 0C000000 		.4byte	.LFE7
+ 1207 0028 00000000 		.4byte	.LFB8
+ 1208 002c 0C000000 		.4byte	.LFE8
+ 1209 0030 00000000 		.4byte	.LFB9
+ 1210 0034 0C000000 		.4byte	.LFE9
+ 1211 0038 00000000 		.4byte	.LFB10
+ 1212 003c 0C000000 		.4byte	.LFE10
+ 1213 0040 00000000 		.4byte	.LFB11
+ 1214 0044 0C000000 		.4byte	.LFE11
+ 1215 0048 00000000 		.4byte	.LFB12
+ 1216 004c 0C000000 		.4byte	.LFE12
+ 1217 0050 00000000 		.4byte	.LFB6
+ 1218 0054 14000000 		.4byte	.LFE6
+ 1219 0058 00000000 		.4byte	.LFB1
+ 1220 005c 58000000 		.4byte	.LFE1
+ 1221 0060 00000000 		.4byte	.LFB0
+ 1222 0064 18000000 		.4byte	.LFE0
+ 1223 0068 00000000 		.4byte	.LFB13
+ 1224 006c 0C000000 		.4byte	.LFE13
+ 1225 0070 00000000 		.4byte	.LFB14
+ 1226 0074 0C000000 		.4byte	.LFE14
+ 1227 0078 00000000 		.4byte	.LFB15
+ 1228 007c 0C000000 		.4byte	.LFE15
+ 1229 0080 00000000 		.4byte	0
+ 1230 0084 00000000 		.4byte	0
+ 1231              		.section	.debug_line,"",%progbits
+ 1232              	.Ldebug_line0:
+ 1233 0000 7F010000 		.section	.debug_str,"MS",%progbits,1
+ 1233      02005000 
+ 1233      00000201 
+ 1233      FB0E0D00 
+ 1233      01010101 
+ 1234              	.LASF15:
+ 1235 0000 72656731 		.ascii	"reg16\000"
+ 1235      3600
+ 1236              	.LASF23:
+ 1237 0006 55535F34 		.ascii	"US_40kHz_WriteCompare1\000"
+ 1237      306B487A 
+ 1237      5F577269 
+ 1237      7465436F 
+ 1237      6D706172 
+ 1238              	.LASF38:
+ 1239 001d 47656E65 		.ascii	"Generated_Source\\PSoC5\\US_40kHz.c\000"
+ 1239      72617465 
+ 1239      645F536F 
+ 1239      75726365 
+ 1239      5C50536F 
+ 1240              	.LASF19:
+ 1241 003f 55535F34 		.ascii	"US_40kHz_WriteCounter\000"
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 39
 
 
- 1310 000b 00       		.byte	0
- 1311 000c 0000     		.2byte	0
- 1312 000e 0000     		.2byte	0
- 1313 0010 00000000 		.4byte	.LFB2
- 1314 0014 10000000 		.4byte	.LFE2-.LFB2
- 1315 0018 00000000 		.4byte	.LFB3
- 1316 001c 10000000 		.4byte	.LFE3-.LFB3
- 1317 0020 00000000 		.4byte	.LFB4
- 1318 0024 0C000000 		.4byte	.LFE4-.LFB4
- 1319 0028 00000000 		.4byte	.LFB5
- 1320 002c 14000000 		.4byte	.LFE5-.LFB5
- 1321 0030 00000000 		.4byte	.LFB7
- 1322 0034 0C000000 		.4byte	.LFE7-.LFB7
- 1323 0038 00000000 		.4byte	.LFB8
- 1324 003c 0C000000 		.4byte	.LFE8-.LFB8
- 1325 0040 00000000 		.4byte	.LFB9
- 1326 0044 0C000000 		.4byte	.LFE9-.LFB9
- 1327 0048 00000000 		.4byte	.LFB10
- 1328 004c 0C000000 		.4byte	.LFE10-.LFB10
- 1329 0050 00000000 		.4byte	.LFB11
- 1330 0054 0C000000 		.4byte	.LFE11-.LFB11
- 1331 0058 00000000 		.4byte	.LFB12
- 1332 005c 0C000000 		.4byte	.LFE12-.LFB12
- 1333 0060 00000000 		.4byte	.LFB13
- 1334 0064 0C000000 		.4byte	.LFE13-.LFB13
- 1335 0068 00000000 		.4byte	.LFB14
- 1336 006c 0C000000 		.4byte	.LFE14-.LFB14
- 1337 0070 00000000 		.4byte	.LFB6
- 1338 0074 14000000 		.4byte	.LFE6-.LFB6
- 1339 0078 00000000 		.4byte	.LFB1
- 1340 007c 58000000 		.4byte	.LFE1-.LFB1
- 1341 0080 00000000 		.4byte	.LFB0
- 1342 0084 1C000000 		.4byte	.LFE0-.LFB0
- 1343 0088 00000000 		.4byte	.LFB15
- 1344 008c 0C000000 		.4byte	.LFE15-.LFB15
- 1345 0090 00000000 		.4byte	.LFB16
- 1346 0094 0C000000 		.4byte	.LFE16-.LFB16
- 1347 0098 00000000 		.4byte	.LFB17
- 1348 009c 0C000000 		.4byte	.LFE17-.LFB17
- 1349 00a0 00000000 		.4byte	0
- 1350 00a4 00000000 		.4byte	0
- 1351              		.section	.debug_ranges,"",%progbits
- 1352              	.Ldebug_ranges0:
- 1353 0000 00000000 		.4byte	.LFB2
- 1354 0004 10000000 		.4byte	.LFE2
- 1355 0008 00000000 		.4byte	.LFB3
- 1356 000c 10000000 		.4byte	.LFE3
- 1357 0010 00000000 		.4byte	.LFB4
- 1358 0014 0C000000 		.4byte	.LFE4
- 1359 0018 00000000 		.4byte	.LFB5
- 1360 001c 14000000 		.4byte	.LFE5
- 1361 0020 00000000 		.4byte	.LFB7
- 1362 0024 0C000000 		.4byte	.LFE7
- 1363 0028 00000000 		.4byte	.LFB8
- 1364 002c 0C000000 		.4byte	.LFE8
- 1365 0030 00000000 		.4byte	.LFB9
- 1366 0034 0C000000 		.4byte	.LFE9
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 41
+ 1241      306B487A 
+ 1241      5F577269 
+ 1241      7465436F 
+ 1241      756E7465 
+ 1242              	.LASF41:
+ 1243 0055 55535F34 		.ascii	"US_40kHz_initVar\000"
+ 1243      306B487A 
+ 1243      5F696E69 
+ 1243      74566172 
+ 1243      00
+ 1244              	.LASF28:
+ 1245 0066 55535F34 		.ascii	"US_40kHz_ReadCounter\000"
+ 1245      306B487A 
+ 1245      5F526561 
+ 1245      64436F75 
+ 1245      6E746572 
+ 1246              	.LASF22:
+ 1247 007b 70657269 		.ascii	"period\000"
+ 1247      6F6400
+ 1248              	.LASF35:
+ 1249 0082 55535F34 		.ascii	"US_40kHz_ReadCompare2\000"
+ 1249      306B487A 
+ 1249      5F526561 
+ 1249      64436F6D 
+ 1249      70617265 
+ 1250              	.LASF3:
+ 1251 0098 73686F72 		.ascii	"short unsigned int\000"
+ 1251      7420756E 
+ 1251      7369676E 
+ 1251      65642069 
+ 1251      6E7400
+ 1252              	.LASF26:
+ 1253 00ab 55535F34 		.ascii	"US_40kHz_SetInterruptMode\000"
+ 1253      306B487A 
+ 1253      5F536574 
+ 1253      496E7465 
+ 1253      72727570 
+ 1254              	.LASF25:
+ 1255 00c5 55535F34 		.ascii	"US_40kHz_WriteCompare2\000"
+ 1255      306B487A 
+ 1255      5F577269 
+ 1255      7465436F 
+ 1255      6D706172 
+ 1256              	.LASF32:
+ 1257 00dc 55535F34 		.ascii	"US_40kHz_Init\000"
+ 1257      306B487A 
+ 1257      5F496E69 
+ 1257      7400
+ 1258              	.LASF33:
+ 1259 00ea 55535F34 		.ascii	"US_40kHz_Start\000"
+ 1259      306B487A 
+ 1259      5F537461 
+ 1259      727400
+ 1260              	.LASF18:
+ 1261 00f9 55535F34 		.ascii	"US_40kHz_Stop\000"
+ 1261      306B487A 
+ 1261      5F53746F 
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 40
 
 
- 1367 0038 00000000 		.4byte	.LFB10
- 1368 003c 0C000000 		.4byte	.LFE10
- 1369 0040 00000000 		.4byte	.LFB11
- 1370 0044 0C000000 		.4byte	.LFE11
- 1371 0048 00000000 		.4byte	.LFB12
- 1372 004c 0C000000 		.4byte	.LFE12
- 1373 0050 00000000 		.4byte	.LFB13
- 1374 0054 0C000000 		.4byte	.LFE13
- 1375 0058 00000000 		.4byte	.LFB14
- 1376 005c 0C000000 		.4byte	.LFE14
- 1377 0060 00000000 		.4byte	.LFB6
- 1378 0064 14000000 		.4byte	.LFE6
- 1379 0068 00000000 		.4byte	.LFB1
- 1380 006c 58000000 		.4byte	.LFE1
- 1381 0070 00000000 		.4byte	.LFB0
- 1382 0074 1C000000 		.4byte	.LFE0
- 1383 0078 00000000 		.4byte	.LFB15
- 1384 007c 0C000000 		.4byte	.LFE15
- 1385 0080 00000000 		.4byte	.LFB16
- 1386 0084 0C000000 		.4byte	.LFE16
- 1387 0088 00000000 		.4byte	.LFB17
- 1388 008c 0C000000 		.4byte	.LFE17
- 1389 0090 00000000 		.4byte	0
- 1390 0094 00000000 		.4byte	0
- 1391              		.section	.debug_line,"",%progbits
- 1392              	.Ldebug_line0:
- 1393 0000 A8010000 		.section	.debug_str,"MS",%progbits,1
- 1393      02005000 
- 1393      00000201 
- 1393      FB0E0D00 
- 1393      01010101 
- 1394              	.LASF21:
- 1395 0000 55535F34 		.ascii	"US_40kHz_WriteCompare1\000"
- 1395      306B487A 
- 1395      5F577269 
- 1395      7465436F 
- 1395      6D706172 
- 1396              	.LASF41:
- 1397 0017 47656E65 		.ascii	"Generated_Source\\PSoC5\\US_40kHz.c\000"
- 1397      72617465 
- 1397      645F536F 
- 1397      75726365 
- 1397      5C50536F 
- 1398              	.LASF17:
- 1399 0039 55535F34 		.ascii	"US_40kHz_WriteCounter\000"
- 1399      306B487A 
- 1399      5F577269 
- 1399      7465436F 
- 1399      756E7465 
- 1400              	.LASF33:
- 1401 004f 72657375 		.ascii	"result\000"
- 1401      6C7400
- 1402              	.LASF44:
- 1403 0056 55535F34 		.ascii	"US_40kHz_initVar\000"
- 1403      306B487A 
- 1403      5F696E69 
- 1403      74566172 
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 42
+ 1261      7000
+ 1262              	.LASF11:
+ 1263 0107 666C6F61 		.ascii	"float\000"
+ 1263      7400
+ 1264              	.LASF21:
+ 1265 010d 636F756E 		.ascii	"counter\000"
+ 1265      74657200 
+ 1266              	.LASF7:
+ 1267 0115 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1267      206C6F6E 
+ 1267      6720756E 
+ 1267      7369676E 
+ 1267      65642069 
+ 1268              	.LASF1:
+ 1269 012c 756E7369 		.ascii	"unsigned char\000"
+ 1269      676E6564 
+ 1269      20636861 
+ 1269      7200
+ 1270              	.LASF40:
+ 1271 013a 55535F34 		.ascii	"US_40kHz_interruptState\000"
+ 1271      306B487A 
+ 1271      5F696E74 
+ 1271      65727275 
+ 1271      70745374 
+ 1272              	.LASF17:
+ 1273 0152 55535F34 		.ascii	"US_40kHz_Enable\000"
+ 1273      306B487A 
+ 1273      5F456E61 
+ 1273      626C6500 
+ 1274              	.LASF5:
+ 1275 0162 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1275      20756E73 
+ 1275      69676E65 
+ 1275      6420696E 
+ 1275      7400
+ 1276              	.LASF36:
+ 1277 0174 55535F34 		.ascii	"US_40kHz_ReadPeriod\000"
+ 1277      306B487A 
+ 1277      5F526561 
+ 1277      64506572 
+ 1277      696F6400 
+ 1278              	.LASF9:
+ 1279 0188 75696E74 		.ascii	"uint8\000"
+ 1279      3800
+ 1280              	.LASF29:
+ 1281 018e 55535F34 		.ascii	"US_40kHz_ReadStatusRegister\000"
+ 1281      306B487A 
+ 1281      5F526561 
+ 1281      64537461 
+ 1281      74757352 
+ 1282              	.LASF20:
+ 1283 01aa 55535F34 		.ascii	"US_40kHz_WritePeriod\000"
+ 1283      306B487A 
+ 1283      5F577269 
+ 1283      74655065 
+ 1283      72696F64 
+ 1284              	.LASF12:
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 41
 
 
- 1403      00
- 1404              	.LASF26:
- 1405 0067 55535F34 		.ascii	"US_40kHz_ReadCounter\000"
- 1405      306B487A 
- 1405      5F526561 
- 1405      64436F75 
- 1405      6E746572 
- 1406              	.LASF20:
- 1407 007c 70657269 		.ascii	"period\000"
- 1407      6F6400
- 1408              	.LASF38:
- 1409 0083 55535F34 		.ascii	"US_40kHz_ReadCompare2\000"
- 1409      306B487A 
- 1409      5F526561 
- 1409      64436F6D 
- 1409      70617265 
- 1410              	.LASF3:
- 1411 0099 73686F72 		.ascii	"short unsigned int\000"
- 1411      7420756E 
- 1411      7369676E 
- 1411      65642069 
- 1411      6E7400
- 1412              	.LASF24:
- 1413 00ac 55535F34 		.ascii	"US_40kHz_SetInterruptMode\000"
- 1413      306B487A 
- 1413      5F536574 
- 1413      496E7465 
- 1413      72727570 
- 1414              	.LASF23:
- 1415 00c6 55535F34 		.ascii	"US_40kHz_WriteCompare2\000"
- 1415      306B487A 
- 1415      5F577269 
- 1415      7465436F 
- 1415      6D706172 
- 1416              	.LASF32:
- 1417 00dd 55535F34 		.ascii	"US_40kHz_Init\000"
- 1417      306B487A 
- 1417      5F496E69 
- 1417      7400
- 1418              	.LASF36:
- 1419 00eb 55535F34 		.ascii	"US_40kHz_Start\000"
- 1419      306B487A 
- 1419      5F537461 
- 1419      727400
- 1420              	.LASF16:
- 1421 00fa 55535F34 		.ascii	"US_40kHz_Stop\000"
- 1421      306B487A 
- 1421      5F53746F 
- 1421      7000
- 1422              	.LASF9:
- 1423 0108 666C6F61 		.ascii	"float\000"
- 1423      7400
- 1424              	.LASF19:
- 1425 010e 636F756E 		.ascii	"counter\000"
- 1425      74657200 
- 1426              	.LASF7:
- 1427 0116 6C6F6E67 		.ascii	"long long unsigned int\000"
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 43
+ 1285 01bf 646F7562 		.ascii	"double\000"
+ 1285      6C6500
+ 1286              	.LASF10:
+ 1287 01c6 75696E74 		.ascii	"uint16\000"
+ 1287      313600
+ 1288              	.LASF37:
+ 1289 01cd 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1289      4320342E 
+ 1289      392E3320 
+ 1289      32303135 
+ 1289      30333033 
+ 1290 0200 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1290      20726576 
+ 1290      6973696F 
+ 1290      6E203232 
+ 1290      31323230 
+ 1291 0233 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1291      66756E63 
+ 1291      74696F6E 
+ 1291      2D736563 
+ 1291      74696F6E 
+ 1292              	.LASF42:
+ 1293 025b 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 1293      74657243 
+ 1293      72697469 
+ 1293      63616C53 
+ 1293      65637469 
+ 1294              	.LASF8:
+ 1295 0272 756E7369 		.ascii	"unsigned int\000"
+ 1295      676E6564 
+ 1295      20696E74 
+ 1295      00
+ 1296              	.LASF43:
+ 1297 027f 43794578 		.ascii	"CyExitCriticalSection\000"
+ 1297      69744372 
+ 1297      69746963 
+ 1297      616C5365 
+ 1297      6374696F 
+ 1298              	.LASF34:
+ 1299 0295 55535F34 		.ascii	"US_40kHz_ReadCompare1\000"
+ 1299      306B487A 
+ 1299      5F526561 
+ 1299      64436F6D 
+ 1299      70617265 
+ 1300              	.LASF31:
+ 1301 02ab 55535F34 		.ascii	"US_40kHz_ClearFIFO\000"
+ 1301      306B487A 
+ 1301      5F436C65 
+ 1301      61724649 
+ 1301      464F00
+ 1302              	.LASF39:
+ 1303 02be 433A5C55 		.ascii	"C:\\Users\\Julien\\Documents\\INSA\\5A\\BE_systemes"
+ 1303      73657273 
+ 1303      5C4A756C 
+ 1303      69656E5C 
+ 1303      446F6375 
+ 1304 02eb 5F656D62 		.ascii	"_embarques\\BE_systemes_embarques\\capteur_us.cydsn"
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc9MfkKd.s 			page 42
 
 
- 1427      206C6F6E 
- 1427      6720756E 
- 1427      7369676E 
- 1427      65642069 
- 1428              	.LASF1:
- 1429 012d 756E7369 		.ascii	"unsigned char\000"
- 1429      676E6564 
- 1429      20636861 
- 1429      7200
- 1430              	.LASF35:
- 1431 013b 55535F34 		.ascii	"US_40kHz_interruptState\000"
- 1431      306B487A 
- 1431      5F696E74 
- 1431      65727275 
- 1431      70745374 
- 1432              	.LASF15:
- 1433 0153 55535F34 		.ascii	"US_40kHz_Enable\000"
- 1433      306B487A 
- 1433      5F456E61 
- 1433      626C6500 
- 1434              	.LASF43:
- 1435 0163 55535F34 		.ascii	"US_40kHz_ReadControlRegister\000"
- 1435      306B487A 
- 1435      5F526561 
- 1435      64436F6E 
- 1435      74726F6C 
- 1436              	.LASF5:
- 1437 0180 6C6F6E67 		.ascii	"long unsigned int\000"
- 1437      20756E73 
- 1437      69676E65 
- 1437      6420696E 
- 1437      7400
- 1438              	.LASF39:
- 1439 0192 55535F34 		.ascii	"US_40kHz_ReadPeriod\000"
- 1439      306B487A 
- 1439      5F526561 
- 1439      64506572 
- 1439      696F6400 
- 1440              	.LASF12:
- 1441 01a6 75696E74 		.ascii	"uint8\000"
- 1441      3800
- 1442              	.LASF29:
- 1443 01ac 636F6E74 		.ascii	"control\000"
- 1443      726F6C00 
- 1444              	.LASF27:
- 1445 01b4 55535F34 		.ascii	"US_40kHz_ReadStatusRegister\000"
- 1445      306B487A 
- 1445      5F526561 
- 1445      64537461 
- 1445      74757352 
- 1446              	.LASF18:
- 1447 01d0 55535F34 		.ascii	"US_40kHz_WritePeriod\000"
- 1447      306B487A 
- 1447      5F577269 
- 1447      74655065 
- 1447      72696F64 
- 1448              	.LASF28:
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 44
-
-
- 1449 01e5 55535F34 		.ascii	"US_40kHz_WriteControlRegister\000"
- 1449      306B487A 
- 1449      5F577269 
- 1449      7465436F 
- 1449      6E74726F 
- 1450              	.LASF10:
- 1451 0203 646F7562 		.ascii	"double\000"
- 1451      6C6500
- 1452              	.LASF40:
- 1453 020a 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 1453      4320342E 
- 1453      392E3320 
- 1453      32303135 
- 1453      30333033 
- 1454 023d 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 1454      20726576 
- 1454      6973696F 
- 1454      6E203232 
- 1454      31323230 
- 1455 0270 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1455      66756E63 
- 1455      74696F6E 
- 1455      2D736563 
- 1455      74696F6E 
- 1456              	.LASF45:
- 1457 0298 4379456E 		.ascii	"CyEnterCriticalSection\000"
- 1457      74657243 
- 1457      72697469 
- 1457      63616C53 
- 1457      65637469 
- 1458              	.LASF8:
- 1459 02af 756E7369 		.ascii	"unsigned int\000"
- 1459      676E6564 
- 1459      20696E74 
- 1459      00
- 1460              	.LASF46:
- 1461 02bc 43794578 		.ascii	"CyExitCriticalSection\000"
- 1461      69744372 
- 1461      69746963 
- 1461      616C5365 
- 1461      6374696F 
- 1462              	.LASF37:
- 1463 02d2 55535F34 		.ascii	"US_40kHz_ReadCompare1\000"
- 1463      306B487A 
- 1463      5F526561 
- 1463      64436F6D 
- 1463      70617265 
- 1464              	.LASF31:
- 1465 02e8 55535F34 		.ascii	"US_40kHz_ClearFIFO\000"
- 1465      306B487A 
- 1465      5F436C65 
- 1465      61724649 
- 1465      464F00
- 1466              	.LASF42:
- 1467 02fb 433A5C55 		.ascii	"C:\\Users\\Julien\\Documents\\INSA\\5A\\BE_systemes"
- 1467      73657273 
- 1467      5C4A756C 
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccPRCnAe.s 			page 45
-
-
- 1467      69656E5C 
- 1467      446F6375 
- 1468 0328 5F656D62 		.ascii	"_embarques\\BE_systemes_embarques\\capteur_us.cydsn"
- 1468      61727175 
- 1468      65735C42 
- 1468      455F7379 
- 1468      7374656D 
- 1469 0359 00       		.ascii	"\000"
- 1470              	.LASF13:
- 1471 035a 72656738 		.ascii	"reg8\000"
- 1471      00
- 1472              	.LASF14:
- 1473 035f 73697A65 		.ascii	"sizetype\000"
- 1473      74797065 
- 1473      00
- 1474              	.LASF6:
- 1475 0368 6C6F6E67 		.ascii	"long long int\000"
- 1475      206C6F6E 
- 1475      6720696E 
- 1475      7400
- 1476              	.LASF25:
- 1477 0376 696E7465 		.ascii	"interruptMode\000"
- 1477      72727570 
- 1477      744D6F64 
- 1477      6500
- 1478              	.LASF2:
- 1479 0384 73686F72 		.ascii	"short int\000"
- 1479      7420696E 
- 1479      7400
- 1480              	.LASF34:
- 1481 038e 6374726C 		.ascii	"ctrl\000"
- 1481      00
- 1482              	.LASF4:
- 1483 0393 6C6F6E67 		.ascii	"long int\000"
- 1483      20696E74 
- 1483      00
- 1484              	.LASF11:
- 1485 039c 63686172 		.ascii	"char\000"
- 1485      00
- 1486              	.LASF0:
- 1487 03a1 7369676E 		.ascii	"signed char\000"
- 1487      65642063 
- 1487      68617200 
- 1488              	.LASF22:
- 1489 03ad 636F6D70 		.ascii	"compare\000"
- 1489      61726500 
- 1490              	.LASF30:
- 1491 03b5 55535F34 		.ascii	"US_40kHz_ReadCapture\000"
- 1491      306B487A 
- 1491      5F526561 
- 1491      64436170 
- 1491      74757265 
- 1492              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 1304      61727175 
+ 1304      65735C42 
+ 1304      455F7379 
+ 1304      7374656D 
+ 1305 031c 00       		.ascii	"\000"
+ 1306              	.LASF14:
+ 1307 031d 72656738 		.ascii	"reg8\000"
+ 1307      00
+ 1308              	.LASF16:
+ 1309 0322 73697A65 		.ascii	"sizetype\000"
+ 1309      74797065 
+ 1309      00
+ 1310              	.LASF6:
+ 1311 032b 6C6F6E67 		.ascii	"long long int\000"
+ 1311      206C6F6E 
+ 1311      6720696E 
+ 1311      7400
+ 1312              	.LASF27:
+ 1313 0339 696E7465 		.ascii	"interruptMode\000"
+ 1313      72727570 
+ 1313      744D6F64 
+ 1313      6500
+ 1314              	.LASF2:
+ 1315 0347 73686F72 		.ascii	"short int\000"
+ 1315      7420696E 
+ 1315      7400
+ 1316              	.LASF4:
+ 1317 0351 6C6F6E67 		.ascii	"long int\000"
+ 1317      20696E74 
+ 1317      00
+ 1318              	.LASF13:
+ 1319 035a 63686172 		.ascii	"char\000"
+ 1319      00
+ 1320              	.LASF0:
+ 1321 035f 7369676E 		.ascii	"signed char\000"
+ 1321      65642063 
+ 1321      68617200 
+ 1322              	.LASF24:
+ 1323 036b 636F6D70 		.ascii	"compare\000"
+ 1323      61726500 
+ 1324              	.LASF30:
+ 1325 0373 55535F34 		.ascii	"US_40kHz_ReadCapture\000"
+ 1325      306B487A 
+ 1325      5F526561 
+ 1325      64436170 
+ 1325      74757265 
+ 1326              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

@@ -6,7 +6,7 @@
 
 #Build Date:         Apr 29 2016 09:00:55
 
-#File Generated:     Nov 22 2016 17:01:27
+#File Generated:     Nov 24 2016 12:17:42
 
 #Purpose:            
 
@@ -44,17 +44,17 @@ Phase 2
 Phase 3
 
 Design Statistics after Packing
-    Number of Combinational MCs 	:	4
-    Number of Sequential MCs    	:	17
-    Number of DPs               	:	4
-    Number of Controls          	:	2
-    Number of Status            	:	2
+    Number of Combinational MCs 	:	7
+    Number of Sequential MCs    	:	19
+    Number of DPs               	:	6
+    Number of Controls          	:	3
+    Number of Status            	:	3
     Number of SyncCells         	:	0
     Number of count7cells       	:	0
 
 Device Utilization Summary after Packing
-    Macrocells                  :	21/192
-    UDBS                        :	5/24
+    Macrocells                  :	26/192
+    UDBS                        :	6/24
     IOs                         :	10/72
 
 
@@ -80,8 +80,8 @@ analysis after routing.
                      Clock Summary 
 ======================================================================
 Number of clocks: 6
-Clock: Clock_1              | Frequency:  85.3 MHz | Target:  12.0 MHz
-Clock: CyBUS_CLK            | Frequency:  39.9 MHz | Target:  24.0 MHz
+Clock: Clock_1              | Frequency:  59.3 MHz | Target:  12.0 MHz
+Clock: CyBUS_CLK            | Frequency:  40.0 MHz | Target:  24.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   3.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
@@ -98,8 +98,8 @@ Phase 7
                      Clock Summary 
 ======================================================================
 Number of clocks: 6
-Clock: Clock_1              | Frequency:  72.5 MHz | Target:  12.0 MHz
-Clock: CyBUS_CLK            | Frequency:  40.7 MHz | Target:  24.0 MHz
+Clock: Clock_1              | Frequency:  54.1 MHz | Target:  12.0 MHz
+Clock: CyBUS_CLK            | Frequency:  40.0 MHz | Target:  24.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   3.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
@@ -108,20 +108,20 @@ Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 0.1 (sec)
+D2088: Phase 7, elapsed time : 0.2 (sec)
 
 Final Design Statistics
-    Number of Combinational MCs 	:	4
-    Number of Sequential MCs    	:	17
-    Number of DPs               	:	4
-    Number of Controls          	:	2
-    Number of Status            	:	2
+    Number of Combinational MCs 	:	7
+    Number of Sequential MCs    	:	19
+    Number of DPs               	:	6
+    Number of Controls          	:	3
+    Number of Status            	:	3
     Number of SyncCells         	:	0
     Number of count7cells       	:	0
     Number of IOs       	:	10
 
 Device Utilization Summary
-    Macrocells                  :	21/192
+    Macrocells                  :	26/192
     IOs                         :	10/72
 
 
@@ -139,8 +139,8 @@ analysis after routing.
                      Clock Summary 
 ======================================================================
 Number of clocks: 6
-Clock: Clock_1              | Frequency:  84.8 MHz | Target:  13.2 MHz
-Clock: CyBUS_CLK            | Frequency:  40.7 MHz | Target:  26.3 MHz
+Clock: Clock_1              | Frequency:  49.8 MHz | Target:  13.2 MHz
+Clock: CyBUS_CLK            | Frequency:  39.9 MHz | Target:  26.3 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   3.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
@@ -155,5 +155,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 0.8 sec.
+I2076: Total run-time: 1.1 sec.
 

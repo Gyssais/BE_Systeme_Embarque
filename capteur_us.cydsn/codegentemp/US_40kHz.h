@@ -28,7 +28,7 @@ extern uint8 US_40kHz_initVar;
 /***************************************
 * Conditional Compilation Parameters
 ***************************************/
-#define US_40kHz_Resolution                     (8u)
+#define US_40kHz_Resolution                     (16u)
 #define US_40kHz_UsingFixedFunction             (0u)
 #define US_40kHz_DeadBandMode                   (0u)
 #define US_40kHz_KillModeMinTime                (0u)
@@ -45,14 +45,14 @@ extern uint8 US_40kHz_initVar;
 #endif /* !defined(US_40kHz_PWMUDB_genblk8_stsreg__REMOVED) */
 
 #if !defined(US_40kHz_PWMUDB_genblk1_ctrlreg__REMOVED)
-    #define US_40kHz_UseControl                 (1u)
+    #define US_40kHz_UseControl                 (0u)
 #else
     #define US_40kHz_UseControl                 (0u)
 #endif /* !defined(US_40kHz_PWMUDB_genblk1_ctrlreg__REMOVED) */
 
 #define US_40kHz_UseOneCompareMode              (0u)
 #define US_40kHz_MinimumKillTime                (1u)
-#define US_40kHz_EnableMode                     (0u)
+#define US_40kHz_EnableMode                     (1u)
 
 #define US_40kHz_CompareMode1SW                 (0u)
 #define US_40kHz_CompareMode2SW                 (0u)
@@ -110,9 +110,9 @@ typedef struct
     uint8 PWMEnableState;
 
     #if(!US_40kHz_UsingFixedFunction)
-        uint8 PWMUdb;               /* PWM Current Counter value  */
+        uint16 PWMUdb;               /* PWM Current Counter value  */
         #if(!US_40kHz_PWMModeIsCenterAligned)
-            uint8 PWMPeriod;
+            uint16 PWMPeriod;
         #endif /* (!US_40kHz_PWMModeIsCenterAligned) */
         #if (US_40kHz_UseStatus)
             uint8 InterruptMaskValue;   /* PWM Current Interrupt Mask */
@@ -176,32 +176,32 @@ void    US_40kHz_Stop(void) ;
 #endif /* (US_40kHz_UseOneCompareMode) */
 
 #if (!US_40kHz_UsingFixedFunction)
-    uint8   US_40kHz_ReadCounter(void) ;
-    uint8 US_40kHz_ReadCapture(void) ;
+    uint16   US_40kHz_ReadCounter(void) ;
+    uint16 US_40kHz_ReadCapture(void) ;
 
     #if (US_40kHz_UseStatus)
             void US_40kHz_ClearFIFO(void) ;
     #endif /* (US_40kHz_UseStatus) */
 
-    void    US_40kHz_WriteCounter(uint8 counter)
+    void    US_40kHz_WriteCounter(uint16 counter)
             ;
 #endif /* (!US_40kHz_UsingFixedFunction) */
 
-void    US_40kHz_WritePeriod(uint8 period)
+void    US_40kHz_WritePeriod(uint16 period)
         ;
-uint8 US_40kHz_ReadPeriod(void) ;
+uint16 US_40kHz_ReadPeriod(void) ;
 
 #if (US_40kHz_UseOneCompareMode)
-    void    US_40kHz_WriteCompare(uint8 compare)
+    void    US_40kHz_WriteCompare(uint16 compare)
             ;
-    uint8 US_40kHz_ReadCompare(void) ;
+    uint16 US_40kHz_ReadCompare(void) ;
 #else
-    void    US_40kHz_WriteCompare1(uint8 compare)
+    void    US_40kHz_WriteCompare1(uint16 compare)
             ;
-    uint8 US_40kHz_ReadCompare1(void) ;
-    void    US_40kHz_WriteCompare2(uint8 compare)
+    uint16 US_40kHz_ReadCompare1(void) ;
+    void    US_40kHz_WriteCompare2(uint16 compare)
             ;
-    uint8 US_40kHz_ReadCompare2(void) ;
+    uint16 US_40kHz_ReadCompare2(void) ;
 #endif /* (US_40kHz_UseOneCompareMode) */
 
 
@@ -226,9 +226,9 @@ void US_40kHz_RestoreConfig(void) ;
 /***************************************
 *         Initialization Values
 **************************************/
-#define US_40kHz_INIT_PERIOD_VALUE          (255u)
-#define US_40kHz_INIT_COMPARE_VALUE1        (127u)
-#define US_40kHz_INIT_COMPARE_VALUE2        (127u)
+#define US_40kHz_INIT_PERIOD_VALUE          (299u)
+#define US_40kHz_INIT_COMPARE_VALUE1        (150u)
+#define US_40kHz_INIT_COMPARE_VALUE2        (150u)
 #define US_40kHz_INIT_INTERRUPTS_MODE       (uint8)(((uint8)(0u <<   \
                                                     US_40kHz_STATUS_TC_INT_EN_MASK_SHIFT)) | \
                                                     (uint8)((uint8)(0u <<  \
@@ -237,7 +237,7 @@ void US_40kHz_RestoreConfig(void) ;
                                                     US_40kHz_STATUS_CMP1_INT_EN_MASK_SHIFT )) | \
                                                     (uint8)((uint8)(0u <<  \
                                                     US_40kHz_STATUS_KILL_INT_EN_MASK_SHIFT )))
-#define US_40kHz_DEFAULT_COMPARE2_MODE      (uint8)((uint8)3u <<  US_40kHz_CTRL_CMPMODE2_SHIFT)
+#define US_40kHz_DEFAULT_COMPARE2_MODE      (uint8)((uint8)4u <<  US_40kHz_CTRL_CMPMODE2_SHIFT)
 #define US_40kHz_DEFAULT_COMPARE1_MODE      (uint8)((uint8)1u <<  US_40kHz_CTRL_CMPMODE1_SHIFT)
 #define US_40kHz_INIT_DEAD_TIME             (1u)
 
@@ -264,73 +264,73 @@ void US_40kHz_RestoreConfig(void) ;
    #if (US_40kHz_Resolution == 8u) /* 8bit - PWM */
 
        #if(US_40kHz_PWMModeIsCenterAligned)
-           #define US_40kHz_PERIOD_LSB      (*(reg8 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__D1_REG)
-           #define US_40kHz_PERIOD_LSB_PTR  ((reg8 *)   US_40kHz_PWMUDB_sP8_pwmdp_u0__D1_REG)
+           #define US_40kHz_PERIOD_LSB      (*(reg8 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__D1_REG)
+           #define US_40kHz_PERIOD_LSB_PTR  ((reg8 *)   US_40kHz_PWMUDB_sP16_pwmdp_u0__D1_REG)
        #else
-           #define US_40kHz_PERIOD_LSB      (*(reg8 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__F0_REG)
-           #define US_40kHz_PERIOD_LSB_PTR  ((reg8 *)   US_40kHz_PWMUDB_sP8_pwmdp_u0__F0_REG)
+           #define US_40kHz_PERIOD_LSB      (*(reg8 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__F0_REG)
+           #define US_40kHz_PERIOD_LSB_PTR  ((reg8 *)   US_40kHz_PWMUDB_sP16_pwmdp_u0__F0_REG)
        #endif /* (US_40kHz_PWMModeIsCenterAligned) */
 
-       #define US_40kHz_COMPARE1_LSB        (*(reg8 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__D0_REG)
-       #define US_40kHz_COMPARE1_LSB_PTR    ((reg8 *)   US_40kHz_PWMUDB_sP8_pwmdp_u0__D0_REG)
-       #define US_40kHz_COMPARE2_LSB        (*(reg8 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__D1_REG)
-       #define US_40kHz_COMPARE2_LSB_PTR    ((reg8 *)   US_40kHz_PWMUDB_sP8_pwmdp_u0__D1_REG)
-       #define US_40kHz_COUNTERCAP_LSB      (*(reg8 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__A1_REG)
-       #define US_40kHz_COUNTERCAP_LSB_PTR  ((reg8 *)   US_40kHz_PWMUDB_sP8_pwmdp_u0__A1_REG)
-       #define US_40kHz_COUNTER_LSB         (*(reg8 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__A0_REG)
-       #define US_40kHz_COUNTER_LSB_PTR     ((reg8 *)   US_40kHz_PWMUDB_sP8_pwmdp_u0__A0_REG)
-       #define US_40kHz_CAPTURE_LSB         (*(reg8 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__F1_REG)
-       #define US_40kHz_CAPTURE_LSB_PTR     ((reg8 *)   US_40kHz_PWMUDB_sP8_pwmdp_u0__F1_REG)
+       #define US_40kHz_COMPARE1_LSB        (*(reg8 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__D0_REG)
+       #define US_40kHz_COMPARE1_LSB_PTR    ((reg8 *)   US_40kHz_PWMUDB_sP16_pwmdp_u0__D0_REG)
+       #define US_40kHz_COMPARE2_LSB        (*(reg8 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__D1_REG)
+       #define US_40kHz_COMPARE2_LSB_PTR    ((reg8 *)   US_40kHz_PWMUDB_sP16_pwmdp_u0__D1_REG)
+       #define US_40kHz_COUNTERCAP_LSB      (*(reg8 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__A1_REG)
+       #define US_40kHz_COUNTERCAP_LSB_PTR  ((reg8 *)   US_40kHz_PWMUDB_sP16_pwmdp_u0__A1_REG)
+       #define US_40kHz_COUNTER_LSB         (*(reg8 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__A0_REG)
+       #define US_40kHz_COUNTER_LSB_PTR     ((reg8 *)   US_40kHz_PWMUDB_sP16_pwmdp_u0__A0_REG)
+       #define US_40kHz_CAPTURE_LSB         (*(reg8 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__F1_REG)
+       #define US_40kHz_CAPTURE_LSB_PTR     ((reg8 *)   US_40kHz_PWMUDB_sP16_pwmdp_u0__F1_REG)
 
    #else
         #if(CY_PSOC3) /* 8-bit address space */
             #if(US_40kHz_PWMModeIsCenterAligned)
-               #define US_40kHz_PERIOD_LSB      (*(reg16 *) US_40kHz_PWMUDB_sP8_pwmdp_u0__D1_REG)
-               #define US_40kHz_PERIOD_LSB_PTR  ((reg16 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__D1_REG)
+               #define US_40kHz_PERIOD_LSB      (*(reg16 *) US_40kHz_PWMUDB_sP16_pwmdp_u0__D1_REG)
+               #define US_40kHz_PERIOD_LSB_PTR  ((reg16 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__D1_REG)
             #else
-               #define US_40kHz_PERIOD_LSB      (*(reg16 *) US_40kHz_PWMUDB_sP8_pwmdp_u0__F0_REG)
-               #define US_40kHz_PERIOD_LSB_PTR  ((reg16 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__F0_REG)
+               #define US_40kHz_PERIOD_LSB      (*(reg16 *) US_40kHz_PWMUDB_sP16_pwmdp_u0__F0_REG)
+               #define US_40kHz_PERIOD_LSB_PTR  ((reg16 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__F0_REG)
             #endif /* (US_40kHz_PWMModeIsCenterAligned) */
 
-            #define US_40kHz_COMPARE1_LSB       (*(reg16 *) US_40kHz_PWMUDB_sP8_pwmdp_u0__D0_REG)
-            #define US_40kHz_COMPARE1_LSB_PTR   ((reg16 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__D0_REG)
-            #define US_40kHz_COMPARE2_LSB       (*(reg16 *) US_40kHz_PWMUDB_sP8_pwmdp_u0__D1_REG)
-            #define US_40kHz_COMPARE2_LSB_PTR   ((reg16 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__D1_REG)
-            #define US_40kHz_COUNTERCAP_LSB     (*(reg16 *) US_40kHz_PWMUDB_sP8_pwmdp_u0__A1_REG)
-            #define US_40kHz_COUNTERCAP_LSB_PTR ((reg16 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__A1_REG)
-            #define US_40kHz_COUNTER_LSB        (*(reg16 *) US_40kHz_PWMUDB_sP8_pwmdp_u0__A0_REG)
-            #define US_40kHz_COUNTER_LSB_PTR    ((reg16 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__A0_REG)
-            #define US_40kHz_CAPTURE_LSB        (*(reg16 *) US_40kHz_PWMUDB_sP8_pwmdp_u0__F1_REG)
-            #define US_40kHz_CAPTURE_LSB_PTR    ((reg16 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__F1_REG)
+            #define US_40kHz_COMPARE1_LSB       (*(reg16 *) US_40kHz_PWMUDB_sP16_pwmdp_u0__D0_REG)
+            #define US_40kHz_COMPARE1_LSB_PTR   ((reg16 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__D0_REG)
+            #define US_40kHz_COMPARE2_LSB       (*(reg16 *) US_40kHz_PWMUDB_sP16_pwmdp_u0__D1_REG)
+            #define US_40kHz_COMPARE2_LSB_PTR   ((reg16 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__D1_REG)
+            #define US_40kHz_COUNTERCAP_LSB     (*(reg16 *) US_40kHz_PWMUDB_sP16_pwmdp_u0__A1_REG)
+            #define US_40kHz_COUNTERCAP_LSB_PTR ((reg16 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__A1_REG)
+            #define US_40kHz_COUNTER_LSB        (*(reg16 *) US_40kHz_PWMUDB_sP16_pwmdp_u0__A0_REG)
+            #define US_40kHz_COUNTER_LSB_PTR    ((reg16 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__A0_REG)
+            #define US_40kHz_CAPTURE_LSB        (*(reg16 *) US_40kHz_PWMUDB_sP16_pwmdp_u0__F1_REG)
+            #define US_40kHz_CAPTURE_LSB_PTR    ((reg16 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__F1_REG)
         #else
             #if(US_40kHz_PWMModeIsCenterAligned)
-               #define US_40kHz_PERIOD_LSB      (*(reg16 *) US_40kHz_PWMUDB_sP8_pwmdp_u0__16BIT_D1_REG)
-               #define US_40kHz_PERIOD_LSB_PTR  ((reg16 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__16BIT_D1_REG)
+               #define US_40kHz_PERIOD_LSB      (*(reg16 *) US_40kHz_PWMUDB_sP16_pwmdp_u0__16BIT_D1_REG)
+               #define US_40kHz_PERIOD_LSB_PTR  ((reg16 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__16BIT_D1_REG)
             #else
-               #define US_40kHz_PERIOD_LSB      (*(reg16 *) US_40kHz_PWMUDB_sP8_pwmdp_u0__16BIT_F0_REG)
-               #define US_40kHz_PERIOD_LSB_PTR  ((reg16 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__16BIT_F0_REG)
+               #define US_40kHz_PERIOD_LSB      (*(reg16 *) US_40kHz_PWMUDB_sP16_pwmdp_u0__16BIT_F0_REG)
+               #define US_40kHz_PERIOD_LSB_PTR  ((reg16 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__16BIT_F0_REG)
             #endif /* (US_40kHz_PWMModeIsCenterAligned) */
 
-            #define US_40kHz_COMPARE1_LSB       (*(reg16 *) US_40kHz_PWMUDB_sP8_pwmdp_u0__16BIT_D0_REG)
-            #define US_40kHz_COMPARE1_LSB_PTR   ((reg16 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__16BIT_D0_REG)
-            #define US_40kHz_COMPARE2_LSB       (*(reg16 *) US_40kHz_PWMUDB_sP8_pwmdp_u0__16BIT_D1_REG)
-            #define US_40kHz_COMPARE2_LSB_PTR   ((reg16 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__16BIT_D1_REG)
-            #define US_40kHz_COUNTERCAP_LSB     (*(reg16 *) US_40kHz_PWMUDB_sP8_pwmdp_u0__16BIT_A1_REG)
-            #define US_40kHz_COUNTERCAP_LSB_PTR ((reg16 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__16BIT_A1_REG)
-            #define US_40kHz_COUNTER_LSB        (*(reg16 *) US_40kHz_PWMUDB_sP8_pwmdp_u0__16BIT_A0_REG)
-            #define US_40kHz_COUNTER_LSB_PTR    ((reg16 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__16BIT_A0_REG)
-            #define US_40kHz_CAPTURE_LSB        (*(reg16 *) US_40kHz_PWMUDB_sP8_pwmdp_u0__16BIT_F1_REG)
-            #define US_40kHz_CAPTURE_LSB_PTR    ((reg16 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__16BIT_F1_REG)
+            #define US_40kHz_COMPARE1_LSB       (*(reg16 *) US_40kHz_PWMUDB_sP16_pwmdp_u0__16BIT_D0_REG)
+            #define US_40kHz_COMPARE1_LSB_PTR   ((reg16 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__16BIT_D0_REG)
+            #define US_40kHz_COMPARE2_LSB       (*(reg16 *) US_40kHz_PWMUDB_sP16_pwmdp_u0__16BIT_D1_REG)
+            #define US_40kHz_COMPARE2_LSB_PTR   ((reg16 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__16BIT_D1_REG)
+            #define US_40kHz_COUNTERCAP_LSB     (*(reg16 *) US_40kHz_PWMUDB_sP16_pwmdp_u0__16BIT_A1_REG)
+            #define US_40kHz_COUNTERCAP_LSB_PTR ((reg16 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__16BIT_A1_REG)
+            #define US_40kHz_COUNTER_LSB        (*(reg16 *) US_40kHz_PWMUDB_sP16_pwmdp_u0__16BIT_A0_REG)
+            #define US_40kHz_COUNTER_LSB_PTR    ((reg16 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__16BIT_A0_REG)
+            #define US_40kHz_CAPTURE_LSB        (*(reg16 *) US_40kHz_PWMUDB_sP16_pwmdp_u0__16BIT_F1_REG)
+            #define US_40kHz_CAPTURE_LSB_PTR    ((reg16 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__16BIT_F1_REG)
         #endif /* (CY_PSOC3) */
 
-       #define US_40kHz_AUX_CONTROLDP1          (*(reg8 *)  US_40kHz_PWMUDB_sP8_pwmdp_u1__DP_AUX_CTL_REG)
-       #define US_40kHz_AUX_CONTROLDP1_PTR      ((reg8 *)   US_40kHz_PWMUDB_sP8_pwmdp_u1__DP_AUX_CTL_REG)
+       #define US_40kHz_AUX_CONTROLDP1          (*(reg8 *)  US_40kHz_PWMUDB_sP16_pwmdp_u1__DP_AUX_CTL_REG)
+       #define US_40kHz_AUX_CONTROLDP1_PTR      ((reg8 *)   US_40kHz_PWMUDB_sP16_pwmdp_u1__DP_AUX_CTL_REG)
 
    #endif /* (US_40kHz_Resolution == 8) */
 
-   #define US_40kHz_COUNTERCAP_LSB_PTR_8BIT ( (reg8 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__A1_REG)
-   #define US_40kHz_AUX_CONTROLDP0          (*(reg8 *)  US_40kHz_PWMUDB_sP8_pwmdp_u0__DP_AUX_CTL_REG)
-   #define US_40kHz_AUX_CONTROLDP0_PTR      ((reg8 *)   US_40kHz_PWMUDB_sP8_pwmdp_u0__DP_AUX_CTL_REG)
+   #define US_40kHz_COUNTERCAP_LSB_PTR_8BIT ( (reg8 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__A1_REG)
+   #define US_40kHz_AUX_CONTROLDP0          (*(reg8 *)  US_40kHz_PWMUDB_sP16_pwmdp_u0__DP_AUX_CTL_REG)
+   #define US_40kHz_AUX_CONTROLDP0_PTR      ((reg8 *)   US_40kHz_PWMUDB_sP16_pwmdp_u0__DP_AUX_CTL_REG)
 
 #endif /* (US_40kHz_UsingFixedFunction) */
 

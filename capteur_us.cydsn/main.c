@@ -12,23 +12,29 @@
 #include "project.h"
 
 uint32 timerCount;
+uint8 recu;
 
 CY_ISR(timerInterrupt)
 {
-	/* Read counter register
-	 */
-   	 timerCount = Timer_US_ReadCapture();
-     US_40kHz_Stop(); // Arrêt de l'émission ultrasons
+    // Signal reçu, lecture du compteur de Timer_US : temps entre émission et réception
+   	timerCount = Timer_US_ReadCapture();
+    recu = 1;
 }
 
-
+CY_ISR(counterInterrupt)
+{
+    Control_Reg_1_Write(0); // Arrêt émission US, activation réception
+}
 
 int main(void)
 {
-    uint32  distance;
+    uint8  distance=42;
+    recu = 0;
     
     /* Start and assign interrupt handle for interrupt component */
     TimerISR_StartEx(timerInterrupt);
+    
+    CounterISR_StartEx(counterInterrupt);
     
     CyGlobalIntEnable; /* Enable global interrupts. */
 
@@ -38,6 +44,8 @@ int main(void)
     V_seuil_Start();
     Timer_US_Start();
     CharLCD_1_Start();
+    US_40kHz_Start();
+    Counter_1_Start();
     
     CharLCD_1_Position(0u, 0u);
     CharLCD_1_PrintString("DISTANCE :");
@@ -45,10 +53,11 @@ int main(void)
     
     for(;;)
     {
-        US_40kHz_Start(); // Génération signal pour émetteur ultrasons
+        Control_Reg_1_Write(1);// Génération signal pour émetteur ultrasons
         
-        /* Place your application code here. */
-        distance = timerCount/24000000 * 340;
+        while(recu == 0) {} // Attente réception
+        
+        distance = (uint8) timerCount/240000000 * 34; // en cm
         
 		CharLCD_1_Position(0u, 11u);
         CharLCD_1_PrintInt8(distance);

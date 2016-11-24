@@ -52,6 +52,14 @@
   <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\CharLCD_1.h" value="HEADER;;;;;CharLCD_1" />
   <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\CharLCD_1_PM.c" value="SOURCE_C;CortexM3;;;;CharLCD_1" />
   <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\CharLCD_1_CustChars.c" value="SOURCE_C;CortexM3;;;;CharLCD_1" />
+  <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\Counter_1.c" value="SOURCE_C;CortexM3;;;;Counter_1" />
+  <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\Counter_1.h" value="HEADER;;;;;Counter_1" />
+  <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\Counter_1_PM.c" value="SOURCE_C;CortexM3;;;;Counter_1" />
+  <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\CounterISR.c" value="SOURCE_C;CortexM3;;;;CounterISR" />
+  <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\CounterISR.h" value="HEADER;;;;;CounterISR" />
+  <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\Control_Reg_1.h" value="HEADER;;;;;Control_Reg_1" />
+  <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\Control_Reg_1.c" value="SOURCE_C;CortexM3;;;;Control_Reg_1" />
+  <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\Control_Reg_1_PM.c" value="SOURCE_C;CortexM3;;;;Control_Reg_1" />
   <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\CharLCD_1_LCDPort_aliases.h" value="HEADER;;;;;CharLCD_1_LCDPort" />
   <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\CharLCD_1_LCDPort.c" value="SOURCE_C;CortexM3;;;;CharLCD_1_LCDPort" />
   <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\CharLCD_1_LCDPort.h" value="HEADER;;;;;CharLCD_1_LCDPort" />
