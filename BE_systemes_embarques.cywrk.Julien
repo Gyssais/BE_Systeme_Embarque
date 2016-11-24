@@ -16,7 +16,6 @@
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BE_systemes_embarques\capteur_us">
 <ExpandedNodeIds>
 <v>BE_systemes_embarques</v>
-<v>BE_systemes_embarques\capteur_us</v>
 <v>BE_systemes_embarques\capteur_us\TopDesign</v>
 <v>BE_systemes_embarques\capteur_us\capteur_us.cydwr</v>
 <v>BE_systemes_embarques\capteur_us\capteur_us.cydwr\Pins</v>
@@ -128,6 +127,7 @@
 <v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cyfitterrv.inc</v>
 <v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cymetadata.c</v>
 <v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\project.h</v>
+<v>BE_systemes_embarques\Counter_exemple</v>
 <v>BE_systemes_embarques\Counter_exemple\TopDesign</v>
 <v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr</v>
 <v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\Pins</v>
@@ -227,54 +227,34 @@
 <VisibleNodeIds>
 <v>BE_systemes_embarques</v>
 <v>BE_systemes_embarques\capteur_us</v>
-<v>BE_systemes_embarques\capteur_us\TopDesign</v>
-<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr</v>
-<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr\Pins</v>
-<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr\Analog</v>
-<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr\Clocks</v>
-<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr\Interrupts</v>
-<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr\DMA</v>
-<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr\System</v>
-<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr\Directives</v>
-<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr\Flash Security</v>
-<v>BE_systemes_embarques\capteur_us\capteur_us.cydwr\EEPROM</v>
-<v>BE_systemes_embarques\capteur_us\Header Files</v>
-<v>BE_systemes_embarques\capteur_us\Header Files\cyapicallbacks.h</v>
-<v>BE_systemes_embarques\capteur_us\Source Files</v>
-<v>BE_systemes_embarques\capteur_us\Source Files\main.c</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Ampli_Recept</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Ampli_Recept\Ampli_Recept.c</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Ampli_Recept\Ampli_Recept.h</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Ampli_Recept\Ampli_Recept_PM.c</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\CharLCD_1</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\CharLCD_1\CharLCD_1.c</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\CharLCD_1\CharLCD_1.h</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\CharLCD_1\CharLCD_1_CustChars.c</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\CharLCD_1\CharLCD_1_PM.c</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\CharLCD_1_LCDPort</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\CharLCD_1_LCDPort\CharLCD_1_LCDPort.c</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\CharLCD_1_LCDPort\CharLCD_1_LCDPort.h</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\CharLCD_1_LCDPort\CharLCD_1_LCDPort_aliases.h</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Clock_1</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Clock_1\Clock_1.c</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\Clock_1\Clock_1.h</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\cmsis_armcc.h</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\cmsis_gcc.h</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\core_cmInstr.h</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\CyBootAsmGnu.s</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\CyBootAsmIar.s</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\CyBootAsmRv.s</v>
-<v>BE_systemes_embarques\capteur_us\Generated_Source\PSoC5\cy_boot\CyDmac.c</v>
+<v>BE_systemes_embarques\Counter_exemple</v>
+<v>BE_systemes_embarques\Counter_exemple\TopDesign</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\Pins</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\Analog</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\Clocks</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\Interrupts</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\DMA</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\System</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\Directives</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\Flash Security</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.cydwr\EEPROM</v>
+<v>BE_systemes_embarques\Counter_exemple\Header Files</v>
+<v>BE_systemes_embarques\Counter_exemple\Header Files\cyapicallbacks.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Source Files</v>
+<v>BE_systemes_embarques\Counter_exemple\Source Files\main.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Counter.pdf</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1\CharLCD_1.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1\CharLCD_1.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1\CharLCD_1_CustChars.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1\CharLCD_1_PM.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1_LCDPort</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1_LCDPort\CharLCD_1_LCDPort.c</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1_LCDPort\CharLCD_1_LCDPort.h</v>
+<v>BE_systemes_embarques\Counter_exemple\Generated_Source\PSoC5\CharLCD_1_LCDPort\CharLCD_1_LCDPort_aliases.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BE_systemes_embarques">
@@ -406,26 +386,6 @@
 <v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_2.lst</v>
 <v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_3.lst</v>
 <v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Timer_US.lst</v>
-<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\Timer_US_PM.lst</v>
-<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\TimerISR.lst</v>
-<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\US_40kHz.lst</v>
-<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\US_40kHz_PM.lst</v>
-<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\V_seuil.lst</v>
-<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\Listing Files\V_seuil_PM.lst</v>
-<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\capteur_us.elf</v>
-<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\capteur_us.hex</v>
-<v>BE_systemes_embarques\capteur_us\CortexM3\ARM_GCC_493\Debug\capteur_us.map</v>
-<v>BE_systemes_embarques\capteur_us\capteur_us.gpdsc</v>
-<v>BE_systemes_embarques\capteur_us\capteur_us.rpt</v>
-<v>BE_systemes_embarques\capteur_us\capteur_us_timing.html</v>
-<v>BE_systemes_embarques\Counter_exemple</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1_CustChars.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1_LCDPort.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -503,12 +463,6 @@
 <v>BE_systemes_embarques\Counter_exemple\cy_clock_v2_20</v>
 <v>BE_systemes_embarques\Counter_exemple\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
 <v>BE_systemes_embarques\Counter_exemple\cy_isr_v1_70.pdf</v>
-<v>BE_systemes_embarques\Counter_exemple\cy_pins_v2_20</v>
-<v>BE_systemes_embarques\Counter_exemple\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>BE_systemes_embarques\Counter_exemple\cy_sync_v1_0.pdf</v>
-<v>BE_systemes_embarques\Counter_exemple\cy_tff_v1_0.pdf</v>
-<v>BE_systemes_embarques\Counter_exemple\OneTerminal.pdf</v>
-<v>BE_systemes_embarques\Counter_exemple\ZeroTerminal.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -528,6 +482,7 @@
 <name v=".\capteur_us.cydsn\capteur_us.cydwr" />
 <name v=".\Counter_exemple.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\Counter_exemple.cydsn\main.c" />
+<name v=".\Counter_exemple.cydsn\Counter_exemple.cydwr" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -535,7 +490,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1349, 756" SelectedTabbedMdiWindow="27e8d2e3-4fc9-4e3b-8813-7788c006eae2"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="6d0653a0-27c7-43e1-8e8c-eea05ee190dd" /><DocumentWindow Key="d7cdc747-6f0a-4bcc-a819-897d8a0ace91" Guid="b5d7b9cf-b328-46d3-8850-681924fdec85" /><DocumentWindow Key="bfb376e1-fbbf-401f-b348-72d8e037190e" Guid="27e8d2e3-4fc9-4e3b-8813-7788c006eae2" /><DocumentWindow Key="ac1e5581-49d3-4beb-aea6-0b28e6965205" Guid="e0013521-d8b6-4ff7-b347-29886a9edae2" /><DocumentWindow Key="236eb380-a52b-42c9-8d58-9849590765bb" Guid="6dd4246a-f997-44f9-9c54-508eed1aa2e5" /><DocumentWindow Key="76643d61-841a-410c-96fb-b83ba8599eb8" Guid="20885f11-d082-4619-a95d-f91d4b5bb43e" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="696, 378" SelectedTabbedMdiWindow="741740a1-43d9-45bf-a74c-2db19993bdc1"><DocumentWindow Key="22c4318c-ec44-4383-a1f9-59642d424295" Guid="741740a1-43d9-45bf-a74c-2db19993bdc1" /><DocumentWindow Key="a9610bfc-802c-4339-912d-6a70793edc96" Guid="865e3dd3-8ffc-44fb-b525-3c3a10f9befc" /><DocumentWindow Key="0d2f7cd1-a140-4a79-ac03-5b99ef41f774" Guid="9f922310-6af6-4bab-b51c-32587ccb756d" /><DocumentWindow Key="6d58aefe-df73-4066-8f0d-9de0f0c4dd0a" Guid="2a382b75-b55c-4211-8ce8-afaa4f90d13c" /><DocumentWindow Key="1b4b28b8-7bef-40c9-ac2c-f661659b07a7" Guid="392f4a64-4ffc-408b-897a-826c26141588" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="6d0653a0-27c7-43e1-8e8c-eea05ee190dd" /><DocumentWindow Key="20672c54-501d-4922-96e4-53ba6b94719c" Guid="4567ef1f-1607-4c38-ac4b-4155d73634a1" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

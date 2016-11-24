@@ -488,7 +488,42 @@
 <name v="link_deps">
 <CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256 type_name="CyDesigner.Common.ProjMgmt.Model.CyConfigDependencies" version="1">
 <dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" xml_contents_version="2">
-<CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1" />
+<CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
+<file name=".\CortexM3\ARM_GCC_493\Debug\capteur_us.hex">
+<dep name=".\CortexM3\ARM_GCC_493\Debug\main.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\cyfitter_cfg.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\cymetadata.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\Pin_1.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\Pin_2.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\Pin_3.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\Cm3Start.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\CyBootAsmGnu.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\CyDmac.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\CyFlash.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\CyLib.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\cyPm.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\CySpc.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\cyutils.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\Clock_1.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\US_40kHz.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\US_40kHz_PM.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\Detect_Seuil_Recept.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\Detect_Seuil_Recept_PM.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\V_seuil.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\V_seuil_PM.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\Timer_US.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\Timer_US_PM.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\Ampli_Recept.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\Ampli_Recept_PM.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\TimerISR.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\CharLCD_1.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\CharLCD_1_PM.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\CharLCD_1_CustChars.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\CharLCD_1_LCDPort.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\capteur_us.a" />
+<dep name="${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_493\Debug\CyComponentLibrary.a" />
+</file>
+</CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
 </dependency_info>
 </CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256>
 </name>
@@ -587,26 +622,6 @@
 <v>Cypress Component Catalog\Display\ResistiveTouch [v2.0]</v>
 <v>Cypress Component Catalog\Display\Segment LCD - Static [v2.30]</v>
 <v>Cypress Component Catalog\Display\Segment LCD [v3.40]</v>
-<v>Cypress Component Catalog\Filters</v>
-<v>Cypress Component Catalog\Filters\Digital Filter Block (DFB) Assembler [v1.40]</v>
-<v>Cypress Component Catalog\Filters\Filter [v2.30]</v>
-<v>Cypress Component Catalog\Ports and Pins</v>
-<v>Cypress Component Catalog\Ports and Pins\Analog Pin [v2.20]</v>
-<v>Cypress Component Catalog\Ports and Pins\Digital Bidirectional Pin [v2.20]</v>
-<v>Cypress Component Catalog\Ports and Pins\Digital Input Pin [v2.20]</v>
-<v>Cypress Component Catalog\Ports and Pins\Digital Output Pin [v2.20]</v>
-<v>Cypress Component Catalog\Power Supervision</v>
-<v>Cypress Component Catalog\System</v>
-<v>Cypress Component Catalog\System\Boost Converter [v5.0]</v>
-<v>Cypress Component Catalog\System\Bootloadable [v1.50]</v>
-<v>Cypress Component Catalog\System\Bootloader [v1.50]</v>
-<v>Cypress Component Catalog\System\Clock [v2.20]</v>
-<v>Cypress Component Catalog\System\Die Temperature [v2.0]</v>
-<v>Cypress Component Catalog\System\DMA [v1.70]</v>
-<v>Cypress Component Catalog\System\EEPROM [v3.0]</v>
-<v>Cypress Component Catalog\System\Emulated EEPROM [v1.10]</v>
-<v>Cypress Component Catalog\System\External Memory Interface</v>
-<v>Cypress Component Catalog\System\Global Signal Reference [v2.0]</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Off-Chip Component Catalog\Electro-Mechanical\Speaker [v1.0]">
@@ -636,7 +651,6 @@
 <v>Off-Chip Component Catalog\Sensors\Strain Gauge [v1.0]</v>
 <v>Off-Chip Component Catalog\Sensors\Thermistor [v1.0]</v>
 <v>Off-Chip Component Catalog\Sensors\Thermocouple [v1.0]</v>
-<v>Off-Chip Component Catalog\Transistors</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </tree_states>
@@ -1143,7 +1157,7 @@
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif</v>
 </warp_dep>
-<deps_time v="131240437065185867" />
+<deps_time v="131243040924080679" />
 <top_block v="TopDesign" />
 <last_generation v="0" />
 <pdl_path v="C:\Users\Julien\Documents\Cypress\PDL\2.1.0" />
@@ -1151,7 +1165,7 @@
 </dataGuid>
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
-<deps_time v="131240437265817342" />
+<deps_time v="131243041048917820" />
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
 <dataGuid v="237c8ed1-e161-4c9d-af97-582eda6d6952">

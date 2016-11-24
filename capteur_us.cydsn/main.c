@@ -37,6 +37,7 @@ int main(void)
     Detect_Seuil_Recept_Start();
     V_seuil_Start();
     Timer_US_Start();
+    CharLCD_1_Start();
     
     CharLCD_1_Position(0u, 0u);
     CharLCD_1_PrintString("DISTANCE :");

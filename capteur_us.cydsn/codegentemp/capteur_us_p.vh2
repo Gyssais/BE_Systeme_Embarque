@@ -1,5 +1,5 @@
 -- Project:   capteur_us
--- Generated: 11/19/2016 16:41:34
+-- Generated: 11/22/2016 17:01:27
 -- PSoC Creator  4.0
 
 ENTITY capteur_us IS
@@ -138,7 +138,21 @@ ARCHITECTURE __DEFAULT__ OF capteur_us IS
     ATTRIBUTE lib_model OF Pin_1(0) : LABEL IS "iocell2";
     ATTRIBUTE Location OF Pin_1(0) : LABEL IS "P1[6]";
     ATTRIBUTE lib_model OF Pin_3(0) : LABEL IS "iocell3";
-    ATTRIBUTE Location OF Pin_3(0) : LABEL IS "P2[0]";
+    ATTRIBUTE Location OF Pin_3(0) : LABEL IS "P5[0]";
+    ATTRIBUTE lib_model OF \CharLCD_1:LCDPort(0)\ : LABEL IS "iocell4";
+    ATTRIBUTE Location OF \CharLCD_1:LCDPort(0)\ : LABEL IS "P2[0]";
+    ATTRIBUTE lib_model OF \CharLCD_1:LCDPort(1)\ : LABEL IS "iocell5";
+    ATTRIBUTE Location OF \CharLCD_1:LCDPort(1)\ : LABEL IS "P2[1]";
+    ATTRIBUTE lib_model OF \CharLCD_1:LCDPort(2)\ : LABEL IS "iocell6";
+    ATTRIBUTE Location OF \CharLCD_1:LCDPort(2)\ : LABEL IS "P2[2]";
+    ATTRIBUTE lib_model OF \CharLCD_1:LCDPort(3)\ : LABEL IS "iocell7";
+    ATTRIBUTE Location OF \CharLCD_1:LCDPort(3)\ : LABEL IS "P2[3]";
+    ATTRIBUTE lib_model OF \CharLCD_1:LCDPort(4)\ : LABEL IS "iocell8";
+    ATTRIBUTE Location OF \CharLCD_1:LCDPort(4)\ : LABEL IS "P2[4]";
+    ATTRIBUTE lib_model OF \CharLCD_1:LCDPort(5)\ : LABEL IS "iocell9";
+    ATTRIBUTE Location OF \CharLCD_1:LCDPort(5)\ : LABEL IS "P2[5]";
+    ATTRIBUTE lib_model OF \CharLCD_1:LCDPort(6)\ : LABEL IS "iocell10";
+    ATTRIBUTE Location OF \CharLCD_1:LCDPort(6)\ : LABEL IS "P2[6]";
     ATTRIBUTE lib_model OF \US_40kHz:PWMUDB:status_2\ : LABEL IS "macrocell1";
     ATTRIBUTE lib_model OF \Timer_US:TimerUDB:capt_fifo_load\ : LABEL IS "macrocell2";
     ATTRIBUTE lib_model OF \Timer_US:TimerUDB:status_tc\ : LABEL IS "macrocell3";
