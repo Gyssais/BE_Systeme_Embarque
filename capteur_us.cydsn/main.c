@@ -18,13 +18,22 @@ CY_ISR(timerInterrupt)
 {
     // Signal reçu, lecture du compteur de Timer_US : temps entre émission et réception
    	timerCount = Timer_US_ReadCapture();
+    Detect_Seuil_Recept_Stop(); // Arret du comparateur pour éviter rebonds
     recu = 1;
+    Timer_US_STATUS_CAPTURE; // Remise à 0 status register
 }
 
 CY_ISR(counterInterrupt)
 {
     Control_Reg_1_Write(0); // Arrêt émission US, activation réception
 }
+
+
+CY_ISR(timer_out_Interrupt)
+{
+    recu = 1; // Arret boucle attente reception
+}
+
 
 int main(void)
 {
@@ -35,6 +44,8 @@ int main(void)
     TimerISR_StartEx(timerInterrupt);
     
     CounterISR_StartEx(counterInterrupt);
+    
+    Timer_out_ISR_StartEx(timer_out_Interrupt);
     
     CyGlobalIntEnable; /* Enable global interrupts. */
 
@@ -50,12 +61,25 @@ int main(void)
     CharLCD_1_Position(0u, 0u);
     CharLCD_1_PrintString("DISTANCE :");
     
+    int counter_register =0;
     
     for(;;)
     {
+        recu = 0;
+        Detect_Seuil_Recept_Start();
+        Timer_US_WriteCounter(16777216);
         Control_Reg_1_Write(1);// Génération signal pour émetteur ultrasons
         
-        while(recu == 0) {} // Attente réception
+        int n =0;
+        while(recu == 0) {
+            ++n;
+            counter_register = Timer_US_ReadCounter();
+		    CharLCD_1_Position(0u, 11u);
+            CharLCD_1_PrintInt8(counter_register);
+            if (n == 6000) {
+                break;
+            }
+        } // Attente réception
         
         distance = (uint8) timerCount/240000000 * 34; // en cm
         

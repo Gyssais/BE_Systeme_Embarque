@@ -93,8 +93,8 @@ void Detect_Seuil_Recept_Wakeup(void)                    ;
 *           Parameter Defaults        
 **************************************/
 
-#define Detect_Seuil_Recept_DEFAULT_SPEED       (0u) 
-#define Detect_Seuil_Recept_DEFAULT_HYSTERESIS  (0u)
+#define Detect_Seuil_Recept_DEFAULT_SPEED       (2u) 
+#define Detect_Seuil_Recept_DEFAULT_HYSTERESIS  (1u)
 #define Detect_Seuil_Recept_DEFAULT_POLARITY    (0u)
 #define Detect_Seuil_Recept_DEFAULT_BYPASS_SYNC (1u)
 #define Detect_Seuil_Recept_DEFAULT_PWRDWN_OVRD (0u)

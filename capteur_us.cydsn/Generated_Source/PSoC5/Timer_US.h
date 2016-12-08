@@ -44,7 +44,7 @@ extern uint8 Timer_US_initVar;
 #define Timer_US_UsingHWEnable              0u
 #define Timer_US_EnableTriggerMode          1u
 #define Timer_US_InterruptOnCaptureCount    1u
-#define Timer_US_RunModeUsed                2u
+#define Timer_US_RunModeUsed                0u
 #define Timer_US_ControlRegRemoved          0u
 
 #if defined(Timer_US_TimerUDB_sCTRLReg_SyncCtl_ctrlreg__CONTROL_REG)

@@ -1,3 +1,12 @@
---------------- Rebuild Started: 11/24/2016 11:23:35 Project: main.c, Configuration: ARM GCC 4.9-2015-q1-update Debug ---------------
+--------------- Rebuild Started: 12/08/2016 12:13:24 Project: main.c, Configuration: ARM GCC 4.9-2015-q1-update Debug ---------------
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/main.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c main.c -o .\CortexM3\ARM_GCC_493\Debug\main.o
---------------- Rebuild Succeeded: 11/24/2016 11:23:36 ---------------
+In file included from Generated_Source\PSoC5/project.h:32:0,
+                 from main.c:12:
+main.c: In function 'timerInterrupt':
+Generated_Source\PSoC5/Timer_US.h:408:53: warning: statement with no effect [-Wunused-value]
+     #define Timer_US_STATUS_CAPTURE                 ((uint8)((uint8)0x01u << Timer_US_STATUS_CAPTURE_SHIFT))
+                                                     ^
+main.c:23:5: note: in expansion of macro 'Timer_US_STATUS_CAPTURE'
+     Timer_US_STATUS_CAPTURE; // Remise Ã  0 status register
+     ^
+--------------- Rebuild Succeeded: 12/08/2016 12:13:26 ---------------

@@ -131,6 +131,11 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Counter_1_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CounterISR.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CounterISR.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer_out_ISR.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer_out_ISR.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_4_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_4.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_4.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\Export\ARM_GCC_Generic">
