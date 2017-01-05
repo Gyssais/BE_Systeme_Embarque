@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
   30:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** /* variable to decide whether or not to restore the control register in 
   31:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****    Enable() API for PSoC5A only */
   32:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** #if (CY_PSOC5A)
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 2
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 2
 
 
   33:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     static uint8 Detect_Seuil_Recept_restoreReg = 0u;
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
   87:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** ********************************************************************************
   88:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** *
   89:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** * Summary:
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 3
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 3
 
 
   90:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** *  Enable the Comparator
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  144:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     }   
  145:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 
  146:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* Enable power to comparator */
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 4
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 4
 
 
  147:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     Detect_Seuil_Recept_Enable();    
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  201:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****                            (speed & Detect_Seuil_Recept_PWR_MODE_MASK);
  202:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 
  203:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* Set trim value for high speed comparator */
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 5
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 5
 
 
  204:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     if(speed == Detect_Seuil_Recept_HIGHSPEED)
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  258:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** * Function Name: Detect_Seuil_Recept_trimAdjust
  259:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** ********************************************************************************
  260:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** *
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 6
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 6
 
 
  261:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** * Summary:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
   47              		.loc 1 293 0
   48 000e 5DB1     		cbz	r5, .L3
  294:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         {
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 7
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 7
 
 
  295:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             /* PSoC5A */
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
   65 0028 0EB9     		cbnz	r6, .L10
  333:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     	{
  334:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     		trimCntMax = 15u;
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 8
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 8
 
 
   66              		.loc 1 334 0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
   89              		.loc 1 365 0
   90 0042 0B4A     		ldr	r2, .L12+8
   91 0044 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 9
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 9
 
 
   92 0046 0133     		adds	r3, r3, #1
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  136              		.cfi_startproc
  137              		@ args = 0, pretend = 0, frame = 0
  138              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 10
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 10
 
 
  139              		@ link register save eliminated.
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  188              		.size	Detect_Seuil_Recept_Stop, .-Detect_Seuil_Recept_Stop
  189              		.section	.text.Detect_Seuil_Recept_SetSpeed,"ax",%progbits
  190              		.align	2
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 11
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 11
 
 
  191              		.global	Detect_Seuil_Recept_SetSpeed
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  238 003c 1370     		strb	r3, [r2]
  239 003e 7047     		bx	lr
  240              	.L24:
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 12
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 12
 
 
  241              		.align	2
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  289 002c 1A70     		strb	r2, [r3]
   80:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     #endif /* Detect_Seuil_Recept_DEFAULT_BYPASS_SYNC == 0u */
  290              		.loc 1 80 0
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 13
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 13
 
 
  291 002e 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  340              		.size	Detect_Seuil_Recept_Start, .-Detect_Seuil_Recept_Start
  341              		.section	.text.Detect_Seuil_Recept_GetCompare,"ax",%progbits
  342              		.align	2
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 14
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 14
 
 
  343              		.global	Detect_Seuil_Recept_GetCompare
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  392:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** *
  393:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** * Theory: 
  394:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** *  This function is used to optimize the calibration for user specific voltage
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 15
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 15
 
 
  395:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** *  range.  The comparator trim is adjusted to counter transistor offsets
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  375              		.loc 1 448 0
  376              		.cfi_startproc
  377              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 16
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 16
 
 
  378              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  412 0024 1F78     		ldrb	r7, [r3]	@ zero_extendqisi2
  413 0026 FFB2     		uxtb	r7, r7
  414              	.LVL15:
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 17
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 17
 
 
  469:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     Detect_Seuil_Recept_CR |= (Detect_Seuil_Recept_CAL_ON | Detect_Seuil_Recept_HYST_OFF);
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  493:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****    
  494:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* Restore Config Register */
  495:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     Detect_Seuil_Recept_CR = tmpCR;
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 18
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 18
 
 
  445              		.loc 1 495 0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  483              		.type	Detect_Seuil_Recept_LoadTrim, %function
  484              	Detect_Seuil_Recept_LoadTrim:
  485              	.LFB8:
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 19
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 19
 
 
  512:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  508              		.size	Detect_Seuil_Recept_LoadTrim, .-Detect_Seuil_Recept_LoadTrim
  509              		.section	.text.Detect_Seuil_Recept_PwrDwnOverrideEnable,"ax",%progbits
  510              		.align	2
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 20
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 20
 
 
  511              		.global	Detect_Seuil_Recept_PwrDwnOverrideEnable
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  540              		.type	Detect_Seuil_Recept_PwrDwnOverrideDisable, %function
  541              	Detect_Seuil_Recept_PwrDwnOverrideDisable:
  542              	.LFB10:
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 21
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 21
 
 
  569:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     }
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  575 0004 0400     		.2byte	0x4
  576 0006 00000000 		.4byte	.Ldebug_abbrev0
  577 000a 04       		.byte	0x4
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 22
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 22
 
 
  578 000b 01       		.uleb128 0x1
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  632 0078 2D010000 		.4byte	.LASF10
  633 007c 02       		.byte	0x2
  634 007d 9301     		.2byte	0x193
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 23
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 23
 
 
  635 007f 3A000000 		.4byte	0x3a
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  689 00fa 6B000000 		.4byte	0x6b
  690 00fe 4B000000 		.4byte	.LLST2
  691 0102 08       		.uleb128 0x8
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 24
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 24
 
 
  692 0103 D6010000 		.4byte	.LASF19
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  746 0176 01       		.uleb128 0x1
  747 0177 9C       		.byte	0x9c
  748 0178 8C010000 		.4byte	0x18c
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 25
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 25
 
 
  749 017c 09       		.uleb128 0x9
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  803 01f9 C201     		.2byte	0x1c2
  804 01fb 6B000000 		.4byte	0x6b
  805 01ff 84000000 		.4byte	.LLST5
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 26
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 26
 
 
  806 0203 08       		.uleb128 0x8
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  860 0275 1102     		.2byte	0x211
  861 0277 77000000 		.4byte	0x77
  862 027b CC000000 		.4byte	.LLST8
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 27
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 27
 
 
  863 027f 00       		.byte	0
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  917 0013 02       		.uleb128 0x2
  918 0014 24       		.uleb128 0x24
  919 0015 00       		.byte	0
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 28
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 28
 
 
  920 0016 0B       		.uleb128 0xb
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  974 004c 40       		.uleb128 0x40
  975 004d 18       		.uleb128 0x18
  976 004e 9742     		.uleb128 0x2117
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 29
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 29
 
 
  977 0050 19       		.uleb128 0x19
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  1031 008b 2E       		.uleb128 0x2e
  1032 008c 00       		.byte	0
  1033 008d 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 30
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 30
 
 
  1034 008e 19       		.uleb128 0x19
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  1088 00c6 13       		.uleb128 0x13
  1089 00c7 02       		.uleb128 0x2
  1090 00c8 18       		.uleb128 0x18
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 31
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 31
 
 
  1091 00c9 00       		.byte	0
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  1145 0102 06       		.uleb128 0x6
  1146 0103 40       		.uleb128 0x40
  1147 0104 18       		.uleb128 0x18
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 32
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 32
 
 
  1148 0105 9742     		.uleb128 0x2117
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  1202 013f 19       		.uleb128 0x19
  1203 0140 11       		.uleb128 0x11
  1204 0141 01       		.uleb128 0x1
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 33
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 33
 
 
  1205 0142 12       		.uleb128 0x12
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  1259 0004 34000000 		.4byte	.LVL3
  1260 0008 0100     		.2byte	0x1
  1261 000a 50       		.byte	0x50
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 34
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 34
 
 
  1262 000b 34000000 		.4byte	.LVL3
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  1316 0097 14000000 		.4byte	.LVL14
  1317 009b 7A000000 		.4byte	.LVL19
  1318 009f 0100     		.2byte	0x1
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 35
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 35
 
 
  1319 00a1 54       		.byte	0x54
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  1373 0054 14000000 		.4byte	.LFE8-.LFB8
  1374 0058 00000000 		.4byte	.LFB9
  1375 005c 10000000 		.4byte	.LFE9-.LFB9
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 36
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 36
 
 
  1376 0060 00000000 		.4byte	.LFB10
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  1418      573000
  1419              	.LASF12:
  1420 002f 666C6F61 		.ascii	"float\000"
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 37
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 37
 
 
  1420      7400
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  1444      6575696C 
  1444      5F526563 
  1444      6570745F 
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 38
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 38
 
 
  1445              	.LASF26:
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  1464      446F6375 
  1465 023f 5F656D62 		.ascii	"_embarques\\BE_systemes_embarques\\capteur_us.cydsn"
  1465      61727175 
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 39
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 39
 
 
  1465      65735C42 
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 1
  1490 032e 44657465 		.ascii	"Detect_Seuil_Recept_LoadTrim\000"
  1490      63745F53 
  1490      6575696C 
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccnXLFwL.s 			page 40
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccuTUfP1.s 			page 40
 
 
  1490      5F526563 

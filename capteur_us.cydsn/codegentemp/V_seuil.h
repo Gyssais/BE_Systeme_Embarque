@@ -90,7 +90,7 @@ void V_seuil_Wakeup(void)          ;
 /* Default Strobe mode */
 #define V_seuil_DEFAULT_STRB     0u
  /* Initial DAC value */
-#define V_seuil_DEFAULT_DATA     187u
+#define V_seuil_DEFAULT_DATA     125u
  /* Default Data Source */
 #define V_seuil_DEFAULT_DATA_SRC 0u
 

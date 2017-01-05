@@ -9,7 +9,7 @@
 <projects>
 <v>.\capteur_us.cydsn\capteur_us.cyprj</v>
 <v>.\Counter_exemple.cydsn\Counter_exemple.cyprj</v>
-<v>.\Timer_exemple.cydsn\Timer_exemple.cyprj</v>
+<v>.\Test_timer.cydsn\Test_timer.cyprj</v>
 </projects>
 <workspace_id v="aa05892f-984f-4b7b-bea3-ba027e3601a9" />
 <WriteAppVersionLastSavedWith v="4.0.0.432" />

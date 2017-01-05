@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Timer_out_ISR.c  
+* File Name: interrupt_capture_out.c  
 * Version 1.70
 *
 *  Description:
@@ -18,15 +18,15 @@
 
 #include <cydevice_trm.h>
 #include <CyLib.h>
-#include <Timer_out_ISR.h>
+#include <interrupt_capture_out.h>
 #include "cyapicallbacks.h"
 
-#if !defined(Timer_out_ISR__REMOVED) /* Check for removal by optimization */
+#if !defined(interrupt_capture_out__REMOVED) /* Check for removal by optimization */
 
 /*******************************************************************************
 *  Place your includes, defines and code here 
 ********************************************************************************/
-/* `#START Timer_out_ISR_intc` */
+/* `#START interrupt_capture_out_intc` */
 
 /* `#END` */
 
@@ -42,7 +42,7 @@ CY_ISR_PROTO(IntDefaultHandler);
 
 
 /*******************************************************************************
-* Function Name: Timer_out_ISR_Start
+* Function Name: interrupt_capture_out_Start
 ********************************************************************************
 *
 * Summary:
@@ -58,24 +58,24 @@ CY_ISR_PROTO(IntDefaultHandler);
 *   None
 *
 *******************************************************************************/
-void Timer_out_ISR_Start(void)
+void interrupt_capture_out_Start(void)
 {
     /* For all we know the interrupt is active. */
-    Timer_out_ISR_Disable();
+    interrupt_capture_out_Disable();
 
-    /* Set the ISR to point to the Timer_out_ISR Interrupt. */
-    Timer_out_ISR_SetVector(&Timer_out_ISR_Interrupt);
+    /* Set the ISR to point to the interrupt_capture_out Interrupt. */
+    interrupt_capture_out_SetVector(&interrupt_capture_out_Interrupt);
 
     /* Set the priority. */
-    Timer_out_ISR_SetPriority((uint8)Timer_out_ISR_INTC_PRIOR_NUMBER);
+    interrupt_capture_out_SetPriority((uint8)interrupt_capture_out_INTC_PRIOR_NUMBER);
 
     /* Enable it. */
-    Timer_out_ISR_Enable();
+    interrupt_capture_out_Enable();
 }
 
 
 /*******************************************************************************
-* Function Name: Timer_out_ISR_StartEx
+* Function Name: interrupt_capture_out_StartEx
 ********************************************************************************
 *
 * Summary:
@@ -101,24 +101,24 @@ void Timer_out_ISR_Start(void)
 *   None
 *
 *******************************************************************************/
-void Timer_out_ISR_StartEx(cyisraddress address)
+void interrupt_capture_out_StartEx(cyisraddress address)
 {
     /* For all we know the interrupt is active. */
-    Timer_out_ISR_Disable();
+    interrupt_capture_out_Disable();
 
-    /* Set the ISR to point to the Timer_out_ISR Interrupt. */
-    Timer_out_ISR_SetVector(address);
+    /* Set the ISR to point to the interrupt_capture_out Interrupt. */
+    interrupt_capture_out_SetVector(address);
 
     /* Set the priority. */
-    Timer_out_ISR_SetPriority((uint8)Timer_out_ISR_INTC_PRIOR_NUMBER);
+    interrupt_capture_out_SetPriority((uint8)interrupt_capture_out_INTC_PRIOR_NUMBER);
 
     /* Enable it. */
-    Timer_out_ISR_Enable();
+    interrupt_capture_out_Enable();
 }
 
 
 /*******************************************************************************
-* Function Name: Timer_out_ISR_Stop
+* Function Name: interrupt_capture_out_Stop
 ********************************************************************************
 *
 * Summary:
@@ -131,22 +131,22 @@ void Timer_out_ISR_StartEx(cyisraddress address)
 *   None
 *
 *******************************************************************************/
-void Timer_out_ISR_Stop(void)
+void interrupt_capture_out_Stop(void)
 {
     /* Disable this interrupt. */
-    Timer_out_ISR_Disable();
+    interrupt_capture_out_Disable();
 
     /* Set the ISR to point to the passive one. */
-    Timer_out_ISR_SetVector(&IntDefaultHandler);
+    interrupt_capture_out_SetVector(&IntDefaultHandler);
 }
 
 
 /*******************************************************************************
-* Function Name: Timer_out_ISR_Interrupt
+* Function Name: interrupt_capture_out_Interrupt
 ********************************************************************************
 *
 * Summary:
-*   The default Interrupt Service Routine for Timer_out_ISR.
+*   The default Interrupt Service Routine for interrupt_capture_out.
 *
 *   Add custom code between the coments to keep the next version of this file
 *   from over writting your code.
@@ -157,27 +157,27 @@ void Timer_out_ISR_Stop(void)
 *   None
 *
 *******************************************************************************/
-CY_ISR(Timer_out_ISR_Interrupt)
+CY_ISR(interrupt_capture_out_Interrupt)
 {
-    #ifdef Timer_out_ISR_INTERRUPT_INTERRUPT_CALLBACK
-        Timer_out_ISR_Interrupt_InterruptCallback();
-    #endif /* Timer_out_ISR_INTERRUPT_INTERRUPT_CALLBACK */ 
+    #ifdef interrupt_capture_out_INTERRUPT_INTERRUPT_CALLBACK
+        interrupt_capture_out_Interrupt_InterruptCallback();
+    #endif /* interrupt_capture_out_INTERRUPT_INTERRUPT_CALLBACK */ 
 
     /*  Place your Interrupt code here. */
-    /* `#START Timer_out_ISR_Interrupt` */
+    /* `#START interrupt_capture_out_Interrupt` */
 
     /* `#END` */
 }
 
 
 /*******************************************************************************
-* Function Name: Timer_out_ISR_SetVector
+* Function Name: interrupt_capture_out_SetVector
 ********************************************************************************
 *
 * Summary:
-*   Change the ISR vector for the Interrupt. Note calling Timer_out_ISR_Start
+*   Change the ISR vector for the Interrupt. Note calling interrupt_capture_out_Start
 *   will override any effect this method would have had. To set the vector 
-*   before the component has been started use Timer_out_ISR_StartEx instead.
+*   before the component has been started use interrupt_capture_out_StartEx instead.
 * 
 *   When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
 *   used to provide consistent definition across compilers:
@@ -197,18 +197,18 @@ CY_ISR(Timer_out_ISR_Interrupt)
 *   None
 *
 *******************************************************************************/
-void Timer_out_ISR_SetVector(cyisraddress address)
+void interrupt_capture_out_SetVector(cyisraddress address)
 {
     cyisraddress * ramVectorTable;
 
     ramVectorTable = (cyisraddress *) *CYINT_VECT_TABLE;
 
-    ramVectorTable[CYINT_IRQ_BASE + (uint32)Timer_out_ISR__INTC_NUMBER] = address;
+    ramVectorTable[CYINT_IRQ_BASE + (uint32)interrupt_capture_out__INTC_NUMBER] = address;
 }
 
 
 /*******************************************************************************
-* Function Name: Timer_out_ISR_GetVector
+* Function Name: interrupt_capture_out_GetVector
 ********************************************************************************
 *
 * Summary:
@@ -221,26 +221,26 @@ void Timer_out_ISR_SetVector(cyisraddress address)
 *   Address of the ISR in the interrupt vector table.
 *
 *******************************************************************************/
-cyisraddress Timer_out_ISR_GetVector(void)
+cyisraddress interrupt_capture_out_GetVector(void)
 {
     cyisraddress * ramVectorTable;
 
     ramVectorTable = (cyisraddress *) *CYINT_VECT_TABLE;
 
-    return ramVectorTable[CYINT_IRQ_BASE + (uint32)Timer_out_ISR__INTC_NUMBER];
+    return ramVectorTable[CYINT_IRQ_BASE + (uint32)interrupt_capture_out__INTC_NUMBER];
 }
 
 
 /*******************************************************************************
-* Function Name: Timer_out_ISR_SetPriority
+* Function Name: interrupt_capture_out_SetPriority
 ********************************************************************************
 *
 * Summary:
 *   Sets the Priority of the Interrupt. 
 *
-*   Note calling Timer_out_ISR_Start or Timer_out_ISR_StartEx will 
+*   Note calling interrupt_capture_out_Start or interrupt_capture_out_StartEx will 
 *   override any effect this API would have had. This API should only be called
-*   after Timer_out_ISR_Start or Timer_out_ISR_StartEx has been called. 
+*   after interrupt_capture_out_Start or interrupt_capture_out_StartEx has been called. 
 *   To set the initial priority for the component, use the Design-Wide Resources
 *   Interrupt Editor.
 *
@@ -255,14 +255,14 @@ cyisraddress Timer_out_ISR_GetVector(void)
 *   None
 *
 *******************************************************************************/
-void Timer_out_ISR_SetPriority(uint8 priority)
+void interrupt_capture_out_SetPriority(uint8 priority)
 {
-    *Timer_out_ISR_INTC_PRIOR = priority << 5;
+    *interrupt_capture_out_INTC_PRIOR = priority << 5;
 }
 
 
 /*******************************************************************************
-* Function Name: Timer_out_ISR_GetPriority
+* Function Name: interrupt_capture_out_GetPriority
 ********************************************************************************
 *
 * Summary:
@@ -277,19 +277,19 @@ void Timer_out_ISR_SetPriority(uint8 priority)
 *    PSoC 4: Priority is from 0 to 3.
 *
 *******************************************************************************/
-uint8 Timer_out_ISR_GetPriority(void)
+uint8 interrupt_capture_out_GetPriority(void)
 {
     uint8 priority;
 
 
-    priority = *Timer_out_ISR_INTC_PRIOR >> 5;
+    priority = *interrupt_capture_out_INTC_PRIOR >> 5;
 
     return priority;
 }
 
 
 /*******************************************************************************
-* Function Name: Timer_out_ISR_Enable
+* Function Name: interrupt_capture_out_Enable
 ********************************************************************************
 *
 * Summary:
@@ -304,15 +304,15 @@ uint8 Timer_out_ISR_GetPriority(void)
 *   None
 *
 *******************************************************************************/
-void Timer_out_ISR_Enable(void)
+void interrupt_capture_out_Enable(void)
 {
     /* Enable the general interrupt. */
-    *Timer_out_ISR_INTC_SET_EN = Timer_out_ISR__INTC_MASK;
+    *interrupt_capture_out_INTC_SET_EN = interrupt_capture_out__INTC_MASK;
 }
 
 
 /*******************************************************************************
-* Function Name: Timer_out_ISR_GetState
+* Function Name: interrupt_capture_out_GetState
 ********************************************************************************
 *
 * Summary:
@@ -325,15 +325,15 @@ void Timer_out_ISR_Enable(void)
 *   1 if enabled, 0 if disabled.
 *
 *******************************************************************************/
-uint8 Timer_out_ISR_GetState(void)
+uint8 interrupt_capture_out_GetState(void)
 {
     /* Get the state of the general interrupt. */
-    return ((*Timer_out_ISR_INTC_SET_EN & (uint32)Timer_out_ISR__INTC_MASK) != 0u) ? 1u:0u;
+    return ((*interrupt_capture_out_INTC_SET_EN & (uint32)interrupt_capture_out__INTC_MASK) != 0u) ? 1u:0u;
 }
 
 
 /*******************************************************************************
-* Function Name: Timer_out_ISR_Disable
+* Function Name: interrupt_capture_out_Disable
 ********************************************************************************
 *
 * Summary:
@@ -346,15 +346,15 @@ uint8 Timer_out_ISR_GetState(void)
 *   None
 *
 *******************************************************************************/
-void Timer_out_ISR_Disable(void)
+void interrupt_capture_out_Disable(void)
 {
     /* Disable the general interrupt. */
-    *Timer_out_ISR_INTC_CLR_EN = Timer_out_ISR__INTC_MASK;
+    *interrupt_capture_out_INTC_CLR_EN = interrupt_capture_out__INTC_MASK;
 }
 
 
 /*******************************************************************************
-* Function Name: Timer_out_ISR_SetPending
+* Function Name: interrupt_capture_out_SetPending
 ********************************************************************************
 *
 * Summary:
@@ -373,14 +373,14 @@ void Timer_out_ISR_Disable(void)
 *   interrupts).
 *
 *******************************************************************************/
-void Timer_out_ISR_SetPending(void)
+void interrupt_capture_out_SetPending(void)
 {
-    *Timer_out_ISR_INTC_SET_PD = Timer_out_ISR__INTC_MASK;
+    *interrupt_capture_out_INTC_SET_PD = interrupt_capture_out__INTC_MASK;
 }
 
 
 /*******************************************************************************
-* Function Name: Timer_out_ISR_ClearPending
+* Function Name: interrupt_capture_out_ClearPending
 ********************************************************************************
 *
 * Summary:
@@ -398,9 +398,9 @@ void Timer_out_ISR_SetPending(void)
 *   None
 *
 *******************************************************************************/
-void Timer_out_ISR_ClearPending(void)
+void interrupt_capture_out_ClearPending(void)
 {
-    *Timer_out_ISR_INTC_CLR_PD = Timer_out_ISR__INTC_MASK;
+    *interrupt_capture_out_INTC_CLR_PD = interrupt_capture_out__INTC_MASK;
 }
 
 #endif /* End check for removal by optimization */

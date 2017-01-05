@@ -60,11 +60,14 @@
   <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\Control_Reg_1.h" value="HEADER;;;;;Control_Reg_1" />
   <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\Control_Reg_1.c" value="SOURCE_C;CortexM3;;;;Control_Reg_1" />
   <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\Control_Reg_1_PM.c" value="SOURCE_C;CortexM3;;;;Control_Reg_1" />
-  <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\Timer_out_ISR.c" value="SOURCE_C;CortexM3;;;;Timer_out_ISR" />
-  <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\Timer_out_ISR.h" value="HEADER;;;;;Timer_out_ISR" />
   <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\Pin_4_aliases.h" value="HEADER;;;;;Pin_4" />
   <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\Pin_4.c" value="SOURCE_C;CortexM3;;;;Pin_4" />
   <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\Pin_4.h" value="HEADER;;;;;Pin_4" />
+  <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\Timer_periode.c" value="SOURCE_C;CortexM3;;;;Timer_periode" />
+  <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\Timer_periode.h" value="HEADER;;;;;Timer_periode" />
+  <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\Timer_periode_PM.c" value="SOURCE_C;CortexM3;;;;Timer_periode" />
+  <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\periodeISR.c" value="SOURCE_C;CortexM3;;;;periodeISR" />
+  <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\periodeISR.h" value="HEADER;;;;;periodeISR" />
   <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\CharLCD_1_LCDPort_aliases.h" value="HEADER;;;;;CharLCD_1_LCDPort" />
   <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\CharLCD_1_LCDPort.c" value="SOURCE_C;CortexM3;;;;CharLCD_1_LCDPort" />
   <file name="C:\Users\Julien\Documents\INSA\5A\BE_systemes_embarques\BE_systemes_embarques\capteur_us.cydsn\codegentemp\CharLCD_1_LCDPort.h" value="HEADER;;;;;CharLCD_1_LCDPort" />

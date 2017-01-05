@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 1
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccmi0eeA.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 1
   29:Generated_Source\PSoC5/Timer_US_PM.c **** *     Save the current user configuration
   30:Generated_Source\PSoC5/Timer_US_PM.c **** *
   31:Generated_Source\PSoC5/Timer_US_PM.c **** * Parameters:
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 2
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccmi0eeA.s 			page 2
 
 
   32:Generated_Source\PSoC5/Timer_US_PM.c **** *  void
@@ -78,53 +78,49 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 1
   28              		.cfi_startproc
   29              		@ args = 0, pretend = 0, frame = 0
   30              		@ frame_needed = 0, uses_anonymous_args = 0
-  31 0000 10B5     		push	{r4, lr}
+  31 0000 08B5     		push	{r3, lr}
   32              		.cfi_def_cfa_offset 8
-  33              		.cfi_offset 4, -8
+  33              		.cfi_offset 3, -8
   34              		.cfi_offset 14, -4
   45:Generated_Source\PSoC5/Timer_US_PM.c ****     #if (!Timer_US_UsingFixedFunction)
   46:Generated_Source\PSoC5/Timer_US_PM.c ****         Timer_US_backup.TimerUdb = Timer_US_ReadCounter();
   35              		.loc 1 46 0
   36 0002 FFF7FEFF 		bl	Timer_US_ReadCounter
   37              	.LVL0:
-  38 0006 044C     		ldr	r4, .L3
-  39 0008 6060     		str	r0, [r4, #4]
+  38 0006 034B     		ldr	r3, .L3
+  39 0008 5860     		str	r0, [r3, #4]
   47:Generated_Source\PSoC5/Timer_US_PM.c ****         Timer_US_backup.InterruptMaskValue = Timer_US_STATUS_MASK;
   40              		.loc 1 47 0
-  41 000a 044B     		ldr	r3, .L3+4
-  42 000c 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
-  43 000e 2372     		strb	r3, [r4, #8]
+  41 000a 034A     		ldr	r2, .L3+4
+  42 000c 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
+  43 000e 1A72     		strb	r2, [r3, #8]
+  44 0010 08BD     		pop	{r3, pc}
+  45              	.L4:
+  46 0012 00BF     		.align	2
+  47              	.L3:
+  48 0014 00000000 		.word	.LANCHOR0
+  49 0018 8A640040 		.word	1073767562
+  50              		.cfi_endproc
+  51              	.LFE0:
+  52              		.size	Timer_US_SaveConfig, .-Timer_US_SaveConfig
+  53              		.section	.text.Timer_US_RestoreConfig,"ax",%progbits
+  54              		.align	2
+  55              		.global	Timer_US_RestoreConfig
+  56              		.thumb
+  57              		.thumb_func
+  58              		.type	Timer_US_RestoreConfig, %function
+  59              	Timer_US_RestoreConfig:
+  60              	.LFB1:
   48:Generated_Source\PSoC5/Timer_US_PM.c ****         #if (Timer_US_UsingHWCaptureCounter)
   49:Generated_Source\PSoC5/Timer_US_PM.c ****             Timer_US_backup.TimerCaptureCounter = Timer_US_ReadCaptureCount();
   50:Generated_Source\PSoC5/Timer_US_PM.c ****         #endif /* Back Up capture counter register  */
   51:Generated_Source\PSoC5/Timer_US_PM.c **** 
   52:Generated_Source\PSoC5/Timer_US_PM.c ****         #if(!Timer_US_UDB_CONTROL_REG_REMOVED)
   53:Generated_Source\PSoC5/Timer_US_PM.c ****             Timer_US_backup.TimerControlRegister = Timer_US_ReadControlRegister();
-  44              		.loc 1 53 0
-  45 0010 FFF7FEFF 		bl	Timer_US_ReadControlRegister
-  46              	.LVL1:
-  47 0014 6072     		strb	r0, [r4, #9]
-  48 0016 10BD     		pop	{r4, pc}
-  49              	.L4:
-  50              		.align	2
-  51              	.L3:
-  52 0018 00000000 		.word	.LANCHOR0
-  53 001c 81640040 		.word	1073767553
-  54              		.cfi_endproc
-  55              	.LFE0:
-  56              		.size	Timer_US_SaveConfig, .-Timer_US_SaveConfig
-  57              		.section	.text.Timer_US_RestoreConfig,"ax",%progbits
-  58              		.align	2
-  59              		.global	Timer_US_RestoreConfig
-  60              		.thumb
-  61              		.thumb_func
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 3
-
-
-  62              		.type	Timer_US_RestoreConfig, %function
-  63              	Timer_US_RestoreConfig:
-  64              	.LFB1:
   54:Generated_Source\PSoC5/Timer_US_PM.c ****         #endif /* Backup the enable state of the Timer component */
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccmi0eeA.s 			page 3
+
+
   55:Generated_Source\PSoC5/Timer_US_PM.c ****     #endif /* Backup non retention registers in UDB implementation. All fixed function registers ar
   56:Generated_Source\PSoC5/Timer_US_PM.c **** }
   57:Generated_Source\PSoC5/Timer_US_PM.c **** 
@@ -149,57 +145,53 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 1
   76:Generated_Source\PSoC5/Timer_US_PM.c **** *******************************************************************************/
   77:Generated_Source\PSoC5/Timer_US_PM.c **** void Timer_US_RestoreConfig(void) 
   78:Generated_Source\PSoC5/Timer_US_PM.c **** {   
-  65              		.loc 1 78 0
-  66              		.cfi_startproc
-  67              		@ args = 0, pretend = 0, frame = 0
-  68              		@ frame_needed = 0, uses_anonymous_args = 0
-  69 0000 10B5     		push	{r4, lr}
-  70              		.cfi_def_cfa_offset 8
-  71              		.cfi_offset 4, -8
-  72              		.cfi_offset 14, -4
+  61              		.loc 1 78 0
+  62              		.cfi_startproc
+  63              		@ args = 0, pretend = 0, frame = 0
+  64              		@ frame_needed = 0, uses_anonymous_args = 0
+  65 0000 10B5     		push	{r4, lr}
+  66              		.cfi_def_cfa_offset 8
+  67              		.cfi_offset 4, -8
+  68              		.cfi_offset 14, -4
   79:Generated_Source\PSoC5/Timer_US_PM.c ****     #if (!Timer_US_UsingFixedFunction)
   80:Generated_Source\PSoC5/Timer_US_PM.c **** 
   81:Generated_Source\PSoC5/Timer_US_PM.c ****         Timer_US_WriteCounter(Timer_US_backup.TimerUdb);
-  73              		.loc 1 81 0
-  74 0002 054C     		ldr	r4, .L7
-  75 0004 6068     		ldr	r0, [r4, #4]
-  76 0006 FFF7FEFF 		bl	Timer_US_WriteCounter
-  77              	.LVL2:
+  69              		.loc 1 81 0
+  70 0002 044C     		ldr	r4, .L7
+  71 0004 6068     		ldr	r0, [r4, #4]
+  72 0006 FFF7FEFF 		bl	Timer_US_WriteCounter
+  73              	.LVL1:
   82:Generated_Source\PSoC5/Timer_US_PM.c ****         Timer_US_STATUS_MASK =Timer_US_backup.InterruptMaskValue;
-  78              		.loc 1 82 0
-  79 000a 227A     		ldrb	r2, [r4, #8]	@ zero_extendqisi2
-  80 000c 034B     		ldr	r3, .L7+4
-  81 000e 1A70     		strb	r2, [r3]
+  74              		.loc 1 82 0
+  75 000a 227A     		ldrb	r2, [r4, #8]	@ zero_extendqisi2
+  76 000c 024B     		ldr	r3, .L7+4
+  77 000e 1A70     		strb	r2, [r3]
+  78 0010 10BD     		pop	{r4, pc}
+  79              	.L8:
+  80 0012 00BF     		.align	2
+  81              	.L7:
+  82 0014 00000000 		.word	.LANCHOR0
+  83 0018 8A640040 		.word	1073767562
+  84              		.cfi_endproc
+  85              	.LFE1:
+  86              		.size	Timer_US_RestoreConfig, .-Timer_US_RestoreConfig
+  87              		.section	.text.Timer_US_Sleep,"ax",%progbits
+  88              		.align	2
+  89              		.global	Timer_US_Sleep
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccmi0eeA.s 			page 4
+
+
+  90              		.thumb
+  91              		.thumb_func
+  92              		.type	Timer_US_Sleep, %function
+  93              	Timer_US_Sleep:
+  94              	.LFB2:
   83:Generated_Source\PSoC5/Timer_US_PM.c ****         #if (Timer_US_UsingHWCaptureCounter)
   84:Generated_Source\PSoC5/Timer_US_PM.c ****             Timer_US_SetCaptureCount(Timer_US_backup.TimerCaptureCounter);
   85:Generated_Source\PSoC5/Timer_US_PM.c ****         #endif /* Restore Capture counter register*/
   86:Generated_Source\PSoC5/Timer_US_PM.c **** 
   87:Generated_Source\PSoC5/Timer_US_PM.c ****         #if(!Timer_US_UDB_CONTROL_REG_REMOVED)
   88:Generated_Source\PSoC5/Timer_US_PM.c ****             Timer_US_WriteControlRegister(Timer_US_backup.TimerControlRegister);
-  82              		.loc 1 88 0
-  83 0010 607A     		ldrb	r0, [r4, #9]	@ zero_extendqisi2
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 4
-
-
-  84 0012 FFF7FEFF 		bl	Timer_US_WriteControlRegister
-  85              	.LVL3:
-  86 0016 10BD     		pop	{r4, pc}
-  87              	.L8:
-  88              		.align	2
-  89              	.L7:
-  90 0018 00000000 		.word	.LANCHOR0
-  91 001c 81640040 		.word	1073767553
-  92              		.cfi_endproc
-  93              	.LFE1:
-  94              		.size	Timer_US_RestoreConfig, .-Timer_US_RestoreConfig
-  95              		.section	.text.Timer_US_Sleep,"ax",%progbits
-  96              		.align	2
-  97              		.global	Timer_US_Sleep
-  98              		.thumb
-  99              		.thumb_func
- 100              		.type	Timer_US_Sleep, %function
- 101              	Timer_US_Sleep:
- 102              	.LFB2:
   89:Generated_Source\PSoC5/Timer_US_PM.c ****         #endif /* Restore the enable state of the Timer component */
   90:Generated_Source\PSoC5/Timer_US_PM.c ****     #endif /* Restore non retention registers in the UDB implementation only */
   91:Generated_Source\PSoC5/Timer_US_PM.c **** }
@@ -225,71 +217,50 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 1
  111:Generated_Source\PSoC5/Timer_US_PM.c **** *******************************************************************************/
  112:Generated_Source\PSoC5/Timer_US_PM.c **** void Timer_US_Sleep(void) 
  113:Generated_Source\PSoC5/Timer_US_PM.c **** {
- 103              		.loc 1 113 0
- 104              		.cfi_startproc
- 105              		@ args = 0, pretend = 0, frame = 0
- 106              		@ frame_needed = 0, uses_anonymous_args = 0
- 107 0000 08B5     		push	{r3, lr}
- 108              		.cfi_def_cfa_offset 8
- 109              		.cfi_offset 3, -8
- 110              		.cfi_offset 14, -4
+  95              		.loc 1 113 0
+  96              		.cfi_startproc
+  97              		@ args = 0, pretend = 0, frame = 0
+  98              		@ frame_needed = 0, uses_anonymous_args = 0
+  99 0000 08B5     		push	{r3, lr}
+ 100              		.cfi_def_cfa_offset 8
+ 101              		.cfi_offset 3, -8
+ 102              		.cfi_offset 14, -4
  114:Generated_Source\PSoC5/Timer_US_PM.c ****     #if(!Timer_US_UDB_CONTROL_REG_REMOVED)
  115:Generated_Source\PSoC5/Timer_US_PM.c ****         /* Save Counter's enable state */
  116:Generated_Source\PSoC5/Timer_US_PM.c ****         if(Timer_US_CTRL_ENABLE == (Timer_US_CONTROL & Timer_US_CTRL_ENABLE))
- 111              		.loc 1 116 0
- 112 0002 084B     		ldr	r3, .L13
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 5
-
-
- 113 0004 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 114 0006 13F0800F 		tst	r3, #128
- 115 000a 03D0     		beq	.L10
  117:Generated_Source\PSoC5/Timer_US_PM.c ****         {
  118:Generated_Source\PSoC5/Timer_US_PM.c ****             /* Timer is enabled */
  119:Generated_Source\PSoC5/Timer_US_PM.c ****             Timer_US_backup.TimerEnableState = 1u;
- 116              		.loc 1 119 0
- 117 000c 0122     		movs	r2, #1
- 118 000e 064B     		ldr	r3, .L13+4
- 119 0010 1A70     		strb	r2, [r3]
- 120 0012 02E0     		b	.L11
- 121              	.L10:
  120:Generated_Source\PSoC5/Timer_US_PM.c ****         }
  121:Generated_Source\PSoC5/Timer_US_PM.c ****         else
  122:Generated_Source\PSoC5/Timer_US_PM.c ****         {
  123:Generated_Source\PSoC5/Timer_US_PM.c ****             /* Timer is disabled */
  124:Generated_Source\PSoC5/Timer_US_PM.c ****             Timer_US_backup.TimerEnableState = 0u;
- 122              		.loc 1 124 0
- 123 0014 0022     		movs	r2, #0
- 124 0016 044B     		ldr	r3, .L13+4
- 125 0018 1A70     		strb	r2, [r3]
- 126              	.L11:
  125:Generated_Source\PSoC5/Timer_US_PM.c ****         }
  126:Generated_Source\PSoC5/Timer_US_PM.c ****     #endif /* Back up enable state from the Timer control register */
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccmi0eeA.s 			page 5
+
+
  127:Generated_Source\PSoC5/Timer_US_PM.c ****     Timer_US_Stop();
- 127              		.loc 1 127 0
- 128 001a FFF7FEFF 		bl	Timer_US_Stop
- 129              	.LVL4:
+ 103              		.loc 1 127 0
+ 104 0002 FFF7FEFF 		bl	Timer_US_Stop
+ 105              	.LVL2:
  128:Generated_Source\PSoC5/Timer_US_PM.c ****     Timer_US_SaveConfig();
- 130              		.loc 1 128 0
- 131 001e FFF7FEFF 		bl	Timer_US_SaveConfig
- 132              	.LVL5:
- 133 0022 08BD     		pop	{r3, pc}
- 134              	.L14:
- 135              		.align	2
- 136              	.L13:
- 137 0024 71640040 		.word	1073767537
- 138 0028 00000000 		.word	.LANCHOR0
- 139              		.cfi_endproc
- 140              	.LFE2:
- 141              		.size	Timer_US_Sleep, .-Timer_US_Sleep
- 142              		.section	.text.Timer_US_Wakeup,"ax",%progbits
- 143              		.align	2
- 144              		.global	Timer_US_Wakeup
- 145              		.thumb
- 146              		.thumb_func
- 147              		.type	Timer_US_Wakeup, %function
- 148              	Timer_US_Wakeup:
- 149              	.LFB3:
+ 106              		.loc 1 128 0
+ 107 0006 FFF7FEFF 		bl	Timer_US_SaveConfig
+ 108              	.LVL3:
+ 109 000a 08BD     		pop	{r3, pc}
+ 110              		.cfi_endproc
+ 111              	.LFE2:
+ 112              		.size	Timer_US_Sleep, .-Timer_US_Sleep
+ 113              		.section	.text.Timer_US_Wakeup,"ax",%progbits
+ 114              		.align	2
+ 115              		.global	Timer_US_Wakeup
+ 116              		.thumb
+ 117              		.thumb_func
+ 118              		.type	Timer_US_Wakeup, %function
+ 119              	Timer_US_Wakeup:
+ 120              	.LFB3:
  129:Generated_Source\PSoC5/Timer_US_PM.c **** }
  130:Generated_Source\PSoC5/Timer_US_PM.c **** 
  131:Generated_Source\PSoC5/Timer_US_PM.c **** 
@@ -298,9 +269,6 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 1
  134:Generated_Source\PSoC5/Timer_US_PM.c **** ********************************************************************************
  135:Generated_Source\PSoC5/Timer_US_PM.c **** *
  136:Generated_Source\PSoC5/Timer_US_PM.c **** * Summary:
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 6
-
-
  137:Generated_Source\PSoC5/Timer_US_PM.c **** *  Restores and enables the user configuration
  138:Generated_Source\PSoC5/Timer_US_PM.c **** *
  139:Generated_Source\PSoC5/Timer_US_PM.c **** * Parameters:
@@ -316,758 +284,686 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 1
  149:Generated_Source\PSoC5/Timer_US_PM.c **** *******************************************************************************/
  150:Generated_Source\PSoC5/Timer_US_PM.c **** void Timer_US_Wakeup(void) 
  151:Generated_Source\PSoC5/Timer_US_PM.c **** {
- 150              		.loc 1 151 0
- 151              		.cfi_startproc
- 152              		@ args = 0, pretend = 0, frame = 0
- 153              		@ frame_needed = 0, uses_anonymous_args = 0
- 154 0000 08B5     		push	{r3, lr}
- 155              		.cfi_def_cfa_offset 8
- 156              		.cfi_offset 3, -8
- 157              		.cfi_offset 14, -4
+ 121              		.loc 1 151 0
+ 122              		.cfi_startproc
+ 123              		@ args = 0, pretend = 0, frame = 0
+ 124              		@ frame_needed = 0, uses_anonymous_args = 0
+ 125 0000 08B5     		push	{r3, lr}
+ 126              		.cfi_def_cfa_offset 8
+ 127              		.cfi_offset 3, -8
+ 128              		.cfi_offset 14, -4
  152:Generated_Source\PSoC5/Timer_US_PM.c ****     Timer_US_RestoreConfig();
- 158              		.loc 1 152 0
- 159 0002 FFF7FEFF 		bl	Timer_US_RestoreConfig
- 160              	.LVL6:
- 153:Generated_Source\PSoC5/Timer_US_PM.c ****     #if(!Timer_US_UDB_CONTROL_REG_REMOVED)
- 154:Generated_Source\PSoC5/Timer_US_PM.c ****         if(Timer_US_backup.TimerEnableState == 1u)
- 161              		.loc 1 154 0
- 162 0006 034B     		ldr	r3, .L18
- 163 0008 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 164 000a 012B     		cmp	r3, #1
- 165 000c 01D1     		bne	.L15
- 155:Generated_Source\PSoC5/Timer_US_PM.c ****         {     /* Enable Timer's operation */
- 156:Generated_Source\PSoC5/Timer_US_PM.c ****                 Timer_US_Enable();
- 166              		.loc 1 156 0
- 167 000e FFF7FEFF 		bl	Timer_US_Enable
- 168              	.LVL7:
- 169              	.L15:
- 170 0012 08BD     		pop	{r3, pc}
- 171              	.L19:
- 172              		.align	2
- 173              	.L18:
- 174 0014 00000000 		.word	.LANCHOR0
- 175              		.cfi_endproc
- 176              	.LFE3:
- 177              		.size	Timer_US_Wakeup, .-Timer_US_Wakeup
- 178              		.bss
- 179              		.align	2
- 180              		.set	.LANCHOR0,. + 0
- 181              		.type	Timer_US_backup, %object
- 182              		.size	Timer_US_backup, 12
- 183              	Timer_US_backup:
- 184 0000 00000000 		.space	12
- 184      00000000 
- 184      00000000 
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 7
+ 129              		.loc 1 152 0
+ 130 0002 FFF7FEFF 		bl	Timer_US_RestoreConfig
+ 131              	.LVL4:
+ 132 0006 08BD     		pop	{r3, pc}
+ 133              		.cfi_endproc
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccmi0eeA.s 			page 6
 
 
- 185              		.text
- 186              	.Letext0:
- 187              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
- 188              		.file 3 "Generated_Source\\PSoC5\\Timer_US.h"
- 189              		.section	.debug_info,"",%progbits
- 190              	.Ldebug_info0:
- 191 0000 E8010000 		.4byte	0x1e8
- 192 0004 0400     		.2byte	0x4
- 193 0006 00000000 		.4byte	.Ldebug_abbrev0
- 194 000a 04       		.byte	0x4
- 195 000b 01       		.uleb128 0x1
- 196 000c 52010000 		.4byte	.LASF31
- 197 0010 01       		.byte	0x1
- 198 0011 16010000 		.4byte	.LASF32
- 199 0015 04020000 		.4byte	.LASF33
- 200 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 201 001d 00000000 		.4byte	0
- 202 0021 00000000 		.4byte	.Ldebug_line0
- 203 0025 02       		.uleb128 0x2
- 204 0026 01       		.byte	0x1
- 205 0027 06       		.byte	0x6
- 206 0028 B6020000 		.4byte	.LASF0
- 207 002c 02       		.uleb128 0x2
- 208 002d 01       		.byte	0x1
- 209 002e 08       		.byte	0x8
- 210 002f 99000000 		.4byte	.LASF1
- 211 0033 02       		.uleb128 0x2
- 212 0034 02       		.byte	0x2
- 213 0035 05       		.byte	0x5
- 214 0036 7F020000 		.4byte	.LASF2
- 215 003a 02       		.uleb128 0x2
- 216 003b 02       		.byte	0x2
- 217 003c 07       		.byte	0x7
- 218 003d 52000000 		.4byte	.LASF3
- 219 0041 02       		.uleb128 0x2
- 220 0042 04       		.byte	0x4
- 221 0043 05       		.byte	0x5
- 222 0044 AD020000 		.4byte	.LASF4
- 223 0048 02       		.uleb128 0x2
- 224 0049 04       		.byte	0x4
- 225 004a 07       		.byte	0x7
- 226 004b AC000000 		.4byte	.LASF5
- 227 004f 02       		.uleb128 0x2
- 228 0050 08       		.byte	0x8
- 229 0051 05       		.byte	0x5
- 230 0052 6C020000 		.4byte	.LASF6
- 231 0056 02       		.uleb128 0x2
- 232 0057 08       		.byte	0x8
- 233 0058 07       		.byte	0x7
- 234 0059 ED010000 		.4byte	.LASF7
- 235 005d 03       		.uleb128 0x3
- 236 005e 04       		.byte	0x4
- 237 005f 05       		.byte	0x5
- 238 0060 696E7400 		.ascii	"int\000"
- 239 0064 02       		.uleb128 0x2
- 240 0065 04       		.byte	0x4
- 241 0066 07       		.byte	0x7
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 8
+ 134              	.LFE3:
+ 135              		.size	Timer_US_Wakeup, .-Timer_US_Wakeup
+ 136              		.bss
+ 137              		.align	2
+ 138              		.set	.LANCHOR0,. + 0
+ 139              		.type	Timer_US_backup, %object
+ 140              		.size	Timer_US_backup, 12
+ 141              	Timer_US_backup:
+ 142 0000 00000000 		.space	12
+ 142      00000000 
+ 142      00000000 
+ 143              		.text
+ 144              	.Letext0:
+ 145              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 146              		.file 3 "Generated_Source\\PSoC5\\Timer_US.h"
+ 147              		.section	.debug_info,"",%progbits
+ 148              	.Ldebug_info0:
+ 149 0000 9E010000 		.4byte	0x19e
+ 150 0004 0400     		.2byte	0x4
+ 151 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 152 000a 04       		.byte	0x4
+ 153 000b 01       		.uleb128 0x1
+ 154 000c 07010000 		.4byte	.LASF24
+ 155 0010 01       		.byte	0x1
+ 156 0011 CB000000 		.4byte	.LASF25
+ 157 0015 B9010000 		.4byte	.LASF26
+ 158 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 159 001d 00000000 		.4byte	0
+ 160 0021 00000000 		.4byte	.Ldebug_line0
+ 161 0025 02       		.uleb128 0x2
+ 162 0026 01       		.byte	0x1
+ 163 0027 06       		.byte	0x6
+ 164 0028 6B020000 		.4byte	.LASF0
+ 165 002c 02       		.uleb128 0x2
+ 166 002d 01       		.byte	0x1
+ 167 002e 08       		.byte	0x8
+ 168 002f 4E000000 		.4byte	.LASF1
+ 169 0033 02       		.uleb128 0x2
+ 170 0034 02       		.byte	0x2
+ 171 0035 05       		.byte	0x5
+ 172 0036 34020000 		.4byte	.LASF2
+ 173 003a 02       		.uleb128 0x2
+ 174 003b 02       		.byte	0x2
+ 175 003c 07       		.byte	0x7
+ 176 003d 25000000 		.4byte	.LASF3
+ 177 0041 02       		.uleb128 0x2
+ 178 0042 04       		.byte	0x4
+ 179 0043 05       		.byte	0x5
+ 180 0044 62020000 		.4byte	.LASF4
+ 181 0048 02       		.uleb128 0x2
+ 182 0049 04       		.byte	0x4
+ 183 004a 07       		.byte	0x7
+ 184 004b 61000000 		.4byte	.LASF5
+ 185 004f 02       		.uleb128 0x2
+ 186 0050 08       		.byte	0x8
+ 187 0051 05       		.byte	0x5
+ 188 0052 21020000 		.4byte	.LASF6
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccmi0eeA.s 			page 7
 
 
- 242 0067 E0010000 		.4byte	.LASF8
- 243 006b 04       		.uleb128 0x4
- 244 006c BE000000 		.4byte	.LASF9
- 245 0070 02       		.byte	0x2
- 246 0071 9201     		.2byte	0x192
- 247 0073 2C000000 		.4byte	0x2c
- 248 0077 04       		.uleb128 0x4
- 249 0078 4B010000 		.4byte	.LASF10
- 250 007c 02       		.byte	0x2
- 251 007d 9401     		.2byte	0x194
- 252 007f 48000000 		.4byte	0x48
- 253 0083 02       		.uleb128 0x2
- 254 0084 04       		.byte	0x4
- 255 0085 04       		.byte	0x4
- 256 0086 75000000 		.4byte	.LASF11
- 257 008a 02       		.uleb128 0x2
- 258 008b 08       		.byte	0x8
- 259 008c 04       		.byte	0x4
- 260 008d 65000000 		.4byte	.LASF12
- 261 0091 02       		.uleb128 0x2
- 262 0092 01       		.byte	0x1
- 263 0093 08       		.byte	0x8
- 264 0094 7A020000 		.4byte	.LASF13
- 265 0098 04       		.uleb128 0x4
- 266 0099 A7000000 		.4byte	.LASF14
- 267 009d 02       		.byte	0x2
- 268 009e 3C02     		.2byte	0x23c
- 269 00a0 A4000000 		.4byte	0xa4
- 270 00a4 05       		.uleb128 0x5
- 271 00a5 6B000000 		.4byte	0x6b
- 272 00a9 02       		.uleb128 0x2
- 273 00aa 04       		.byte	0x4
- 274 00ab 07       		.byte	0x7
- 275 00ac 63020000 		.4byte	.LASF15
- 276 00b0 06       		.uleb128 0x6
- 277 00b1 0C       		.byte	0xc
- 278 00b2 03       		.byte	0x3
- 279 00b3 43       		.byte	0x43
- 280 00b4 E9000000 		.4byte	0xe9
- 281 00b8 07       		.uleb128 0x7
- 282 00b9 00000000 		.4byte	.LASF16
- 283 00bd 03       		.byte	0x3
- 284 00be 45       		.byte	0x45
- 285 00bf 6B000000 		.4byte	0x6b
- 286 00c3 00       		.byte	0
- 287 00c4 07       		.uleb128 0x7
- 288 00c5 6C000000 		.4byte	.LASF17
- 289 00c9 03       		.byte	0x3
- 290 00ca 48       		.byte	0x48
- 291 00cb 77000000 		.4byte	0x77
- 292 00cf 04       		.byte	0x4
- 293 00d0 07       		.uleb128 0x7
- 294 00d1 D1020000 		.4byte	.LASF18
- 295 00d5 03       		.byte	0x3
- 296 00d6 49       		.byte	0x49
- 297 00d7 6B000000 		.4byte	0x6b
- 298 00db 08       		.byte	0x8
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 9
+ 189 0056 02       		.uleb128 0x2
+ 190 0057 08       		.byte	0x8
+ 191 0058 07       		.byte	0x7
+ 192 0059 A2010000 		.4byte	.LASF7
+ 193 005d 03       		.uleb128 0x3
+ 194 005e 04       		.byte	0x4
+ 195 005f 05       		.byte	0x5
+ 196 0060 696E7400 		.ascii	"int\000"
+ 197 0064 02       		.uleb128 0x2
+ 198 0065 04       		.byte	0x4
+ 199 0066 07       		.byte	0x7
+ 200 0067 95010000 		.4byte	.LASF8
+ 201 006b 04       		.uleb128 0x4
+ 202 006c 73000000 		.4byte	.LASF9
+ 203 0070 02       		.byte	0x2
+ 204 0071 9201     		.2byte	0x192
+ 205 0073 2C000000 		.4byte	0x2c
+ 206 0077 04       		.uleb128 0x4
+ 207 0078 00010000 		.4byte	.LASF10
+ 208 007c 02       		.byte	0x2
+ 209 007d 9401     		.2byte	0x194
+ 210 007f 48000000 		.4byte	0x48
+ 211 0083 02       		.uleb128 0x2
+ 212 0084 04       		.byte	0x4
+ 213 0085 04       		.byte	0x4
+ 214 0086 48000000 		.4byte	.LASF11
+ 215 008a 02       		.uleb128 0x2
+ 216 008b 08       		.byte	0x8
+ 217 008c 04       		.byte	0x4
+ 218 008d 38000000 		.4byte	.LASF12
+ 219 0091 02       		.uleb128 0x2
+ 220 0092 01       		.byte	0x1
+ 221 0093 08       		.byte	0x8
+ 222 0094 2F020000 		.4byte	.LASF13
+ 223 0098 04       		.uleb128 0x4
+ 224 0099 5C000000 		.4byte	.LASF14
+ 225 009d 02       		.byte	0x2
+ 226 009e 3C02     		.2byte	0x23c
+ 227 00a0 A4000000 		.4byte	0xa4
+ 228 00a4 05       		.uleb128 0x5
+ 229 00a5 6B000000 		.4byte	0x6b
+ 230 00a9 02       		.uleb128 0x2
+ 231 00aa 04       		.byte	0x4
+ 232 00ab 07       		.byte	0x7
+ 233 00ac 18020000 		.4byte	.LASF15
+ 234 00b0 06       		.uleb128 0x6
+ 235 00b1 0C       		.byte	0xc
+ 236 00b2 03       		.byte	0x3
+ 237 00b3 43       		.byte	0x43
+ 238 00b4 DD000000 		.4byte	0xdd
+ 239 00b8 07       		.uleb128 0x7
+ 240 00b9 00000000 		.4byte	.LASF16
+ 241 00bd 03       		.byte	0x3
+ 242 00be 45       		.byte	0x45
+ 243 00bf 6B000000 		.4byte	0x6b
+ 244 00c3 00       		.byte	0
+ 245 00c4 07       		.uleb128 0x7
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccmi0eeA.s 			page 8
 
 
- 299 00dc 07       		.uleb128 0x7
- 300 00dd E4020000 		.4byte	.LASF19
- 301 00e1 03       		.byte	0x3
- 302 00e2 4F       		.byte	0x4f
- 303 00e3 6B000000 		.4byte	0x6b
- 304 00e7 09       		.byte	0x9
- 305 00e8 00       		.byte	0
- 306 00e9 08       		.uleb128 0x8
- 307 00ea 89020000 		.4byte	.LASF20
- 308 00ee 03       		.byte	0x3
- 309 00ef 53       		.byte	0x53
- 310 00f0 B0000000 		.4byte	0xb0
- 311 00f4 09       		.uleb128 0x9
- 312 00f5 11000000 		.4byte	.LASF21
- 313 00f9 01       		.byte	0x1
- 314 00fa 2B       		.byte	0x2b
- 315 00fb 00000000 		.4byte	.LFB0
- 316 00ff 20000000 		.4byte	.LFE0-.LFB0
- 317 0103 01       		.uleb128 0x1
- 318 0104 9C       		.byte	0x9c
- 319 0105 1C010000 		.4byte	0x11c
- 320 0109 0A       		.uleb128 0xa
- 321 010a 06000000 		.4byte	.LVL0
- 322 010e A5010000 		.4byte	0x1a5
- 323 0112 0A       		.uleb128 0xa
- 324 0113 14000000 		.4byte	.LVL1
- 325 0117 B0010000 		.4byte	0x1b0
- 326 011b 00       		.byte	0
- 327 011c 09       		.uleb128 0x9
- 328 011d FF000000 		.4byte	.LASF22
- 329 0121 01       		.byte	0x1
- 330 0122 4D       		.byte	0x4d
- 331 0123 00000000 		.4byte	.LFB1
- 332 0127 20000000 		.4byte	.LFE1-.LFB1
- 333 012b 01       		.uleb128 0x1
- 334 012c 9C       		.byte	0x9c
- 335 012d 44010000 		.4byte	0x144
- 336 0131 0A       		.uleb128 0xa
- 337 0132 0A000000 		.4byte	.LVL2
- 338 0136 BB010000 		.4byte	0x1bb
- 339 013a 0A       		.uleb128 0xa
- 340 013b 16000000 		.4byte	.LVL3
- 341 013f CC010000 		.4byte	0x1cc
- 342 0143 00       		.byte	0
- 343 0144 09       		.uleb128 0x9
- 344 0145 C2020000 		.4byte	.LASF23
- 345 0149 01       		.byte	0x1
- 346 014a 70       		.byte	0x70
- 347 014b 00000000 		.4byte	.LFB2
- 348 014f 2C000000 		.4byte	.LFE2-.LFB2
- 349 0153 01       		.uleb128 0x1
- 350 0154 9C       		.byte	0x9c
- 351 0155 6C010000 		.4byte	0x16c
- 352 0159 0A       		.uleb128 0xa
- 353 015a 1E000000 		.4byte	.LVL4
- 354 015e DD010000 		.4byte	0x1dd
- 355 0162 0A       		.uleb128 0xa
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 10
+ 246 00c5 3F000000 		.4byte	.LASF17
+ 247 00c9 03       		.byte	0x3
+ 248 00ca 48       		.byte	0x48
+ 249 00cb 77000000 		.4byte	0x77
+ 250 00cf 04       		.byte	0x4
+ 251 00d0 07       		.uleb128 0x7
+ 252 00d1 86020000 		.4byte	.LASF18
+ 253 00d5 03       		.byte	0x3
+ 254 00d6 49       		.byte	0x49
+ 255 00d7 6B000000 		.4byte	0x6b
+ 256 00db 08       		.byte	0x8
+ 257 00dc 00       		.byte	0
+ 258 00dd 08       		.uleb128 0x8
+ 259 00de 3E020000 		.4byte	.LASF19
+ 260 00e2 03       		.byte	0x3
+ 261 00e3 53       		.byte	0x53
+ 262 00e4 B0000000 		.4byte	0xb0
+ 263 00e8 09       		.uleb128 0x9
+ 264 00e9 11000000 		.4byte	.LASF20
+ 265 00ed 01       		.byte	0x1
+ 266 00ee 2B       		.byte	0x2b
+ 267 00ef 00000000 		.4byte	.LFB0
+ 268 00f3 1C000000 		.4byte	.LFE0-.LFB0
+ 269 00f7 01       		.uleb128 0x1
+ 270 00f8 9C       		.byte	0x9c
+ 271 00f9 07010000 		.4byte	0x107
+ 272 00fd 0A       		.uleb128 0xa
+ 273 00fe 06000000 		.4byte	.LVL0
+ 274 0102 7E010000 		.4byte	0x17e
+ 275 0106 00       		.byte	0
+ 276 0107 09       		.uleb128 0x9
+ 277 0108 B4000000 		.4byte	.LASF21
+ 278 010c 01       		.byte	0x1
+ 279 010d 4D       		.byte	0x4d
+ 280 010e 00000000 		.4byte	.LFB1
+ 281 0112 1C000000 		.4byte	.LFE1-.LFB1
+ 282 0116 01       		.uleb128 0x1
+ 283 0117 9C       		.byte	0x9c
+ 284 0118 26010000 		.4byte	0x126
+ 285 011c 0A       		.uleb128 0xa
+ 286 011d 0A000000 		.4byte	.LVL1
+ 287 0121 89010000 		.4byte	0x189
+ 288 0125 00       		.byte	0
+ 289 0126 09       		.uleb128 0x9
+ 290 0127 77020000 		.4byte	.LASF22
+ 291 012b 01       		.byte	0x1
+ 292 012c 70       		.byte	0x70
+ 293 012d 00000000 		.4byte	.LFB2
+ 294 0131 0C000000 		.4byte	.LFE2-.LFB2
+ 295 0135 01       		.uleb128 0x1
+ 296 0136 9C       		.byte	0x9c
+ 297 0137 4E010000 		.4byte	0x14e
+ 298 013b 0A       		.uleb128 0xa
+ 299 013c 06000000 		.4byte	.LVL2
+ 300 0140 9A010000 		.4byte	0x19a
+ 301 0144 0A       		.uleb128 0xa
+ 302 0145 0A000000 		.4byte	.LVL3
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccmi0eeA.s 			page 9
 
 
- 356 0163 22000000 		.4byte	.LVL5
- 357 0167 F4000000 		.4byte	0xf4
- 358 016b 00       		.byte	0
- 359 016c 09       		.uleb128 0x9
- 360 016d C4000000 		.4byte	.LASF24
- 361 0171 01       		.byte	0x1
- 362 0172 96       		.byte	0x96
- 363 0173 00000000 		.4byte	.LFB3
- 364 0177 18000000 		.4byte	.LFE3-.LFB3
- 365 017b 01       		.uleb128 0x1
- 366 017c 9C       		.byte	0x9c
- 367 017d 94010000 		.4byte	0x194
- 368 0181 0A       		.uleb128 0xa
- 369 0182 06000000 		.4byte	.LVL6
- 370 0186 1C010000 		.4byte	0x11c
- 371 018a 0A       		.uleb128 0xa
- 372 018b 12000000 		.4byte	.LVL7
- 373 018f E4010000 		.4byte	0x1e4
- 374 0193 00       		.byte	0
- 375 0194 0B       		.uleb128 0xb
- 376 0195 3B010000 		.4byte	.LASF34
- 377 0199 01       		.byte	0x1
- 378 019a 15       		.byte	0x15
- 379 019b E9000000 		.4byte	0xe9
- 380 019f 05       		.uleb128 0x5
- 381 01a0 03       		.byte	0x3
- 382 01a1 00000000 		.4byte	Timer_US_backup
- 383 01a5 0C       		.uleb128 0xc
- 384 01a6 EA000000 		.4byte	.LASF25
- 385 01aa 03       		.byte	0x3
- 386 01ab 69       		.byte	0x69
- 387 01ac 77000000 		.4byte	0x77
- 388 01b0 0C       		.uleb128 0xc
- 389 01b1 25000000 		.4byte	.LASF26
- 390 01b5 03       		.byte	0x3
- 391 01b6 63       		.byte	0x63
- 392 01b7 6B000000 		.4byte	0x6b
- 393 01bb 0D       		.uleb128 0xd
- 394 01bc D4000000 		.4byte	.LASF27
- 395 01c0 03       		.byte	0x3
- 396 01c1 6A       		.byte	0x6a
- 397 01c2 CC010000 		.4byte	0x1cc
- 398 01c6 0E       		.uleb128 0xe
- 399 01c7 77000000 		.4byte	0x77
- 400 01cb 00       		.byte	0
- 401 01cc 0D       		.uleb128 0xd
- 402 01cd 7B000000 		.4byte	.LASF28
- 403 01d1 03       		.byte	0x3
- 404 01d2 64       		.byte	0x64
- 405 01d3 DD010000 		.4byte	0x1dd
- 406 01d7 0E       		.uleb128 0xe
- 407 01d8 6B000000 		.4byte	0x6b
- 408 01dc 00       		.byte	0
- 409 01dd 0F       		.uleb128 0xf
- 410 01de 9F020000 		.4byte	.LASF29
- 411 01e2 03       		.byte	0x3
- 412 01e3 5B       		.byte	0x5b
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 11
+ 303 0149 E8000000 		.4byte	0xe8
+ 304 014d 00       		.byte	0
+ 305 014e 09       		.uleb128 0x9
+ 306 014f 79000000 		.4byte	.LASF23
+ 307 0153 01       		.byte	0x1
+ 308 0154 96       		.byte	0x96
+ 309 0155 00000000 		.4byte	.LFB3
+ 310 0159 08000000 		.4byte	.LFE3-.LFB3
+ 311 015d 01       		.uleb128 0x1
+ 312 015e 9C       		.byte	0x9c
+ 313 015f 6D010000 		.4byte	0x16d
+ 314 0163 0A       		.uleb128 0xa
+ 315 0164 06000000 		.4byte	.LVL4
+ 316 0168 07010000 		.4byte	0x107
+ 317 016c 00       		.byte	0
+ 318 016d 0B       		.uleb128 0xb
+ 319 016e F0000000 		.4byte	.LASF27
+ 320 0172 01       		.byte	0x1
+ 321 0173 15       		.byte	0x15
+ 322 0174 DD000000 		.4byte	0xdd
+ 323 0178 05       		.uleb128 0x5
+ 324 0179 03       		.byte	0x3
+ 325 017a 00000000 		.4byte	Timer_US_backup
+ 326 017e 0C       		.uleb128 0xc
+ 327 017f 9F000000 		.4byte	.LASF28
+ 328 0183 03       		.byte	0x3
+ 329 0184 69       		.byte	0x69
+ 330 0185 77000000 		.4byte	0x77
+ 331 0189 0D       		.uleb128 0xd
+ 332 018a 89000000 		.4byte	.LASF29
+ 333 018e 03       		.byte	0x3
+ 334 018f 6A       		.byte	0x6a
+ 335 0190 9A010000 		.4byte	0x19a
+ 336 0194 0E       		.uleb128 0xe
+ 337 0195 77000000 		.4byte	0x77
+ 338 0199 00       		.byte	0
+ 339 019a 0F       		.uleb128 0xf
+ 340 019b 54020000 		.4byte	.LASF30
+ 341 019f 03       		.byte	0x3
+ 342 01a0 5B       		.byte	0x5b
+ 343 01a1 00       		.byte	0
+ 344              		.section	.debug_abbrev,"",%progbits
+ 345              	.Ldebug_abbrev0:
+ 346 0000 01       		.uleb128 0x1
+ 347 0001 11       		.uleb128 0x11
+ 348 0002 01       		.byte	0x1
+ 349 0003 25       		.uleb128 0x25
+ 350 0004 0E       		.uleb128 0xe
+ 351 0005 13       		.uleb128 0x13
+ 352 0006 0B       		.uleb128 0xb
+ 353 0007 03       		.uleb128 0x3
+ 354 0008 0E       		.uleb128 0xe
+ 355 0009 1B       		.uleb128 0x1b
+ 356 000a 0E       		.uleb128 0xe
+ 357 000b 55       		.uleb128 0x55
+ 358 000c 17       		.uleb128 0x17
+ 359 000d 11       		.uleb128 0x11
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccmi0eeA.s 			page 10
 
 
- 413 01e4 0F       		.uleb128 0xf
- 414 01e5 42000000 		.4byte	.LASF30
- 415 01e9 03       		.byte	0x3
- 416 01ea 8B       		.byte	0x8b
- 417 01eb 00       		.byte	0
- 418              		.section	.debug_abbrev,"",%progbits
- 419              	.Ldebug_abbrev0:
- 420 0000 01       		.uleb128 0x1
- 421 0001 11       		.uleb128 0x11
- 422 0002 01       		.byte	0x1
- 423 0003 25       		.uleb128 0x25
- 424 0004 0E       		.uleb128 0xe
- 425 0005 13       		.uleb128 0x13
- 426 0006 0B       		.uleb128 0xb
- 427 0007 03       		.uleb128 0x3
- 428 0008 0E       		.uleb128 0xe
- 429 0009 1B       		.uleb128 0x1b
- 430 000a 0E       		.uleb128 0xe
- 431 000b 55       		.uleb128 0x55
- 432 000c 17       		.uleb128 0x17
- 433 000d 11       		.uleb128 0x11
- 434 000e 01       		.uleb128 0x1
- 435 000f 10       		.uleb128 0x10
- 436 0010 17       		.uleb128 0x17
- 437 0011 00       		.byte	0
- 438 0012 00       		.byte	0
- 439 0013 02       		.uleb128 0x2
- 440 0014 24       		.uleb128 0x24
- 441 0015 00       		.byte	0
- 442 0016 0B       		.uleb128 0xb
- 443 0017 0B       		.uleb128 0xb
- 444 0018 3E       		.uleb128 0x3e
- 445 0019 0B       		.uleb128 0xb
- 446 001a 03       		.uleb128 0x3
- 447 001b 0E       		.uleb128 0xe
- 448 001c 00       		.byte	0
- 449 001d 00       		.byte	0
- 450 001e 03       		.uleb128 0x3
- 451 001f 24       		.uleb128 0x24
- 452 0020 00       		.byte	0
- 453 0021 0B       		.uleb128 0xb
- 454 0022 0B       		.uleb128 0xb
- 455 0023 3E       		.uleb128 0x3e
- 456 0024 0B       		.uleb128 0xb
- 457 0025 03       		.uleb128 0x3
- 458 0026 08       		.uleb128 0x8
- 459 0027 00       		.byte	0
- 460 0028 00       		.byte	0
- 461 0029 04       		.uleb128 0x4
- 462 002a 16       		.uleb128 0x16
- 463 002b 00       		.byte	0
- 464 002c 03       		.uleb128 0x3
- 465 002d 0E       		.uleb128 0xe
- 466 002e 3A       		.uleb128 0x3a
- 467 002f 0B       		.uleb128 0xb
- 468 0030 3B       		.uleb128 0x3b
- 469 0031 05       		.uleb128 0x5
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 12
+ 360 000e 01       		.uleb128 0x1
+ 361 000f 10       		.uleb128 0x10
+ 362 0010 17       		.uleb128 0x17
+ 363 0011 00       		.byte	0
+ 364 0012 00       		.byte	0
+ 365 0013 02       		.uleb128 0x2
+ 366 0014 24       		.uleb128 0x24
+ 367 0015 00       		.byte	0
+ 368 0016 0B       		.uleb128 0xb
+ 369 0017 0B       		.uleb128 0xb
+ 370 0018 3E       		.uleb128 0x3e
+ 371 0019 0B       		.uleb128 0xb
+ 372 001a 03       		.uleb128 0x3
+ 373 001b 0E       		.uleb128 0xe
+ 374 001c 00       		.byte	0
+ 375 001d 00       		.byte	0
+ 376 001e 03       		.uleb128 0x3
+ 377 001f 24       		.uleb128 0x24
+ 378 0020 00       		.byte	0
+ 379 0021 0B       		.uleb128 0xb
+ 380 0022 0B       		.uleb128 0xb
+ 381 0023 3E       		.uleb128 0x3e
+ 382 0024 0B       		.uleb128 0xb
+ 383 0025 03       		.uleb128 0x3
+ 384 0026 08       		.uleb128 0x8
+ 385 0027 00       		.byte	0
+ 386 0028 00       		.byte	0
+ 387 0029 04       		.uleb128 0x4
+ 388 002a 16       		.uleb128 0x16
+ 389 002b 00       		.byte	0
+ 390 002c 03       		.uleb128 0x3
+ 391 002d 0E       		.uleb128 0xe
+ 392 002e 3A       		.uleb128 0x3a
+ 393 002f 0B       		.uleb128 0xb
+ 394 0030 3B       		.uleb128 0x3b
+ 395 0031 05       		.uleb128 0x5
+ 396 0032 49       		.uleb128 0x49
+ 397 0033 13       		.uleb128 0x13
+ 398 0034 00       		.byte	0
+ 399 0035 00       		.byte	0
+ 400 0036 05       		.uleb128 0x5
+ 401 0037 35       		.uleb128 0x35
+ 402 0038 00       		.byte	0
+ 403 0039 49       		.uleb128 0x49
+ 404 003a 13       		.uleb128 0x13
+ 405 003b 00       		.byte	0
+ 406 003c 00       		.byte	0
+ 407 003d 06       		.uleb128 0x6
+ 408 003e 13       		.uleb128 0x13
+ 409 003f 01       		.byte	0x1
+ 410 0040 0B       		.uleb128 0xb
+ 411 0041 0B       		.uleb128 0xb
+ 412 0042 3A       		.uleb128 0x3a
+ 413 0043 0B       		.uleb128 0xb
+ 414 0044 3B       		.uleb128 0x3b
+ 415 0045 0B       		.uleb128 0xb
+ 416 0046 01       		.uleb128 0x1
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccmi0eeA.s 			page 11
 
 
- 470 0032 49       		.uleb128 0x49
- 471 0033 13       		.uleb128 0x13
- 472 0034 00       		.byte	0
- 473 0035 00       		.byte	0
- 474 0036 05       		.uleb128 0x5
- 475 0037 35       		.uleb128 0x35
- 476 0038 00       		.byte	0
- 477 0039 49       		.uleb128 0x49
- 478 003a 13       		.uleb128 0x13
- 479 003b 00       		.byte	0
- 480 003c 00       		.byte	0
- 481 003d 06       		.uleb128 0x6
- 482 003e 13       		.uleb128 0x13
- 483 003f 01       		.byte	0x1
- 484 0040 0B       		.uleb128 0xb
- 485 0041 0B       		.uleb128 0xb
- 486 0042 3A       		.uleb128 0x3a
- 487 0043 0B       		.uleb128 0xb
- 488 0044 3B       		.uleb128 0x3b
- 489 0045 0B       		.uleb128 0xb
- 490 0046 01       		.uleb128 0x1
- 491 0047 13       		.uleb128 0x13
- 492 0048 00       		.byte	0
- 493 0049 00       		.byte	0
- 494 004a 07       		.uleb128 0x7
- 495 004b 0D       		.uleb128 0xd
- 496 004c 00       		.byte	0
- 497 004d 03       		.uleb128 0x3
- 498 004e 0E       		.uleb128 0xe
- 499 004f 3A       		.uleb128 0x3a
- 500 0050 0B       		.uleb128 0xb
- 501 0051 3B       		.uleb128 0x3b
- 502 0052 0B       		.uleb128 0xb
- 503 0053 49       		.uleb128 0x49
- 504 0054 13       		.uleb128 0x13
- 505 0055 38       		.uleb128 0x38
- 506 0056 0B       		.uleb128 0xb
- 507 0057 00       		.byte	0
- 508 0058 00       		.byte	0
- 509 0059 08       		.uleb128 0x8
- 510 005a 16       		.uleb128 0x16
- 511 005b 00       		.byte	0
- 512 005c 03       		.uleb128 0x3
- 513 005d 0E       		.uleb128 0xe
- 514 005e 3A       		.uleb128 0x3a
- 515 005f 0B       		.uleb128 0xb
- 516 0060 3B       		.uleb128 0x3b
- 517 0061 0B       		.uleb128 0xb
- 518 0062 49       		.uleb128 0x49
- 519 0063 13       		.uleb128 0x13
- 520 0064 00       		.byte	0
- 521 0065 00       		.byte	0
- 522 0066 09       		.uleb128 0x9
- 523 0067 2E       		.uleb128 0x2e
- 524 0068 01       		.byte	0x1
- 525 0069 3F       		.uleb128 0x3f
- 526 006a 19       		.uleb128 0x19
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 13
+ 417 0047 13       		.uleb128 0x13
+ 418 0048 00       		.byte	0
+ 419 0049 00       		.byte	0
+ 420 004a 07       		.uleb128 0x7
+ 421 004b 0D       		.uleb128 0xd
+ 422 004c 00       		.byte	0
+ 423 004d 03       		.uleb128 0x3
+ 424 004e 0E       		.uleb128 0xe
+ 425 004f 3A       		.uleb128 0x3a
+ 426 0050 0B       		.uleb128 0xb
+ 427 0051 3B       		.uleb128 0x3b
+ 428 0052 0B       		.uleb128 0xb
+ 429 0053 49       		.uleb128 0x49
+ 430 0054 13       		.uleb128 0x13
+ 431 0055 38       		.uleb128 0x38
+ 432 0056 0B       		.uleb128 0xb
+ 433 0057 00       		.byte	0
+ 434 0058 00       		.byte	0
+ 435 0059 08       		.uleb128 0x8
+ 436 005a 16       		.uleb128 0x16
+ 437 005b 00       		.byte	0
+ 438 005c 03       		.uleb128 0x3
+ 439 005d 0E       		.uleb128 0xe
+ 440 005e 3A       		.uleb128 0x3a
+ 441 005f 0B       		.uleb128 0xb
+ 442 0060 3B       		.uleb128 0x3b
+ 443 0061 0B       		.uleb128 0xb
+ 444 0062 49       		.uleb128 0x49
+ 445 0063 13       		.uleb128 0x13
+ 446 0064 00       		.byte	0
+ 447 0065 00       		.byte	0
+ 448 0066 09       		.uleb128 0x9
+ 449 0067 2E       		.uleb128 0x2e
+ 450 0068 01       		.byte	0x1
+ 451 0069 3F       		.uleb128 0x3f
+ 452 006a 19       		.uleb128 0x19
+ 453 006b 03       		.uleb128 0x3
+ 454 006c 0E       		.uleb128 0xe
+ 455 006d 3A       		.uleb128 0x3a
+ 456 006e 0B       		.uleb128 0xb
+ 457 006f 3B       		.uleb128 0x3b
+ 458 0070 0B       		.uleb128 0xb
+ 459 0071 27       		.uleb128 0x27
+ 460 0072 19       		.uleb128 0x19
+ 461 0073 11       		.uleb128 0x11
+ 462 0074 01       		.uleb128 0x1
+ 463 0075 12       		.uleb128 0x12
+ 464 0076 06       		.uleb128 0x6
+ 465 0077 40       		.uleb128 0x40
+ 466 0078 18       		.uleb128 0x18
+ 467 0079 9742     		.uleb128 0x2117
+ 468 007b 19       		.uleb128 0x19
+ 469 007c 01       		.uleb128 0x1
+ 470 007d 13       		.uleb128 0x13
+ 471 007e 00       		.byte	0
+ 472 007f 00       		.byte	0
+ 473 0080 0A       		.uleb128 0xa
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccmi0eeA.s 			page 12
 
 
- 527 006b 03       		.uleb128 0x3
- 528 006c 0E       		.uleb128 0xe
- 529 006d 3A       		.uleb128 0x3a
- 530 006e 0B       		.uleb128 0xb
- 531 006f 3B       		.uleb128 0x3b
- 532 0070 0B       		.uleb128 0xb
- 533 0071 27       		.uleb128 0x27
- 534 0072 19       		.uleb128 0x19
- 535 0073 11       		.uleb128 0x11
- 536 0074 01       		.uleb128 0x1
- 537 0075 12       		.uleb128 0x12
- 538 0076 06       		.uleb128 0x6
- 539 0077 40       		.uleb128 0x40
- 540 0078 18       		.uleb128 0x18
- 541 0079 9742     		.uleb128 0x2117
- 542 007b 19       		.uleb128 0x19
- 543 007c 01       		.uleb128 0x1
- 544 007d 13       		.uleb128 0x13
- 545 007e 00       		.byte	0
- 546 007f 00       		.byte	0
- 547 0080 0A       		.uleb128 0xa
- 548 0081 898201   		.uleb128 0x4109
- 549 0084 00       		.byte	0
- 550 0085 11       		.uleb128 0x11
- 551 0086 01       		.uleb128 0x1
- 552 0087 31       		.uleb128 0x31
- 553 0088 13       		.uleb128 0x13
- 554 0089 00       		.byte	0
- 555 008a 00       		.byte	0
- 556 008b 0B       		.uleb128 0xb
- 557 008c 34       		.uleb128 0x34
- 558 008d 00       		.byte	0
- 559 008e 03       		.uleb128 0x3
- 560 008f 0E       		.uleb128 0xe
- 561 0090 3A       		.uleb128 0x3a
- 562 0091 0B       		.uleb128 0xb
- 563 0092 3B       		.uleb128 0x3b
- 564 0093 0B       		.uleb128 0xb
- 565 0094 49       		.uleb128 0x49
- 566 0095 13       		.uleb128 0x13
- 567 0096 02       		.uleb128 0x2
- 568 0097 18       		.uleb128 0x18
- 569 0098 00       		.byte	0
- 570 0099 00       		.byte	0
- 571 009a 0C       		.uleb128 0xc
- 572 009b 2E       		.uleb128 0x2e
- 573 009c 00       		.byte	0
- 574 009d 3F       		.uleb128 0x3f
- 575 009e 19       		.uleb128 0x19
- 576 009f 03       		.uleb128 0x3
- 577 00a0 0E       		.uleb128 0xe
- 578 00a1 3A       		.uleb128 0x3a
- 579 00a2 0B       		.uleb128 0xb
- 580 00a3 3B       		.uleb128 0x3b
- 581 00a4 0B       		.uleb128 0xb
- 582 00a5 27       		.uleb128 0x27
- 583 00a6 19       		.uleb128 0x19
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 14
+ 474 0081 898201   		.uleb128 0x4109
+ 475 0084 00       		.byte	0
+ 476 0085 11       		.uleb128 0x11
+ 477 0086 01       		.uleb128 0x1
+ 478 0087 31       		.uleb128 0x31
+ 479 0088 13       		.uleb128 0x13
+ 480 0089 00       		.byte	0
+ 481 008a 00       		.byte	0
+ 482 008b 0B       		.uleb128 0xb
+ 483 008c 34       		.uleb128 0x34
+ 484 008d 00       		.byte	0
+ 485 008e 03       		.uleb128 0x3
+ 486 008f 0E       		.uleb128 0xe
+ 487 0090 3A       		.uleb128 0x3a
+ 488 0091 0B       		.uleb128 0xb
+ 489 0092 3B       		.uleb128 0x3b
+ 490 0093 0B       		.uleb128 0xb
+ 491 0094 49       		.uleb128 0x49
+ 492 0095 13       		.uleb128 0x13
+ 493 0096 02       		.uleb128 0x2
+ 494 0097 18       		.uleb128 0x18
+ 495 0098 00       		.byte	0
+ 496 0099 00       		.byte	0
+ 497 009a 0C       		.uleb128 0xc
+ 498 009b 2E       		.uleb128 0x2e
+ 499 009c 00       		.byte	0
+ 500 009d 3F       		.uleb128 0x3f
+ 501 009e 19       		.uleb128 0x19
+ 502 009f 03       		.uleb128 0x3
+ 503 00a0 0E       		.uleb128 0xe
+ 504 00a1 3A       		.uleb128 0x3a
+ 505 00a2 0B       		.uleb128 0xb
+ 506 00a3 3B       		.uleb128 0x3b
+ 507 00a4 0B       		.uleb128 0xb
+ 508 00a5 27       		.uleb128 0x27
+ 509 00a6 19       		.uleb128 0x19
+ 510 00a7 49       		.uleb128 0x49
+ 511 00a8 13       		.uleb128 0x13
+ 512 00a9 3C       		.uleb128 0x3c
+ 513 00aa 19       		.uleb128 0x19
+ 514 00ab 00       		.byte	0
+ 515 00ac 00       		.byte	0
+ 516 00ad 0D       		.uleb128 0xd
+ 517 00ae 2E       		.uleb128 0x2e
+ 518 00af 01       		.byte	0x1
+ 519 00b0 3F       		.uleb128 0x3f
+ 520 00b1 19       		.uleb128 0x19
+ 521 00b2 03       		.uleb128 0x3
+ 522 00b3 0E       		.uleb128 0xe
+ 523 00b4 3A       		.uleb128 0x3a
+ 524 00b5 0B       		.uleb128 0xb
+ 525 00b6 3B       		.uleb128 0x3b
+ 526 00b7 0B       		.uleb128 0xb
+ 527 00b8 27       		.uleb128 0x27
+ 528 00b9 19       		.uleb128 0x19
+ 529 00ba 3C       		.uleb128 0x3c
+ 530 00bb 19       		.uleb128 0x19
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccmi0eeA.s 			page 13
 
 
- 584 00a7 49       		.uleb128 0x49
- 585 00a8 13       		.uleb128 0x13
- 586 00a9 3C       		.uleb128 0x3c
- 587 00aa 19       		.uleb128 0x19
- 588 00ab 00       		.byte	0
- 589 00ac 00       		.byte	0
- 590 00ad 0D       		.uleb128 0xd
- 591 00ae 2E       		.uleb128 0x2e
- 592 00af 01       		.byte	0x1
- 593 00b0 3F       		.uleb128 0x3f
- 594 00b1 19       		.uleb128 0x19
- 595 00b2 03       		.uleb128 0x3
- 596 00b3 0E       		.uleb128 0xe
- 597 00b4 3A       		.uleb128 0x3a
- 598 00b5 0B       		.uleb128 0xb
- 599 00b6 3B       		.uleb128 0x3b
- 600 00b7 0B       		.uleb128 0xb
- 601 00b8 27       		.uleb128 0x27
- 602 00b9 19       		.uleb128 0x19
- 603 00ba 3C       		.uleb128 0x3c
- 604 00bb 19       		.uleb128 0x19
- 605 00bc 01       		.uleb128 0x1
- 606 00bd 13       		.uleb128 0x13
- 607 00be 00       		.byte	0
- 608 00bf 00       		.byte	0
- 609 00c0 0E       		.uleb128 0xe
- 610 00c1 05       		.uleb128 0x5
- 611 00c2 00       		.byte	0
- 612 00c3 49       		.uleb128 0x49
- 613 00c4 13       		.uleb128 0x13
- 614 00c5 00       		.byte	0
- 615 00c6 00       		.byte	0
- 616 00c7 0F       		.uleb128 0xf
- 617 00c8 2E       		.uleb128 0x2e
- 618 00c9 00       		.byte	0
- 619 00ca 3F       		.uleb128 0x3f
- 620 00cb 19       		.uleb128 0x19
- 621 00cc 03       		.uleb128 0x3
- 622 00cd 0E       		.uleb128 0xe
- 623 00ce 3A       		.uleb128 0x3a
- 624 00cf 0B       		.uleb128 0xb
- 625 00d0 3B       		.uleb128 0x3b
- 626 00d1 0B       		.uleb128 0xb
- 627 00d2 27       		.uleb128 0x27
- 628 00d3 19       		.uleb128 0x19
- 629 00d4 3C       		.uleb128 0x3c
- 630 00d5 19       		.uleb128 0x19
- 631 00d6 00       		.byte	0
- 632 00d7 00       		.byte	0
- 633 00d8 00       		.byte	0
- 634              		.section	.debug_aranges,"",%progbits
- 635 0000 34000000 		.4byte	0x34
- 636 0004 0200     		.2byte	0x2
- 637 0006 00000000 		.4byte	.Ldebug_info0
- 638 000a 04       		.byte	0x4
- 639 000b 00       		.byte	0
- 640 000c 0000     		.2byte	0
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 15
+ 531 00bc 01       		.uleb128 0x1
+ 532 00bd 13       		.uleb128 0x13
+ 533 00be 00       		.byte	0
+ 534 00bf 00       		.byte	0
+ 535 00c0 0E       		.uleb128 0xe
+ 536 00c1 05       		.uleb128 0x5
+ 537 00c2 00       		.byte	0
+ 538 00c3 49       		.uleb128 0x49
+ 539 00c4 13       		.uleb128 0x13
+ 540 00c5 00       		.byte	0
+ 541 00c6 00       		.byte	0
+ 542 00c7 0F       		.uleb128 0xf
+ 543 00c8 2E       		.uleb128 0x2e
+ 544 00c9 00       		.byte	0
+ 545 00ca 3F       		.uleb128 0x3f
+ 546 00cb 19       		.uleb128 0x19
+ 547 00cc 03       		.uleb128 0x3
+ 548 00cd 0E       		.uleb128 0xe
+ 549 00ce 3A       		.uleb128 0x3a
+ 550 00cf 0B       		.uleb128 0xb
+ 551 00d0 3B       		.uleb128 0x3b
+ 552 00d1 0B       		.uleb128 0xb
+ 553 00d2 27       		.uleb128 0x27
+ 554 00d3 19       		.uleb128 0x19
+ 555 00d4 3C       		.uleb128 0x3c
+ 556 00d5 19       		.uleb128 0x19
+ 557 00d6 00       		.byte	0
+ 558 00d7 00       		.byte	0
+ 559 00d8 00       		.byte	0
+ 560              		.section	.debug_aranges,"",%progbits
+ 561 0000 34000000 		.4byte	0x34
+ 562 0004 0200     		.2byte	0x2
+ 563 0006 00000000 		.4byte	.Ldebug_info0
+ 564 000a 04       		.byte	0x4
+ 565 000b 00       		.byte	0
+ 566 000c 0000     		.2byte	0
+ 567 000e 0000     		.2byte	0
+ 568 0010 00000000 		.4byte	.LFB0
+ 569 0014 1C000000 		.4byte	.LFE0-.LFB0
+ 570 0018 00000000 		.4byte	.LFB1
+ 571 001c 1C000000 		.4byte	.LFE1-.LFB1
+ 572 0020 00000000 		.4byte	.LFB2
+ 573 0024 0C000000 		.4byte	.LFE2-.LFB2
+ 574 0028 00000000 		.4byte	.LFB3
+ 575 002c 08000000 		.4byte	.LFE3-.LFB3
+ 576 0030 00000000 		.4byte	0
+ 577 0034 00000000 		.4byte	0
+ 578              		.section	.debug_ranges,"",%progbits
+ 579              	.Ldebug_ranges0:
+ 580 0000 00000000 		.4byte	.LFB0
+ 581 0004 1C000000 		.4byte	.LFE0
+ 582 0008 00000000 		.4byte	.LFB1
+ 583 000c 1C000000 		.4byte	.LFE1
+ 584 0010 00000000 		.4byte	.LFB2
+ 585 0014 0C000000 		.4byte	.LFE2
+ 586 0018 00000000 		.4byte	.LFB3
+ 587 001c 08000000 		.4byte	.LFE3
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccmi0eeA.s 			page 14
 
 
- 641 000e 0000     		.2byte	0
- 642 0010 00000000 		.4byte	.LFB0
- 643 0014 20000000 		.4byte	.LFE0-.LFB0
- 644 0018 00000000 		.4byte	.LFB1
- 645 001c 20000000 		.4byte	.LFE1-.LFB1
- 646 0020 00000000 		.4byte	.LFB2
- 647 0024 2C000000 		.4byte	.LFE2-.LFB2
- 648 0028 00000000 		.4byte	.LFB3
- 649 002c 18000000 		.4byte	.LFE3-.LFB3
- 650 0030 00000000 		.4byte	0
- 651 0034 00000000 		.4byte	0
- 652              		.section	.debug_ranges,"",%progbits
- 653              	.Ldebug_ranges0:
- 654 0000 00000000 		.4byte	.LFB0
- 655 0004 20000000 		.4byte	.LFE0
- 656 0008 00000000 		.4byte	.LFB1
- 657 000c 20000000 		.4byte	.LFE1
- 658 0010 00000000 		.4byte	.LFB2
- 659 0014 2C000000 		.4byte	.LFE2
- 660 0018 00000000 		.4byte	.LFB3
- 661 001c 18000000 		.4byte	.LFE3
- 662 0020 00000000 		.4byte	0
- 663 0024 00000000 		.4byte	0
- 664              		.section	.debug_line,"",%progbits
- 665              	.Ldebug_line0:
- 666 0000 A9000000 		.section	.debug_str,"MS",%progbits,1
- 666      02005600 
- 666      00000201 
- 666      FB0E0D00 
- 666      01010101 
- 667              	.LASF16:
- 668 0000 54696D65 		.ascii	"TimerEnableState\000"
- 668      72456E61 
- 668      626C6553 
- 668      74617465 
- 668      00
- 669              	.LASF21:
- 670 0011 54696D65 		.ascii	"Timer_US_SaveConfig\000"
- 670      725F5553 
- 670      5F536176 
- 670      65436F6E 
- 670      66696700 
- 671              	.LASF26:
- 672 0025 54696D65 		.ascii	"Timer_US_ReadControlRegister\000"
- 672      725F5553 
- 672      5F526561 
- 672      64436F6E 
- 672      74726F6C 
- 673              	.LASF30:
- 674 0042 54696D65 		.ascii	"Timer_US_Enable\000"
- 674      725F5553 
- 674      5F456E61 
- 674      626C6500 
- 675              	.LASF3:
- 676 0052 73686F72 		.ascii	"short unsigned int\000"
- 676      7420756E 
- 676      7369676E 
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 16
+ 588 0020 00000000 		.4byte	0
+ 589 0024 00000000 		.4byte	0
+ 590              		.section	.debug_line,"",%progbits
+ 591              	.Ldebug_line0:
+ 592 0000 A4000000 		.section	.debug_str,"MS",%progbits,1
+ 592      02005600 
+ 592      00000201 
+ 592      FB0E0D00 
+ 592      01010101 
+ 593              	.LASF16:
+ 594 0000 54696D65 		.ascii	"TimerEnableState\000"
+ 594      72456E61 
+ 594      626C6553 
+ 594      74617465 
+ 594      00
+ 595              	.LASF20:
+ 596 0011 54696D65 		.ascii	"Timer_US_SaveConfig\000"
+ 596      725F5553 
+ 596      5F536176 
+ 596      65436F6E 
+ 596      66696700 
+ 597              	.LASF3:
+ 598 0025 73686F72 		.ascii	"short unsigned int\000"
+ 598      7420756E 
+ 598      7369676E 
+ 598      65642069 
+ 598      6E7400
+ 599              	.LASF12:
+ 600 0038 646F7562 		.ascii	"double\000"
+ 600      6C6500
+ 601              	.LASF17:
+ 602 003f 54696D65 		.ascii	"TimerUdb\000"
+ 602      72556462 
+ 602      00
+ 603              	.LASF11:
+ 604 0048 666C6F61 		.ascii	"float\000"
+ 604      7400
+ 605              	.LASF1:
+ 606 004e 756E7369 		.ascii	"unsigned char\000"
+ 606      676E6564 
+ 606      20636861 
+ 606      7200
+ 607              	.LASF14:
+ 608 005c 72656738 		.ascii	"reg8\000"
+ 608      00
+ 609              	.LASF5:
+ 610 0061 6C6F6E67 		.ascii	"long unsigned int\000"
+ 610      20756E73 
+ 610      69676E65 
+ 610      6420696E 
+ 610      7400
+ 611              	.LASF9:
+ 612 0073 75696E74 		.ascii	"uint8\000"
+ 612      3800
+ 613              	.LASF23:
+ 614 0079 54696D65 		.ascii	"Timer_US_Wakeup\000"
+ 614      725F5553 
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccmi0eeA.s 			page 15
 
 
- 676      65642069 
- 676      6E7400
- 677              	.LASF12:
- 678 0065 646F7562 		.ascii	"double\000"
- 678      6C6500
- 679              	.LASF17:
- 680 006c 54696D65 		.ascii	"TimerUdb\000"
- 680      72556462 
- 680      00
- 681              	.LASF11:
- 682 0075 666C6F61 		.ascii	"float\000"
- 682      7400
- 683              	.LASF28:
- 684 007b 54696D65 		.ascii	"Timer_US_WriteControlRegister\000"
- 684      725F5553 
- 684      5F577269 
- 684      7465436F 
- 684      6E74726F 
- 685              	.LASF1:
- 686 0099 756E7369 		.ascii	"unsigned char\000"
- 686      676E6564 
- 686      20636861 
- 686      7200
- 687              	.LASF14:
- 688 00a7 72656738 		.ascii	"reg8\000"
- 688      00
- 689              	.LASF5:
- 690 00ac 6C6F6E67 		.ascii	"long unsigned int\000"
- 690      20756E73 
- 690      69676E65 
- 690      6420696E 
- 690      7400
- 691              	.LASF9:
- 692 00be 75696E74 		.ascii	"uint8\000"
- 692      3800
- 693              	.LASF24:
- 694 00c4 54696D65 		.ascii	"Timer_US_Wakeup\000"
- 694      725F5553 
- 694      5F57616B 
- 694      65757000 
- 695              	.LASF27:
- 696 00d4 54696D65 		.ascii	"Timer_US_WriteCounter\000"
- 696      725F5553 
- 696      5F577269 
- 696      7465436F 
- 696      756E7465 
- 697              	.LASF25:
- 698 00ea 54696D65 		.ascii	"Timer_US_ReadCounter\000"
- 698      725F5553 
- 698      5F526561 
- 698      64436F75 
- 698      6E746572 
- 699              	.LASF22:
- 700 00ff 54696D65 		.ascii	"Timer_US_RestoreConfig\000"
- 700      725F5553 
- 700      5F526573 
- 700      746F7265 
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 17
+ 614      5F57616B 
+ 614      65757000 
+ 615              	.LASF29:
+ 616 0089 54696D65 		.ascii	"Timer_US_WriteCounter\000"
+ 616      725F5553 
+ 616      5F577269 
+ 616      7465436F 
+ 616      756E7465 
+ 617              	.LASF28:
+ 618 009f 54696D65 		.ascii	"Timer_US_ReadCounter\000"
+ 618      725F5553 
+ 618      5F526561 
+ 618      64436F75 
+ 618      6E746572 
+ 619              	.LASF21:
+ 620 00b4 54696D65 		.ascii	"Timer_US_RestoreConfig\000"
+ 620      725F5553 
+ 620      5F526573 
+ 620      746F7265 
+ 620      436F6E66 
+ 621              	.LASF25:
+ 622 00cb 47656E65 		.ascii	"Generated_Source\\PSoC5\\Timer_US_PM.c\000"
+ 622      72617465 
+ 622      645F536F 
+ 622      75726365 
+ 622      5C50536F 
+ 623              	.LASF27:
+ 624 00f0 54696D65 		.ascii	"Timer_US_backup\000"
+ 624      725F5553 
+ 624      5F626163 
+ 624      6B757000 
+ 625              	.LASF10:
+ 626 0100 75696E74 		.ascii	"uint32\000"
+ 626      333200
+ 627              	.LASF24:
+ 628 0107 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 628      4320342E 
+ 628      392E3320 
+ 628      32303135 
+ 628      30333033 
+ 629 013a 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 629      20726576 
+ 629      6973696F 
+ 629      6E203232 
+ 629      31323230 
+ 630 016d 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 630      66756E63 
+ 630      74696F6E 
+ 630      2D736563 
+ 630      74696F6E 
+ 631              	.LASF8:
+ 632 0195 756E7369 		.ascii	"unsigned int\000"
+ 632      676E6564 
+ 632      20696E74 
+ 632      00
+ 633              	.LASF7:
+ 634 01a2 6C6F6E67 		.ascii	"long long unsigned int\000"
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccmi0eeA.s 			page 16
 
 
- 700      436F6E66 
- 701              	.LASF32:
- 702 0116 47656E65 		.ascii	"Generated_Source\\PSoC5\\Timer_US_PM.c\000"
- 702      72617465 
- 702      645F536F 
- 702      75726365 
- 702      5C50536F 
- 703              	.LASF34:
- 704 013b 54696D65 		.ascii	"Timer_US_backup\000"
- 704      725F5553 
- 704      5F626163 
- 704      6B757000 
- 705              	.LASF10:
- 706 014b 75696E74 		.ascii	"uint32\000"
- 706      333200
- 707              	.LASF31:
- 708 0152 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 708      4320342E 
- 708      392E3320 
- 708      32303135 
- 708      30333033 
- 709 0185 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 709      20726576 
- 709      6973696F 
- 709      6E203232 
- 709      31323230 
- 710 01b8 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 710      66756E63 
- 710      74696F6E 
- 710      2D736563 
- 710      74696F6E 
- 711              	.LASF8:
- 712 01e0 756E7369 		.ascii	"unsigned int\000"
- 712      676E6564 
- 712      20696E74 
- 712      00
- 713              	.LASF7:
- 714 01ed 6C6F6E67 		.ascii	"long long unsigned int\000"
- 714      206C6F6E 
- 714      6720756E 
- 714      7369676E 
- 714      65642069 
- 715              	.LASF33:
- 716 0204 433A5C55 		.ascii	"C:\\Users\\Julien\\Documents\\INSA\\5A\\BE_systemes"
- 716      73657273 
- 716      5C4A756C 
- 716      69656E5C 
- 716      446F6375 
- 717 0231 5F656D62 		.ascii	"_embarques\\BE_systemes_embarques\\capteur_us.cydsn"
- 717      61727175 
- 717      65735C42 
- 717      455F7379 
- 717      7374656D 
- 718 0262 00       		.ascii	"\000"
- 719              	.LASF15:
- 720 0263 73697A65 		.ascii	"sizetype\000"
- 720      74797065 
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\cc0QmtGR.s 			page 18
+ 634      206C6F6E 
+ 634      6720756E 
+ 634      7369676E 
+ 634      65642069 
+ 635              	.LASF26:
+ 636 01b9 433A5C55 		.ascii	"C:\\Users\\Julien\\Documents\\INSA\\5A\\BE_systemes"
+ 636      73657273 
+ 636      5C4A756C 
+ 636      69656E5C 
+ 636      446F6375 
+ 637 01e6 5F656D62 		.ascii	"_embarques\\BE_systemes_embarques\\capteur_us.cydsn"
+ 637      61727175 
+ 637      65735C42 
+ 637      455F7379 
+ 637      7374656D 
+ 638 0217 00       		.ascii	"\000"
+ 639              	.LASF15:
+ 640 0218 73697A65 		.ascii	"sizetype\000"
+ 640      74797065 
+ 640      00
+ 641              	.LASF6:
+ 642 0221 6C6F6E67 		.ascii	"long long int\000"
+ 642      206C6F6E 
+ 642      6720696E 
+ 642      7400
+ 643              	.LASF13:
+ 644 022f 63686172 		.ascii	"char\000"
+ 644      00
+ 645              	.LASF2:
+ 646 0234 73686F72 		.ascii	"short int\000"
+ 646      7420696E 
+ 646      7400
+ 647              	.LASF19:
+ 648 023e 54696D65 		.ascii	"Timer_US_backupStruct\000"
+ 648      725F5553 
+ 648      5F626163 
+ 648      6B757053 
+ 648      74727563 
+ 649              	.LASF30:
+ 650 0254 54696D65 		.ascii	"Timer_US_Stop\000"
+ 650      725F5553 
+ 650      5F53746F 
+ 650      7000
+ 651              	.LASF4:
+ 652 0262 6C6F6E67 		.ascii	"long int\000"
+ 652      20696E74 
+ 652      00
+ 653              	.LASF0:
+ 654 026b 7369676E 		.ascii	"signed char\000"
+ 654      65642063 
+ 654      68617200 
+ 655              	.LASF22:
+ 656 0277 54696D65 		.ascii	"Timer_US_Sleep\000"
+ 656      725F5553 
+ 656      5F536C65 
+ 656      657000
+ 657              	.LASF18:
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccmi0eeA.s 			page 17
 
 
- 720      00
- 721              	.LASF6:
- 722 026c 6C6F6E67 		.ascii	"long long int\000"
- 722      206C6F6E 
- 722      6720696E 
- 722      7400
- 723              	.LASF13:
- 724 027a 63686172 		.ascii	"char\000"
- 724      00
- 725              	.LASF2:
- 726 027f 73686F72 		.ascii	"short int\000"
- 726      7420696E 
- 726      7400
- 727              	.LASF20:
- 728 0289 54696D65 		.ascii	"Timer_US_backupStruct\000"
- 728      725F5553 
- 728      5F626163 
- 728      6B757053 
- 728      74727563 
- 729              	.LASF29:
- 730 029f 54696D65 		.ascii	"Timer_US_Stop\000"
- 730      725F5553 
- 730      5F53746F 
- 730      7000
- 731              	.LASF4:
- 732 02ad 6C6F6E67 		.ascii	"long int\000"
- 732      20696E74 
- 732      00
- 733              	.LASF0:
- 734 02b6 7369676E 		.ascii	"signed char\000"
- 734      65642063 
- 734      68617200 
- 735              	.LASF23:
- 736 02c2 54696D65 		.ascii	"Timer_US_Sleep\000"
- 736      725F5553 
- 736      5F536C65 
- 736      657000
- 737              	.LASF18:
- 738 02d1 496E7465 		.ascii	"InterruptMaskValue\000"
- 738      72727570 
- 738      744D6173 
- 738      6B56616C 
- 738      756500
- 739              	.LASF19:
- 740 02e4 54696D65 		.ascii	"TimerControlRegister\000"
- 740      72436F6E 
- 740      74726F6C 
- 740      52656769 
- 740      73746572 
- 741              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 658 0286 496E7465 		.ascii	"InterruptMaskValue\000"
+ 658      72727570 
+ 658      744D6173 
+ 658      6B56616C 
+ 658      756500
+ 659              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

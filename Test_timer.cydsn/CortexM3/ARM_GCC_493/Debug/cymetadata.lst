@@ -1,0 +1,1317 @@
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"cymetadata.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	cy_metadata
+  19              		.global	cy_meta_flashprotect
+  20              		.global	cy_meta_wonvl
+  21              		.global	cy_meta_custnvl
+  22              		.global	cy_meta_configecc
+  23              		.section	.cyconfigecc,"a",%progbits
+  24              		.align	2
+  25              		.type	cy_meta_configecc, %object
+  26              		.size	cy_meta_configecc, 780
+  27              	cy_meta_configecc:
+  28 0000 02       		.byte	2
+  29 0001 52       		.byte	82
+  30 0002 00       		.byte	0
+  31 0003 40       		.byte	64
+  32 0004 01       		.byte	1
+  33 0005 64       		.byte	100
+  34 0006 00       		.byte	0
+  35 0007 40       		.byte	64
+  36 0008 01       		.byte	1
+  37 0009 65       		.byte	101
+  38 000a 00       		.byte	0
+  39 000b 40       		.byte	64
+  40 000c 3A       		.byte	58
+  41 000d 06       		.byte	6
+  42 000e 01       		.byte	1
+  43 000f 40       		.byte	64
+  44 0010 1F       		.byte	31
+  45 0011 07       		.byte	7
+  46 0012 01       		.byte	1
+  47 0013 40       		.byte	64
+  48 0014 01       		.byte	1
+  49 0015 09       		.byte	9
+  50 0016 01       		.byte	1
+  51 0017 40       		.byte	64
+  52 0018 3E       		.byte	62
+  53 0019 14       		.byte	20
+  54 001a 01       		.byte	1
+  55 001b 40       		.byte	64
+  56 001c 31       		.byte	49
+  57 001d 15       		.byte	21
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 2
+
+
+  58 001e 01       		.byte	1
+  59 001f 40       		.byte	64
+  60 0020 36       		.byte	54
+  61 0021 16       		.byte	22
+  62 0022 01       		.byte	1
+  63 0023 40       		.byte	64
+  64 0024 27       		.byte	39
+  65 0025 17       		.byte	23
+  66 0026 01       		.byte	1
+  67 0027 40       		.byte	64
+  68 0028 04       		.byte	4
+  69 0029 40       		.byte	64
+  70 002a 01       		.byte	1
+  71 002b 40       		.byte	64
+  72 002c 02       		.byte	2
+  73 002d 41       		.byte	65
+  74 002e 01       		.byte	1
+  75 002f 40       		.byte	64
+  76 0030 02       		.byte	2
+  77 0031 42       		.byte	66
+  78 0032 01       		.byte	1
+  79 0033 40       		.byte	64
+  80 0034 02       		.byte	2
+  81 0035 43       		.byte	67
+  82 0036 01       		.byte	1
+  83 0037 40       		.byte	64
+  84 0038 02       		.byte	2
+  85 0039 47       		.byte	71
+  86 003a 01       		.byte	1
+  87 003b 40       		.byte	64
+  88 003c 04       		.byte	4
+  89 003d 48       		.byte	72
+  90 003e 01       		.byte	1
+  91 003f 40       		.byte	64
+  92 0040 0B       		.byte	11
+  93 0041 49       		.byte	73
+  94 0042 01       		.byte	1
+  95 0043 40       		.byte	64
+  96 0044 03       		.byte	3
+  97 0045 4C       		.byte	76
+  98 0046 01       		.byte	1
+  99 0047 40       		.byte	64
+ 100 0048 08       		.byte	8
+ 101 0049 50       		.byte	80
+ 102 004a 01       		.byte	1
+ 103 004b 40       		.byte	64
+ 104 004c 01       		.byte	1
+ 105 004d 51       		.byte	81
+ 106 004e 01       		.byte	1
+ 107 004f 40       		.byte	64
+ 108 0050 09       		.byte	9
+ 109 0051 80       		.byte	-128
+ 110 0052 60       		.byte	96
+ 111 0053 08       		.byte	8
+ 112 0054 87       		.byte	-121
+ 113 0055 0F       		.byte	15
+ 114 0056 84       		.byte	-124
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 3
+
+
+ 115 0057 0F       		.byte	15
+ 116 0058 40       		.byte	64
+ 117 0059 10       		.byte	16
+ 118 005a 41       		.byte	65
+ 119 005b 06       		.byte	6
+ 120 005c 49       		.byte	73
+ 121 005d FF       		.byte	-1
+ 122 005e 4A       		.byte	74
+ 123 005f FF       		.byte	-1
+ 124 0060 4B       		.byte	75
+ 125 0061 FF       		.byte	-1
+ 126 0062 4D       		.byte	77
+ 127 0063 A0       		.byte	-96
+ 128 0064 4F       		.byte	79
+ 129 0065 04       		.byte	4
+ 130 0066 50       		.byte	80
+ 131 0067 18       		.byte	24
+ 132 0068 5A       		.byte	90
+ 133 0069 04       		.byte	4
+ 134 006a 5F       		.byte	95
+ 135 006b 01       		.byte	1
+ 136 006c 60       		.byte	96
+ 137 006d 40       		.byte	64
+ 138 006e 62       		.byte	98
+ 139 006f C0       		.byte	-64
+ 140 0070 64       		.byte	100
+ 141 0071 40       		.byte	64
+ 142 0072 65       		.byte	101
+ 143 0073 40       		.byte	64
+ 144 0074 66       		.byte	102
+ 145 0075 C0       		.byte	-64
+ 146 0076 68       		.byte	104
+ 147 0077 C0       		.byte	-64
+ 148 0078 6A       		.byte	106
+ 149 0079 C0       		.byte	-64
+ 150 007a 6C       		.byte	108
+ 151 007b C0       		.byte	-64
+ 152 007c 6E       		.byte	110
+ 153 007d C0       		.byte	-64
+ 154 007e 84       		.byte	-124
+ 155 007f 01       		.byte	1
+ 156 0080 9A       		.byte	-102
+ 157 0081 01       		.byte	1
+ 158 0082 9B       		.byte	-101
+ 159 0083 01       		.byte	1
+ 160 0084 9E       		.byte	-98
+ 161 0085 02       		.byte	2
+ 162 0086 A7       		.byte	-89
+ 163 0087 01       		.byte	1
+ 164 0088 AA       		.byte	-86
+ 165 0089 02       		.byte	2
+ 166 008a B2       		.byte	-78
+ 167 008b 02       		.byte	2
+ 168 008c B4       		.byte	-76
+ 169 008d 01       		.byte	1
+ 170 008e B7       		.byte	-73
+ 171 008f 01       		.byte	1
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 4
+
+
+ 172 0090 BE       		.byte	-66
+ 173 0091 04       		.byte	4
+ 174 0092 C0       		.byte	-64
+ 175 0093 10       		.byte	16
+ 176 0094 C1       		.byte	-63
+ 177 0095 06       		.byte	6
+ 178 0096 C5       		.byte	-59
+ 179 0097 D1       		.byte	-47
+ 180 0098 C6       		.byte	-58
+ 181 0099 50       		.byte	80
+ 182 009a C7       		.byte	-57
+ 183 009b 02       		.byte	2
+ 184 009c C8       		.byte	-56
+ 185 009d 1B       		.byte	27
+ 186 009e C9       		.byte	-55
+ 187 009f FF       		.byte	-1
+ 188 00a0 CA       		.byte	-54
+ 189 00a1 FF       		.byte	-1
+ 190 00a2 CB       		.byte	-53
+ 191 00a3 FF       		.byte	-1
+ 192 00a4 CD       		.byte	-51
+ 193 00a5 AF       		.byte	-81
+ 194 00a6 CE       		.byte	-50
+ 195 00a7 0F       		.byte	15
+ 196 00a8 CF       		.byte	-49
+ 197 00a9 04       		.byte	4
+ 198 00aa D0       		.byte	-48
+ 199 00ab 18       		.byte	24
+ 200 00ac D4       		.byte	-44
+ 201 00ad 07       		.byte	7
+ 202 00ae D8       		.byte	-40
+ 203 00af 04       		.byte	4
+ 204 00b0 D9       		.byte	-39
+ 205 00b1 04       		.byte	4
+ 206 00b2 DA       		.byte	-38
+ 207 00b3 04       		.byte	4
+ 208 00b4 DB       		.byte	-37
+ 209 00b5 04       		.byte	4
+ 210 00b6 DC       		.byte	-36
+ 211 00b7 90       		.byte	-112
+ 212 00b8 DF       		.byte	-33
+ 213 00b9 01       		.byte	1
+ 214 00ba E0       		.byte	-32
+ 215 00bb 40       		.byte	64
+ 216 00bc E2       		.byte	-30
+ 217 00bd C0       		.byte	-64
+ 218 00be E4       		.byte	-28
+ 219 00bf 40       		.byte	64
+ 220 00c0 E5       		.byte	-27
+ 221 00c1 40       		.byte	64
+ 222 00c2 E6       		.byte	-26
+ 223 00c3 C0       		.byte	-64
+ 224 00c4 E8       		.byte	-24
+ 225 00c5 C0       		.byte	-64
+ 226 00c6 EA       		.byte	-22
+ 227 00c7 C0       		.byte	-64
+ 228 00c8 EC       		.byte	-20
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 5
+
+
+ 229 00c9 C0       		.byte	-64
+ 230 00ca EE       		.byte	-18
+ 231 00cb C0       		.byte	-64
+ 232 00cc 00       		.byte	0
+ 233 00cd 08       		.byte	8
+ 234 00ce 09       		.byte	9
+ 235 00cf 60       		.byte	96
+ 236 00d0 12       		.byte	18
+ 237 00d1 08       		.byte	8
+ 238 00d2 19       		.byte	25
+ 239 00d3 14       		.byte	20
+ 240 00d4 22       		.byte	34
+ 241 00d5 80       		.byte	-128
+ 242 00d6 2B       		.byte	43
+ 243 00d7 10       		.byte	16
+ 244 00d8 30       		.byte	48
+ 245 00d9 20       		.byte	32
+ 246 00da 40       		.byte	64
+ 247 00db 02       		.byte	2
+ 248 00dc 44       		.byte	68
+ 249 00dd 02       		.byte	2
+ 250 00de 45       		.byte	69
+ 251 00df 40       		.byte	64
+ 252 00e0 47       		.byte	71
+ 253 00e1 80       		.byte	-128
+ 254 00e2 48       		.byte	72
+ 255 00e3 10       		.byte	16
+ 256 00e4 49       		.byte	73
+ 257 00e5 01       		.byte	1
+ 258 00e6 4A       		.byte	74
+ 259 00e7 08       		.byte	8
+ 260 00e8 4B       		.byte	75
+ 261 00e9 04       		.byte	4
+ 262 00ea 4E       		.byte	78
+ 263 00eb 08       		.byte	8
+ 264 00ec 50       		.byte	80
+ 265 00ed 10       		.byte	16
+ 266 00ee 51       		.byte	81
+ 267 00ef 20       		.byte	32
+ 268 00f0 52       		.byte	82
+ 269 00f1 08       		.byte	8
+ 270 00f2 59       		.byte	89
+ 271 00f3 15       		.byte	21
+ 272 00f4 5A       		.byte	90
+ 273 00f5 80       		.byte	-128
+ 274 00f6 69       		.byte	105
+ 275 00f7 80       		.byte	-128
+ 276 00f8 8D       		.byte	-115
+ 277 00f9 40       		.byte	64
+ 278 00fa C0       		.byte	-64
+ 279 00fb 04       		.byte	4
+ 280 00fc C2       		.byte	-62
+ 281 00fd 03       		.byte	3
+ 282 00fe C4       		.byte	-60
+ 283 00ff 02       		.byte	2
+ 284 0100 CA       		.byte	-54
+ 285 0101 02       		.byte	2
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 6
+
+
+ 286 0102 CC       		.byte	-52
+ 287 0103 04       		.byte	4
+ 288 0104 D0       		.byte	-48
+ 289 0105 18       		.byte	24
+ 290 0106 D2       		.byte	-46
+ 291 0107 24       		.byte	36
+ 292 0108 D6       		.byte	-42
+ 293 0109 0F       		.byte	15
+ 294 010a E4       		.byte	-28
+ 295 010b 10       		.byte	16
+ 296 010c 06       		.byte	6
+ 297 010d 04       		.byte	4
+ 298 010e 07       		.byte	7
+ 299 010f 01       		.byte	1
+ 300 0110 0A       		.byte	10
+ 301 0111 03       		.byte	3
+ 302 0112 0D       		.byte	13
+ 303 0113 01       		.byte	1
+ 304 0114 17       		.byte	23
+ 305 0115 01       		.byte	1
+ 306 0116 1E       		.byte	30
+ 307 0117 01       		.byte	1
+ 308 0118 26       		.byte	38
+ 309 0119 04       		.byte	4
+ 310 011a 30       		.byte	48
+ 311 011b 04       		.byte	4
+ 312 011c 31       		.byte	49
+ 313 011d 01       		.byte	1
+ 314 011e 32       		.byte	50
+ 315 011f 02       		.byte	2
+ 316 0120 33       		.byte	51
+ 317 0121 01       		.byte	1
+ 318 0122 34       		.byte	52
+ 319 0123 01       		.byte	1
+ 320 0124 3E       		.byte	62
+ 321 0125 01       		.byte	1
+ 322 0126 3F       		.byte	63
+ 323 0127 04       		.byte	4
+ 324 0128 40       		.byte	64
+ 325 0129 23       		.byte	35
+ 326 012a 41       		.byte	65
+ 327 012b 04       		.byte	4
+ 328 012c 42       		.byte	66
+ 329 012d 06       		.byte	6
+ 330 012e 49       		.byte	73
+ 331 012f FF       		.byte	-1
+ 332 0130 4A       		.byte	74
+ 333 0131 FF       		.byte	-1
+ 334 0132 4B       		.byte	75
+ 335 0133 FF       		.byte	-1
+ 336 0134 4F       		.byte	79
+ 337 0135 01       		.byte	1
+ 338 0136 50       		.byte	80
+ 339 0137 18       		.byte	24
+ 340 0138 54       		.byte	84
+ 341 0139 03       		.byte	3
+ 342 013a 56       		.byte	86
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 7
+
+
+ 343 013b 04       		.byte	4
+ 344 013c 58       		.byte	88
+ 345 013d 04       		.byte	4
+ 346 013e 59       		.byte	89
+ 347 013f 04       		.byte	4
+ 348 0140 5A       		.byte	90
+ 349 0141 04       		.byte	4
+ 350 0142 5B       		.byte	91
+ 351 0143 04       		.byte	4
+ 352 0144 5C       		.byte	92
+ 353 0145 90       		.byte	-112
+ 354 0146 5D       		.byte	93
+ 355 0147 99       		.byte	-103
+ 356 0148 5F       		.byte	95
+ 357 0149 05       		.byte	5
+ 358 014a 60       		.byte	96
+ 359 014b 40       		.byte	64
+ 360 014c 62       		.byte	98
+ 361 014d 40       		.byte	64
+ 362 014e 64       		.byte	100
+ 363 014f 40       		.byte	64
+ 364 0150 65       		.byte	101
+ 365 0151 40       		.byte	64
+ 366 0152 66       		.byte	102
+ 367 0153 80       		.byte	-128
+ 368 0154 68       		.byte	104
+ 369 0155 80       		.byte	-128
+ 370 0156 6A       		.byte	106
+ 371 0157 80       		.byte	-128
+ 372 0158 6C       		.byte	108
+ 373 0159 80       		.byte	-128
+ 374 015a 6E       		.byte	110
+ 375 015b 80       		.byte	-128
+ 376 015c C0       		.byte	-64
+ 377 015d 63       		.byte	99
+ 378 015e C1       		.byte	-63
+ 379 015f 04       		.byte	4
+ 380 0160 C2       		.byte	-62
+ 381 0161 02       		.byte	2
+ 382 0162 C9       		.byte	-55
+ 383 0163 FF       		.byte	-1
+ 384 0164 CA       		.byte	-54
+ 385 0165 FF       		.byte	-1
+ 386 0166 CB       		.byte	-53
+ 387 0167 FF       		.byte	-1
+ 388 0168 CD       		.byte	-51
+ 389 0169 83       		.byte	-125
+ 390 016a CE       		.byte	-50
+ 391 016b 03       		.byte	3
+ 392 016c CF       		.byte	-49
+ 393 016d 01       		.byte	1
+ 394 016e D0       		.byte	-48
+ 395 016f 18       		.byte	24
+ 396 0170 DA       		.byte	-38
+ 397 0171 04       		.byte	4
+ 398 0172 DD       		.byte	-35
+ 399 0173 09       		.byte	9
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 8
+
+
+ 400 0174 DF       		.byte	-33
+ 401 0175 01       		.byte	1
+ 402 0176 E0       		.byte	-32
+ 403 0177 40       		.byte	64
+ 404 0178 E2       		.byte	-30
+ 405 0179 40       		.byte	64
+ 406 017a E4       		.byte	-28
+ 407 017b 40       		.byte	64
+ 408 017c E5       		.byte	-27
+ 409 017d 40       		.byte	64
+ 410 017e E6       		.byte	-26
+ 411 017f 80       		.byte	-128
+ 412 0180 E8       		.byte	-24
+ 413 0181 80       		.byte	-128
+ 414 0182 EA       		.byte	-22
+ 415 0183 80       		.byte	-128
+ 416 0184 EC       		.byte	-20
+ 417 0185 80       		.byte	-128
+ 418 0186 EE       		.byte	-18
+ 419 0187 80       		.byte	-128
+ 420 0188 00       		.byte	0
+ 421 0189 24       		.byte	36
+ 422 018a 0A       		.byte	10
+ 423 018b 02       		.byte	2
+ 424 018c 10       		.byte	16
+ 425 018d 20       		.byte	32
+ 426 018e 18       		.byte	24
+ 427 018f 04       		.byte	4
+ 428 0190 19       		.byte	25
+ 429 0191 04       		.byte	4
+ 430 0192 1A       		.byte	26
+ 431 0193 40       		.byte	64
+ 432 0194 1B       		.byte	27
+ 433 0195 10       		.byte	16
+ 434 0196 21       		.byte	33
+ 435 0197 01       		.byte	1
+ 436 0198 22       		.byte	34
+ 437 0199 08       		.byte	8
+ 438 019a 23       		.byte	35
+ 439 019b 20       		.byte	32
+ 440 019c 31       		.byte	49
+ 441 019d 08       		.byte	8
+ 442 019e 38       		.byte	56
+ 443 019f 84       		.byte	-124
+ 444 01a0 40       		.byte	64
+ 445 01a1 44       		.byte	68
+ 446 01a2 42       		.byte	66
+ 447 01a3 20       		.byte	32
+ 448 01a4 45       		.byte	69
+ 449 01a5 02       		.byte	2
+ 450 01a6 46       		.byte	70
+ 451 01a7 20       		.byte	32
+ 452 01a8 47       		.byte	71
+ 453 01a9 20       		.byte	32
+ 454 01aa 4A       		.byte	74
+ 455 01ab 08       		.byte	8
+ 456 01ac 4F       		.byte	79
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 9
+
+
+ 457 01ad 20       		.byte	32
+ 458 01ae 59       		.byte	89
+ 459 01af 1A       		.byte	26
+ 460 01b0 5A       		.byte	90
+ 461 01b1 40       		.byte	64
+ 462 01b2 60       		.byte	96
+ 463 01b3 C0       		.byte	-64
+ 464 01b4 61       		.byte	97
+ 465 01b5 02       		.byte	2
+ 466 01b6 78       		.byte	120
+ 467 01b7 80       		.byte	-128
+ 468 01b8 83       		.byte	-125
+ 469 01b9 10       		.byte	16
+ 470 01ba 85       		.byte	-123
+ 471 01bb 01       		.byte	1
+ 472 01bc 8C       		.byte	-116
+ 473 01bd 40       		.byte	64
+ 474 01be 90       		.byte	-112
+ 475 01bf 80       		.byte	-128
+ 476 01c0 92       		.byte	-110
+ 477 01c1 02       		.byte	2
+ 478 01c2 94       		.byte	-108
+ 479 01c3 04       		.byte	4
+ 480 01c4 99       		.byte	-103
+ 481 01c5 1A       		.byte	26
+ 482 01c6 9A       		.byte	-102
+ 483 01c7 20       		.byte	32
+ 484 01c8 9D       		.byte	-99
+ 485 01c9 04       		.byte	4
+ 486 01ca 9F       		.byte	-97
+ 487 01cb 20       		.byte	32
+ 488 01cc A0       		.byte	-96
+ 489 01cd 30       		.byte	48
+ 490 01ce A1       		.byte	-95
+ 491 01cf 08       		.byte	8
+ 492 01d0 A5       		.byte	-91
+ 493 01d1 02       		.byte	2
+ 494 01d2 A7       		.byte	-89
+ 495 01d3 10       		.byte	16
+ 496 01d4 C0       		.byte	-64
+ 497 01d5 06       		.byte	6
+ 498 01d6 C2       		.byte	-62
+ 499 01d7 01       		.byte	1
+ 500 01d8 C4       		.byte	-60
+ 501 01d9 04       		.byte	4
+ 502 01da CC       		.byte	-52
+ 503 01db 02       		.byte	2
+ 504 01dc CE       		.byte	-50
+ 505 01dd 0A       		.byte	10
+ 506 01de D0       		.byte	-48
+ 507 01df E7       		.byte	-25
+ 508 01e0 D2       		.byte	-46
+ 509 01e1 24       		.byte	36
+ 510 01e2 D6       		.byte	-42
+ 511 01e3 0F       		.byte	15
+ 512 01e4 D8       		.byte	-40
+ 513 01e5 01       		.byte	1
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 10
+
+
+ 514 01e6 DE       		.byte	-34
+ 515 01e7 08       		.byte	8
+ 516 01e8 E2       		.byte	-30
+ 517 01e9 40       		.byte	64
+ 518 01ea 40       		.byte	64
+ 519 01eb 63       		.byte	99
+ 520 01ec 41       		.byte	65
+ 521 01ed 04       		.byte	4
+ 522 01ee 42       		.byte	66
+ 523 01ef 02       		.byte	2
+ 524 01f0 45       		.byte	69
+ 525 01f1 EC       		.byte	-20
+ 526 01f2 46       		.byte	70
+ 527 01f3 20       		.byte	32
+ 528 01f4 48       		.byte	72
+ 529 01f5 0B       		.byte	11
+ 530 01f6 49       		.byte	73
+ 531 01f7 FF       		.byte	-1
+ 532 01f8 4A       		.byte	74
+ 533 01f9 FF       		.byte	-1
+ 534 01fa 4B       		.byte	75
+ 535 01fb FF       		.byte	-1
+ 536 01fc 4D       		.byte	77
+ 537 01fd 83       		.byte	-125
+ 538 01fe 4E       		.byte	78
+ 539 01ff 03       		.byte	3
+ 540 0200 4F       		.byte	79
+ 541 0201 01       		.byte	1
+ 542 0202 50       		.byte	80
+ 543 0203 18       		.byte	24
+ 544 0204 5A       		.byte	90
+ 545 0205 04       		.byte	4
+ 546 0206 5D       		.byte	93
+ 547 0207 09       		.byte	9
+ 548 0208 5F       		.byte	95
+ 549 0209 01       		.byte	1
+ 550 020a 60       		.byte	96
+ 551 020b 40       		.byte	64
+ 552 020c 62       		.byte	98
+ 553 020d 40       		.byte	64
+ 554 020e 64       		.byte	100
+ 555 020f 40       		.byte	64
+ 556 0210 65       		.byte	101
+ 557 0211 40       		.byte	64
+ 558 0212 66       		.byte	102
+ 559 0213 80       		.byte	-128
+ 560 0214 68       		.byte	104
+ 561 0215 80       		.byte	-128
+ 562 0216 6A       		.byte	106
+ 563 0217 80       		.byte	-128
+ 564 0218 6C       		.byte	108
+ 565 0219 80       		.byte	-128
+ 566 021a 6E       		.byte	110
+ 567 021b 80       		.byte	-128
+ 568 021c 86       		.byte	-122
+ 569 021d 2D       		.byte	45
+ 570 021e 87       		.byte	-121
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 11
+
+
+ 571 021f 04       		.byte	4
+ 572 0220 88       		.byte	-120
+ 573 0221 20       		.byte	32
+ 574 0222 8A       		.byte	-118
+ 575 0223 11       		.byte	17
+ 576 0224 8B       		.byte	-117
+ 577 0225 03       		.byte	3
+ 578 0226 8C       		.byte	-116
+ 579 0227 2D       		.byte	45
+ 580 0228 90       		.byte	-112
+ 581 0229 29       		.byte	41
+ 582 022a 92       		.byte	-110
+ 583 022b 12       		.byte	18
+ 584 022c 93       		.byte	-109
+ 585 022d 01       		.byte	1
+ 586 022e 96       		.byte	-106
+ 587 022f 6D       		.byte	109
+ 588 0230 9C       		.byte	-100
+ 589 0231 20       		.byte	32
+ 590 0232 9E       		.byte	-98
+ 591 0233 0E       		.byte	14
+ 592 0234 A3       		.byte	-93
+ 593 0235 08       		.byte	8
+ 594 0236 A5       		.byte	-91
+ 595 0237 04       		.byte	4
+ 596 0238 B0       		.byte	-80
+ 597 0239 40       		.byte	64
+ 598 023a B1       		.byte	-79
+ 599 023b 08       		.byte	8
+ 600 023c B2       		.byte	-78
+ 601 023d 18       		.byte	24
+ 602 023e B3       		.byte	-77
+ 603 023f 01       		.byte	1
+ 604 0240 B4       		.byte	-76
+ 605 0241 20       		.byte	32
+ 606 0242 B5       		.byte	-75
+ 607 0243 02       		.byte	2
+ 608 0244 B6       		.byte	-74
+ 609 0245 07       		.byte	7
+ 610 0246 B7       		.byte	-73
+ 611 0247 04       		.byte	4
+ 612 0248 BA       		.byte	-70
+ 613 0249 88       		.byte	-120
+ 614 024a D2       		.byte	-46
+ 615 024b 80       		.byte	-128
+ 616 024c D8       		.byte	-40
+ 617 024d 04       		.byte	4
+ 618 024e D9       		.byte	-39
+ 619 024f 04       		.byte	4
+ 620 0250 DB       		.byte	-37
+ 621 0251 04       		.byte	4
+ 622 0252 DC       		.byte	-36
+ 623 0253 09       		.byte	9
+ 624 0254 DF       		.byte	-33
+ 625 0255 01       		.byte	1
+ 626 0256 00       		.byte	0
+ 627 0257 44       		.byte	68
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 12
+
+
+ 628 0258 03       		.byte	3
+ 629 0259 08       		.byte	8
+ 630 025a 09       		.byte	9
+ 631 025b 0A       		.byte	10
+ 632 025c 0A       		.byte	10
+ 633 025d 01       		.byte	1
+ 634 025e 18       		.byte	24
+ 635 025f C0       		.byte	-64
+ 636 0260 19       		.byte	25
+ 637 0261 10       		.byte	16
+ 638 0262 1A       		.byte	26
+ 639 0263 01       		.byte	1
+ 640 0264 1B       		.byte	27
+ 641 0265 08       		.byte	8
+ 642 0266 20       		.byte	32
+ 643 0267 08       		.byte	8
+ 644 0268 21       		.byte	33
+ 645 0269 08       		.byte	8
+ 646 026a 22       		.byte	34
+ 647 026b 41       		.byte	65
+ 648 026c 23       		.byte	35
+ 649 026d 80       		.byte	-128
+ 650 026e 29       		.byte	41
+ 651 026f 05       		.byte	5
+ 652 0270 32       		.byte	50
+ 653 0271 01       		.byte	1
+ 654 0272 38       		.byte	56
+ 655 0273 20       		.byte	32
+ 656 0274 3B       		.byte	59
+ 657 0275 04       		.byte	4
+ 658 0276 45       		.byte	69
+ 659 0277 02       		.byte	2
+ 660 0278 46       		.byte	70
+ 661 0279 20       		.byte	32
+ 662 027a 47       		.byte	71
+ 663 027b 20       		.byte	32
+ 664 027c 4D       		.byte	77
+ 665 027d 0A       		.byte	10
+ 666 027e 4F       		.byte	79
+ 667 027f 20       		.byte	32
+ 668 0280 54       		.byte	84
+ 669 0281 20       		.byte	32
+ 670 0282 56       		.byte	86
+ 671 0283 20       		.byte	32
+ 672 0284 71       		.byte	113
+ 673 0285 01       		.byte	1
+ 674 0286 90       		.byte	-112
+ 675 0287 20       		.byte	32
+ 676 0288 93       		.byte	-109
+ 677 0289 04       		.byte	4
+ 678 028a 96       		.byte	-106
+ 679 028b 80       		.byte	-128
+ 680 028c 9F       		.byte	-97
+ 681 028d 80       		.byte	-128
+ 682 028e A0       		.byte	-96
+ 683 028f 10       		.byte	16
+ 684 0290 A4       		.byte	-92
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 13
+
+
+ 685 0291 24       		.byte	36
+ 686 0292 A7       		.byte	-89
+ 687 0293 10       		.byte	16
+ 688 0294 AE       		.byte	-82
+ 689 0295 80       		.byte	-128
+ 690 0296 C0       		.byte	-64
+ 691 0297 07       		.byte	7
+ 692 0298 C2       		.byte	-62
+ 693 0299 0D       		.byte	13
+ 694 029a CA       		.byte	-54
+ 695 029b 03       		.byte	3
+ 696 029c CC       		.byte	-52
+ 697 029d 01       		.byte	1
+ 698 029e CE       		.byte	-50
+ 699 029f 06       		.byte	6
+ 700 02a0 D0       		.byte	-48
+ 701 02a1 E0       		.byte	-32
+ 702 02a2 D2       		.byte	-46
+ 703 02a3 20       		.byte	32
+ 704 02a4 31       		.byte	49
+ 705 02a5 02       		.byte	2
+ 706 02a6 32       		.byte	50
+ 707 02a7 20       		.byte	32
+ 708 02a8 36       		.byte	54
+ 709 02a9 10       		.byte	16
+ 710 02aa CC       		.byte	-52
+ 711 02ab 70       		.byte	112
+ 712 02ac A5       		.byte	-91
+ 713 02ad 02       		.byte	2
+ 714 02ae A6       		.byte	-90
+ 715 02af 30       		.byte	48
+ 716 02b0 A5       		.byte	-91
+ 717 02b1 02       		.byte	2
+ 718 02b2 A6       		.byte	-90
+ 719 02b3 30       		.byte	48
+ 720 02b4 A5       		.byte	-91
+ 721 02b5 02       		.byte	2
+ 722 02b6 A6       		.byte	-90
+ 723 02b7 30       		.byte	48
+ 724 02b8 8D       		.byte	-115
+ 725 02b9 08       		.byte	8
+ 726 02ba E4       		.byte	-28
+ 727 02bb 08       		.byte	8
+ 728 02bc A5       		.byte	-91
+ 729 02bd 02       		.byte	2
+ 730 02be A6       		.byte	-90
+ 731 02bf 20       		.byte	32
+ 732 02c0 AE       		.byte	-82
+ 733 02c1 10       		.byte	16
+ 734 02c2 EE       		.byte	-18
+ 735 02c3 10       		.byte	16
+ 736 02c4 70       		.byte	112
+ 737 02c5 01       		.byte	1
+ 738 02c6 71       		.byte	113
+ 739 02c7 02       		.byte	2
+ 740 02c8 75       		.byte	117
+ 741 02c9 04       		.byte	4
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 14
+
+
+ 742 02ca 81       		.byte	-127
+ 743 02cb 04       		.byte	4
+ 744 02cc 86       		.byte	-122
+ 745 02cd 20       		.byte	32
+ 746 02ce 8C       		.byte	-116
+ 747 02cf 01       		.byte	1
+ 748 02d0 A5       		.byte	-91
+ 749 02d1 02       		.byte	2
+ 750 02d2 A6       		.byte	-90
+ 751 02d3 20       		.byte	32
+ 752 02d4 DC       		.byte	-36
+ 753 02d5 80       		.byte	-128
+ 754 02d6 DE       		.byte	-34
+ 755 02d7 20       		.byte	32
+ 756 02d8 E6       		.byte	-26
+ 757 02d9 C0       		.byte	-64
+ 758 02da 61       		.byte	97
+ 759 02db 08       		.byte	8
+ 760 02dc A1       		.byte	-95
+ 761 02dd 08       		.byte	8
+ 762 02de D8       		.byte	-40
+ 763 02df 02       		.byte	2
+ 764 02e0 00       		.byte	0
+ 765 02e1 01       		.byte	1
+ 766 02e2 01       		.byte	1
+ 767 02e3 01       		.byte	1
+ 768 02e4 0A       		.byte	10
+ 769 02e5 01       		.byte	1
+ 770 02e6 0B       		.byte	11
+ 771 02e7 01       		.byte	1
+ 772 02e8 10       		.byte	16
+ 773 02e9 01       		.byte	1
+ 774 02ea 11       		.byte	17
+ 775 02eb 01       		.byte	1
+ 776 02ec 1A       		.byte	26
+ 777 02ed 01       		.byte	1
+ 778 02ee 1B       		.byte	27
+ 779 02ef 01       		.byte	1
+ 780 02f0 00       		.byte	0
+ 781 02f1 3F       		.byte	63
+ 782 02f2 00       		.byte	0
+ 783 02f3 00       		.byte	0
+ 784 02f4 00       		.byte	0
+ 785 02f5 0A       		.byte	10
+ 786 02f6 0A       		.byte	10
+ 787 02f7 00       		.byte	0
+ 788 02f8 0A       		.byte	10
+ 789 02f9 00       		.byte	0
+ 790 02fa 00       		.byte	0
+ 791 02fb 00       		.byte	0
+ 792 02fc 00       		.byte	0
+ 793 02fd 8B       		.byte	-117
+ 794 02fe 8B       		.byte	-117
+ 795 02ff 00       		.byte	0
+ 796 0300 80       		.byte	-128
+ 797 0301 00       		.byte	0
+ 798 0302 00       		.byte	0
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 15
+
+
+ 799 0303 00       		.byte	0
+ 800 0304 00       		.byte	0
+ 801 0305 7F       		.byte	127
+ 802 0306 7F       		.byte	127
+ 803 0307 00       		.byte	0
+ 804 0308 00       		.byte	0
+ 805 0309 00       		.byte	0
+ 806 030a 00       		.byte	0
+ 807 030b 00       		.byte	0
+ 808              		.section	.cywolatch,"a",%progbits
+ 809              		.align	2
+ 810              		.type	cy_meta_wonvl, %object
+ 811              		.size	cy_meta_wonvl, 4
+ 812              	cy_meta_wonvl:
+ 813 0000 BC       		.byte	-68
+ 814 0001 90       		.byte	-112
+ 815 0002 AC       		.byte	-84
+ 816 0003 AF       		.byte	-81
+ 817              		.section	.cycustnvl,"a",%progbits
+ 818              		.align	2
+ 819              		.type	cy_meta_custnvl, %object
+ 820              		.size	cy_meta_custnvl, 4
+ 821              	cy_meta_custnvl:
+ 822 0000 00       		.byte	0
+ 823 0001 00       		.byte	0
+ 824 0002 40       		.byte	64
+ 825 0003 05       		.byte	5
+ 826              		.section	.cymeta,"a",%progbits
+ 827              		.align	2
+ 828              		.type	cy_metadata, %object
+ 829              		.size	cy_metadata, 12
+ 830              	cy_metadata:
+ 831 0000 00       		.byte	0
+ 832 0001 01       		.byte	1
+ 833 0002 2E       		.byte	46
+ 834 0003 12       		.byte	18
+ 835 0004 30       		.byte	48
+ 836 0005 69       		.byte	105
+ 837 0006 00       		.byte	0
+ 838 0007 01       		.byte	1
+ 839 0008 00       		.byte	0
+ 840 0009 00       		.byte	0
+ 841 000a 00       		.byte	0
+ 842 000b 00       		.byte	0
+ 843              		.section	.cyflashprotect,"a",%progbits
+ 844              		.align	2
+ 845              		.type	cy_meta_flashprotect, %object
+ 846              		.size	cy_meta_flashprotect, 256
+ 847              	cy_meta_flashprotect:
+ 848 0000 00000000 		.space	256
+ 848      00000000 
+ 848      00000000 
+ 848      00000000 
+ 848      00000000 
+ 849              		.text
+ 850              	.Letext0:
+ 851              		.file 1 "Generated_Source\\PSoC5\\cymetadata.c"
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 16
+
+
+ 852              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 853              		.section	.debug_info,"",%progbits
+ 854              	.Ldebug_info0:
+ 855 0000 37010000 		.4byte	0x137
+ 856 0004 0400     		.2byte	0x4
+ 857 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 858 000a 04       		.byte	0x4
+ 859 000b 01       		.uleb128 0x1
+ 860 000c 6E000000 		.4byte	.LASF18
+ 861 0010 01       		.byte	0x1
+ 862 0011 E3010000 		.4byte	.LASF19
+ 863 0015 84010000 		.4byte	.LASF20
+ 864 0019 00000000 		.4byte	.Ldebug_line0
+ 865 001d 02       		.uleb128 0x2
+ 866 001e 01       		.byte	0x1
+ 867 001f 06       		.byte	0x6
+ 868 0020 78010000 		.4byte	.LASF0
+ 869 0024 02       		.uleb128 0x2
+ 870 0025 01       		.byte	0x1
+ 871 0026 08       		.byte	0x8
+ 872 0027 12000000 		.4byte	.LASF1
+ 873 002b 02       		.uleb128 0x2
+ 874 002c 02       		.byte	0x2
+ 875 002d 05       		.byte	0x5
+ 876 002e 5F010000 		.4byte	.LASF2
+ 877 0032 02       		.uleb128 0x2
+ 878 0033 02       		.byte	0x2
+ 879 0034 07       		.byte	0x7
+ 880 0035 32000000 		.4byte	.LASF3
+ 881 0039 02       		.uleb128 0x2
+ 882 003a 04       		.byte	0x4
+ 883 003b 05       		.byte	0x5
+ 884 003c 6F010000 		.4byte	.LASF4
+ 885 0040 02       		.uleb128 0x2
+ 886 0041 04       		.byte	0x4
+ 887 0042 07       		.byte	0x7
+ 888 0043 20000000 		.4byte	.LASF5
+ 889 0047 02       		.uleb128 0x2
+ 890 0048 08       		.byte	0x8
+ 891 0049 05       		.byte	0x5
+ 892 004a 4C010000 		.4byte	.LASF6
+ 893 004e 02       		.uleb128 0x2
+ 894 004f 08       		.byte	0x8
+ 895 0050 07       		.byte	0x7
+ 896 0051 09010000 		.4byte	.LASF7
+ 897 0055 03       		.uleb128 0x3
+ 898 0056 04       		.byte	0x4
+ 899 0057 05       		.byte	0x5
+ 900 0058 696E7400 		.ascii	"int\000"
+ 901 005c 02       		.uleb128 0x2
+ 902 005d 04       		.byte	0x4
+ 903 005e 07       		.byte	0x7
+ 904 005f FC000000 		.4byte	.LASF8
+ 905 0063 04       		.uleb128 0x4
+ 906 0064 69010000 		.4byte	.LASF21
+ 907 0068 02       		.byte	0x2
+ 908 0069 9201     		.2byte	0x192
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 17
+
+
+ 909 006b 24000000 		.4byte	0x24
+ 910 006f 02       		.uleb128 0x2
+ 911 0070 04       		.byte	0x4
+ 912 0071 04       		.byte	0x4
+ 913 0072 0C000000 		.4byte	.LASF9
+ 914 0076 02       		.uleb128 0x2
+ 915 0077 08       		.byte	0x8
+ 916 0078 04       		.byte	0x4
+ 917 0079 45000000 		.4byte	.LASF10
+ 918 007d 02       		.uleb128 0x2
+ 919 007e 01       		.byte	0x1
+ 920 007f 08       		.byte	0x8
+ 921 0080 5A010000 		.4byte	.LASF11
+ 922 0084 05       		.uleb128 0x5
+ 923 0085 63000000 		.4byte	0x63
+ 924 0089 95000000 		.4byte	0x95
+ 925 008d 06       		.uleb128 0x6
+ 926 008e 95000000 		.4byte	0x95
+ 927 0092 0B03     		.2byte	0x30b
+ 928 0094 00       		.byte	0
+ 929 0095 02       		.uleb128 0x2
+ 930 0096 04       		.byte	0x4
+ 931 0097 07       		.byte	0x7
+ 932 0098 43010000 		.4byte	.LASF12
+ 933 009c 07       		.uleb128 0x7
+ 934 009d 5C000000 		.4byte	.LASF13
+ 935 00a1 01       		.byte	0x1
+ 936 00a2 1F       		.byte	0x1f
+ 937 00a3 AD000000 		.4byte	0xad
+ 938 00a7 05       		.uleb128 0x5
+ 939 00a8 03       		.byte	0x3
+ 940 00a9 00000000 		.4byte	cy_meta_configecc
+ 941 00ad 08       		.uleb128 0x8
+ 942 00ae 84000000 		.4byte	0x84
+ 943 00b2 05       		.uleb128 0x5
+ 944 00b3 63000000 		.4byte	0x63
+ 945 00b7 C2000000 		.4byte	0xc2
+ 946 00bb 09       		.uleb128 0x9
+ 947 00bc 95000000 		.4byte	0x95
+ 948 00c0 03       		.byte	0x3
+ 949 00c1 00       		.byte	0
+ 950 00c2 07       		.uleb128 0x7
+ 951 00c3 4C000000 		.4byte	.LASF14
+ 952 00c7 01       		.byte	0x1
+ 953 00c8 8E       		.byte	0x8e
+ 954 00c9 D3000000 		.4byte	0xd3
+ 955 00cd 05       		.uleb128 0x5
+ 956 00ce 03       		.byte	0x3
+ 957 00cf 00000000 		.4byte	cy_meta_custnvl
+ 958 00d3 08       		.uleb128 0x8
+ 959 00d4 B2000000 		.4byte	0xb2
+ 960 00d8 07       		.uleb128 0x7
+ 961 00d9 35010000 		.4byte	.LASF15
+ 962 00dd 01       		.byte	0x1
+ 963 00de 9C       		.byte	0x9c
+ 964 00df E9000000 		.4byte	0xe9
+ 965 00e3 05       		.uleb128 0x5
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 18
+
+
+ 966 00e4 03       		.byte	0x3
+ 967 00e5 00000000 		.4byte	cy_meta_wonvl
+ 968 00e9 08       		.uleb128 0x8
+ 969 00ea B2000000 		.4byte	0xb2
+ 970 00ee 05       		.uleb128 0x5
+ 971 00ef 63000000 		.4byte	0x63
+ 972 00f3 FE000000 		.4byte	0xfe
+ 973 00f7 09       		.uleb128 0x9
+ 974 00f8 95000000 		.4byte	0x95
+ 975 00fc FF       		.byte	0xff
+ 976 00fd 00       		.byte	0
+ 977 00fe 07       		.uleb128 0x7
+ 978 00ff 20010000 		.4byte	.LASF16
+ 979 0103 01       		.byte	0x1
+ 980 0104 AA       		.byte	0xaa
+ 981 0105 0F010000 		.4byte	0x10f
+ 982 0109 05       		.uleb128 0x5
+ 983 010a 03       		.byte	0x3
+ 984 010b 00000000 		.4byte	cy_meta_flashprotect
+ 985 010f 08       		.uleb128 0x8
+ 986 0110 EE000000 		.4byte	0xee
+ 987 0114 05       		.uleb128 0x5
+ 988 0115 63000000 		.4byte	0x63
+ 989 0119 24010000 		.4byte	0x124
+ 990 011d 09       		.uleb128 0x9
+ 991 011e 95000000 		.4byte	0x95
+ 992 0122 0B       		.byte	0xb
+ 993 0123 00       		.byte	0
+ 994 0124 07       		.uleb128 0x7
+ 995 0125 00000000 		.4byte	.LASF17
+ 996 0129 01       		.byte	0x1
+ 997 012a D7       		.byte	0xd7
+ 998 012b 35010000 		.4byte	0x135
+ 999 012f 05       		.uleb128 0x5
+ 1000 0130 03       		.byte	0x3
+ 1001 0131 00000000 		.4byte	cy_metadata
+ 1002 0135 08       		.uleb128 0x8
+ 1003 0136 14010000 		.4byte	0x114
+ 1004 013a 00       		.byte	0
+ 1005              		.section	.debug_abbrev,"",%progbits
+ 1006              	.Ldebug_abbrev0:
+ 1007 0000 01       		.uleb128 0x1
+ 1008 0001 11       		.uleb128 0x11
+ 1009 0002 01       		.byte	0x1
+ 1010 0003 25       		.uleb128 0x25
+ 1011 0004 0E       		.uleb128 0xe
+ 1012 0005 13       		.uleb128 0x13
+ 1013 0006 0B       		.uleb128 0xb
+ 1014 0007 03       		.uleb128 0x3
+ 1015 0008 0E       		.uleb128 0xe
+ 1016 0009 1B       		.uleb128 0x1b
+ 1017 000a 0E       		.uleb128 0xe
+ 1018 000b 10       		.uleb128 0x10
+ 1019 000c 17       		.uleb128 0x17
+ 1020 000d 00       		.byte	0
+ 1021 000e 00       		.byte	0
+ 1022 000f 02       		.uleb128 0x2
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 19
+
+
+ 1023 0010 24       		.uleb128 0x24
+ 1024 0011 00       		.byte	0
+ 1025 0012 0B       		.uleb128 0xb
+ 1026 0013 0B       		.uleb128 0xb
+ 1027 0014 3E       		.uleb128 0x3e
+ 1028 0015 0B       		.uleb128 0xb
+ 1029 0016 03       		.uleb128 0x3
+ 1030 0017 0E       		.uleb128 0xe
+ 1031 0018 00       		.byte	0
+ 1032 0019 00       		.byte	0
+ 1033 001a 03       		.uleb128 0x3
+ 1034 001b 24       		.uleb128 0x24
+ 1035 001c 00       		.byte	0
+ 1036 001d 0B       		.uleb128 0xb
+ 1037 001e 0B       		.uleb128 0xb
+ 1038 001f 3E       		.uleb128 0x3e
+ 1039 0020 0B       		.uleb128 0xb
+ 1040 0021 03       		.uleb128 0x3
+ 1041 0022 08       		.uleb128 0x8
+ 1042 0023 00       		.byte	0
+ 1043 0024 00       		.byte	0
+ 1044 0025 04       		.uleb128 0x4
+ 1045 0026 16       		.uleb128 0x16
+ 1046 0027 00       		.byte	0
+ 1047 0028 03       		.uleb128 0x3
+ 1048 0029 0E       		.uleb128 0xe
+ 1049 002a 3A       		.uleb128 0x3a
+ 1050 002b 0B       		.uleb128 0xb
+ 1051 002c 3B       		.uleb128 0x3b
+ 1052 002d 05       		.uleb128 0x5
+ 1053 002e 49       		.uleb128 0x49
+ 1054 002f 13       		.uleb128 0x13
+ 1055 0030 00       		.byte	0
+ 1056 0031 00       		.byte	0
+ 1057 0032 05       		.uleb128 0x5
+ 1058 0033 01       		.uleb128 0x1
+ 1059 0034 01       		.byte	0x1
+ 1060 0035 49       		.uleb128 0x49
+ 1061 0036 13       		.uleb128 0x13
+ 1062 0037 01       		.uleb128 0x1
+ 1063 0038 13       		.uleb128 0x13
+ 1064 0039 00       		.byte	0
+ 1065 003a 00       		.byte	0
+ 1066 003b 06       		.uleb128 0x6
+ 1067 003c 21       		.uleb128 0x21
+ 1068 003d 00       		.byte	0
+ 1069 003e 49       		.uleb128 0x49
+ 1070 003f 13       		.uleb128 0x13
+ 1071 0040 2F       		.uleb128 0x2f
+ 1072 0041 05       		.uleb128 0x5
+ 1073 0042 00       		.byte	0
+ 1074 0043 00       		.byte	0
+ 1075 0044 07       		.uleb128 0x7
+ 1076 0045 34       		.uleb128 0x34
+ 1077 0046 00       		.byte	0
+ 1078 0047 03       		.uleb128 0x3
+ 1079 0048 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 20
+
+
+ 1080 0049 3A       		.uleb128 0x3a
+ 1081 004a 0B       		.uleb128 0xb
+ 1082 004b 3B       		.uleb128 0x3b
+ 1083 004c 0B       		.uleb128 0xb
+ 1084 004d 49       		.uleb128 0x49
+ 1085 004e 13       		.uleb128 0x13
+ 1086 004f 3F       		.uleb128 0x3f
+ 1087 0050 19       		.uleb128 0x19
+ 1088 0051 02       		.uleb128 0x2
+ 1089 0052 18       		.uleb128 0x18
+ 1090 0053 00       		.byte	0
+ 1091 0054 00       		.byte	0
+ 1092 0055 08       		.uleb128 0x8
+ 1093 0056 26       		.uleb128 0x26
+ 1094 0057 00       		.byte	0
+ 1095 0058 49       		.uleb128 0x49
+ 1096 0059 13       		.uleb128 0x13
+ 1097 005a 00       		.byte	0
+ 1098 005b 00       		.byte	0
+ 1099 005c 09       		.uleb128 0x9
+ 1100 005d 21       		.uleb128 0x21
+ 1101 005e 00       		.byte	0
+ 1102 005f 49       		.uleb128 0x49
+ 1103 0060 13       		.uleb128 0x13
+ 1104 0061 2F       		.uleb128 0x2f
+ 1105 0062 0B       		.uleb128 0xb
+ 1106 0063 00       		.byte	0
+ 1107 0064 00       		.byte	0
+ 1108 0065 00       		.byte	0
+ 1109              		.section	.debug_aranges,"",%progbits
+ 1110 0000 14000000 		.4byte	0x14
+ 1111 0004 0200     		.2byte	0x2
+ 1112 0006 00000000 		.4byte	.Ldebug_info0
+ 1113 000a 04       		.byte	0x4
+ 1114 000b 00       		.byte	0
+ 1115 000c 0000     		.2byte	0
+ 1116 000e 0000     		.2byte	0
+ 1117 0010 00000000 		.4byte	0
+ 1118 0014 00000000 		.4byte	0
+ 1119              		.section	.debug_line,"",%progbits
+ 1120              	.Ldebug_line0:
+ 1121 0000 4D000000 		.section	.debug_str,"MS",%progbits,1
+ 1121      02004700 
+ 1121      00000201 
+ 1121      FB0E0D00 
+ 1121      01010101 
+ 1122              	.LASF17:
+ 1123 0000 63795F6D 		.ascii	"cy_metadata\000"
+ 1123      65746164 
+ 1123      61746100 
+ 1124              	.LASF9:
+ 1125 000c 666C6F61 		.ascii	"float\000"
+ 1125      7400
+ 1126              	.LASF1:
+ 1127 0012 756E7369 		.ascii	"unsigned char\000"
+ 1127      676E6564 
+ 1127      20636861 
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 21
+
+
+ 1127      7200
+ 1128              	.LASF5:
+ 1129 0020 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1129      20756E73 
+ 1129      69676E65 
+ 1129      6420696E 
+ 1129      7400
+ 1130              	.LASF3:
+ 1131 0032 73686F72 		.ascii	"short unsigned int\000"
+ 1131      7420756E 
+ 1131      7369676E 
+ 1131      65642069 
+ 1131      6E7400
+ 1132              	.LASF10:
+ 1133 0045 646F7562 		.ascii	"double\000"
+ 1133      6C6500
+ 1134              	.LASF14:
+ 1135 004c 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 1135      6574615F 
+ 1135      63757374 
+ 1135      6E766C00 
+ 1136              	.LASF13:
+ 1137 005c 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 1137      6574615F 
+ 1137      636F6E66 
+ 1137      69676563 
+ 1137      6300
+ 1138              	.LASF18:
+ 1139 006e 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1139      4320342E 
+ 1139      392E3320 
+ 1139      32303135 
+ 1139      30333033 
+ 1140 00a1 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1140      20726576 
+ 1140      6973696F 
+ 1140      6E203232 
+ 1140      31323230 
+ 1141 00d4 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1141      66756E63 
+ 1141      74696F6E 
+ 1141      2D736563 
+ 1141      74696F6E 
+ 1142              	.LASF8:
+ 1143 00fc 756E7369 		.ascii	"unsigned int\000"
+ 1143      676E6564 
+ 1143      20696E74 
+ 1143      00
+ 1144              	.LASF7:
+ 1145 0109 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1145      206C6F6E 
+ 1145      6720756E 
+ 1145      7369676E 
+ 1145      65642069 
+ 1146              	.LASF16:
+ 1147 0120 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 1147      6574615F 
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccVWiUW9.s 			page 22
+
+
+ 1147      666C6173 
+ 1147      6870726F 
+ 1147      74656374 
+ 1148              	.LASF15:
+ 1149 0135 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 1149      6574615F 
+ 1149      776F6E76 
+ 1149      6C00
+ 1150              	.LASF12:
+ 1151 0143 73697A65 		.ascii	"sizetype\000"
+ 1151      74797065 
+ 1151      00
+ 1152              	.LASF6:
+ 1153 014c 6C6F6E67 		.ascii	"long long int\000"
+ 1153      206C6F6E 
+ 1153      6720696E 
+ 1153      7400
+ 1154              	.LASF11:
+ 1155 015a 63686172 		.ascii	"char\000"
+ 1155      00
+ 1156              	.LASF2:
+ 1157 015f 73686F72 		.ascii	"short int\000"
+ 1157      7420696E 
+ 1157      7400
+ 1158              	.LASF21:
+ 1159 0169 75696E74 		.ascii	"uint8\000"
+ 1159      3800
+ 1160              	.LASF4:
+ 1161 016f 6C6F6E67 		.ascii	"long int\000"
+ 1161      20696E74 
+ 1161      00
+ 1162              	.LASF0:
+ 1163 0178 7369676E 		.ascii	"signed char\000"
+ 1163      65642063 
+ 1163      68617200 
+ 1164              	.LASF20:
+ 1165 0184 433A5C55 		.ascii	"C:\\Users\\Julien\\Documents\\INSA\\5A\\BE_systemes"
+ 1165      73657273 
+ 1165      5C4A756C 
+ 1165      69656E5C 
+ 1165      446F6375 
+ 1166 01b1 5F656D62 		.ascii	"_embarques\\BE_systemes_embarques\\Test_timer.cydsn"
+ 1166      61727175 
+ 1166      65735C42 
+ 1166      455F7379 
+ 1166      7374656D 
+ 1167 01e2 00       		.ascii	"\000"
+ 1168              	.LASF19:
+ 1169 01e3 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
+ 1169      72617465 
+ 1169      645F536F 
+ 1169      75726365 
+ 1169      5C50536F 
+ 1170              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

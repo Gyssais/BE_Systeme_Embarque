@@ -41,11 +41,11 @@ extern uint8 Timer_US_initVar;
 #define Timer_US_UsingHWCaptureCounter      0u
 #define Timer_US_SoftwareCaptureMode        0u
 #define Timer_US_SoftwareTriggerMode        0u
-#define Timer_US_UsingHWEnable              0u
-#define Timer_US_EnableTriggerMode          1u
+#define Timer_US_UsingHWEnable              1u
+#define Timer_US_EnableTriggerMode          0u
 #define Timer_US_InterruptOnCaptureCount    1u
 #define Timer_US_RunModeUsed                0u
-#define Timer_US_ControlRegRemoved          0u
+#define Timer_US_ControlRegRemoved          1u
 
 #if defined(Timer_US_TimerUDB_sCTRLReg_SyncCtl_ctrlreg__CONTROL_REG)
     #define Timer_US_UDB_CONTROL_REG_REMOVED            (0u)
@@ -170,7 +170,7 @@ void Timer_US_Wakeup(void)        ;
 
 #define Timer_US_INIT_PERIOD             16777215u
 #define Timer_US_INIT_CAPTURE_MODE       ((uint8)((uint8)1u << Timer_US_CTRL_CAP_MODE_SHIFT))
-#define Timer_US_INIT_TRIGGER_MODE       ((uint8)((uint8)1u << Timer_US_CTRL_TRIG_MODE_SHIFT))
+#define Timer_US_INIT_TRIGGER_MODE       ((uint8)((uint8)0u << Timer_US_CTRL_TRIG_MODE_SHIFT))
 #if (Timer_US_UsingFixedFunction)
     #define Timer_US_INIT_INTERRUPT_MODE (((uint8)((uint8)0u << Timer_US_STATUS_TC_INT_MASK_SHIFT)) | \
                                                   ((uint8)((uint8)1 << Timer_US_STATUS_CAPTURE_INT_MASK_SHIFT)))
