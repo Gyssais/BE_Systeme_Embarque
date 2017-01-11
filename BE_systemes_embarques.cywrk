@@ -3,13 +3,13 @@
 <!--This file is machine generated and read. It is not intended to be edited by hand.-->
 <!--Due to this, there is no schema for this file.-->
 <CyGuid_2867d519-54d2-4c01-9830-c51cb08bc3dd type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWorkspaceSerialize" version="5" xml_contents_version="3" name="BE_systemes_embarques" persistent="BE_systemes_embarques.cywrk" platform="NOT_USED">
-<current_project name=".\capteur_us.cydsn\capteur_us.cyprj" />
+<current_project name=".\projet_entier.cydsn\projet_entier.cyprj" />
 <wrkspc_folders />
 <files />
 <projects>
-<v>.\capteur_us.cydsn\capteur_us.cyprj</v>
 <v>.\Counter_exemple.cydsn\Counter_exemple.cyprj</v>
 <v>.\Test_timer.cydsn\Test_timer.cyprj</v>
+<v>.\projet_entier.cydsn\projet_entier.cyprj</v>
 </projects>
 <workspace_id v="aa05892f-984f-4b7b-bea3-ba027e3601a9" />
 <WriteAppVersionLastSavedWith v="4.0.0.432" />
