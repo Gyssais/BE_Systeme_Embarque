@@ -1,5 +1,5 @@
 # projet_entier
-# 2017-01-11 21:50:42Z
+# 2017-01-12 15:59:03Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -21,8 +21,10 @@ set_io "Pin_4(0)" iocell 4 2
 set_io "XBee_Rx(0)" iocell 6 6
 set_io "PWM_FL(0)" iocell 0 3
 set_io "PWM_FR(0)" iocell 12 5
-set_io "PWM_BL(0)" iocell 1 7
+set_io "PWM_BL(0)" iocell 5 1
 set_io "PWM_BR(0)" iocell 1 6
-set_location "\Detect_Seuil_Recept:ctComp\" comparatorcell -1 -1 2
-set_location "\V_seuil:viDAC8\" vidaccell -1 -1 2
+set_io "Moteur_BL_inA(0)" iocell 0 1
+set_io "Moteur_BL_inB(0)" iocell 0 0
+set_location "\Detect_Seuil_Recept:ctComp\" comparatorcell -1 -1 0
+set_location "\V_seuil:viDAC8\" vidaccell -1 -1 0
 set_location "\Ampli_Recept:SC\" sccell -1 -1 0

@@ -16,12 +16,12 @@
 #define KEY_DROITE 0x73  // Code asic Letra S minuscule
 #define KEY_GAUCHE 0x66  // Code asic Letra F minuscule
 
-#define CTRL_AVANCE 0x01 // A DEFINIR REGISTRADORES
-#define CTRL_RECULE 0x01
+#define CTRL_AVANCE 0x0F // A DEFINIR REGISTRADORES
+#define CTRL_RECULE 0xF0
 #define CTRL_DROITE 0x01
 #define CTRL_GAUCHE 0x01
 
-#define VITESSE_1  0x64  // A DEFINIR VELOCIDADES DOS MOTORES
+#define VITESSE_1  255  // A DEFINIR VELOCIDADES DOS MOTORES
 #define VITESSE_2  0x05
 #define VITESSE_3  0x01
 #define VITESSE_4  0x01

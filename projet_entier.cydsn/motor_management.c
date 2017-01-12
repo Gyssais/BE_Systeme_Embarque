@@ -76,7 +76,7 @@ void recule_moteurs(void)
 {
     ctrl_moteur_Write(CTRL_RECULE);
     
-    PWM_Front_WriteCompare1(VITESSE_2); // Moteur Front Left    
+    PWM_Front_WriteCompare1(VITESSE_1); // Moteur Front Left    
     PWM_Front_WriteCompare2(VITESSE_1); // Moteur Front Right
     PWM_Back_WriteCompare1(VITESSE_1);  // Moteur Back Left
     PWM_Back_WriteCompare2(VITESSE_1);  // Moteur Back Right

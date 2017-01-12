@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
   30:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** /* variable to decide whether or not to restore the control register in 
   31:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****    Enable() API for PSoC5A only */
   32:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** #if (CY_PSOC5A)
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 2
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 2
 
 
   33:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     static uint8 Detect_Seuil_Recept_restoreReg = 0u;
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
   87:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** ********************************************************************************
   88:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** *
   89:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** * Summary:
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 3
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 3
 
 
   90:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** *  Enable the Comparator
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
  144:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     }   
  145:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 
  146:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* Enable power to comparator */
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 4
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 4
 
 
  147:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     Detect_Seuil_Recept_Enable();    
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
  201:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****                            (speed & Detect_Seuil_Recept_PWR_MODE_MASK);
  202:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 
  203:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* Set trim value for high speed comparator */
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 5
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 5
 
 
  204:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     if(speed == Detect_Seuil_Recept_HIGHSPEED)
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
  258:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** * Function Name: Detect_Seuil_Recept_trimAdjust
  259:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** ********************************************************************************
  260:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** *
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 6
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 6
 
 
  261:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** * Summary:
@@ -343,25 +343,24 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
  287:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* get current state of comparator output */
  288:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     cmpState = Detect_Seuil_Recept_WRK & Detect_Seuil_Recept_CMP_OUT_MASK;
   39              		.loc 1 288 0
-  40 0002 1A4B     		ldr	r3, .L12
+  40 0002 194B     		ldr	r3, .L12
   41 0004 1D78     		ldrb	r5, [r3]	@ zero_extendqisi2
-  42 0006 05F00405 		and	r5, r5, #4
-  43 000a EDB2     		uxtb	r5, r5
-  44              	.LVL1:
+  42 0006 05F00105 		and	r5, r5, #1
+  43              	.LVL1:
  289:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     
  290:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     if (nibble == 0u)
-  45              		.loc 1 290 0
-  46 000c 0646     		mov	r6, r0
-  47 000e 30B9     		cbnz	r0, .L2
+  44              		.loc 1 290 0
+  45 000a 0646     		mov	r6, r0
+  46 000c 30B9     		cbnz	r0, .L2
  291:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     {    
  292:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         /* if comparator output is high, negative offset adjust is required */
  293:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         if ( cmpState != 0u )
-  48              		.loc 1 293 0
-  49 0010 5DB1     		cbz	r5, .L3
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 7
-
-
+  47              		.loc 1 293 0
+  48 000e 5DB1     		cbz	r5, .L3
  294:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         {
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 7
+
+
  295:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             /* PSoC5A */
  296:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             #if (CY_PSOC5A)
  297:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****                 Detect_Seuil_Recept_TR |= Detect_Seuil_Recept_CMP_TRIM1_DIR;
@@ -370,13 +369,13 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
  300:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             /* PSoC3, PSoC5LP or later */
  301:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             #if (CY_PSOC3 || CY_PSOC5LP)
  302:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****                 Detect_Seuil_Recept_TR0 |= Detect_Seuil_Recept_CMP_TR0_DIR;
-  50              		.loc 1 302 0
-  51 0012 174A     		ldr	r2, .L12+4
-  52 0014 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
-  53 0016 43F01003 		orr	r3, r3, #16
-  54 001a 1370     		strb	r3, [r2]
-  55 001c 05E0     		b	.L3
-  56              	.L2:
+  49              		.loc 1 302 0
+  50 0010 164A     		ldr	r2, .L12+4
+  51 0012 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  52 0014 43F01003 		orr	r3, r3, #16
+  53 0018 1370     		strb	r3, [r2]
+  54 001a 05E0     		b	.L3
+  55              	.L2:
  303:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             #endif /* CY_PSOC3 || CY_PSOC5LP */
  304:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         }
  305:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     }
@@ -384,8 +383,8 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
  307:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     {
  308:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         /* if comparator output is low, positive offset adjust is required */
  309:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         if ( cmpState == 0u )
-  57              		.loc 1 309 0
-  58 001e 25B9     		cbnz	r5, .L3
+  56              		.loc 1 309 0
+  57 001c 25B9     		cbnz	r5, .L3
  310:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         {
  311:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             /* PSoC5A */
  312:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             #if (CY_PSOC5A)
@@ -395,12 +394,12 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
  316:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             /* PSoC3, PSoC5LP or later */
  317:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             #if (CY_PSOC3 || CY_PSOC5LP)
  318:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****                 Detect_Seuil_Recept_TR1 |= Detect_Seuil_Recept_CMP_TR1_DIR;
-  59              		.loc 1 318 0
-  60 0020 144A     		ldr	r2, .L12+8
-  61 0022 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
-  62 0024 43F01003 		orr	r3, r3, #16
-  63 0028 1370     		strb	r3, [r2]
-  64              	.L3:
+  58              		.loc 1 318 0
+  59 001e 144A     		ldr	r2, .L12+8
+  60 0020 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  61 0022 43F01003 		orr	r3, r3, #16
+  62 0026 1370     		strb	r3, [r2]
+  63              	.L3:
  319:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             #endif /* CY_PSOC3 || CY_PSOC5LP */
  320:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         }
  321:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     }
@@ -415,38 +414,38 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
  330:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 	/* PSoC3, PSoC5LP or later */
  331:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 	#if (CY_PSOC3 || CY_PSOC5LP)
  332:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     	if(nibble == 0u)
-  65              		.loc 1 332 0
-  66 002a 0EB9     		cbnz	r6, .L10
+  64              		.loc 1 332 0
+  65 0028 0EB9     		cbnz	r6, .L10
  333:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     	{
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 8
-
-
  334:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     		trimCntMax = 15u;
-  67              		.loc 1 334 0
-  68 002c 0F27     		movs	r7, #15
-  69 002e 00E0     		b	.L4
-  70              	.L10:
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 8
+
+
+  66              		.loc 1 334 0
+  67 002a 0F27     		movs	r7, #15
+  68 002c 00E0     		b	.L4
+  69              	.L10:
  335:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     	}
  336:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     	else
  337:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     	{
  338:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     		trimCntMax = 7u;
-  71              		.loc 1 338 0
-  72 0030 0727     		movs	r7, #7
-  73              	.L4:
-  74              	.LVL2:
+  70              		.loc 1 338 0
+  71 002e 0727     		movs	r7, #7
+  72              	.L4:
+  73              	.LVL2:
  339:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     	}
  340:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 	#endif
  341:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 	
  342:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     for ( trimCnt = 0u; trimCnt < trimCntMax; trimCnt++ )
-  75              		.loc 1 342 0
-  76 0032 0024     		movs	r4, #0
-  77 0034 17E0     		b	.L5
-  78              	.LVL3:
-  79              	.L9:
+  74              		.loc 1 342 0
+  75 0030 0024     		movs	r4, #0
+  76 0032 16E0     		b	.L5
+  77              	.LVL3:
+  78              	.L9:
  343:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 	{
  344:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         if (nibble == 0u)
-  80              		.loc 1 344 0
-  81 0036 2EB9     		cbnz	r6, .L6
+  79              		.loc 1 344 0
+  80 0034 2EB9     		cbnz	r6, .L6
  345:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         {
  346:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             /* PSoC5A */
  347:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             #if (CY_PSOC5A)
@@ -456,14 +455,14 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
  351:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             /* PSoC3, PSoC5LP or later */
  352:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             #if (CY_PSOC3 || CY_PSOC5LP)
  353:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****                 Detect_Seuil_Recept_TR0 += 1u;
-  82              		.loc 1 353 0
-  83 0038 0D4A     		ldr	r2, .L12+4
-  84 003a 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
-  85 003c 0133     		adds	r3, r3, #1
-  86 003e DBB2     		uxtb	r3, r3
-  87 0040 1370     		strb	r3, [r2]
-  88 0042 04E0     		b	.L7
-  89              	.L6:
+  81              		.loc 1 353 0
+  82 0036 0D4A     		ldr	r2, .L12+4
+  83 0038 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  84 003a 0133     		adds	r3, r3, #1
+  85 003c DBB2     		uxtb	r3, r3
+  86 003e 1370     		strb	r3, [r2]
+  87 0040 04E0     		b	.L7
+  88              	.L6:
  354:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             #endif /* CY_PSOC3 || CY_PSOC5LP */
  355:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         }
  356:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         else
@@ -476,348 +475,347 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
  363:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             /* PSoC3, PSoC5LP or later */
  364:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             #if (CY_PSOC3 || CY_PSOC5LP)
  365:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****                 Detect_Seuil_Recept_TR1 += 1u;
-  90              		.loc 1 365 0
-  91 0044 0B4A     		ldr	r2, .L12+8
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 9
+  89              		.loc 1 365 0
+  90 0042 0B4A     		ldr	r2, .L12+8
+  91 0044 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 9
 
 
-  92 0046 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
-  93 0048 0133     		adds	r3, r3, #1
-  94 004a DBB2     		uxtb	r3, r3
-  95 004c 1370     		strb	r3, [r2]
-  96              	.L7:
+  92 0046 0133     		adds	r3, r3, #1
+  93 0048 DBB2     		uxtb	r3, r3
+  94 004a 1370     		strb	r3, [r2]
+  95              	.L7:
  366:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             #endif /* CY_PSOC3 || CY_PSOC5LP */
  367:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         }
  368:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         
  369:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         CyDelayUs(10u);
-  97              		.loc 1 369 0
-  98 004e 0A20     		movs	r0, #10
-  99 0050 FFF7FEFF 		bl	CyDelayUs
- 100              	.LVL4:
+  96              		.loc 1 369 0
+  97 004c 0A20     		movs	r0, #10
+  98 004e FFF7FEFF 		bl	CyDelayUs
+  99              	.LVL4:
  370:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         
  371:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         /* Check for change in comparator output */
  372:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         if ((Detect_Seuil_Recept_WRK & Detect_Seuil_Recept_CMP_OUT_MASK) != cmpState)
- 101              		.loc 1 372 0
- 102 0054 054B     		ldr	r3, .L12
- 103 0056 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 104 0058 03F00403 		and	r3, r3, #4
- 105 005c DBB2     		uxtb	r3, r3
- 106 005e AB42     		cmp	r3, r5
- 107 0060 03D1     		bne	.L1
+ 100              		.loc 1 372 0
+ 101 0052 054B     		ldr	r3, .L12
+ 102 0054 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 103 0056 03F00103 		and	r3, r3, #1
+ 104 005a AB42     		cmp	r3, r5
+ 105 005c 03D1     		bne	.L1
  342:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 	{
- 108              		.loc 1 342 0 discriminator 2
- 109 0062 0134     		adds	r4, r4, #1
- 110              	.LVL5:
- 111 0064 E4B2     		uxtb	r4, r4
- 112              	.LVL6:
- 113              	.L5:
+ 106              		.loc 1 342 0 discriminator 2
+ 107 005e 0134     		adds	r4, r4, #1
+ 108              	.LVL5:
+ 109 0060 E4B2     		uxtb	r4, r4
+ 110              	.LVL6:
+ 111              	.L5:
  342:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 	{
- 114              		.loc 1 342 0 is_stmt 0 discriminator 1
- 115 0066 BC42     		cmp	r4, r7
- 116 0068 E5D3     		bcc	.L9
- 117              	.L1:
- 118 006a F8BD     		pop	{r3, r4, r5, r6, r7, pc}
- 119              	.LVL7:
- 120              	.L13:
- 121              		.align	2
- 122              	.L12:
- 123 006c 965B0040 		.word	1073765270
- 124 0070 34460040 		.word	1073759796
- 125 0074 35460040 		.word	1073759797
- 126              		.cfi_endproc
- 127              	.LFE6:
- 128              		.size	Detect_Seuil_Recept_trimAdjust, .-Detect_Seuil_Recept_trimAdjust
- 129              		.section	.text.Detect_Seuil_Recept_Enable,"ax",%progbits
- 130              		.align	2
- 131              		.global	Detect_Seuil_Recept_Enable
- 132              		.thumb
- 133              		.thumb_func
- 134              		.type	Detect_Seuil_Recept_Enable, %function
- 135              	Detect_Seuil_Recept_Enable:
- 136              	.LFB1:
+ 112              		.loc 1 342 0 is_stmt 0 discriminator 1
+ 113 0062 BC42     		cmp	r4, r7
+ 114 0064 E6D3     		bcc	.L9
+ 115              	.L1:
+ 116 0066 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 117              	.LVL7:
+ 118              	.L13:
+ 119              		.align	2
+ 120              	.L12:
+ 121 0068 965B0040 		.word	1073765270
+ 122 006c 30460040 		.word	1073759792
+ 123 0070 31460040 		.word	1073759793
+ 124              		.cfi_endproc
+ 125              	.LFE6:
+ 126              		.size	Detect_Seuil_Recept_trimAdjust, .-Detect_Seuil_Recept_trimAdjust
+ 127              		.section	.text.Detect_Seuil_Recept_Enable,"ax",%progbits
+ 128              		.align	2
+ 129              		.global	Detect_Seuil_Recept_Enable
+ 130              		.thumb
+ 131              		.thumb_func
+ 132              		.type	Detect_Seuil_Recept_Enable, %function
+ 133              	Detect_Seuil_Recept_Enable:
+ 134              	.LFB1:
  100:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     Detect_Seuil_Recept_PWRMGR |= Detect_Seuil_Recept_ACT_PWR_EN;
- 137              		.loc 1 100 0 is_stmt 1
- 138              		.cfi_startproc
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 10
+ 135              		.loc 1 100 0 is_stmt 1
+ 136              		.cfi_startproc
+ 137              		@ args = 0, pretend = 0, frame = 0
+ 138              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 10
 
 
- 139              		@ args = 0, pretend = 0, frame = 0
- 140              		@ frame_needed = 0, uses_anonymous_args = 0
- 141              		@ link register save eliminated.
+ 139              		@ link register save eliminated.
  101:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     Detect_Seuil_Recept_STBY_PWRMGR |= Detect_Seuil_Recept_STBY_PWR_EN;
- 142              		.loc 1 101 0
- 143 0000 054A     		ldr	r2, .L15
- 144 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
- 145 0004 43F00403 		orr	r3, r3, #4
- 146 0008 1370     		strb	r3, [r2]
+ 140              		.loc 1 101 0
+ 141 0000 054A     		ldr	r2, .L15
+ 142 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 143 0004 43F00103 		orr	r3, r3, #1
+ 144 0008 1370     		strb	r3, [r2]
  102:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****      
- 147              		.loc 1 102 0
- 148 000a 1032     		adds	r2, r2, #16
- 149 000c 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
- 150 000e 43F00403 		orr	r3, r3, #4
- 151 0012 1370     		strb	r3, [r2]
- 152 0014 7047     		bx	lr
- 153              	.L16:
- 154 0016 00BF     		.align	2
- 155              	.L15:
- 156 0018 A7430040 		.word	1073759143
- 157              		.cfi_endproc
- 158              	.LFE1:
- 159              		.size	Detect_Seuil_Recept_Enable, .-Detect_Seuil_Recept_Enable
- 160              		.section	.text.Detect_Seuil_Recept_Stop,"ax",%progbits
- 161              		.align	2
- 162              		.global	Detect_Seuil_Recept_Stop
- 163              		.thumb
- 164              		.thumb_func
- 165              		.type	Detect_Seuil_Recept_Stop, %function
- 166              	Detect_Seuil_Recept_Stop:
- 167              	.LFB3:
+ 145              		.loc 1 102 0
+ 146 000a 1032     		adds	r2, r2, #16
+ 147 000c 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 148 000e 43F00103 		orr	r3, r3, #1
+ 149 0012 1370     		strb	r3, [r2]
+ 150 0014 7047     		bx	lr
+ 151              	.L16:
+ 152 0016 00BF     		.align	2
+ 153              	.L15:
+ 154 0018 A7430040 		.word	1073759143
+ 155              		.cfi_endproc
+ 156              	.LFE1:
+ 157              		.size	Detect_Seuil_Recept_Enable, .-Detect_Seuil_Recept_Enable
+ 158              		.section	.text.Detect_Seuil_Recept_Stop,"ax",%progbits
+ 159              		.align	2
+ 160              		.global	Detect_Seuil_Recept_Stop
+ 161              		.thumb
+ 162              		.thumb_func
+ 163              		.type	Detect_Seuil_Recept_Stop, %function
+ 164              	Detect_Seuil_Recept_Stop:
+ 165              	.LFB3:
  166:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* Disable power to comparator */
- 168              		.loc 1 166 0
- 169              		.cfi_startproc
- 170              		@ args = 0, pretend = 0, frame = 0
- 171              		@ frame_needed = 0, uses_anonymous_args = 0
- 172              		@ link register save eliminated.
+ 166              		.loc 1 166 0
+ 167              		.cfi_startproc
+ 168              		@ args = 0, pretend = 0, frame = 0
+ 169              		@ frame_needed = 0, uses_anonymous_args = 0
+ 170              		@ link register save eliminated.
  168:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     Detect_Seuil_Recept_STBY_PWRMGR &= (uint8)(~Detect_Seuil_Recept_STBY_PWR_EN);
- 173              		.loc 1 168 0
- 174 0000 054A     		ldr	r2, .L18
- 175 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
- 176 0004 03F0FB03 		and	r3, r3, #251
- 177 0008 1370     		strb	r3, [r2]
+ 171              		.loc 1 168 0
+ 172 0000 054A     		ldr	r2, .L18
+ 173 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 174 0004 03F0FE03 		and	r3, r3, #254
+ 175 0008 1370     		strb	r3, [r2]
  169:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     
- 178              		.loc 1 169 0
- 179 000a 1032     		adds	r2, r2, #16
- 180 000c 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
- 181 000e 03F0FB03 		and	r3, r3, #251
- 182 0012 1370     		strb	r3, [r2]
- 183 0014 7047     		bx	lr
- 184              	.L19:
- 185 0016 00BF     		.align	2
- 186              	.L18:
- 187 0018 A7430040 		.word	1073759143
- 188              		.cfi_endproc
- 189              	.LFE3:
- 190              		.size	Detect_Seuil_Recept_Stop, .-Detect_Seuil_Recept_Stop
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 11
+ 176              		.loc 1 169 0
+ 177 000a 1032     		adds	r2, r2, #16
+ 178 000c 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 179 000e 03F0FE03 		and	r3, r3, #254
+ 180 0012 1370     		strb	r3, [r2]
+ 181 0014 7047     		bx	lr
+ 182              	.L19:
+ 183 0016 00BF     		.align	2
+ 184              	.L18:
+ 185 0018 A7430040 		.word	1073759143
+ 186              		.cfi_endproc
+ 187              	.LFE3:
+ 188              		.size	Detect_Seuil_Recept_Stop, .-Detect_Seuil_Recept_Stop
+ 189              		.section	.text.Detect_Seuil_Recept_SetSpeed,"ax",%progbits
+ 190              		.align	2
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 11
 
 
- 191              		.section	.text.Detect_Seuil_Recept_SetSpeed,"ax",%progbits
- 192              		.align	2
- 193              		.global	Detect_Seuil_Recept_SetSpeed
- 194              		.thumb
- 195              		.thumb_func
- 196              		.type	Detect_Seuil_Recept_SetSpeed, %function
- 197              	Detect_Seuil_Recept_SetSpeed:
- 198              	.LFB4:
+ 191              		.global	Detect_Seuil_Recept_SetSpeed
+ 192              		.thumb
+ 193              		.thumb_func
+ 194              		.type	Detect_Seuil_Recept_SetSpeed, %function
+ 195              	Detect_Seuil_Recept_SetSpeed:
+ 196              	.LFB4:
  198:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* Clear and Set power level */    
- 199              		.loc 1 198 0
- 200              		.cfi_startproc
- 201              		@ args = 0, pretend = 0, frame = 0
- 202              		@ frame_needed = 0, uses_anonymous_args = 0
- 203              		@ link register save eliminated.
- 204              	.LVL8:
+ 197              		.loc 1 198 0
+ 198              		.cfi_startproc
+ 199              		@ args = 0, pretend = 0, frame = 0
+ 200              		@ frame_needed = 0, uses_anonymous_args = 0
+ 201              		@ link register save eliminated.
+ 202              	.LVL8:
  200:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****                            (speed & Detect_Seuil_Recept_PWR_MODE_MASK);
- 205              		.loc 1 200 0
- 206 0000 0F49     		ldr	r1, .L23
- 207 0002 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
- 208 0004 03F0FC02 		and	r2, r3, #252
- 209 0008 00F00303 		and	r3, r0, #3
- 210 000c 1343     		orrs	r3, r3, r2
- 211 000e 0B70     		strb	r3, [r1]
+ 203              		.loc 1 200 0
+ 204 0000 0F49     		ldr	r1, .L23
+ 205 0002 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
+ 206 0004 03F0FC02 		and	r2, r3, #252
+ 207 0008 00F00303 		and	r3, r0, #3
+ 208 000c 1343     		orrs	r3, r3, r2
+ 209 000e 0B70     		strb	r3, [r1]
  204:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     {
- 212              		.loc 1 204 0
- 213 0010 0128     		cmp	r0, #1
- 214 0012 0AD1     		bne	.L21
+ 210              		.loc 1 204 0
+ 211 0010 0128     		cmp	r0, #1
+ 212 0012 0AD1     		bne	.L21
  213:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             Detect_Seuil_Recept_TR1 = Detect_Seuil_Recept_HS_TRIM_TR1;
- 215              		.loc 1 213 0
- 216 0014 0B4B     		ldr	r3, .L23+4
- 217 0016 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 218 0018 DBB2     		uxtb	r3, r3
- 219 001a 0B4A     		ldr	r2, .L23+8
- 220 001c 1370     		strb	r3, [r2]
+ 213              		.loc 1 213 0
+ 214 0014 0B4B     		ldr	r3, .L23+4
+ 215 0016 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 216 0018 DBB2     		uxtb	r3, r3
+ 217 001a 0B4A     		ldr	r2, .L23+8
+ 218 001c 1370     		strb	r3, [r2]
  214:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         #endif /* CY_PSOC3 || CY_PSOC5LP */
- 221              		.loc 1 214 0
- 222 001e 0B4B     		ldr	r3, .L23+12
- 223 0020 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 224 0022 DBB2     		uxtb	r3, r3
- 225 0024 0132     		adds	r2, r2, #1
- 226 0026 1370     		strb	r3, [r2]
- 227 0028 7047     		bx	lr
- 228              	.L21:
+ 219              		.loc 1 214 0
+ 220 001e 0B4B     		ldr	r3, .L23+12
+ 221 0020 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 222 0022 DBB2     		uxtb	r3, r3
+ 223 0024 0132     		adds	r2, r2, #1
+ 224 0026 1370     		strb	r3, [r2]
+ 225 0028 7047     		bx	lr
+ 226              	.L21:
  226:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             Detect_Seuil_Recept_TR1 = Detect_Seuil_Recept_LS_TRIM_TR1;
- 229              		.loc 1 226 0
- 230 002a 094B     		ldr	r3, .L23+16
- 231 002c 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 232 002e DBB2     		uxtb	r3, r3
- 233 0030 054A     		ldr	r2, .L23+8
- 234 0032 1370     		strb	r3, [r2]
+ 227              		.loc 1 226 0
+ 228 002a 094B     		ldr	r3, .L23+16
+ 229 002c 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 230 002e DBB2     		uxtb	r3, r3
+ 231 0030 054A     		ldr	r2, .L23+8
+ 232 0032 1370     		strb	r3, [r2]
  227:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         #endif /* CY_PSOC3 || CY_PSOC5LP */
- 235              		.loc 1 227 0
- 236 0034 074B     		ldr	r3, .L23+20
- 237 0036 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 238 0038 DBB2     		uxtb	r3, r3
- 239 003a 0132     		adds	r2, r2, #1
- 240 003c 1370     		strb	r3, [r2]
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 12
+ 233              		.loc 1 227 0
+ 234 0034 074B     		ldr	r3, .L23+20
+ 235 0036 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 236 0038 DBB2     		uxtb	r3, r3
+ 237 003a 0132     		adds	r2, r2, #1
+ 238 003c 1370     		strb	r3, [r2]
+ 239 003e 7047     		bx	lr
+ 240              	.L24:
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 12
 
 
- 241 003e 7047     		bx	lr
- 242              	.L24:
- 243              		.align	2
- 244              	.L23:
- 245 0040 42580040 		.word	1073764418
- 246 0044 12010049 		.word	1224737042
- 247 0048 34460040 		.word	1073759796
- 248 004c 16010049 		.word	1224737046
- 249 0050 B1010049 		.word	1224737201
- 250 0054 B9010049 		.word	1224737209
- 251              		.cfi_endproc
- 252              	.LFE4:
- 253              		.size	Detect_Seuil_Recept_SetSpeed, .-Detect_Seuil_Recept_SetSpeed
- 254              		.section	.text.Detect_Seuil_Recept_Init,"ax",%progbits
- 255              		.align	2
- 256              		.global	Detect_Seuil_Recept_Init
- 257              		.thumb
- 258              		.thumb_func
- 259              		.type	Detect_Seuil_Recept_Init, %function
- 260              	Detect_Seuil_Recept_Init:
- 261              	.LFB0:
+ 241              		.align	2
+ 242              	.L23:
+ 243 0040 40580040 		.word	1073764416
+ 244 0044 10010049 		.word	1224737040
+ 245 0048 30460040 		.word	1073759792
+ 246 004c 14010049 		.word	1224737044
+ 247 0050 AD010049 		.word	1224737197
+ 248 0054 B5010049 		.word	1224737205
+ 249              		.cfi_endproc
+ 250              	.LFE4:
+ 251              		.size	Detect_Seuil_Recept_SetSpeed, .-Detect_Seuil_Recept_SetSpeed
+ 252              		.section	.text.Detect_Seuil_Recept_Init,"ax",%progbits
+ 253              		.align	2
+ 254              		.global	Detect_Seuil_Recept_Init
+ 255              		.thumb
+ 256              		.thumb_func
+ 257              		.type	Detect_Seuil_Recept_Init, %function
+ 258              	Detect_Seuil_Recept_Init:
+ 259              	.LFB0:
   52:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* Set default speed/power */
- 262              		.loc 1 52 0
- 263              		.cfi_startproc
- 264              		@ args = 0, pretend = 0, frame = 0
- 265              		@ frame_needed = 0, uses_anonymous_args = 0
- 266 0000 08B5     		push	{r3, lr}
- 267              		.cfi_def_cfa_offset 8
- 268              		.cfi_offset 3, -8
- 269              		.cfi_offset 14, -4
+ 260              		.loc 1 52 0
+ 261              		.cfi_startproc
+ 262              		@ args = 0, pretend = 0, frame = 0
+ 263              		@ frame_needed = 0, uses_anonymous_args = 0
+ 264 0000 08B5     		push	{r3, lr}
+ 265              		.cfi_def_cfa_offset 8
+ 266              		.cfi_offset 3, -8
+ 267              		.cfi_offset 14, -4
   54:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 
- 270              		.loc 1 54 0
- 271 0002 0220     		movs	r0, #2
- 272 0004 FFF7FEFF 		bl	Detect_Seuil_Recept_SetSpeed
- 273              	.LVL9:
+ 268              		.loc 1 54 0
+ 269 0002 0220     		movs	r0, #2
+ 270 0004 FFF7FEFF 		bl	Detect_Seuil_Recept_SetSpeed
+ 271              	.LVL9:
   60:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     #endif /* Detect_Seuil_Recept_DEFAULT_HYSTERESIS == 0u */
- 274              		.loc 1 60 0
- 275 0008 0B4B     		ldr	r3, .L27
- 276 000a 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
- 277 000c 02F0DF02 		and	r2, r2, #223
- 278 0010 1A70     		strb	r2, [r3]
+ 272              		.loc 1 60 0
+ 273 0008 0B4B     		ldr	r3, .L27
+ 274 000a 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 275 000c 02F0DF02 		and	r2, r2, #223
+ 276 0010 1A70     		strb	r2, [r3]
   66:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         #else 
- 279              		.loc 1 66 0
- 280 0012 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
- 281 0014 02F0FB02 		and	r2, r2, #251
- 282 0018 1A70     		strb	r2, [r3]
+ 277              		.loc 1 66 0
+ 278 0012 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 279 0014 02F0FB02 		and	r2, r2, #251
+ 280 0018 1A70     		strb	r2, [r3]
   73:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 
- 283              		.loc 1 73 0
- 284 001a 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
- 285 001c 42F00802 		orr	r2, r2, #8
- 286 0020 1A70     		strb	r2, [r3]
+ 281              		.loc 1 73 0
+ 282 001a 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 283 001c 42F00802 		orr	r2, r2, #8
+ 284 0020 1A70     		strb	r2, [r3]
   76:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     #if ( Detect_Seuil_Recept_DEFAULT_BYPASS_SYNC == 0u )
- 287              		.loc 1 76 0
- 288 0022 03F29523 		addw	r3, r3, #661
- 289 0026 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
- 290 0028 02F0E702 		and	r2, r2, #231
- 291 002c 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 13
-
-
+ 285              		.loc 1 76 0
+ 286 0022 03F28723 		addw	r3, r3, #647
+ 287 0026 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 288 0028 02F0E702 		and	r2, r2, #231
+ 289 002c 1A70     		strb	r2, [r3]
   80:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     #endif /* Detect_Seuil_Recept_DEFAULT_BYPASS_SYNC == 0u */
- 292              		.loc 1 80 0
- 293 002e 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
- 294 0030 42F01002 		orr	r2, r2, #16
- 295 0034 1A70     		strb	r2, [r3]
- 296 0036 08BD     		pop	{r3, pc}
- 297              	.L28:
- 298              		.align	2
- 299              	.L27:
- 300 0038 42580040 		.word	1073764418
- 301              		.cfi_endproc
- 302              	.LFE0:
- 303              		.size	Detect_Seuil_Recept_Init, .-Detect_Seuil_Recept_Init
- 304              		.section	.text.Detect_Seuil_Recept_Start,"ax",%progbits
- 305              		.align	2
- 306              		.global	Detect_Seuil_Recept_Start
- 307              		.thumb
- 308              		.thumb_func
- 309              		.type	Detect_Seuil_Recept_Start, %function
- 310              	Detect_Seuil_Recept_Start:
- 311              	.LFB2:
+ 290              		.loc 1 80 0
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 13
+
+
+ 291 002e 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 292 0030 42F01002 		orr	r2, r2, #16
+ 293 0034 1A70     		strb	r2, [r3]
+ 294 0036 08BD     		pop	{r3, pc}
+ 295              	.L28:
+ 296              		.align	2
+ 297              	.L27:
+ 298 0038 40580040 		.word	1073764416
+ 299              		.cfi_endproc
+ 300              	.LFE0:
+ 301              		.size	Detect_Seuil_Recept_Init, .-Detect_Seuil_Recept_Init
+ 302              		.section	.text.Detect_Seuil_Recept_Start,"ax",%progbits
+ 303              		.align	2
+ 304              		.global	Detect_Seuil_Recept_Start
+ 305              		.thumb
+ 306              		.thumb_func
+ 307              		.type	Detect_Seuil_Recept_Start, %function
+ 308              	Detect_Seuil_Recept_Start:
+ 309              	.LFB2:
  137:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 
- 312              		.loc 1 137 0
- 313              		.cfi_startproc
- 314              		@ args = 0, pretend = 0, frame = 0
- 315              		@ frame_needed = 0, uses_anonymous_args = 0
- 316 0000 08B5     		push	{r3, lr}
- 317              		.cfi_def_cfa_offset 8
- 318              		.cfi_offset 3, -8
- 319              		.cfi_offset 14, -4
+ 310              		.loc 1 137 0
+ 311              		.cfi_startproc
+ 312              		@ args = 0, pretend = 0, frame = 0
+ 313              		@ frame_needed = 0, uses_anonymous_args = 0
+ 314 0000 08B5     		push	{r3, lr}
+ 315              		.cfi_def_cfa_offset 8
+ 316              		.cfi_offset 3, -8
+ 317              		.cfi_offset 14, -4
  139:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     {
- 320              		.loc 1 139 0
- 321 0002 054B     		ldr	r3, .L32
- 322 0004 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 323 0006 23B9     		cbnz	r3, .L30
+ 318              		.loc 1 139 0
+ 319 0002 054B     		ldr	r3, .L32
+ 320 0004 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 321 0006 23B9     		cbnz	r3, .L30
  141:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         
- 324              		.loc 1 141 0
- 325 0008 FFF7FEFF 		bl	Detect_Seuil_Recept_Init
- 326              	.LVL10:
+ 322              		.loc 1 141 0
+ 323 0008 FFF7FEFF 		bl	Detect_Seuil_Recept_Init
+ 324              	.LVL10:
  143:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     }   
- 327              		.loc 1 143 0
- 328 000c 0122     		movs	r2, #1
- 329 000e 024B     		ldr	r3, .L32
- 330 0010 1A70     		strb	r2, [r3]
- 331              	.L30:
+ 325              		.loc 1 143 0
+ 326 000c 0122     		movs	r2, #1
+ 327 000e 024B     		ldr	r3, .L32
+ 328 0010 1A70     		strb	r2, [r3]
+ 329              	.L30:
  147:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** }
- 332              		.loc 1 147 0
- 333 0012 FFF7FEFF 		bl	Detect_Seuil_Recept_Enable
- 334              	.LVL11:
- 335 0016 08BD     		pop	{r3, pc}
- 336              	.L33:
- 337              		.align	2
- 338              	.L32:
- 339 0018 00000000 		.word	.LANCHOR0
- 340              		.cfi_endproc
- 341              	.LFE2:
- 342              		.size	Detect_Seuil_Recept_Start, .-Detect_Seuil_Recept_Start
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 14
+ 330              		.loc 1 147 0
+ 331 0012 FFF7FEFF 		bl	Detect_Seuil_Recept_Enable
+ 332              	.LVL11:
+ 333 0016 08BD     		pop	{r3, pc}
+ 334              	.L33:
+ 335              		.align	2
+ 336              	.L32:
+ 337 0018 00000000 		.word	.LANCHOR0
+ 338              		.cfi_endproc
+ 339              	.LFE2:
+ 340              		.size	Detect_Seuil_Recept_Start, .-Detect_Seuil_Recept_Start
+ 341              		.section	.text.Detect_Seuil_Recept_GetCompare,"ax",%progbits
+ 342              		.align	2
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 14
 
 
- 343              		.section	.text.Detect_Seuil_Recept_GetCompare,"ax",%progbits
- 344              		.align	2
- 345              		.global	Detect_Seuil_Recept_GetCompare
- 346              		.thumb
- 347              		.thumb_func
- 348              		.type	Detect_Seuil_Recept_GetCompare, %function
- 349              	Detect_Seuil_Recept_GetCompare:
- 350              	.LFB5:
+ 343              		.global	Detect_Seuil_Recept_GetCompare
+ 344              		.thumb
+ 345              		.thumb_func
+ 346              		.type	Detect_Seuil_Recept_GetCompare, %function
+ 347              	Detect_Seuil_Recept_GetCompare:
+ 348              	.LFB5:
  252:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     return( Detect_Seuil_Recept_WRK & Detect_Seuil_Recept_CMP_OUT_MASK);
- 351              		.loc 1 252 0
- 352              		.cfi_startproc
- 353              		@ args = 0, pretend = 0, frame = 0
- 354              		@ frame_needed = 0, uses_anonymous_args = 0
- 355              		@ link register save eliminated.
+ 349              		.loc 1 252 0
+ 350              		.cfi_startproc
+ 351              		@ args = 0, pretend = 0, frame = 0
+ 352              		@ frame_needed = 0, uses_anonymous_args = 0
+ 353              		@ link register save eliminated.
  253:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** }
- 356              		.loc 1 253 0
- 357 0000 024B     		ldr	r3, .L35
- 358 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 354              		.loc 1 253 0
+ 355 0000 024B     		ldr	r3, .L35
+ 356 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
  254:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 
- 359              		.loc 1 254 0
- 360 0004 00F00400 		and	r0, r0, #4
- 361 0008 7047     		bx	lr
- 362              	.L36:
- 363 000a 00BF     		.align	2
- 364              	.L35:
- 365 000c 965B0040 		.word	1073765270
- 366              		.cfi_endproc
- 367              	.LFE5:
- 368              		.size	Detect_Seuil_Recept_GetCompare, .-Detect_Seuil_Recept_GetCompare
- 369              		.section	.text.Detect_Seuil_Recept_ZeroCal,"ax",%progbits
- 370              		.align	2
- 371              		.global	Detect_Seuil_Recept_ZeroCal
- 372              		.thumb
- 373              		.thumb_func
- 374              		.type	Detect_Seuil_Recept_ZeroCal, %function
- 375              	Detect_Seuil_Recept_ZeroCal:
- 376              	.LFB7:
+ 357              		.loc 1 254 0
+ 358 0004 00F00100 		and	r0, r0, #1
+ 359 0008 7047     		bx	lr
+ 360              	.L36:
+ 361 000a 00BF     		.align	2
+ 362              	.L35:
+ 363 000c 965B0040 		.word	1073765270
+ 364              		.cfi_endproc
+ 365              	.LFE5:
+ 366              		.size	Detect_Seuil_Recept_GetCompare, .-Detect_Seuil_Recept_GetCompare
+ 367              		.section	.text.Detect_Seuil_Recept_ZeroCal,"ax",%progbits
+ 368              		.align	2
+ 369              		.global	Detect_Seuil_Recept_ZeroCal
+ 370              		.thumb
+ 371              		.thumb_func
+ 372              		.type	Detect_Seuil_Recept_ZeroCal, %function
+ 373              	Detect_Seuil_Recept_ZeroCal:
+ 374              	.LFB7:
  373:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         {
  374:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****             break;      /* output changed state, trim phase is complete */
  375:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         }        
@@ -838,11 +836,11 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
  390:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** * Return:
  391:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** *  (uint16)  value written in trim register when calibration complete.
  392:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** *
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 15
-
-
  393:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** * Theory: 
  394:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** *  This function is used to optimize the calibration for user specific voltage
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 15
+
+
  395:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** *  range.  The comparator trim is adjusted to counter transistor offsets
  396:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** *   - offset is defined as positive if the output transitions to high before inP
  397:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** *     is greater than inN
@@ -897,21 +895,21 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
  446:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** *******************************************************************************/
  447:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** uint16 Detect_Seuil_Recept_ZeroCal(void) 
  448:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** {
- 377              		.loc 1 448 0
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 16
+ 375              		.loc 1 448 0
+ 376              		.cfi_startproc
+ 377              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 16
 
 
- 378              		.cfi_startproc
- 379              		@ args = 0, pretend = 0, frame = 0
- 380              		@ frame_needed = 0, uses_anonymous_args = 0
- 381 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
- 382              		.cfi_def_cfa_offset 24
- 383              		.cfi_offset 3, -24
- 384              		.cfi_offset 4, -20
- 385              		.cfi_offset 5, -16
- 386              		.cfi_offset 6, -12
- 387              		.cfi_offset 7, -8
- 388              		.cfi_offset 14, -4
+ 378              		@ frame_needed = 0, uses_anonymous_args = 0
+ 379 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+ 380              		.cfi_def_cfa_offset 24
+ 381              		.cfi_offset 3, -24
+ 382              		.cfi_offset 4, -20
+ 383              		.cfi_offset 5, -16
+ 384              		.cfi_offset 6, -12
+ 385              		.cfi_offset 7, -8
+ 386              		.cfi_offset 14, -4
  449:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     uint8 tmpSW0;
  450:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     uint8 tmpSW2;
  451:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     uint8 tmpSW3;
@@ -919,55 +917,55 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
  453:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 
  454:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* Save a copy of routing registers associated with inP */
  455:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     tmpSW0 = Detect_Seuil_Recept_SW0;
- 389              		.loc 1 455 0
- 390 0002 1E48     		ldr	r0, .L41
- 391 0004 0678     		ldrb	r6, [r0]	@ zero_extendqisi2
- 392 0006 F6B2     		uxtb	r6, r6
- 393              	.LVL12:
+ 387              		.loc 1 455 0
+ 388 0002 1E48     		ldr	r0, .L41
+ 389 0004 0678     		ldrb	r6, [r0]	@ zero_extendqisi2
+ 390 0006 F6B2     		uxtb	r6, r6
+ 391              	.LVL12:
  456:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     tmpSW2 = Detect_Seuil_Recept_SW2;
- 394              		.loc 1 456 0
- 395 0008 1D49     		ldr	r1, .L41+4
- 396 000a 0D78     		ldrb	r5, [r1]	@ zero_extendqisi2
- 397 000c EDB2     		uxtb	r5, r5
- 398              	.LVL13:
+ 392              		.loc 1 456 0
+ 393 0008 1D49     		ldr	r1, .L41+4
+ 394 000a 0D78     		ldrb	r5, [r1]	@ zero_extendqisi2
+ 395 000c EDB2     		uxtb	r5, r5
+ 396              	.LVL13:
  457:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     tmpSW3 = Detect_Seuil_Recept_SW3;
- 399              		.loc 1 457 0
- 400 000e 1D4B     		ldr	r3, .L41+8
- 401 0010 1C78     		ldrb	r4, [r3]	@ zero_extendqisi2
- 402 0012 E4B2     		uxtb	r4, r4
- 403              	.LVL14:
+ 397              		.loc 1 457 0
+ 398 000e 1D4B     		ldr	r3, .L41+8
+ 399 0010 1C78     		ldrb	r4, [r3]	@ zero_extendqisi2
+ 400 0012 E4B2     		uxtb	r4, r4
+ 401              	.LVL14:
  458:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 
  459:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****      /* Clear routing for inP, retain routing for inN */
  460:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     Detect_Seuil_Recept_SW0 = 0x00u;
- 404              		.loc 1 460 0
- 405 0014 0022     		movs	r2, #0
- 406 0016 0270     		strb	r2, [r0]
+ 402              		.loc 1 460 0
+ 403 0014 0022     		movs	r2, #0
+ 404 0016 0270     		strb	r2, [r0]
  461:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     Detect_Seuil_Recept_SW2 = 0x00u;
- 407              		.loc 1 461 0
- 408 0018 0A70     		strb	r2, [r1]
+ 405              		.loc 1 461 0
+ 406 0018 0A70     		strb	r2, [r1]
  462:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     Detect_Seuil_Recept_SW3 = tmpSW3 & (uint8)(~Detect_Seuil_Recept_CMP_SW3_INPCTL_MASK);
- 409              		.loc 1 462 0
- 410 001a 04F0F601 		and	r1, r4, #246
- 411 001e 1970     		strb	r1, [r3]
+ 407              		.loc 1 462 0
+ 408 001a 04F0F601 		and	r1, r4, #246
+ 409 001e 1970     		strb	r1, [r3]
  463:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 
  464:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* Preserve original configuration
  465:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****      * - turn off Hysteresis
  466:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****      * - set calibration bit - shorts inN to inP
  467:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     */
  468:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     tmpCR = Detect_Seuil_Recept_CR;
- 412              		.loc 1 468 0
- 413 0020 A3F29123 		subw	r3, r3, #657
- 414 0024 1F78     		ldrb	r7, [r3]	@ zero_extendqisi2
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 17
+ 410              		.loc 1 468 0
+ 411 0020 A3F28323 		subw	r3, r3, #643
+ 412 0024 1F78     		ldrb	r7, [r3]	@ zero_extendqisi2
+ 413 0026 FFB2     		uxtb	r7, r7
+ 414              	.LVL15:
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 17
 
 
- 415 0026 FFB2     		uxtb	r7, r7
- 416              	.LVL15:
  469:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     Detect_Seuil_Recept_CR |= (Detect_Seuil_Recept_CAL_ON | Detect_Seuil_Recept_HYST_OFF);
- 417              		.loc 1 469 0
- 418 0028 1978     		ldrb	r1, [r3]	@ zero_extendqisi2
- 419 002a 41F03001 		orr	r1, r1, #48
- 420 002e 1970     		strb	r1, [r3]
+ 415              		.loc 1 469 0
+ 416 0028 1978     		ldrb	r1, [r3]	@ zero_extendqisi2
+ 417 002a 41F03001 		orr	r1, r1, #48
+ 418 002e 1970     		strb	r1, [r3]
  470:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     
  471:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* Write default low values to trim register - no offset adjust */
  472:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* PSoC5A */
@@ -978,68 +976,68 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
  477:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* PSoC3, PSoC5LP or later */
  478:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     #if (CY_PSOC3 || CY_PSOC5LP)
  479:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         Detect_Seuil_Recept_TR0 = Detect_Seuil_Recept_DEFAULT_CMP_TRIM;
- 421              		.loc 1 479 0
- 422 0030 1549     		ldr	r1, .L41+12
- 423 0032 0A70     		strb	r2, [r1]
+ 419              		.loc 1 479 0
+ 420 0030 1549     		ldr	r1, .L41+12
+ 421 0032 0A70     		strb	r2, [r1]
  480:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         Detect_Seuil_Recept_TR1 = Detect_Seuil_Recept_DEFAULT_CMP_TRIM;
- 424              		.loc 1 480 0
- 425 0034 0131     		adds	r1, r1, #1
- 426 0036 0A70     		strb	r2, [r1]
+ 422              		.loc 1 480 0
+ 423 0034 0131     		adds	r1, r1, #1
+ 424 0036 0A70     		strb	r2, [r1]
  481:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     #endif /* CY_PSOC3 || CY_PSOC5LP */
  482:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 	
  483:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 	/* Two phase trim - slow modes, one phase trim - for fast */ 
  484:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     if ( (Detect_Seuil_Recept_CR & Detect_Seuil_Recept_PWR_MODE_MASK) == Detect_Seuil_Recept_PWR_MO
- 427              		.loc 1 484 0
- 428 0038 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 429 003a 03F00303 		and	r3, r3, #3
- 430 003e 012B     		cmp	r3, #1
- 431 0040 03D1     		bne	.L38
+ 425              		.loc 1 484 0
+ 426 0038 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 427 003a 03F00303 		and	r3, r3, #3
+ 428 003e 012B     		cmp	r3, #1
+ 429 0040 03D1     		bne	.L38
  485:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     {
  486:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         Detect_Seuil_Recept_trimAdjust(0u);
- 432              		.loc 1 486 0
- 433 0042 1046     		mov	r0, r2
- 434 0044 FFF7FEFF 		bl	Detect_Seuil_Recept_trimAdjust
- 435              	.LVL16:
- 436 0048 05E0     		b	.L39
- 437              	.L38:
+ 430              		.loc 1 486 0
+ 431 0042 1046     		mov	r0, r2
+ 432 0044 FFF7FEFF 		bl	Detect_Seuil_Recept_trimAdjust
+ 433              	.LVL16:
+ 434 0048 05E0     		b	.L39
+ 435              	.L38:
  487:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     }
  488:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     else /* default to trim for fast modes */
  489:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     {
  490:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         Detect_Seuil_Recept_trimAdjust(1u);
- 438              		.loc 1 490 0
- 439 004a 0120     		movs	r0, #1
- 440 004c FFF7FEFF 		bl	Detect_Seuil_Recept_trimAdjust
- 441              	.LVL17:
+ 436              		.loc 1 490 0
+ 437 004a 0120     		movs	r0, #1
+ 438 004c FFF7FEFF 		bl	Detect_Seuil_Recept_trimAdjust
+ 439              	.LVL17:
  491:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 		Detect_Seuil_Recept_trimAdjust(0u);
- 442              		.loc 1 491 0
- 443 0050 0020     		movs	r0, #0
- 444 0052 FFF7FEFF 		bl	Detect_Seuil_Recept_trimAdjust
- 445              	.LVL18:
- 446              	.L39:
+ 440              		.loc 1 491 0
+ 441 0050 0020     		movs	r0, #0
+ 442 0052 FFF7FEFF 		bl	Detect_Seuil_Recept_trimAdjust
+ 443              	.LVL18:
+ 444              	.L39:
  492:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     }
  493:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****    
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 18
-
-
  494:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* Restore Config Register */
  495:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     Detect_Seuil_Recept_CR = tmpCR;
- 447              		.loc 1 495 0
- 448 0056 0D4B     		ldr	r3, .L41+16
- 449 0058 1F70     		strb	r7, [r3]
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 18
+
+
+ 445              		.loc 1 495 0
+ 446 0056 0D4B     		ldr	r3, .L41+16
+ 447 0058 1F70     		strb	r7, [r3]
  496:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     
  497:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* Restore routing registers for inP */
  498:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     Detect_Seuil_Recept_SW0 = tmpSW0;
- 450              		.loc 1 498 0
- 451 005a 03F28E23 		addw	r3, r3, #654
- 452 005e 1E70     		strb	r6, [r3]
+ 448              		.loc 1 498 0
+ 449 005a 03F52073 		add	r3, r3, #640
+ 450 005e 1E70     		strb	r6, [r3]
  499:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     Detect_Seuil_Recept_SW2 = tmpSW2;
- 453              		.loc 1 499 0
- 454 0060 0233     		adds	r3, r3, #2
- 455 0062 1D70     		strb	r5, [r3]
+ 451              		.loc 1 499 0
+ 452 0060 0233     		adds	r3, r3, #2
+ 453 0062 1D70     		strb	r5, [r3]
  500:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     Detect_Seuil_Recept_SW3 = tmpSW3;
- 456              		.loc 1 500 0
- 457 0064 0133     		adds	r3, r3, #1
- 458 0066 1C70     		strb	r4, [r3]
+ 454              		.loc 1 500 0
+ 455 0064 0133     		adds	r3, r3, #1
+ 456 0066 1C70     		strb	r4, [r3]
  501:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     
  502:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* PSoC5A */
  503:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     #if (CY_PSOC5A)
@@ -1049,40 +1047,40 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
  507:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* PSoC3, PSoC5LP or later */
  508:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     #if (CY_PSOC3 || CY_PSOC5LP)
  509:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         return ((uint16)((uint16)Detect_Seuil_Recept_TR1 << 8u) | (Detect_Seuil_Recept_TR0));      
- 459              		.loc 1 509 0
- 460 0068 A3F5A453 		sub	r3, r3, #5248
- 461 006c 1E3B     		subs	r3, r3, #30
- 462 006e 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
- 463 0070 013B     		subs	r3, r3, #1
- 464 0072 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 457              		.loc 1 509 0
+ 458 0068 A3F5A453 		sub	r3, r3, #5248
+ 459 006c 123B     		subs	r3, r3, #18
+ 460 006e 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 461 0070 013B     		subs	r3, r3, #1
+ 462 0072 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  510:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     #endif /* CY_PSOC3 || CY_PSOC5LP */
  511:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** }
- 465              		.loc 1 511 0
- 466 0074 43EA0020 		orr	r0, r3, r0, lsl #8
- 467 0078 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
- 468              	.LVL19:
- 469              	.L42:
- 470 007a 00BF     		.align	2
- 471              	.L41:
- 472 007c D05A0040 		.word	1073765072
- 473 0080 D25A0040 		.word	1073765074
- 474 0084 D35A0040 		.word	1073765075
- 475 0088 34460040 		.word	1073759796
- 476 008c 42580040 		.word	1073764418
- 477              		.cfi_endproc
- 478              	.LFE7:
- 479              		.size	Detect_Seuil_Recept_ZeroCal, .-Detect_Seuil_Recept_ZeroCal
- 480              		.section	.text.Detect_Seuil_Recept_LoadTrim,"ax",%progbits
- 481              		.align	2
- 482              		.global	Detect_Seuil_Recept_LoadTrim
- 483              		.thumb
- 484              		.thumb_func
- 485              		.type	Detect_Seuil_Recept_LoadTrim, %function
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 19
+ 463              		.loc 1 511 0
+ 464 0074 43EA0020 		orr	r0, r3, r0, lsl #8
+ 465 0078 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 466              	.LVL19:
+ 467              	.L42:
+ 468 007a 00BF     		.align	2
+ 469              	.L41:
+ 470 007c C05A0040 		.word	1073765056
+ 471 0080 C25A0040 		.word	1073765058
+ 472 0084 C35A0040 		.word	1073765059
+ 473 0088 30460040 		.word	1073759792
+ 474 008c 40580040 		.word	1073764416
+ 475              		.cfi_endproc
+ 476              	.LFE7:
+ 477              		.size	Detect_Seuil_Recept_ZeroCal, .-Detect_Seuil_Recept_ZeroCal
+ 478              		.section	.text.Detect_Seuil_Recept_LoadTrim,"ax",%progbits
+ 479              		.align	2
+ 480              		.global	Detect_Seuil_Recept_LoadTrim
+ 481              		.thumb
+ 482              		.thumb_func
+ 483              		.type	Detect_Seuil_Recept_LoadTrim, %function
+ 484              	Detect_Seuil_Recept_LoadTrim:
+ 485              	.LFB8:
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 19
 
 
- 486              	Detect_Seuil_Recept_LoadTrim:
- 487              	.LFB8:
  512:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 
  513:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 
  514:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** /*******************************************************************************
@@ -1102,12 +1100,12 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
  528:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** *******************************************************************************/
  529:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** void Detect_Seuil_Recept_LoadTrim(uint16 trimVal) 
  530:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** {
- 488              		.loc 1 530 0
- 489              		.cfi_startproc
- 490              		@ args = 0, pretend = 0, frame = 0
- 491              		@ frame_needed = 0, uses_anonymous_args = 0
- 492              		@ link register save eliminated.
- 493              	.LVL20:
+ 486              		.loc 1 530 0
+ 487              		.cfi_startproc
+ 488              		@ args = 0, pretend = 0, frame = 0
+ 489              		@ frame_needed = 0, uses_anonymous_args = 0
+ 490              		@ link register save eliminated.
+ 491              	.LVL20:
  531:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* Stores value in the Analog Comparator trim register */
  532:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     /* PSoC5A */
  533:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     #if (CY_PSOC5A)
@@ -1118,37 +1116,37 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
  538:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     #if (CY_PSOC3 || CY_PSOC5LP)
  539:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         /* Stores value in the Analog Comparator trim register for P-type load */
  540:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         Detect_Seuil_Recept_TR0 = (uint8) trimVal;
- 494              		.loc 1 540 0
- 495 0000 C2B2     		uxtb	r2, r0
- 496 0002 034B     		ldr	r3, .L44
- 497 0004 1A70     		strb	r2, [r3]
+ 492              		.loc 1 540 0
+ 493 0000 C2B2     		uxtb	r2, r0
+ 494 0002 034B     		ldr	r3, .L44
+ 495 0004 1A70     		strb	r2, [r3]
  541:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         
  542:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         /* Stores value in the Analog Comparator trim register for N-type load */
  543:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         Detect_Seuil_Recept_TR1 = (uint8) (trimVal >> 8); 
- 498              		.loc 1 543 0
- 499 0006 000A     		lsrs	r0, r0, #8
- 500              	.LVL21:
- 501 0008 0133     		adds	r3, r3, #1
- 502 000a 1870     		strb	r0, [r3]
- 503 000c 7047     		bx	lr
- 504              	.L45:
- 505 000e 00BF     		.align	2
- 506              	.L44:
- 507 0010 34460040 		.word	1073759796
- 508              		.cfi_endproc
- 509              	.LFE8:
- 510              		.size	Detect_Seuil_Recept_LoadTrim, .-Detect_Seuil_Recept_LoadTrim
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 20
+ 496              		.loc 1 543 0
+ 497 0006 000A     		lsrs	r0, r0, #8
+ 498              	.LVL21:
+ 499 0008 0133     		adds	r3, r3, #1
+ 500 000a 1870     		strb	r0, [r3]
+ 501 000c 7047     		bx	lr
+ 502              	.L45:
+ 503 000e 00BF     		.align	2
+ 504              	.L44:
+ 505 0010 30460040 		.word	1073759792
+ 506              		.cfi_endproc
+ 507              	.LFE8:
+ 508              		.size	Detect_Seuil_Recept_LoadTrim, .-Detect_Seuil_Recept_LoadTrim
+ 509              		.section	.text.Detect_Seuil_Recept_PwrDwnOverrideEnable,"ax",%progbits
+ 510              		.align	2
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 20
 
 
- 511              		.section	.text.Detect_Seuil_Recept_PwrDwnOverrideEnable,"ax",%progbits
- 512              		.align	2
- 513              		.global	Detect_Seuil_Recept_PwrDwnOverrideEnable
- 514              		.thumb
- 515              		.thumb_func
- 516              		.type	Detect_Seuil_Recept_PwrDwnOverrideEnable, %function
- 517              	Detect_Seuil_Recept_PwrDwnOverrideEnable:
- 518              	.LFB9:
+ 511              		.global	Detect_Seuil_Recept_PwrDwnOverrideEnable
+ 512              		.thumb
+ 513              		.thumb_func
+ 514              		.type	Detect_Seuil_Recept_PwrDwnOverrideEnable, %function
+ 515              	Detect_Seuil_Recept_PwrDwnOverrideEnable:
+ 516              	.LFB9:
  544:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     #endif /* CY_PSOC3 || CY_PSOC5LP */
  545:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** }
  546:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 
@@ -1172,37 +1170,37 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
  564:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     *******************************************************************************/
  565:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     void Detect_Seuil_Recept_PwrDwnOverrideEnable(void) 
  566:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     {
- 519              		.loc 1 566 0
- 520              		.cfi_startproc
- 521              		@ args = 0, pretend = 0, frame = 0
- 522              		@ frame_needed = 0, uses_anonymous_args = 0
- 523              		@ link register save eliminated.
+ 517              		.loc 1 566 0
+ 518              		.cfi_startproc
+ 519              		@ args = 0, pretend = 0, frame = 0
+ 520              		@ frame_needed = 0, uses_anonymous_args = 0
+ 521              		@ link register save eliminated.
  567:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         /* Set the pd_override bit in CMP_CR register */
  568:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         Detect_Seuil_Recept_CR |= Detect_Seuil_Recept_PWRDWN_OVRD;
- 524              		.loc 1 568 0
- 525 0000 024A     		ldr	r2, .L47
- 526 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
- 527 0004 43F00403 		orr	r3, r3, #4
- 528 0008 1370     		strb	r3, [r2]
- 529 000a 7047     		bx	lr
- 530              	.L48:
- 531              		.align	2
- 532              	.L47:
- 533 000c 42580040 		.word	1073764418
- 534              		.cfi_endproc
- 535              	.LFE9:
- 536              		.size	Detect_Seuil_Recept_PwrDwnOverrideEnable, .-Detect_Seuil_Recept_PwrDwnOverrideEnable
- 537              		.section	.text.Detect_Seuil_Recept_PwrDwnOverrideDisable,"ax",%progbits
- 538              		.align	2
- 539              		.global	Detect_Seuil_Recept_PwrDwnOverrideDisable
- 540              		.thumb
- 541              		.thumb_func
- 542              		.type	Detect_Seuil_Recept_PwrDwnOverrideDisable, %function
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 21
+ 522              		.loc 1 568 0
+ 523 0000 024A     		ldr	r2, .L47
+ 524 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 525 0004 43F00403 		orr	r3, r3, #4
+ 526 0008 1370     		strb	r3, [r2]
+ 527 000a 7047     		bx	lr
+ 528              	.L48:
+ 529              		.align	2
+ 530              	.L47:
+ 531 000c 40580040 		.word	1073764416
+ 532              		.cfi_endproc
+ 533              	.LFE9:
+ 534              		.size	Detect_Seuil_Recept_PwrDwnOverrideEnable, .-Detect_Seuil_Recept_PwrDwnOverrideEnable
+ 535              		.section	.text.Detect_Seuil_Recept_PwrDwnOverrideDisable,"ax",%progbits
+ 536              		.align	2
+ 537              		.global	Detect_Seuil_Recept_PwrDwnOverrideDisable
+ 538              		.thumb
+ 539              		.thumb_func
+ 540              		.type	Detect_Seuil_Recept_PwrDwnOverrideDisable, %function
+ 541              	Detect_Seuil_Recept_PwrDwnOverrideDisable:
+ 542              	.LFB10:
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 21
 
 
- 543              	Detect_Seuil_Recept_PwrDwnOverrideDisable:
- 544              	.LFB10:
  569:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     }
  570:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 
  571:Generated_Source\PSoC5/Detect_Seuil_Recept.c **** 
@@ -1223,1145 +1221,1145 @@ ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 1
  586:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     *******************************************************************************/
  587:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     void Detect_Seuil_Recept_PwrDwnOverrideDisable(void) 
  588:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****     {
- 545              		.loc 1 588 0
- 546              		.cfi_startproc
- 547              		@ args = 0, pretend = 0, frame = 0
- 548              		@ frame_needed = 0, uses_anonymous_args = 0
- 549              		@ link register save eliminated.
+ 543              		.loc 1 588 0
+ 544              		.cfi_startproc
+ 545              		@ args = 0, pretend = 0, frame = 0
+ 546              		@ frame_needed = 0, uses_anonymous_args = 0
+ 547              		@ link register save eliminated.
  589:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         /* Reset the pd_override bit in CMP_CR register */
  590:Generated_Source\PSoC5/Detect_Seuil_Recept.c ****         Detect_Seuil_Recept_CR &= (uint8)(~Detect_Seuil_Recept_PWRDWN_OVRD);
- 550              		.loc 1 590 0
- 551 0000 024A     		ldr	r2, .L50
- 552 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
- 553 0004 03F0FB03 		and	r3, r3, #251
- 554 0008 1370     		strb	r3, [r2]
- 555 000a 7047     		bx	lr
- 556              	.L51:
- 557              		.align	2
- 558              	.L50:
- 559 000c 42580040 		.word	1073764418
- 560              		.cfi_endproc
- 561              	.LFE10:
- 562              		.size	Detect_Seuil_Recept_PwrDwnOverrideDisable, .-Detect_Seuil_Recept_PwrDwnOverrideDisable
- 563              		.global	Detect_Seuil_Recept_initVar
- 564              		.bss
- 565              		.set	.LANCHOR0,. + 0
- 566              		.type	Detect_Seuil_Recept_initVar, %object
- 567              		.size	Detect_Seuil_Recept_initVar, 1
- 568              	Detect_Seuil_Recept_initVar:
- 569 0000 00       		.space	1
- 570              		.text
- 571              	.Letext0:
- 572              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
- 573              		.file 3 "Generated_Source\\PSoC5\\CyLib.h"
- 574              		.section	.debug_info,"",%progbits
- 575              	.Ldebug_info0:
- 576 0000 BF020000 		.4byte	0x2bf
- 577 0004 0400     		.2byte	0x4
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 22
+ 548              		.loc 1 590 0
+ 549 0000 024A     		ldr	r2, .L50
+ 550 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 551 0004 03F0FB03 		and	r3, r3, #251
+ 552 0008 1370     		strb	r3, [r2]
+ 553 000a 7047     		bx	lr
+ 554              	.L51:
+ 555              		.align	2
+ 556              	.L50:
+ 557 000c 40580040 		.word	1073764416
+ 558              		.cfi_endproc
+ 559              	.LFE10:
+ 560              		.size	Detect_Seuil_Recept_PwrDwnOverrideDisable, .-Detect_Seuil_Recept_PwrDwnOverrideDisable
+ 561              		.global	Detect_Seuil_Recept_initVar
+ 562              		.bss
+ 563              		.set	.LANCHOR0,. + 0
+ 564              		.type	Detect_Seuil_Recept_initVar, %object
+ 565              		.size	Detect_Seuil_Recept_initVar, 1
+ 566              	Detect_Seuil_Recept_initVar:
+ 567 0000 00       		.space	1
+ 568              		.text
+ 569              	.Letext0:
+ 570              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 571              		.file 3 "Generated_Source\\PSoC5\\CyLib.h"
+ 572              		.section	.debug_info,"",%progbits
+ 573              	.Ldebug_info0:
+ 574 0000 BF020000 		.4byte	0x2bf
+ 575 0004 0400     		.2byte	0x4
+ 576 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 577 000a 04       		.byte	0x4
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 22
 
 
- 578 0006 00000000 		.4byte	.Ldebug_abbrev0
- 579 000a 04       		.byte	0x4
- 580 000b 01       		.uleb128 0x1
- 581 000c 42010000 		.4byte	.LASF35
- 582 0010 01       		.byte	0x1
- 583 0011 50020000 		.4byte	.LASF36
- 584 0015 33030000 		.4byte	.LASF37
- 585 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 586 001d 00000000 		.4byte	0
- 587 0021 00000000 		.4byte	.Ldebug_line0
- 588 0025 02       		.uleb128 0x2
- 589 0026 01       		.byte	0x1
- 590 0027 06       		.byte	0x6
- 591 0028 0C030000 		.4byte	.LASF0
- 592 002c 02       		.uleb128 0x2
- 593 002d 01       		.byte	0x1
- 594 002e 08       		.byte	0x8
- 595 002f 62000000 		.4byte	.LASF1
- 596 0033 02       		.uleb128 0x2
- 597 0034 02       		.byte	0x2
- 598 0035 05       		.byte	0x5
- 599 0036 7D020000 		.4byte	.LASF2
- 600 003a 02       		.uleb128 0x2
- 601 003b 02       		.byte	0x2
- 602 003c 07       		.byte	0x7
- 603 003d 1C000000 		.4byte	.LASF3
- 604 0041 02       		.uleb128 0x2
- 605 0042 04       		.byte	0x4
- 606 0043 05       		.byte	0x5
- 607 0044 CD020000 		.4byte	.LASF4
- 608 0048 02       		.uleb128 0x2
- 609 0049 04       		.byte	0x4
- 610 004a 07       		.byte	0x7
- 611 004b 99000000 		.4byte	.LASF5
- 612 004f 02       		.uleb128 0x2
- 613 0050 08       		.byte	0x8
- 614 0051 05       		.byte	0x5
- 615 0052 33020000 		.4byte	.LASF6
- 616 0056 02       		.uleb128 0x2
- 617 0057 08       		.byte	0x8
- 618 0058 07       		.byte	0x7
- 619 0059 E6010000 		.4byte	.LASF7
- 620 005d 03       		.uleb128 0x3
- 621 005e 04       		.byte	0x4
- 622 005f 05       		.byte	0x5
- 623 0060 696E7400 		.ascii	"int\000"
- 624 0064 02       		.uleb128 0x2
- 625 0065 04       		.byte	0x4
- 626 0066 07       		.byte	0x7
- 627 0067 D0010000 		.4byte	.LASF8
- 628 006b 04       		.uleb128 0x4
- 629 006c AB000000 		.4byte	.LASF9
- 630 0070 02       		.byte	0x2
- 631 0071 9201     		.2byte	0x192
- 632 0073 2C000000 		.4byte	0x2c
- 633 0077 04       		.uleb128 0x4
- 634 0078 34010000 		.4byte	.LASF10
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 23
+ 578 000b 01       		.uleb128 0x1
+ 579 000c 42010000 		.4byte	.LASF35
+ 580 0010 01       		.byte	0x1
+ 581 0011 50020000 		.4byte	.LASF36
+ 582 0015 33030000 		.4byte	.LASF37
+ 583 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 584 001d 00000000 		.4byte	0
+ 585 0021 00000000 		.4byte	.Ldebug_line0
+ 586 0025 02       		.uleb128 0x2
+ 587 0026 01       		.byte	0x1
+ 588 0027 06       		.byte	0x6
+ 589 0028 0C030000 		.4byte	.LASF0
+ 590 002c 02       		.uleb128 0x2
+ 591 002d 01       		.byte	0x1
+ 592 002e 08       		.byte	0x8
+ 593 002f 62000000 		.4byte	.LASF1
+ 594 0033 02       		.uleb128 0x2
+ 595 0034 02       		.byte	0x2
+ 596 0035 05       		.byte	0x5
+ 597 0036 7D020000 		.4byte	.LASF2
+ 598 003a 02       		.uleb128 0x2
+ 599 003b 02       		.byte	0x2
+ 600 003c 07       		.byte	0x7
+ 601 003d 1C000000 		.4byte	.LASF3
+ 602 0041 02       		.uleb128 0x2
+ 603 0042 04       		.byte	0x4
+ 604 0043 05       		.byte	0x5
+ 605 0044 CD020000 		.4byte	.LASF4
+ 606 0048 02       		.uleb128 0x2
+ 607 0049 04       		.byte	0x4
+ 608 004a 07       		.byte	0x7
+ 609 004b 99000000 		.4byte	.LASF5
+ 610 004f 02       		.uleb128 0x2
+ 611 0050 08       		.byte	0x8
+ 612 0051 05       		.byte	0x5
+ 613 0052 33020000 		.4byte	.LASF6
+ 614 0056 02       		.uleb128 0x2
+ 615 0057 08       		.byte	0x8
+ 616 0058 07       		.byte	0x7
+ 617 0059 E6010000 		.4byte	.LASF7
+ 618 005d 03       		.uleb128 0x3
+ 619 005e 04       		.byte	0x4
+ 620 005f 05       		.byte	0x5
+ 621 0060 696E7400 		.ascii	"int\000"
+ 622 0064 02       		.uleb128 0x2
+ 623 0065 04       		.byte	0x4
+ 624 0066 07       		.byte	0x7
+ 625 0067 D0010000 		.4byte	.LASF8
+ 626 006b 04       		.uleb128 0x4
+ 627 006c AB000000 		.4byte	.LASF9
+ 628 0070 02       		.byte	0x2
+ 629 0071 9201     		.2byte	0x192
+ 630 0073 2C000000 		.4byte	0x2c
+ 631 0077 04       		.uleb128 0x4
+ 632 0078 34010000 		.4byte	.LASF10
+ 633 007c 02       		.byte	0x2
+ 634 007d 9301     		.2byte	0x193
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 23
 
 
- 635 007c 02       		.byte	0x2
- 636 007d 9301     		.2byte	0x193
- 637 007f 3A000000 		.4byte	0x3a
- 638 0083 04       		.uleb128 0x4
- 639 0084 3B010000 		.4byte	.LASF11
- 640 0088 02       		.byte	0x2
- 641 0089 9401     		.2byte	0x194
- 642 008b 48000000 		.4byte	0x48
- 643 008f 02       		.uleb128 0x2
- 644 0090 04       		.byte	0x4
- 645 0091 04       		.byte	0x4
- 646 0092 36000000 		.4byte	.LASF12
- 647 0096 02       		.uleb128 0x2
- 648 0097 08       		.byte	0x8
- 649 0098 04       		.byte	0x4
- 650 0099 FA000000 		.4byte	.LASF13
- 651 009d 02       		.uleb128 0x2
- 652 009e 01       		.byte	0x1
- 653 009f 08       		.byte	0x8
- 654 00a0 4B020000 		.4byte	.LASF14
- 655 00a4 04       		.uleb128 0x4
- 656 00a5 8C000000 		.4byte	.LASF15
- 657 00a9 02       		.byte	0x2
- 658 00aa 3C02     		.2byte	0x23c
- 659 00ac B0000000 		.4byte	0xb0
- 660 00b0 05       		.uleb128 0x5
- 661 00b1 6B000000 		.4byte	0x6b
- 662 00b5 02       		.uleb128 0x2
- 663 00b6 04       		.byte	0x4
- 664 00b7 07       		.byte	0x7
- 665 00b8 1F020000 		.4byte	.LASF16
- 666 00bc 06       		.uleb128 0x6
- 667 00bd DB000000 		.4byte	.LASF38
- 668 00c1 01       		.byte	0x1
- 669 00c2 1A01     		.2byte	0x11a
- 670 00c4 00000000 		.4byte	.LFB6
- 671 00c8 78000000 		.4byte	.LFE6-.LFB6
- 672 00cc 01       		.uleb128 0x1
- 673 00cd 9C       		.byte	0x9c
- 674 00ce 22010000 		.4byte	0x122
- 675 00d2 07       		.uleb128 0x7
- 676 00d3 0E000000 		.4byte	.LASF22
- 677 00d7 01       		.byte	0x1
- 678 00d8 1A01     		.2byte	0x11a
- 679 00da 6B000000 		.4byte	0x6b
- 680 00de 00000000 		.4byte	.LLST0
- 681 00e2 08       		.uleb128 0x8
- 682 00e3 91000000 		.4byte	.LASF17
- 683 00e7 01       		.byte	0x1
- 684 00e8 1C01     		.2byte	0x11c
- 685 00ea 6B000000 		.4byte	0x6b
- 686 00ee 21000000 		.4byte	.LLST1
- 687 00f2 08       		.uleb128 0x8
- 688 00f3 28020000 		.4byte	.LASF18
- 689 00f7 01       		.byte	0x1
- 690 00f8 1C01     		.2byte	0x11c
- 691 00fa 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 24
+ 635 007f 3A000000 		.4byte	0x3a
+ 636 0083 04       		.uleb128 0x4
+ 637 0084 3B010000 		.4byte	.LASF11
+ 638 0088 02       		.byte	0x2
+ 639 0089 9401     		.2byte	0x194
+ 640 008b 48000000 		.4byte	0x48
+ 641 008f 02       		.uleb128 0x2
+ 642 0090 04       		.byte	0x4
+ 643 0091 04       		.byte	0x4
+ 644 0092 36000000 		.4byte	.LASF12
+ 645 0096 02       		.uleb128 0x2
+ 646 0097 08       		.byte	0x8
+ 647 0098 04       		.byte	0x4
+ 648 0099 FA000000 		.4byte	.LASF13
+ 649 009d 02       		.uleb128 0x2
+ 650 009e 01       		.byte	0x1
+ 651 009f 08       		.byte	0x8
+ 652 00a0 4B020000 		.4byte	.LASF14
+ 653 00a4 04       		.uleb128 0x4
+ 654 00a5 8C000000 		.4byte	.LASF15
+ 655 00a9 02       		.byte	0x2
+ 656 00aa 3C02     		.2byte	0x23c
+ 657 00ac B0000000 		.4byte	0xb0
+ 658 00b0 05       		.uleb128 0x5
+ 659 00b1 6B000000 		.4byte	0x6b
+ 660 00b5 02       		.uleb128 0x2
+ 661 00b6 04       		.byte	0x4
+ 662 00b7 07       		.byte	0x7
+ 663 00b8 1F020000 		.4byte	.LASF16
+ 664 00bc 06       		.uleb128 0x6
+ 665 00bd DB000000 		.4byte	.LASF38
+ 666 00c1 01       		.byte	0x1
+ 667 00c2 1A01     		.2byte	0x11a
+ 668 00c4 00000000 		.4byte	.LFB6
+ 669 00c8 74000000 		.4byte	.LFE6-.LFB6
+ 670 00cc 01       		.uleb128 0x1
+ 671 00cd 9C       		.byte	0x9c
+ 672 00ce 22010000 		.4byte	0x122
+ 673 00d2 07       		.uleb128 0x7
+ 674 00d3 0E000000 		.4byte	.LASF22
+ 675 00d7 01       		.byte	0x1
+ 676 00d8 1A01     		.2byte	0x11a
+ 677 00da 6B000000 		.4byte	0x6b
+ 678 00de 00000000 		.4byte	.LLST0
+ 679 00e2 08       		.uleb128 0x8
+ 680 00e3 91000000 		.4byte	.LASF17
+ 681 00e7 01       		.byte	0x1
+ 682 00e8 1C01     		.2byte	0x11c
+ 683 00ea 6B000000 		.4byte	0x6b
+ 684 00ee 21000000 		.4byte	.LLST1
+ 685 00f2 08       		.uleb128 0x8
+ 686 00f3 28020000 		.4byte	.LASF18
+ 687 00f7 01       		.byte	0x1
+ 688 00f8 1C01     		.2byte	0x11c
+ 689 00fa 6B000000 		.4byte	0x6b
+ 690 00fe 4B000000 		.4byte	.LLST2
+ 691 0102 08       		.uleb128 0x8
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 24
 
 
- 692 00fe 4B000000 		.4byte	.LLST2
- 693 0102 08       		.uleb128 0x8
- 694 0103 DD010000 		.4byte	.LASF19
- 695 0107 01       		.byte	0x1
- 696 0108 1D01     		.2byte	0x11d
- 697 010a 6B000000 		.4byte	0x6b
- 698 010e 5E000000 		.4byte	.LLST3
- 699 0112 09       		.uleb128 0x9
- 700 0113 54000000 		.4byte	.LVL4
- 701 0117 B5020000 		.4byte	0x2b5
- 702 011b 0A       		.uleb128 0xa
- 703 011c 01       		.uleb128 0x1
- 704 011d 50       		.byte	0x50
- 705 011e 01       		.uleb128 0x1
- 706 011f 3A       		.byte	0x3a
- 707 0120 00       		.byte	0
- 708 0121 00       		.byte	0
- 709 0122 0B       		.uleb128 0xb
- 710 0123 18030000 		.4byte	.LASF20
- 711 0127 01       		.byte	0x1
- 712 0128 63       		.byte	0x63
- 713 0129 00000000 		.4byte	.LFB1
- 714 012d 1C000000 		.4byte	.LFE1-.LFB1
- 715 0131 01       		.uleb128 0x1
- 716 0132 9C       		.byte	0x9c
- 717 0133 0B       		.uleb128 0xb
- 718 0134 F3020000 		.4byte	.LASF21
- 719 0138 01       		.byte	0x1
- 720 0139 A5       		.byte	0xa5
- 721 013a 00000000 		.4byte	.LFB3
- 722 013e 1C000000 		.4byte	.LFE3-.LFB3
- 723 0142 01       		.uleb128 0x1
- 724 0143 9C       		.byte	0x9c
- 725 0144 0C       		.uleb128 0xc
- 726 0145 87020000 		.4byte	.LASF24
- 727 0149 01       		.byte	0x1
- 728 014a C5       		.byte	0xc5
- 729 014b 00000000 		.4byte	.LFB4
- 730 014f 58000000 		.4byte	.LFE4-.LFB4
- 731 0153 01       		.uleb128 0x1
- 732 0154 9C       		.byte	0x9c
- 733 0155 67010000 		.4byte	0x167
- 734 0159 0D       		.uleb128 0xd
- 735 015a 19020000 		.4byte	.LASF23
- 736 015e 01       		.byte	0x1
- 737 015f C5       		.byte	0xc5
- 738 0160 6B000000 		.4byte	0x6b
- 739 0164 01       		.uleb128 0x1
- 740 0165 50       		.byte	0x50
- 741 0166 00       		.byte	0
- 742 0167 0C       		.uleb128 0xc
- 743 0168 01010000 		.4byte	.LASF25
- 744 016c 01       		.byte	0x1
- 745 016d 33       		.byte	0x33
- 746 016e 00000000 		.4byte	.LFB0
- 747 0172 3C000000 		.4byte	.LFE0-.LFB0
- 748 0176 01       		.uleb128 0x1
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 25
+ 692 0103 DD010000 		.4byte	.LASF19
+ 693 0107 01       		.byte	0x1
+ 694 0108 1D01     		.2byte	0x11d
+ 695 010a 6B000000 		.4byte	0x6b
+ 696 010e 5E000000 		.4byte	.LLST3
+ 697 0112 09       		.uleb128 0x9
+ 698 0113 52000000 		.4byte	.LVL4
+ 699 0117 B5020000 		.4byte	0x2b5
+ 700 011b 0A       		.uleb128 0xa
+ 701 011c 01       		.uleb128 0x1
+ 702 011d 50       		.byte	0x50
+ 703 011e 01       		.uleb128 0x1
+ 704 011f 3A       		.byte	0x3a
+ 705 0120 00       		.byte	0
+ 706 0121 00       		.byte	0
+ 707 0122 0B       		.uleb128 0xb
+ 708 0123 18030000 		.4byte	.LASF20
+ 709 0127 01       		.byte	0x1
+ 710 0128 63       		.byte	0x63
+ 711 0129 00000000 		.4byte	.LFB1
+ 712 012d 1C000000 		.4byte	.LFE1-.LFB1
+ 713 0131 01       		.uleb128 0x1
+ 714 0132 9C       		.byte	0x9c
+ 715 0133 0B       		.uleb128 0xb
+ 716 0134 F3020000 		.4byte	.LASF21
+ 717 0138 01       		.byte	0x1
+ 718 0139 A5       		.byte	0xa5
+ 719 013a 00000000 		.4byte	.LFB3
+ 720 013e 1C000000 		.4byte	.LFE3-.LFB3
+ 721 0142 01       		.uleb128 0x1
+ 722 0143 9C       		.byte	0x9c
+ 723 0144 0C       		.uleb128 0xc
+ 724 0145 87020000 		.4byte	.LASF24
+ 725 0149 01       		.byte	0x1
+ 726 014a C5       		.byte	0xc5
+ 727 014b 00000000 		.4byte	.LFB4
+ 728 014f 58000000 		.4byte	.LFE4-.LFB4
+ 729 0153 01       		.uleb128 0x1
+ 730 0154 9C       		.byte	0x9c
+ 731 0155 67010000 		.4byte	0x167
+ 732 0159 0D       		.uleb128 0xd
+ 733 015a 19020000 		.4byte	.LASF23
+ 734 015e 01       		.byte	0x1
+ 735 015f C5       		.byte	0xc5
+ 736 0160 6B000000 		.4byte	0x6b
+ 737 0164 01       		.uleb128 0x1
+ 738 0165 50       		.byte	0x50
+ 739 0166 00       		.byte	0
+ 740 0167 0C       		.uleb128 0xc
+ 741 0168 01010000 		.4byte	.LASF25
+ 742 016c 01       		.byte	0x1
+ 743 016d 33       		.byte	0x33
+ 744 016e 00000000 		.4byte	.LFB0
+ 745 0172 3C000000 		.4byte	.LFE0-.LFB0
+ 746 0176 01       		.uleb128 0x1
+ 747 0177 9C       		.byte	0x9c
+ 748 0178 8C010000 		.4byte	0x18c
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 25
 
 
- 749 0177 9C       		.byte	0x9c
- 750 0178 8C010000 		.4byte	0x18c
- 751 017c 09       		.uleb128 0x9
- 752 017d 08000000 		.4byte	.LVL9
- 753 0181 44010000 		.4byte	0x144
- 754 0185 0A       		.uleb128 0xa
- 755 0186 01       		.uleb128 0x1
- 756 0187 50       		.byte	0x50
- 757 0188 01       		.uleb128 0x1
- 758 0189 32       		.byte	0x32
- 759 018a 00       		.byte	0
- 760 018b 00       		.byte	0
- 761 018c 0C       		.uleb128 0xc
- 762 018d 1A010000 		.4byte	.LASF26
- 763 0191 01       		.byte	0x1
- 764 0192 88       		.byte	0x88
- 765 0193 00000000 		.4byte	.LFB2
- 766 0197 1C000000 		.4byte	.LFE2-.LFB2
- 767 019b 01       		.uleb128 0x1
- 768 019c 9C       		.byte	0x9c
- 769 019d B4010000 		.4byte	0x1b4
- 770 01a1 0E       		.uleb128 0xe
- 771 01a2 0C000000 		.4byte	.LVL10
- 772 01a6 67010000 		.4byte	0x167
- 773 01aa 0E       		.uleb128 0xe
- 774 01ab 16000000 		.4byte	.LVL11
- 775 01af 22010000 		.4byte	0x122
- 776 01b3 00       		.byte	0
- 777 01b4 0F       		.uleb128 0xf
- 778 01b5 43000000 		.4byte	.LASF39
- 779 01b9 01       		.byte	0x1
- 780 01ba FB       		.byte	0xfb
- 781 01bb 6B000000 		.4byte	0x6b
- 782 01bf 00000000 		.4byte	.LFB5
- 783 01c3 10000000 		.4byte	.LFE5-.LFB5
- 784 01c7 01       		.uleb128 0x1
- 785 01c8 9C       		.byte	0x9c
- 786 01c9 10       		.uleb128 0x10
- 787 01ca FD010000 		.4byte	.LASF40
- 788 01ce 01       		.byte	0x1
- 789 01cf BF01     		.2byte	0x1bf
- 790 01d1 77000000 		.4byte	0x77
- 791 01d5 00000000 		.4byte	.LFB7
- 792 01d9 90000000 		.4byte	.LFE7-.LFB7
- 793 01dd 01       		.uleb128 0x1
- 794 01de 9C       		.byte	0x9c
- 795 01df 59020000 		.4byte	0x259
- 796 01e3 08       		.uleb128 0x8
- 797 01e4 2F000000 		.4byte	.LASF27
- 798 01e8 01       		.byte	0x1
- 799 01e9 C101     		.2byte	0x1c1
- 800 01eb 6B000000 		.4byte	0x6b
- 801 01ef 71000000 		.4byte	.LLST4
- 802 01f3 08       		.uleb128 0x8
- 803 01f4 15000000 		.4byte	.LASF28
- 804 01f8 01       		.byte	0x1
- 805 01f9 C201     		.2byte	0x1c2
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 26
+ 749 017c 09       		.uleb128 0x9
+ 750 017d 08000000 		.4byte	.LVL9
+ 751 0181 44010000 		.4byte	0x144
+ 752 0185 0A       		.uleb128 0xa
+ 753 0186 01       		.uleb128 0x1
+ 754 0187 50       		.byte	0x50
+ 755 0188 01       		.uleb128 0x1
+ 756 0189 32       		.byte	0x32
+ 757 018a 00       		.byte	0
+ 758 018b 00       		.byte	0
+ 759 018c 0C       		.uleb128 0xc
+ 760 018d 1A010000 		.4byte	.LASF26
+ 761 0191 01       		.byte	0x1
+ 762 0192 88       		.byte	0x88
+ 763 0193 00000000 		.4byte	.LFB2
+ 764 0197 1C000000 		.4byte	.LFE2-.LFB2
+ 765 019b 01       		.uleb128 0x1
+ 766 019c 9C       		.byte	0x9c
+ 767 019d B4010000 		.4byte	0x1b4
+ 768 01a1 0E       		.uleb128 0xe
+ 769 01a2 0C000000 		.4byte	.LVL10
+ 770 01a6 67010000 		.4byte	0x167
+ 771 01aa 0E       		.uleb128 0xe
+ 772 01ab 16000000 		.4byte	.LVL11
+ 773 01af 22010000 		.4byte	0x122
+ 774 01b3 00       		.byte	0
+ 775 01b4 0F       		.uleb128 0xf
+ 776 01b5 43000000 		.4byte	.LASF39
+ 777 01b9 01       		.byte	0x1
+ 778 01ba FB       		.byte	0xfb
+ 779 01bb 6B000000 		.4byte	0x6b
+ 780 01bf 00000000 		.4byte	.LFB5
+ 781 01c3 10000000 		.4byte	.LFE5-.LFB5
+ 782 01c7 01       		.uleb128 0x1
+ 783 01c8 9C       		.byte	0x9c
+ 784 01c9 10       		.uleb128 0x10
+ 785 01ca FD010000 		.4byte	.LASF40
+ 786 01ce 01       		.byte	0x1
+ 787 01cf BF01     		.2byte	0x1bf
+ 788 01d1 77000000 		.4byte	0x77
+ 789 01d5 00000000 		.4byte	.LFB7
+ 790 01d9 90000000 		.4byte	.LFE7-.LFB7
+ 791 01dd 01       		.uleb128 0x1
+ 792 01de 9C       		.byte	0x9c
+ 793 01df 59020000 		.4byte	0x259
+ 794 01e3 08       		.uleb128 0x8
+ 795 01e4 2F000000 		.4byte	.LASF27
+ 796 01e8 01       		.byte	0x1
+ 797 01e9 C101     		.2byte	0x1c1
+ 798 01eb 6B000000 		.4byte	0x6b
+ 799 01ef 71000000 		.4byte	.LLST4
+ 800 01f3 08       		.uleb128 0x8
+ 801 01f4 15000000 		.4byte	.LASF28
+ 802 01f8 01       		.byte	0x1
+ 803 01f9 C201     		.2byte	0x1c2
+ 804 01fb 6B000000 		.4byte	0x6b
+ 805 01ff 84000000 		.4byte	.LLST5
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 26
 
 
- 806 01fb 6B000000 		.4byte	0x6b
- 807 01ff 84000000 		.4byte	.LLST5
- 808 0203 08       		.uleb128 0x8
- 809 0204 3C000000 		.4byte	.LASF29
- 810 0208 01       		.byte	0x1
- 811 0209 C301     		.2byte	0x1c3
- 812 020b 6B000000 		.4byte	0x6b
- 813 020f 97000000 		.4byte	.LLST6
- 814 0213 08       		.uleb128 0x8
- 815 0214 08000000 		.4byte	.LASF30
- 816 0218 01       		.byte	0x1
- 817 0219 C401     		.2byte	0x1c4
- 818 021b 6B000000 		.4byte	0x6b
- 819 021f B9000000 		.4byte	.LLST7
- 820 0223 11       		.uleb128 0x11
- 821 0224 48000000 		.4byte	.LVL16
- 822 0228 BC000000 		.4byte	0xbc
- 823 022c 36020000 		.4byte	0x236
- 824 0230 0A       		.uleb128 0xa
- 825 0231 01       		.uleb128 0x1
- 826 0232 50       		.byte	0x50
- 827 0233 01       		.uleb128 0x1
- 828 0234 30       		.byte	0x30
- 829 0235 00       		.byte	0
- 830 0236 11       		.uleb128 0x11
- 831 0237 50000000 		.4byte	.LVL17
- 832 023b BC000000 		.4byte	0xbc
- 833 023f 49020000 		.4byte	0x249
- 834 0243 0A       		.uleb128 0xa
- 835 0244 01       		.uleb128 0x1
- 836 0245 50       		.byte	0x50
- 837 0246 01       		.uleb128 0x1
- 838 0247 31       		.byte	0x31
- 839 0248 00       		.byte	0
- 840 0249 09       		.uleb128 0x9
- 841 024a 56000000 		.4byte	.LVL18
- 842 024e BC000000 		.4byte	0xbc
- 843 0252 0A       		.uleb128 0xa
- 844 0253 01       		.uleb128 0x1
- 845 0254 50       		.byte	0x50
- 846 0255 01       		.uleb128 0x1
- 847 0256 30       		.byte	0x30
- 848 0257 00       		.byte	0
- 849 0258 00       		.byte	0
- 850 0259 12       		.uleb128 0x12
- 851 025a D6020000 		.4byte	.LASF31
- 852 025e 01       		.byte	0x1
- 853 025f 1102     		.2byte	0x211
- 854 0261 00000000 		.4byte	.LFB8
- 855 0265 14000000 		.4byte	.LFE8-.LFB8
- 856 0269 01       		.uleb128 0x1
- 857 026a 9C       		.byte	0x9c
- 858 026b 80020000 		.4byte	0x280
- 859 026f 07       		.uleb128 0x7
- 860 0270 00000000 		.4byte	.LASF32
- 861 0274 01       		.byte	0x1
- 862 0275 1102     		.2byte	0x211
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 27
+ 806 0203 08       		.uleb128 0x8
+ 807 0204 3C000000 		.4byte	.LASF29
+ 808 0208 01       		.byte	0x1
+ 809 0209 C301     		.2byte	0x1c3
+ 810 020b 6B000000 		.4byte	0x6b
+ 811 020f 97000000 		.4byte	.LLST6
+ 812 0213 08       		.uleb128 0x8
+ 813 0214 08000000 		.4byte	.LASF30
+ 814 0218 01       		.byte	0x1
+ 815 0219 C401     		.2byte	0x1c4
+ 816 021b 6B000000 		.4byte	0x6b
+ 817 021f B9000000 		.4byte	.LLST7
+ 818 0223 11       		.uleb128 0x11
+ 819 0224 48000000 		.4byte	.LVL16
+ 820 0228 BC000000 		.4byte	0xbc
+ 821 022c 36020000 		.4byte	0x236
+ 822 0230 0A       		.uleb128 0xa
+ 823 0231 01       		.uleb128 0x1
+ 824 0232 50       		.byte	0x50
+ 825 0233 01       		.uleb128 0x1
+ 826 0234 30       		.byte	0x30
+ 827 0235 00       		.byte	0
+ 828 0236 11       		.uleb128 0x11
+ 829 0237 50000000 		.4byte	.LVL17
+ 830 023b BC000000 		.4byte	0xbc
+ 831 023f 49020000 		.4byte	0x249
+ 832 0243 0A       		.uleb128 0xa
+ 833 0244 01       		.uleb128 0x1
+ 834 0245 50       		.byte	0x50
+ 835 0246 01       		.uleb128 0x1
+ 836 0247 31       		.byte	0x31
+ 837 0248 00       		.byte	0
+ 838 0249 09       		.uleb128 0x9
+ 839 024a 56000000 		.4byte	.LVL18
+ 840 024e BC000000 		.4byte	0xbc
+ 841 0252 0A       		.uleb128 0xa
+ 842 0253 01       		.uleb128 0x1
+ 843 0254 50       		.byte	0x50
+ 844 0255 01       		.uleb128 0x1
+ 845 0256 30       		.byte	0x30
+ 846 0257 00       		.byte	0
+ 847 0258 00       		.byte	0
+ 848 0259 12       		.uleb128 0x12
+ 849 025a D6020000 		.4byte	.LASF31
+ 850 025e 01       		.byte	0x1
+ 851 025f 1102     		.2byte	0x211
+ 852 0261 00000000 		.4byte	.LFB8
+ 853 0265 14000000 		.4byte	.LFE8-.LFB8
+ 854 0269 01       		.uleb128 0x1
+ 855 026a 9C       		.byte	0x9c
+ 856 026b 80020000 		.4byte	0x280
+ 857 026f 07       		.uleb128 0x7
+ 858 0270 00000000 		.4byte	.LASF32
+ 859 0274 01       		.byte	0x1
+ 860 0275 1102     		.2byte	0x211
+ 861 0277 77000000 		.4byte	0x77
+ 862 027b CC000000 		.4byte	.LLST8
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 27
 
 
- 863 0277 77000000 		.4byte	0x77
- 864 027b CC000000 		.4byte	.LLST8
- 865 027f 00       		.byte	0
- 866 0280 13       		.uleb128 0x13
- 867 0281 A4020000 		.4byte	.LASF33
- 868 0285 01       		.byte	0x1
- 869 0286 3502     		.2byte	0x235
- 870 0288 00000000 		.4byte	.LFB9
- 871 028c 10000000 		.4byte	.LFE9-.LFB9
- 872 0290 01       		.uleb128 0x1
- 873 0291 9C       		.byte	0x9c
- 874 0292 13       		.uleb128 0x13
- 875 0293 B1000000 		.4byte	.LASF34
- 876 0297 01       		.byte	0x1
- 877 0298 4B02     		.2byte	0x24b
- 878 029a 00000000 		.4byte	.LFB10
- 879 029e 10000000 		.4byte	.LFE10-.LFB10
- 880 02a2 01       		.uleb128 0x1
- 881 02a3 9C       		.byte	0x9c
- 882 02a4 14       		.uleb128 0x14
- 883 02a5 70000000 		.4byte	.LASF41
- 884 02a9 01       		.byte	0x1
- 885 02aa 14       		.byte	0x14
- 886 02ab 6B000000 		.4byte	0x6b
- 887 02af 05       		.uleb128 0x5
- 888 02b0 03       		.byte	0x3
- 889 02b1 00000000 		.4byte	Detect_Seuil_Recept_initVar
- 890 02b5 15       		.uleb128 0x15
- 891 02b6 41020000 		.4byte	.LASF42
- 892 02ba 03       		.byte	0x3
- 893 02bb 77       		.byte	0x77
- 894 02bc 16       		.uleb128 0x16
- 895 02bd 77000000 		.4byte	0x77
- 896 02c1 00       		.byte	0
- 897 02c2 00       		.byte	0
- 898              		.section	.debug_abbrev,"",%progbits
- 899              	.Ldebug_abbrev0:
- 900 0000 01       		.uleb128 0x1
- 901 0001 11       		.uleb128 0x11
- 902 0002 01       		.byte	0x1
- 903 0003 25       		.uleb128 0x25
- 904 0004 0E       		.uleb128 0xe
- 905 0005 13       		.uleb128 0x13
- 906 0006 0B       		.uleb128 0xb
- 907 0007 03       		.uleb128 0x3
- 908 0008 0E       		.uleb128 0xe
- 909 0009 1B       		.uleb128 0x1b
- 910 000a 0E       		.uleb128 0xe
- 911 000b 55       		.uleb128 0x55
- 912 000c 17       		.uleb128 0x17
- 913 000d 11       		.uleb128 0x11
- 914 000e 01       		.uleb128 0x1
- 915 000f 10       		.uleb128 0x10
- 916 0010 17       		.uleb128 0x17
- 917 0011 00       		.byte	0
- 918 0012 00       		.byte	0
- 919 0013 02       		.uleb128 0x2
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 28
+ 863 027f 00       		.byte	0
+ 864 0280 13       		.uleb128 0x13
+ 865 0281 A4020000 		.4byte	.LASF33
+ 866 0285 01       		.byte	0x1
+ 867 0286 3502     		.2byte	0x235
+ 868 0288 00000000 		.4byte	.LFB9
+ 869 028c 10000000 		.4byte	.LFE9-.LFB9
+ 870 0290 01       		.uleb128 0x1
+ 871 0291 9C       		.byte	0x9c
+ 872 0292 13       		.uleb128 0x13
+ 873 0293 B1000000 		.4byte	.LASF34
+ 874 0297 01       		.byte	0x1
+ 875 0298 4B02     		.2byte	0x24b
+ 876 029a 00000000 		.4byte	.LFB10
+ 877 029e 10000000 		.4byte	.LFE10-.LFB10
+ 878 02a2 01       		.uleb128 0x1
+ 879 02a3 9C       		.byte	0x9c
+ 880 02a4 14       		.uleb128 0x14
+ 881 02a5 70000000 		.4byte	.LASF41
+ 882 02a9 01       		.byte	0x1
+ 883 02aa 14       		.byte	0x14
+ 884 02ab 6B000000 		.4byte	0x6b
+ 885 02af 05       		.uleb128 0x5
+ 886 02b0 03       		.byte	0x3
+ 887 02b1 00000000 		.4byte	Detect_Seuil_Recept_initVar
+ 888 02b5 15       		.uleb128 0x15
+ 889 02b6 41020000 		.4byte	.LASF42
+ 890 02ba 03       		.byte	0x3
+ 891 02bb 77       		.byte	0x77
+ 892 02bc 16       		.uleb128 0x16
+ 893 02bd 77000000 		.4byte	0x77
+ 894 02c1 00       		.byte	0
+ 895 02c2 00       		.byte	0
+ 896              		.section	.debug_abbrev,"",%progbits
+ 897              	.Ldebug_abbrev0:
+ 898 0000 01       		.uleb128 0x1
+ 899 0001 11       		.uleb128 0x11
+ 900 0002 01       		.byte	0x1
+ 901 0003 25       		.uleb128 0x25
+ 902 0004 0E       		.uleb128 0xe
+ 903 0005 13       		.uleb128 0x13
+ 904 0006 0B       		.uleb128 0xb
+ 905 0007 03       		.uleb128 0x3
+ 906 0008 0E       		.uleb128 0xe
+ 907 0009 1B       		.uleb128 0x1b
+ 908 000a 0E       		.uleb128 0xe
+ 909 000b 55       		.uleb128 0x55
+ 910 000c 17       		.uleb128 0x17
+ 911 000d 11       		.uleb128 0x11
+ 912 000e 01       		.uleb128 0x1
+ 913 000f 10       		.uleb128 0x10
+ 914 0010 17       		.uleb128 0x17
+ 915 0011 00       		.byte	0
+ 916 0012 00       		.byte	0
+ 917 0013 02       		.uleb128 0x2
+ 918 0014 24       		.uleb128 0x24
+ 919 0015 00       		.byte	0
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 28
 
 
- 920 0014 24       		.uleb128 0x24
- 921 0015 00       		.byte	0
- 922 0016 0B       		.uleb128 0xb
- 923 0017 0B       		.uleb128 0xb
- 924 0018 3E       		.uleb128 0x3e
- 925 0019 0B       		.uleb128 0xb
- 926 001a 03       		.uleb128 0x3
- 927 001b 0E       		.uleb128 0xe
- 928 001c 00       		.byte	0
- 929 001d 00       		.byte	0
- 930 001e 03       		.uleb128 0x3
- 931 001f 24       		.uleb128 0x24
- 932 0020 00       		.byte	0
- 933 0021 0B       		.uleb128 0xb
- 934 0022 0B       		.uleb128 0xb
- 935 0023 3E       		.uleb128 0x3e
- 936 0024 0B       		.uleb128 0xb
- 937 0025 03       		.uleb128 0x3
- 938 0026 08       		.uleb128 0x8
- 939 0027 00       		.byte	0
- 940 0028 00       		.byte	0
- 941 0029 04       		.uleb128 0x4
- 942 002a 16       		.uleb128 0x16
- 943 002b 00       		.byte	0
- 944 002c 03       		.uleb128 0x3
- 945 002d 0E       		.uleb128 0xe
- 946 002e 3A       		.uleb128 0x3a
- 947 002f 0B       		.uleb128 0xb
- 948 0030 3B       		.uleb128 0x3b
- 949 0031 05       		.uleb128 0x5
- 950 0032 49       		.uleb128 0x49
- 951 0033 13       		.uleb128 0x13
- 952 0034 00       		.byte	0
- 953 0035 00       		.byte	0
- 954 0036 05       		.uleb128 0x5
- 955 0037 35       		.uleb128 0x35
- 956 0038 00       		.byte	0
- 957 0039 49       		.uleb128 0x49
- 958 003a 13       		.uleb128 0x13
- 959 003b 00       		.byte	0
- 960 003c 00       		.byte	0
- 961 003d 06       		.uleb128 0x6
- 962 003e 2E       		.uleb128 0x2e
- 963 003f 01       		.byte	0x1
- 964 0040 03       		.uleb128 0x3
- 965 0041 0E       		.uleb128 0xe
- 966 0042 3A       		.uleb128 0x3a
- 967 0043 0B       		.uleb128 0xb
- 968 0044 3B       		.uleb128 0x3b
- 969 0045 05       		.uleb128 0x5
- 970 0046 27       		.uleb128 0x27
- 971 0047 19       		.uleb128 0x19
- 972 0048 11       		.uleb128 0x11
- 973 0049 01       		.uleb128 0x1
- 974 004a 12       		.uleb128 0x12
- 975 004b 06       		.uleb128 0x6
- 976 004c 40       		.uleb128 0x40
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 29
+ 920 0016 0B       		.uleb128 0xb
+ 921 0017 0B       		.uleb128 0xb
+ 922 0018 3E       		.uleb128 0x3e
+ 923 0019 0B       		.uleb128 0xb
+ 924 001a 03       		.uleb128 0x3
+ 925 001b 0E       		.uleb128 0xe
+ 926 001c 00       		.byte	0
+ 927 001d 00       		.byte	0
+ 928 001e 03       		.uleb128 0x3
+ 929 001f 24       		.uleb128 0x24
+ 930 0020 00       		.byte	0
+ 931 0021 0B       		.uleb128 0xb
+ 932 0022 0B       		.uleb128 0xb
+ 933 0023 3E       		.uleb128 0x3e
+ 934 0024 0B       		.uleb128 0xb
+ 935 0025 03       		.uleb128 0x3
+ 936 0026 08       		.uleb128 0x8
+ 937 0027 00       		.byte	0
+ 938 0028 00       		.byte	0
+ 939 0029 04       		.uleb128 0x4
+ 940 002a 16       		.uleb128 0x16
+ 941 002b 00       		.byte	0
+ 942 002c 03       		.uleb128 0x3
+ 943 002d 0E       		.uleb128 0xe
+ 944 002e 3A       		.uleb128 0x3a
+ 945 002f 0B       		.uleb128 0xb
+ 946 0030 3B       		.uleb128 0x3b
+ 947 0031 05       		.uleb128 0x5
+ 948 0032 49       		.uleb128 0x49
+ 949 0033 13       		.uleb128 0x13
+ 950 0034 00       		.byte	0
+ 951 0035 00       		.byte	0
+ 952 0036 05       		.uleb128 0x5
+ 953 0037 35       		.uleb128 0x35
+ 954 0038 00       		.byte	0
+ 955 0039 49       		.uleb128 0x49
+ 956 003a 13       		.uleb128 0x13
+ 957 003b 00       		.byte	0
+ 958 003c 00       		.byte	0
+ 959 003d 06       		.uleb128 0x6
+ 960 003e 2E       		.uleb128 0x2e
+ 961 003f 01       		.byte	0x1
+ 962 0040 03       		.uleb128 0x3
+ 963 0041 0E       		.uleb128 0xe
+ 964 0042 3A       		.uleb128 0x3a
+ 965 0043 0B       		.uleb128 0xb
+ 966 0044 3B       		.uleb128 0x3b
+ 967 0045 05       		.uleb128 0x5
+ 968 0046 27       		.uleb128 0x27
+ 969 0047 19       		.uleb128 0x19
+ 970 0048 11       		.uleb128 0x11
+ 971 0049 01       		.uleb128 0x1
+ 972 004a 12       		.uleb128 0x12
+ 973 004b 06       		.uleb128 0x6
+ 974 004c 40       		.uleb128 0x40
+ 975 004d 18       		.uleb128 0x18
+ 976 004e 9742     		.uleb128 0x2117
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 29
 
 
- 977 004d 18       		.uleb128 0x18
- 978 004e 9742     		.uleb128 0x2117
- 979 0050 19       		.uleb128 0x19
- 980 0051 01       		.uleb128 0x1
- 981 0052 13       		.uleb128 0x13
- 982 0053 00       		.byte	0
- 983 0054 00       		.byte	0
- 984 0055 07       		.uleb128 0x7
- 985 0056 05       		.uleb128 0x5
- 986 0057 00       		.byte	0
- 987 0058 03       		.uleb128 0x3
- 988 0059 0E       		.uleb128 0xe
- 989 005a 3A       		.uleb128 0x3a
- 990 005b 0B       		.uleb128 0xb
- 991 005c 3B       		.uleb128 0x3b
- 992 005d 05       		.uleb128 0x5
- 993 005e 49       		.uleb128 0x49
- 994 005f 13       		.uleb128 0x13
- 995 0060 02       		.uleb128 0x2
- 996 0061 17       		.uleb128 0x17
- 997 0062 00       		.byte	0
- 998 0063 00       		.byte	0
- 999 0064 08       		.uleb128 0x8
- 1000 0065 34       		.uleb128 0x34
- 1001 0066 00       		.byte	0
- 1002 0067 03       		.uleb128 0x3
- 1003 0068 0E       		.uleb128 0xe
- 1004 0069 3A       		.uleb128 0x3a
- 1005 006a 0B       		.uleb128 0xb
- 1006 006b 3B       		.uleb128 0x3b
- 1007 006c 05       		.uleb128 0x5
- 1008 006d 49       		.uleb128 0x49
- 1009 006e 13       		.uleb128 0x13
- 1010 006f 02       		.uleb128 0x2
- 1011 0070 17       		.uleb128 0x17
- 1012 0071 00       		.byte	0
- 1013 0072 00       		.byte	0
- 1014 0073 09       		.uleb128 0x9
- 1015 0074 898201   		.uleb128 0x4109
- 1016 0077 01       		.byte	0x1
- 1017 0078 11       		.uleb128 0x11
- 1018 0079 01       		.uleb128 0x1
- 1019 007a 31       		.uleb128 0x31
- 1020 007b 13       		.uleb128 0x13
- 1021 007c 00       		.byte	0
- 1022 007d 00       		.byte	0
- 1023 007e 0A       		.uleb128 0xa
- 1024 007f 8A8201   		.uleb128 0x410a
- 1025 0082 00       		.byte	0
- 1026 0083 02       		.uleb128 0x2
- 1027 0084 18       		.uleb128 0x18
- 1028 0085 9142     		.uleb128 0x2111
- 1029 0087 18       		.uleb128 0x18
- 1030 0088 00       		.byte	0
- 1031 0089 00       		.byte	0
- 1032 008a 0B       		.uleb128 0xb
- 1033 008b 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 30
+ 977 0050 19       		.uleb128 0x19
+ 978 0051 01       		.uleb128 0x1
+ 979 0052 13       		.uleb128 0x13
+ 980 0053 00       		.byte	0
+ 981 0054 00       		.byte	0
+ 982 0055 07       		.uleb128 0x7
+ 983 0056 05       		.uleb128 0x5
+ 984 0057 00       		.byte	0
+ 985 0058 03       		.uleb128 0x3
+ 986 0059 0E       		.uleb128 0xe
+ 987 005a 3A       		.uleb128 0x3a
+ 988 005b 0B       		.uleb128 0xb
+ 989 005c 3B       		.uleb128 0x3b
+ 990 005d 05       		.uleb128 0x5
+ 991 005e 49       		.uleb128 0x49
+ 992 005f 13       		.uleb128 0x13
+ 993 0060 02       		.uleb128 0x2
+ 994 0061 17       		.uleb128 0x17
+ 995 0062 00       		.byte	0
+ 996 0063 00       		.byte	0
+ 997 0064 08       		.uleb128 0x8
+ 998 0065 34       		.uleb128 0x34
+ 999 0066 00       		.byte	0
+ 1000 0067 03       		.uleb128 0x3
+ 1001 0068 0E       		.uleb128 0xe
+ 1002 0069 3A       		.uleb128 0x3a
+ 1003 006a 0B       		.uleb128 0xb
+ 1004 006b 3B       		.uleb128 0x3b
+ 1005 006c 05       		.uleb128 0x5
+ 1006 006d 49       		.uleb128 0x49
+ 1007 006e 13       		.uleb128 0x13
+ 1008 006f 02       		.uleb128 0x2
+ 1009 0070 17       		.uleb128 0x17
+ 1010 0071 00       		.byte	0
+ 1011 0072 00       		.byte	0
+ 1012 0073 09       		.uleb128 0x9
+ 1013 0074 898201   		.uleb128 0x4109
+ 1014 0077 01       		.byte	0x1
+ 1015 0078 11       		.uleb128 0x11
+ 1016 0079 01       		.uleb128 0x1
+ 1017 007a 31       		.uleb128 0x31
+ 1018 007b 13       		.uleb128 0x13
+ 1019 007c 00       		.byte	0
+ 1020 007d 00       		.byte	0
+ 1021 007e 0A       		.uleb128 0xa
+ 1022 007f 8A8201   		.uleb128 0x410a
+ 1023 0082 00       		.byte	0
+ 1024 0083 02       		.uleb128 0x2
+ 1025 0084 18       		.uleb128 0x18
+ 1026 0085 9142     		.uleb128 0x2111
+ 1027 0087 18       		.uleb128 0x18
+ 1028 0088 00       		.byte	0
+ 1029 0089 00       		.byte	0
+ 1030 008a 0B       		.uleb128 0xb
+ 1031 008b 2E       		.uleb128 0x2e
+ 1032 008c 00       		.byte	0
+ 1033 008d 3F       		.uleb128 0x3f
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 30
 
 
- 1034 008c 00       		.byte	0
- 1035 008d 3F       		.uleb128 0x3f
- 1036 008e 19       		.uleb128 0x19
- 1037 008f 03       		.uleb128 0x3
- 1038 0090 0E       		.uleb128 0xe
- 1039 0091 3A       		.uleb128 0x3a
- 1040 0092 0B       		.uleb128 0xb
- 1041 0093 3B       		.uleb128 0x3b
- 1042 0094 0B       		.uleb128 0xb
- 1043 0095 27       		.uleb128 0x27
- 1044 0096 19       		.uleb128 0x19
- 1045 0097 11       		.uleb128 0x11
- 1046 0098 01       		.uleb128 0x1
- 1047 0099 12       		.uleb128 0x12
- 1048 009a 06       		.uleb128 0x6
- 1049 009b 40       		.uleb128 0x40
- 1050 009c 18       		.uleb128 0x18
- 1051 009d 9742     		.uleb128 0x2117
- 1052 009f 19       		.uleb128 0x19
- 1053 00a0 00       		.byte	0
- 1054 00a1 00       		.byte	0
- 1055 00a2 0C       		.uleb128 0xc
- 1056 00a3 2E       		.uleb128 0x2e
- 1057 00a4 01       		.byte	0x1
- 1058 00a5 3F       		.uleb128 0x3f
- 1059 00a6 19       		.uleb128 0x19
- 1060 00a7 03       		.uleb128 0x3
- 1061 00a8 0E       		.uleb128 0xe
- 1062 00a9 3A       		.uleb128 0x3a
- 1063 00aa 0B       		.uleb128 0xb
- 1064 00ab 3B       		.uleb128 0x3b
- 1065 00ac 0B       		.uleb128 0xb
- 1066 00ad 27       		.uleb128 0x27
- 1067 00ae 19       		.uleb128 0x19
- 1068 00af 11       		.uleb128 0x11
- 1069 00b0 01       		.uleb128 0x1
- 1070 00b1 12       		.uleb128 0x12
- 1071 00b2 06       		.uleb128 0x6
- 1072 00b3 40       		.uleb128 0x40
- 1073 00b4 18       		.uleb128 0x18
- 1074 00b5 9742     		.uleb128 0x2117
- 1075 00b7 19       		.uleb128 0x19
- 1076 00b8 01       		.uleb128 0x1
- 1077 00b9 13       		.uleb128 0x13
- 1078 00ba 00       		.byte	0
- 1079 00bb 00       		.byte	0
- 1080 00bc 0D       		.uleb128 0xd
- 1081 00bd 05       		.uleb128 0x5
- 1082 00be 00       		.byte	0
- 1083 00bf 03       		.uleb128 0x3
- 1084 00c0 0E       		.uleb128 0xe
- 1085 00c1 3A       		.uleb128 0x3a
- 1086 00c2 0B       		.uleb128 0xb
- 1087 00c3 3B       		.uleb128 0x3b
- 1088 00c4 0B       		.uleb128 0xb
- 1089 00c5 49       		.uleb128 0x49
- 1090 00c6 13       		.uleb128 0x13
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 31
+ 1034 008e 19       		.uleb128 0x19
+ 1035 008f 03       		.uleb128 0x3
+ 1036 0090 0E       		.uleb128 0xe
+ 1037 0091 3A       		.uleb128 0x3a
+ 1038 0092 0B       		.uleb128 0xb
+ 1039 0093 3B       		.uleb128 0x3b
+ 1040 0094 0B       		.uleb128 0xb
+ 1041 0095 27       		.uleb128 0x27
+ 1042 0096 19       		.uleb128 0x19
+ 1043 0097 11       		.uleb128 0x11
+ 1044 0098 01       		.uleb128 0x1
+ 1045 0099 12       		.uleb128 0x12
+ 1046 009a 06       		.uleb128 0x6
+ 1047 009b 40       		.uleb128 0x40
+ 1048 009c 18       		.uleb128 0x18
+ 1049 009d 9742     		.uleb128 0x2117
+ 1050 009f 19       		.uleb128 0x19
+ 1051 00a0 00       		.byte	0
+ 1052 00a1 00       		.byte	0
+ 1053 00a2 0C       		.uleb128 0xc
+ 1054 00a3 2E       		.uleb128 0x2e
+ 1055 00a4 01       		.byte	0x1
+ 1056 00a5 3F       		.uleb128 0x3f
+ 1057 00a6 19       		.uleb128 0x19
+ 1058 00a7 03       		.uleb128 0x3
+ 1059 00a8 0E       		.uleb128 0xe
+ 1060 00a9 3A       		.uleb128 0x3a
+ 1061 00aa 0B       		.uleb128 0xb
+ 1062 00ab 3B       		.uleb128 0x3b
+ 1063 00ac 0B       		.uleb128 0xb
+ 1064 00ad 27       		.uleb128 0x27
+ 1065 00ae 19       		.uleb128 0x19
+ 1066 00af 11       		.uleb128 0x11
+ 1067 00b0 01       		.uleb128 0x1
+ 1068 00b1 12       		.uleb128 0x12
+ 1069 00b2 06       		.uleb128 0x6
+ 1070 00b3 40       		.uleb128 0x40
+ 1071 00b4 18       		.uleb128 0x18
+ 1072 00b5 9742     		.uleb128 0x2117
+ 1073 00b7 19       		.uleb128 0x19
+ 1074 00b8 01       		.uleb128 0x1
+ 1075 00b9 13       		.uleb128 0x13
+ 1076 00ba 00       		.byte	0
+ 1077 00bb 00       		.byte	0
+ 1078 00bc 0D       		.uleb128 0xd
+ 1079 00bd 05       		.uleb128 0x5
+ 1080 00be 00       		.byte	0
+ 1081 00bf 03       		.uleb128 0x3
+ 1082 00c0 0E       		.uleb128 0xe
+ 1083 00c1 3A       		.uleb128 0x3a
+ 1084 00c2 0B       		.uleb128 0xb
+ 1085 00c3 3B       		.uleb128 0x3b
+ 1086 00c4 0B       		.uleb128 0xb
+ 1087 00c5 49       		.uleb128 0x49
+ 1088 00c6 13       		.uleb128 0x13
+ 1089 00c7 02       		.uleb128 0x2
+ 1090 00c8 18       		.uleb128 0x18
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 31
 
 
- 1091 00c7 02       		.uleb128 0x2
- 1092 00c8 18       		.uleb128 0x18
- 1093 00c9 00       		.byte	0
- 1094 00ca 00       		.byte	0
- 1095 00cb 0E       		.uleb128 0xe
- 1096 00cc 898201   		.uleb128 0x4109
- 1097 00cf 00       		.byte	0
- 1098 00d0 11       		.uleb128 0x11
- 1099 00d1 01       		.uleb128 0x1
- 1100 00d2 31       		.uleb128 0x31
- 1101 00d3 13       		.uleb128 0x13
- 1102 00d4 00       		.byte	0
- 1103 00d5 00       		.byte	0
- 1104 00d6 0F       		.uleb128 0xf
- 1105 00d7 2E       		.uleb128 0x2e
- 1106 00d8 00       		.byte	0
- 1107 00d9 3F       		.uleb128 0x3f
- 1108 00da 19       		.uleb128 0x19
- 1109 00db 03       		.uleb128 0x3
- 1110 00dc 0E       		.uleb128 0xe
- 1111 00dd 3A       		.uleb128 0x3a
- 1112 00de 0B       		.uleb128 0xb
- 1113 00df 3B       		.uleb128 0x3b
- 1114 00e0 0B       		.uleb128 0xb
- 1115 00e1 27       		.uleb128 0x27
- 1116 00e2 19       		.uleb128 0x19
- 1117 00e3 49       		.uleb128 0x49
- 1118 00e4 13       		.uleb128 0x13
- 1119 00e5 11       		.uleb128 0x11
- 1120 00e6 01       		.uleb128 0x1
- 1121 00e7 12       		.uleb128 0x12
- 1122 00e8 06       		.uleb128 0x6
- 1123 00e9 40       		.uleb128 0x40
- 1124 00ea 18       		.uleb128 0x18
- 1125 00eb 9742     		.uleb128 0x2117
- 1126 00ed 19       		.uleb128 0x19
- 1127 00ee 00       		.byte	0
- 1128 00ef 00       		.byte	0
- 1129 00f0 10       		.uleb128 0x10
- 1130 00f1 2E       		.uleb128 0x2e
- 1131 00f2 01       		.byte	0x1
- 1132 00f3 3F       		.uleb128 0x3f
- 1133 00f4 19       		.uleb128 0x19
- 1134 00f5 03       		.uleb128 0x3
- 1135 00f6 0E       		.uleb128 0xe
- 1136 00f7 3A       		.uleb128 0x3a
- 1137 00f8 0B       		.uleb128 0xb
- 1138 00f9 3B       		.uleb128 0x3b
- 1139 00fa 05       		.uleb128 0x5
- 1140 00fb 27       		.uleb128 0x27
- 1141 00fc 19       		.uleb128 0x19
- 1142 00fd 49       		.uleb128 0x49
- 1143 00fe 13       		.uleb128 0x13
- 1144 00ff 11       		.uleb128 0x11
- 1145 0100 01       		.uleb128 0x1
- 1146 0101 12       		.uleb128 0x12
- 1147 0102 06       		.uleb128 0x6
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 32
+ 1091 00c9 00       		.byte	0
+ 1092 00ca 00       		.byte	0
+ 1093 00cb 0E       		.uleb128 0xe
+ 1094 00cc 898201   		.uleb128 0x4109
+ 1095 00cf 00       		.byte	0
+ 1096 00d0 11       		.uleb128 0x11
+ 1097 00d1 01       		.uleb128 0x1
+ 1098 00d2 31       		.uleb128 0x31
+ 1099 00d3 13       		.uleb128 0x13
+ 1100 00d4 00       		.byte	0
+ 1101 00d5 00       		.byte	0
+ 1102 00d6 0F       		.uleb128 0xf
+ 1103 00d7 2E       		.uleb128 0x2e
+ 1104 00d8 00       		.byte	0
+ 1105 00d9 3F       		.uleb128 0x3f
+ 1106 00da 19       		.uleb128 0x19
+ 1107 00db 03       		.uleb128 0x3
+ 1108 00dc 0E       		.uleb128 0xe
+ 1109 00dd 3A       		.uleb128 0x3a
+ 1110 00de 0B       		.uleb128 0xb
+ 1111 00df 3B       		.uleb128 0x3b
+ 1112 00e0 0B       		.uleb128 0xb
+ 1113 00e1 27       		.uleb128 0x27
+ 1114 00e2 19       		.uleb128 0x19
+ 1115 00e3 49       		.uleb128 0x49
+ 1116 00e4 13       		.uleb128 0x13
+ 1117 00e5 11       		.uleb128 0x11
+ 1118 00e6 01       		.uleb128 0x1
+ 1119 00e7 12       		.uleb128 0x12
+ 1120 00e8 06       		.uleb128 0x6
+ 1121 00e9 40       		.uleb128 0x40
+ 1122 00ea 18       		.uleb128 0x18
+ 1123 00eb 9742     		.uleb128 0x2117
+ 1124 00ed 19       		.uleb128 0x19
+ 1125 00ee 00       		.byte	0
+ 1126 00ef 00       		.byte	0
+ 1127 00f0 10       		.uleb128 0x10
+ 1128 00f1 2E       		.uleb128 0x2e
+ 1129 00f2 01       		.byte	0x1
+ 1130 00f3 3F       		.uleb128 0x3f
+ 1131 00f4 19       		.uleb128 0x19
+ 1132 00f5 03       		.uleb128 0x3
+ 1133 00f6 0E       		.uleb128 0xe
+ 1134 00f7 3A       		.uleb128 0x3a
+ 1135 00f8 0B       		.uleb128 0xb
+ 1136 00f9 3B       		.uleb128 0x3b
+ 1137 00fa 05       		.uleb128 0x5
+ 1138 00fb 27       		.uleb128 0x27
+ 1139 00fc 19       		.uleb128 0x19
+ 1140 00fd 49       		.uleb128 0x49
+ 1141 00fe 13       		.uleb128 0x13
+ 1142 00ff 11       		.uleb128 0x11
+ 1143 0100 01       		.uleb128 0x1
+ 1144 0101 12       		.uleb128 0x12
+ 1145 0102 06       		.uleb128 0x6
+ 1146 0103 40       		.uleb128 0x40
+ 1147 0104 18       		.uleb128 0x18
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 32
 
 
- 1148 0103 40       		.uleb128 0x40
- 1149 0104 18       		.uleb128 0x18
- 1150 0105 9742     		.uleb128 0x2117
- 1151 0107 19       		.uleb128 0x19
- 1152 0108 01       		.uleb128 0x1
- 1153 0109 13       		.uleb128 0x13
- 1154 010a 00       		.byte	0
- 1155 010b 00       		.byte	0
- 1156 010c 11       		.uleb128 0x11
- 1157 010d 898201   		.uleb128 0x4109
- 1158 0110 01       		.byte	0x1
- 1159 0111 11       		.uleb128 0x11
- 1160 0112 01       		.uleb128 0x1
- 1161 0113 31       		.uleb128 0x31
- 1162 0114 13       		.uleb128 0x13
- 1163 0115 01       		.uleb128 0x1
- 1164 0116 13       		.uleb128 0x13
- 1165 0117 00       		.byte	0
- 1166 0118 00       		.byte	0
- 1167 0119 12       		.uleb128 0x12
- 1168 011a 2E       		.uleb128 0x2e
- 1169 011b 01       		.byte	0x1
- 1170 011c 3F       		.uleb128 0x3f
- 1171 011d 19       		.uleb128 0x19
- 1172 011e 03       		.uleb128 0x3
- 1173 011f 0E       		.uleb128 0xe
- 1174 0120 3A       		.uleb128 0x3a
- 1175 0121 0B       		.uleb128 0xb
- 1176 0122 3B       		.uleb128 0x3b
- 1177 0123 05       		.uleb128 0x5
- 1178 0124 27       		.uleb128 0x27
- 1179 0125 19       		.uleb128 0x19
- 1180 0126 11       		.uleb128 0x11
- 1181 0127 01       		.uleb128 0x1
- 1182 0128 12       		.uleb128 0x12
- 1183 0129 06       		.uleb128 0x6
- 1184 012a 40       		.uleb128 0x40
- 1185 012b 18       		.uleb128 0x18
- 1186 012c 9742     		.uleb128 0x2117
- 1187 012e 19       		.uleb128 0x19
- 1188 012f 01       		.uleb128 0x1
- 1189 0130 13       		.uleb128 0x13
- 1190 0131 00       		.byte	0
- 1191 0132 00       		.byte	0
- 1192 0133 13       		.uleb128 0x13
- 1193 0134 2E       		.uleb128 0x2e
- 1194 0135 00       		.byte	0
- 1195 0136 3F       		.uleb128 0x3f
- 1196 0137 19       		.uleb128 0x19
- 1197 0138 03       		.uleb128 0x3
- 1198 0139 0E       		.uleb128 0xe
- 1199 013a 3A       		.uleb128 0x3a
- 1200 013b 0B       		.uleb128 0xb
- 1201 013c 3B       		.uleb128 0x3b
- 1202 013d 05       		.uleb128 0x5
- 1203 013e 27       		.uleb128 0x27
- 1204 013f 19       		.uleb128 0x19
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 33
+ 1148 0105 9742     		.uleb128 0x2117
+ 1149 0107 19       		.uleb128 0x19
+ 1150 0108 01       		.uleb128 0x1
+ 1151 0109 13       		.uleb128 0x13
+ 1152 010a 00       		.byte	0
+ 1153 010b 00       		.byte	0
+ 1154 010c 11       		.uleb128 0x11
+ 1155 010d 898201   		.uleb128 0x4109
+ 1156 0110 01       		.byte	0x1
+ 1157 0111 11       		.uleb128 0x11
+ 1158 0112 01       		.uleb128 0x1
+ 1159 0113 31       		.uleb128 0x31
+ 1160 0114 13       		.uleb128 0x13
+ 1161 0115 01       		.uleb128 0x1
+ 1162 0116 13       		.uleb128 0x13
+ 1163 0117 00       		.byte	0
+ 1164 0118 00       		.byte	0
+ 1165 0119 12       		.uleb128 0x12
+ 1166 011a 2E       		.uleb128 0x2e
+ 1167 011b 01       		.byte	0x1
+ 1168 011c 3F       		.uleb128 0x3f
+ 1169 011d 19       		.uleb128 0x19
+ 1170 011e 03       		.uleb128 0x3
+ 1171 011f 0E       		.uleb128 0xe
+ 1172 0120 3A       		.uleb128 0x3a
+ 1173 0121 0B       		.uleb128 0xb
+ 1174 0122 3B       		.uleb128 0x3b
+ 1175 0123 05       		.uleb128 0x5
+ 1176 0124 27       		.uleb128 0x27
+ 1177 0125 19       		.uleb128 0x19
+ 1178 0126 11       		.uleb128 0x11
+ 1179 0127 01       		.uleb128 0x1
+ 1180 0128 12       		.uleb128 0x12
+ 1181 0129 06       		.uleb128 0x6
+ 1182 012a 40       		.uleb128 0x40
+ 1183 012b 18       		.uleb128 0x18
+ 1184 012c 9742     		.uleb128 0x2117
+ 1185 012e 19       		.uleb128 0x19
+ 1186 012f 01       		.uleb128 0x1
+ 1187 0130 13       		.uleb128 0x13
+ 1188 0131 00       		.byte	0
+ 1189 0132 00       		.byte	0
+ 1190 0133 13       		.uleb128 0x13
+ 1191 0134 2E       		.uleb128 0x2e
+ 1192 0135 00       		.byte	0
+ 1193 0136 3F       		.uleb128 0x3f
+ 1194 0137 19       		.uleb128 0x19
+ 1195 0138 03       		.uleb128 0x3
+ 1196 0139 0E       		.uleb128 0xe
+ 1197 013a 3A       		.uleb128 0x3a
+ 1198 013b 0B       		.uleb128 0xb
+ 1199 013c 3B       		.uleb128 0x3b
+ 1200 013d 05       		.uleb128 0x5
+ 1201 013e 27       		.uleb128 0x27
+ 1202 013f 19       		.uleb128 0x19
+ 1203 0140 11       		.uleb128 0x11
+ 1204 0141 01       		.uleb128 0x1
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 33
 
 
- 1205 0140 11       		.uleb128 0x11
- 1206 0141 01       		.uleb128 0x1
- 1207 0142 12       		.uleb128 0x12
- 1208 0143 06       		.uleb128 0x6
- 1209 0144 40       		.uleb128 0x40
- 1210 0145 18       		.uleb128 0x18
- 1211 0146 9742     		.uleb128 0x2117
- 1212 0148 19       		.uleb128 0x19
- 1213 0149 00       		.byte	0
- 1214 014a 00       		.byte	0
- 1215 014b 14       		.uleb128 0x14
- 1216 014c 34       		.uleb128 0x34
- 1217 014d 00       		.byte	0
- 1218 014e 03       		.uleb128 0x3
- 1219 014f 0E       		.uleb128 0xe
- 1220 0150 3A       		.uleb128 0x3a
- 1221 0151 0B       		.uleb128 0xb
- 1222 0152 3B       		.uleb128 0x3b
- 1223 0153 0B       		.uleb128 0xb
- 1224 0154 49       		.uleb128 0x49
- 1225 0155 13       		.uleb128 0x13
- 1226 0156 3F       		.uleb128 0x3f
- 1227 0157 19       		.uleb128 0x19
- 1228 0158 02       		.uleb128 0x2
- 1229 0159 18       		.uleb128 0x18
- 1230 015a 00       		.byte	0
- 1231 015b 00       		.byte	0
- 1232 015c 15       		.uleb128 0x15
- 1233 015d 2E       		.uleb128 0x2e
- 1234 015e 01       		.byte	0x1
- 1235 015f 3F       		.uleb128 0x3f
- 1236 0160 19       		.uleb128 0x19
- 1237 0161 03       		.uleb128 0x3
- 1238 0162 0E       		.uleb128 0xe
- 1239 0163 3A       		.uleb128 0x3a
- 1240 0164 0B       		.uleb128 0xb
- 1241 0165 3B       		.uleb128 0x3b
- 1242 0166 0B       		.uleb128 0xb
- 1243 0167 27       		.uleb128 0x27
- 1244 0168 19       		.uleb128 0x19
- 1245 0169 3C       		.uleb128 0x3c
- 1246 016a 19       		.uleb128 0x19
- 1247 016b 00       		.byte	0
- 1248 016c 00       		.byte	0
- 1249 016d 16       		.uleb128 0x16
- 1250 016e 05       		.uleb128 0x5
- 1251 016f 00       		.byte	0
- 1252 0170 49       		.uleb128 0x49
- 1253 0171 13       		.uleb128 0x13
- 1254 0172 00       		.byte	0
- 1255 0173 00       		.byte	0
- 1256 0174 00       		.byte	0
- 1257              		.section	.debug_loc,"",%progbits
- 1258              	.Ldebug_loc0:
- 1259              	.LLST0:
- 1260 0000 00000000 		.4byte	.LVL0
- 1261 0004 36000000 		.4byte	.LVL3
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 34
+ 1205 0142 12       		.uleb128 0x12
+ 1206 0143 06       		.uleb128 0x6
+ 1207 0144 40       		.uleb128 0x40
+ 1208 0145 18       		.uleb128 0x18
+ 1209 0146 9742     		.uleb128 0x2117
+ 1210 0148 19       		.uleb128 0x19
+ 1211 0149 00       		.byte	0
+ 1212 014a 00       		.byte	0
+ 1213 014b 14       		.uleb128 0x14
+ 1214 014c 34       		.uleb128 0x34
+ 1215 014d 00       		.byte	0
+ 1216 014e 03       		.uleb128 0x3
+ 1217 014f 0E       		.uleb128 0xe
+ 1218 0150 3A       		.uleb128 0x3a
+ 1219 0151 0B       		.uleb128 0xb
+ 1220 0152 3B       		.uleb128 0x3b
+ 1221 0153 0B       		.uleb128 0xb
+ 1222 0154 49       		.uleb128 0x49
+ 1223 0155 13       		.uleb128 0x13
+ 1224 0156 3F       		.uleb128 0x3f
+ 1225 0157 19       		.uleb128 0x19
+ 1226 0158 02       		.uleb128 0x2
+ 1227 0159 18       		.uleb128 0x18
+ 1228 015a 00       		.byte	0
+ 1229 015b 00       		.byte	0
+ 1230 015c 15       		.uleb128 0x15
+ 1231 015d 2E       		.uleb128 0x2e
+ 1232 015e 01       		.byte	0x1
+ 1233 015f 3F       		.uleb128 0x3f
+ 1234 0160 19       		.uleb128 0x19
+ 1235 0161 03       		.uleb128 0x3
+ 1236 0162 0E       		.uleb128 0xe
+ 1237 0163 3A       		.uleb128 0x3a
+ 1238 0164 0B       		.uleb128 0xb
+ 1239 0165 3B       		.uleb128 0x3b
+ 1240 0166 0B       		.uleb128 0xb
+ 1241 0167 27       		.uleb128 0x27
+ 1242 0168 19       		.uleb128 0x19
+ 1243 0169 3C       		.uleb128 0x3c
+ 1244 016a 19       		.uleb128 0x19
+ 1245 016b 00       		.byte	0
+ 1246 016c 00       		.byte	0
+ 1247 016d 16       		.uleb128 0x16
+ 1248 016e 05       		.uleb128 0x5
+ 1249 016f 00       		.byte	0
+ 1250 0170 49       		.uleb128 0x49
+ 1251 0171 13       		.uleb128 0x13
+ 1252 0172 00       		.byte	0
+ 1253 0173 00       		.byte	0
+ 1254 0174 00       		.byte	0
+ 1255              		.section	.debug_loc,"",%progbits
+ 1256              	.Ldebug_loc0:
+ 1257              	.LLST0:
+ 1258 0000 00000000 		.4byte	.LVL0
+ 1259 0004 34000000 		.4byte	.LVL3
+ 1260 0008 0100     		.2byte	0x1
+ 1261 000a 50       		.byte	0x50
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 34
 
 
- 1262 0008 0100     		.2byte	0x1
- 1263 000a 50       		.byte	0x50
- 1264 000b 36000000 		.4byte	.LVL3
- 1265 000f 78000000 		.4byte	.LFE6
- 1266 0013 0400     		.2byte	0x4
- 1267 0015 F3       		.byte	0xf3
- 1268 0016 01       		.uleb128 0x1
- 1269 0017 50       		.byte	0x50
- 1270 0018 9F       		.byte	0x9f
- 1271 0019 00000000 		.4byte	0
- 1272 001d 00000000 		.4byte	0
- 1273              	.LLST1:
- 1274 0021 32000000 		.4byte	.LVL2
- 1275 0025 36000000 		.4byte	.LVL3
- 1276 0029 0200     		.2byte	0x2
- 1277 002b 30       		.byte	0x30
- 1278 002c 9F       		.byte	0x9f
- 1279 002d 36000000 		.4byte	.LVL3
- 1280 0031 64000000 		.4byte	.LVL5
- 1281 0035 0100     		.2byte	0x1
- 1282 0037 54       		.byte	0x54
- 1283 0038 66000000 		.4byte	.LVL6
- 1284 003c 6C000000 		.4byte	.LVL7
- 1285 0040 0100     		.2byte	0x1
- 1286 0042 54       		.byte	0x54
- 1287 0043 00000000 		.4byte	0
- 1288 0047 00000000 		.4byte	0
- 1289              	.LLST2:
- 1290 004b 32000000 		.4byte	.LVL2
- 1291 004f 6C000000 		.4byte	.LVL7
- 1292 0053 0100     		.2byte	0x1
- 1293 0055 57       		.byte	0x57
- 1294 0056 00000000 		.4byte	0
- 1295 005a 00000000 		.4byte	0
- 1296              	.LLST3:
- 1297 005e 0C000000 		.4byte	.LVL1
- 1298 0062 6C000000 		.4byte	.LVL7
- 1299 0066 0100     		.2byte	0x1
- 1300 0068 55       		.byte	0x55
- 1301 0069 00000000 		.4byte	0
- 1302 006d 00000000 		.4byte	0
- 1303              	.LLST4:
- 1304 0071 08000000 		.4byte	.LVL12
- 1305 0075 7A000000 		.4byte	.LVL19
- 1306 0079 0100     		.2byte	0x1
- 1307 007b 56       		.byte	0x56
- 1308 007c 00000000 		.4byte	0
- 1309 0080 00000000 		.4byte	0
- 1310              	.LLST5:
- 1311 0084 0E000000 		.4byte	.LVL13
- 1312 0088 7A000000 		.4byte	.LVL19
- 1313 008c 0100     		.2byte	0x1
- 1314 008e 55       		.byte	0x55
- 1315 008f 00000000 		.4byte	0
- 1316 0093 00000000 		.4byte	0
- 1317              	.LLST6:
- 1318 0097 14000000 		.4byte	.LVL14
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 35
+ 1262 000b 34000000 		.4byte	.LVL3
+ 1263 000f 74000000 		.4byte	.LFE6
+ 1264 0013 0400     		.2byte	0x4
+ 1265 0015 F3       		.byte	0xf3
+ 1266 0016 01       		.uleb128 0x1
+ 1267 0017 50       		.byte	0x50
+ 1268 0018 9F       		.byte	0x9f
+ 1269 0019 00000000 		.4byte	0
+ 1270 001d 00000000 		.4byte	0
+ 1271              	.LLST1:
+ 1272 0021 30000000 		.4byte	.LVL2
+ 1273 0025 34000000 		.4byte	.LVL3
+ 1274 0029 0200     		.2byte	0x2
+ 1275 002b 30       		.byte	0x30
+ 1276 002c 9F       		.byte	0x9f
+ 1277 002d 34000000 		.4byte	.LVL3
+ 1278 0031 60000000 		.4byte	.LVL5
+ 1279 0035 0100     		.2byte	0x1
+ 1280 0037 54       		.byte	0x54
+ 1281 0038 62000000 		.4byte	.LVL6
+ 1282 003c 68000000 		.4byte	.LVL7
+ 1283 0040 0100     		.2byte	0x1
+ 1284 0042 54       		.byte	0x54
+ 1285 0043 00000000 		.4byte	0
+ 1286 0047 00000000 		.4byte	0
+ 1287              	.LLST2:
+ 1288 004b 30000000 		.4byte	.LVL2
+ 1289 004f 68000000 		.4byte	.LVL7
+ 1290 0053 0100     		.2byte	0x1
+ 1291 0055 57       		.byte	0x57
+ 1292 0056 00000000 		.4byte	0
+ 1293 005a 00000000 		.4byte	0
+ 1294              	.LLST3:
+ 1295 005e 0A000000 		.4byte	.LVL1
+ 1296 0062 68000000 		.4byte	.LVL7
+ 1297 0066 0100     		.2byte	0x1
+ 1298 0068 55       		.byte	0x55
+ 1299 0069 00000000 		.4byte	0
+ 1300 006d 00000000 		.4byte	0
+ 1301              	.LLST4:
+ 1302 0071 08000000 		.4byte	.LVL12
+ 1303 0075 7A000000 		.4byte	.LVL19
+ 1304 0079 0100     		.2byte	0x1
+ 1305 007b 56       		.byte	0x56
+ 1306 007c 00000000 		.4byte	0
+ 1307 0080 00000000 		.4byte	0
+ 1308              	.LLST5:
+ 1309 0084 0E000000 		.4byte	.LVL13
+ 1310 0088 7A000000 		.4byte	.LVL19
+ 1311 008c 0100     		.2byte	0x1
+ 1312 008e 55       		.byte	0x55
+ 1313 008f 00000000 		.4byte	0
+ 1314 0093 00000000 		.4byte	0
+ 1315              	.LLST6:
+ 1316 0097 14000000 		.4byte	.LVL14
+ 1317 009b 7A000000 		.4byte	.LVL19
+ 1318 009f 0100     		.2byte	0x1
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 35
 
 
- 1319 009b 7A000000 		.4byte	.LVL19
- 1320 009f 0100     		.2byte	0x1
- 1321 00a1 54       		.byte	0x54
- 1322 00a2 7A000000 		.4byte	.LVL19
- 1323 00a6 90000000 		.4byte	.LFE7
- 1324 00aa 0500     		.2byte	0x5
- 1325 00ac 0C       		.byte	0xc
- 1326 00ad D35A0040 		.4byte	0x40005ad3
- 1327 00b1 00000000 		.4byte	0
- 1328 00b5 00000000 		.4byte	0
- 1329              	.LLST7:
- 1330 00b9 28000000 		.4byte	.LVL15
- 1331 00bd 7A000000 		.4byte	.LVL19
- 1332 00c1 0100     		.2byte	0x1
- 1333 00c3 57       		.byte	0x57
- 1334 00c4 00000000 		.4byte	0
- 1335 00c8 00000000 		.4byte	0
- 1336              	.LLST8:
- 1337 00cc 00000000 		.4byte	.LVL20
- 1338 00d0 08000000 		.4byte	.LVL21
- 1339 00d4 0100     		.2byte	0x1
- 1340 00d6 50       		.byte	0x50
- 1341 00d7 08000000 		.4byte	.LVL21
- 1342 00db 14000000 		.4byte	.LFE8
- 1343 00df 0400     		.2byte	0x4
- 1344 00e1 F3       		.byte	0xf3
- 1345 00e2 01       		.uleb128 0x1
- 1346 00e3 50       		.byte	0x50
- 1347 00e4 9F       		.byte	0x9f
- 1348 00e5 00000000 		.4byte	0
- 1349 00e9 00000000 		.4byte	0
- 1350              		.section	.debug_aranges,"",%progbits
- 1351 0000 6C000000 		.4byte	0x6c
- 1352 0004 0200     		.2byte	0x2
- 1353 0006 00000000 		.4byte	.Ldebug_info0
- 1354 000a 04       		.byte	0x4
- 1355 000b 00       		.byte	0
- 1356 000c 0000     		.2byte	0
- 1357 000e 0000     		.2byte	0
- 1358 0010 00000000 		.4byte	.LFB6
- 1359 0014 78000000 		.4byte	.LFE6-.LFB6
- 1360 0018 00000000 		.4byte	.LFB1
- 1361 001c 1C000000 		.4byte	.LFE1-.LFB1
- 1362 0020 00000000 		.4byte	.LFB3
- 1363 0024 1C000000 		.4byte	.LFE3-.LFB3
- 1364 0028 00000000 		.4byte	.LFB4
- 1365 002c 58000000 		.4byte	.LFE4-.LFB4
- 1366 0030 00000000 		.4byte	.LFB0
- 1367 0034 3C000000 		.4byte	.LFE0-.LFB0
- 1368 0038 00000000 		.4byte	.LFB2
- 1369 003c 1C000000 		.4byte	.LFE2-.LFB2
- 1370 0040 00000000 		.4byte	.LFB5
- 1371 0044 10000000 		.4byte	.LFE5-.LFB5
- 1372 0048 00000000 		.4byte	.LFB7
- 1373 004c 90000000 		.4byte	.LFE7-.LFB7
- 1374 0050 00000000 		.4byte	.LFB8
- 1375 0054 14000000 		.4byte	.LFE8-.LFB8
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 36
+ 1319 00a1 54       		.byte	0x54
+ 1320 00a2 7A000000 		.4byte	.LVL19
+ 1321 00a6 90000000 		.4byte	.LFE7
+ 1322 00aa 0500     		.2byte	0x5
+ 1323 00ac 0C       		.byte	0xc
+ 1324 00ad C35A0040 		.4byte	0x40005ac3
+ 1325 00b1 00000000 		.4byte	0
+ 1326 00b5 00000000 		.4byte	0
+ 1327              	.LLST7:
+ 1328 00b9 28000000 		.4byte	.LVL15
+ 1329 00bd 7A000000 		.4byte	.LVL19
+ 1330 00c1 0100     		.2byte	0x1
+ 1331 00c3 57       		.byte	0x57
+ 1332 00c4 00000000 		.4byte	0
+ 1333 00c8 00000000 		.4byte	0
+ 1334              	.LLST8:
+ 1335 00cc 00000000 		.4byte	.LVL20
+ 1336 00d0 08000000 		.4byte	.LVL21
+ 1337 00d4 0100     		.2byte	0x1
+ 1338 00d6 50       		.byte	0x50
+ 1339 00d7 08000000 		.4byte	.LVL21
+ 1340 00db 14000000 		.4byte	.LFE8
+ 1341 00df 0400     		.2byte	0x4
+ 1342 00e1 F3       		.byte	0xf3
+ 1343 00e2 01       		.uleb128 0x1
+ 1344 00e3 50       		.byte	0x50
+ 1345 00e4 9F       		.byte	0x9f
+ 1346 00e5 00000000 		.4byte	0
+ 1347 00e9 00000000 		.4byte	0
+ 1348              		.section	.debug_aranges,"",%progbits
+ 1349 0000 6C000000 		.4byte	0x6c
+ 1350 0004 0200     		.2byte	0x2
+ 1351 0006 00000000 		.4byte	.Ldebug_info0
+ 1352 000a 04       		.byte	0x4
+ 1353 000b 00       		.byte	0
+ 1354 000c 0000     		.2byte	0
+ 1355 000e 0000     		.2byte	0
+ 1356 0010 00000000 		.4byte	.LFB6
+ 1357 0014 74000000 		.4byte	.LFE6-.LFB6
+ 1358 0018 00000000 		.4byte	.LFB1
+ 1359 001c 1C000000 		.4byte	.LFE1-.LFB1
+ 1360 0020 00000000 		.4byte	.LFB3
+ 1361 0024 1C000000 		.4byte	.LFE3-.LFB3
+ 1362 0028 00000000 		.4byte	.LFB4
+ 1363 002c 58000000 		.4byte	.LFE4-.LFB4
+ 1364 0030 00000000 		.4byte	.LFB0
+ 1365 0034 3C000000 		.4byte	.LFE0-.LFB0
+ 1366 0038 00000000 		.4byte	.LFB2
+ 1367 003c 1C000000 		.4byte	.LFE2-.LFB2
+ 1368 0040 00000000 		.4byte	.LFB5
+ 1369 0044 10000000 		.4byte	.LFE5-.LFB5
+ 1370 0048 00000000 		.4byte	.LFB7
+ 1371 004c 90000000 		.4byte	.LFE7-.LFB7
+ 1372 0050 00000000 		.4byte	.LFB8
+ 1373 0054 14000000 		.4byte	.LFE8-.LFB8
+ 1374 0058 00000000 		.4byte	.LFB9
+ 1375 005c 10000000 		.4byte	.LFE9-.LFB9
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 36
 
 
- 1376 0058 00000000 		.4byte	.LFB9
- 1377 005c 10000000 		.4byte	.LFE9-.LFB9
- 1378 0060 00000000 		.4byte	.LFB10
- 1379 0064 10000000 		.4byte	.LFE10-.LFB10
- 1380 0068 00000000 		.4byte	0
- 1381 006c 00000000 		.4byte	0
- 1382              		.section	.debug_ranges,"",%progbits
- 1383              	.Ldebug_ranges0:
- 1384 0000 00000000 		.4byte	.LFB6
- 1385 0004 78000000 		.4byte	.LFE6
- 1386 0008 00000000 		.4byte	.LFB1
- 1387 000c 1C000000 		.4byte	.LFE1
- 1388 0010 00000000 		.4byte	.LFB3
- 1389 0014 1C000000 		.4byte	.LFE3
- 1390 0018 00000000 		.4byte	.LFB4
- 1391 001c 58000000 		.4byte	.LFE4
- 1392 0020 00000000 		.4byte	.LFB0
- 1393 0024 3C000000 		.4byte	.LFE0
- 1394 0028 00000000 		.4byte	.LFB2
- 1395 002c 1C000000 		.4byte	.LFE2
- 1396 0030 00000000 		.4byte	.LFB5
- 1397 0034 10000000 		.4byte	.LFE5
- 1398 0038 00000000 		.4byte	.LFB7
- 1399 003c 90000000 		.4byte	.LFE7
- 1400 0040 00000000 		.4byte	.LFB8
- 1401 0044 14000000 		.4byte	.LFE8
- 1402 0048 00000000 		.4byte	.LFB9
- 1403 004c 10000000 		.4byte	.LFE9
- 1404 0050 00000000 		.4byte	.LFB10
- 1405 0054 10000000 		.4byte	.LFE10
- 1406 0058 00000000 		.4byte	0
- 1407 005c 00000000 		.4byte	0
- 1408              		.section	.debug_line,"",%progbits
- 1409              	.Ldebug_line0:
- 1410 0000 6E010000 		.section	.debug_str,"MS",%progbits,1
- 1410      02005B00 
- 1410      00000201 
- 1410      FB0E0D00 
- 1410      01010101 
- 1411              	.LASF32:
- 1412 0000 7472696D 		.ascii	"trimVal\000"
- 1412      56616C00 
- 1413              	.LASF30:
- 1414 0008 746D7043 		.ascii	"tmpCR\000"
- 1414      5200
- 1415              	.LASF22:
- 1416 000e 6E696262 		.ascii	"nibble\000"
- 1416      6C6500
- 1417              	.LASF28:
- 1418 0015 746D7053 		.ascii	"tmpSW2\000"
- 1418      573200
- 1419              	.LASF3:
- 1420 001c 73686F72 		.ascii	"short unsigned int\000"
- 1420      7420756E 
- 1420      7369676E 
- 1420      65642069 
- 1420      6E7400
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 37
+ 1376 0060 00000000 		.4byte	.LFB10
+ 1377 0064 10000000 		.4byte	.LFE10-.LFB10
+ 1378 0068 00000000 		.4byte	0
+ 1379 006c 00000000 		.4byte	0
+ 1380              		.section	.debug_ranges,"",%progbits
+ 1381              	.Ldebug_ranges0:
+ 1382 0000 00000000 		.4byte	.LFB6
+ 1383 0004 74000000 		.4byte	.LFE6
+ 1384 0008 00000000 		.4byte	.LFB1
+ 1385 000c 1C000000 		.4byte	.LFE1
+ 1386 0010 00000000 		.4byte	.LFB3
+ 1387 0014 1C000000 		.4byte	.LFE3
+ 1388 0018 00000000 		.4byte	.LFB4
+ 1389 001c 58000000 		.4byte	.LFE4
+ 1390 0020 00000000 		.4byte	.LFB0
+ 1391 0024 3C000000 		.4byte	.LFE0
+ 1392 0028 00000000 		.4byte	.LFB2
+ 1393 002c 1C000000 		.4byte	.LFE2
+ 1394 0030 00000000 		.4byte	.LFB5
+ 1395 0034 10000000 		.4byte	.LFE5
+ 1396 0038 00000000 		.4byte	.LFB7
+ 1397 003c 90000000 		.4byte	.LFE7
+ 1398 0040 00000000 		.4byte	.LFB8
+ 1399 0044 14000000 		.4byte	.LFE8
+ 1400 0048 00000000 		.4byte	.LFB9
+ 1401 004c 10000000 		.4byte	.LFE9
+ 1402 0050 00000000 		.4byte	.LFB10
+ 1403 0054 10000000 		.4byte	.LFE10
+ 1404 0058 00000000 		.4byte	0
+ 1405 005c 00000000 		.4byte	0
+ 1406              		.section	.debug_line,"",%progbits
+ 1407              	.Ldebug_line0:
+ 1408 0000 6E010000 		.section	.debug_str,"MS",%progbits,1
+ 1408      02005B00 
+ 1408      00000201 
+ 1408      FB0E0D00 
+ 1408      01010101 
+ 1409              	.LASF32:
+ 1410 0000 7472696D 		.ascii	"trimVal\000"
+ 1410      56616C00 
+ 1411              	.LASF30:
+ 1412 0008 746D7043 		.ascii	"tmpCR\000"
+ 1412      5200
+ 1413              	.LASF22:
+ 1414 000e 6E696262 		.ascii	"nibble\000"
+ 1414      6C6500
+ 1415              	.LASF28:
+ 1416 0015 746D7053 		.ascii	"tmpSW2\000"
+ 1416      573200
+ 1417              	.LASF3:
+ 1418 001c 73686F72 		.ascii	"short unsigned int\000"
+ 1418      7420756E 
+ 1418      7369676E 
+ 1418      65642069 
+ 1418      6E7400
+ 1419              	.LASF27:
+ 1420 002f 746D7053 		.ascii	"tmpSW0\000"
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 37
 
 
- 1421              	.LASF27:
- 1422 002f 746D7053 		.ascii	"tmpSW0\000"
- 1422      573000
- 1423              	.LASF12:
- 1424 0036 666C6F61 		.ascii	"float\000"
- 1424      7400
- 1425              	.LASF29:
- 1426 003c 746D7053 		.ascii	"tmpSW3\000"
- 1426      573300
- 1427              	.LASF39:
- 1428 0043 44657465 		.ascii	"Detect_Seuil_Recept_GetCompare\000"
- 1428      63745F53 
- 1428      6575696C 
- 1428      5F526563 
- 1428      6570745F 
- 1429              	.LASF1:
- 1430 0062 756E7369 		.ascii	"unsigned char\000"
- 1430      676E6564 
- 1430      20636861 
- 1430      7200
- 1431              	.LASF41:
- 1432 0070 44657465 		.ascii	"Detect_Seuil_Recept_initVar\000"
- 1432      63745F53 
- 1432      6575696C 
- 1432      5F526563 
- 1432      6570745F 
- 1433              	.LASF15:
- 1434 008c 72656738 		.ascii	"reg8\000"
- 1434      00
- 1435              	.LASF17:
- 1436 0091 7472696D 		.ascii	"trimCnt\000"
- 1436      436E7400 
- 1437              	.LASF5:
- 1438 0099 6C6F6E67 		.ascii	"long unsigned int\000"
- 1438      20756E73 
- 1438      69676E65 
- 1438      6420696E 
- 1438      7400
- 1439              	.LASF9:
- 1440 00ab 75696E74 		.ascii	"uint8\000"
- 1440      3800
- 1441              	.LASF34:
- 1442 00b1 44657465 		.ascii	"Detect_Seuil_Recept_PwrDwnOverrideDisable\000"
+ 1420      573000
+ 1421              	.LASF12:
+ 1422 0036 666C6F61 		.ascii	"float\000"
+ 1422      7400
+ 1423              	.LASF29:
+ 1424 003c 746D7053 		.ascii	"tmpSW3\000"
+ 1424      573300
+ 1425              	.LASF39:
+ 1426 0043 44657465 		.ascii	"Detect_Seuil_Recept_GetCompare\000"
+ 1426      63745F53 
+ 1426      6575696C 
+ 1426      5F526563 
+ 1426      6570745F 
+ 1427              	.LASF1:
+ 1428 0062 756E7369 		.ascii	"unsigned char\000"
+ 1428      676E6564 
+ 1428      20636861 
+ 1428      7200
+ 1429              	.LASF41:
+ 1430 0070 44657465 		.ascii	"Detect_Seuil_Recept_initVar\000"
+ 1430      63745F53 
+ 1430      6575696C 
+ 1430      5F526563 
+ 1430      6570745F 
+ 1431              	.LASF15:
+ 1432 008c 72656738 		.ascii	"reg8\000"
+ 1432      00
+ 1433              	.LASF17:
+ 1434 0091 7472696D 		.ascii	"trimCnt\000"
+ 1434      436E7400 
+ 1435              	.LASF5:
+ 1436 0099 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1436      20756E73 
+ 1436      69676E65 
+ 1436      6420696E 
+ 1436      7400
+ 1437              	.LASF9:
+ 1438 00ab 75696E74 		.ascii	"uint8\000"
+ 1438      3800
+ 1439              	.LASF34:
+ 1440 00b1 44657465 		.ascii	"Detect_Seuil_Recept_PwrDwnOverrideDisable\000"
+ 1440      63745F53 
+ 1440      6575696C 
+ 1440      5F526563 
+ 1440      6570745F 
+ 1441              	.LASF38:
+ 1442 00db 44657465 		.ascii	"Detect_Seuil_Recept_trimAdjust\000"
  1442      63745F53 
  1442      6575696C 
  1442      5F526563 
  1442      6570745F 
- 1443              	.LASF38:
- 1444 00db 44657465 		.ascii	"Detect_Seuil_Recept_trimAdjust\000"
- 1444      63745F53 
- 1444      6575696C 
- 1444      5F526563 
- 1444      6570745F 
- 1445              	.LASF13:
- 1446 00fa 646F7562 		.ascii	"double\000"
- 1446      6C6500
- 1447              	.LASF25:
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 38
+ 1443              	.LASF13:
+ 1444 00fa 646F7562 		.ascii	"double\000"
+ 1444      6C6500
+ 1445              	.LASF25:
+ 1446 0101 44657465 		.ascii	"Detect_Seuil_Recept_Init\000"
+ 1446      63745F53 
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 38
 
 
- 1448 0101 44657465 		.ascii	"Detect_Seuil_Recept_Init\000"
+ 1446      6575696C 
+ 1446      5F526563 
+ 1446      6570745F 
+ 1447              	.LASF26:
+ 1448 011a 44657465 		.ascii	"Detect_Seuil_Recept_Start\000"
  1448      63745F53 
  1448      6575696C 
  1448      5F526563 
  1448      6570745F 
- 1449              	.LASF26:
- 1450 011a 44657465 		.ascii	"Detect_Seuil_Recept_Start\000"
- 1450      63745F53 
- 1450      6575696C 
- 1450      5F526563 
- 1450      6570745F 
- 1451              	.LASF10:
- 1452 0134 75696E74 		.ascii	"uint16\000"
- 1452      313600
- 1453              	.LASF11:
- 1454 013b 75696E74 		.ascii	"uint32\000"
- 1454      333200
- 1455              	.LASF35:
- 1456 0142 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 1456      4320342E 
- 1456      392E3320 
- 1456      32303135 
- 1456      30333033 
- 1457 0175 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 1457      20726576 
- 1457      6973696F 
- 1457      6E203232 
- 1457      31323230 
- 1458 01a8 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1458      66756E63 
- 1458      74696F6E 
- 1458      2D736563 
- 1458      74696F6E 
- 1459              	.LASF8:
- 1460 01d0 756E7369 		.ascii	"unsigned int\000"
- 1460      676E6564 
- 1460      20696E74 
+ 1449              	.LASF10:
+ 1450 0134 75696E74 		.ascii	"uint16\000"
+ 1450      313600
+ 1451              	.LASF11:
+ 1452 013b 75696E74 		.ascii	"uint32\000"
+ 1452      333200
+ 1453              	.LASF35:
+ 1454 0142 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1454      4320342E 
+ 1454      392E3320 
+ 1454      32303135 
+ 1454      30333033 
+ 1455 0175 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1455      20726576 
+ 1455      6973696F 
+ 1455      6E203232 
+ 1455      31323230 
+ 1456 01a8 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1456      66756E63 
+ 1456      74696F6E 
+ 1456      2D736563 
+ 1456      74696F6E 
+ 1457              	.LASF8:
+ 1458 01d0 756E7369 		.ascii	"unsigned int\000"
+ 1458      676E6564 
+ 1458      20696E74 
+ 1458      00
+ 1459              	.LASF19:
+ 1460 01dd 636D7053 		.ascii	"cmpState\000"
+ 1460      74617465 
  1460      00
- 1461              	.LASF19:
- 1462 01dd 636D7053 		.ascii	"cmpState\000"
- 1462      74617465 
- 1462      00
- 1463              	.LASF7:
- 1464 01e6 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1464      206C6F6E 
- 1464      6720756E 
- 1464      7369676E 
- 1464      65642069 
- 1465              	.LASF40:
- 1466 01fd 44657465 		.ascii	"Detect_Seuil_Recept_ZeroCal\000"
- 1466      63745F53 
- 1466      6575696C 
- 1466      5F526563 
- 1466      6570745F 
- 1467              	.LASF23:
- 1468 0219 73706565 		.ascii	"speed\000"
- 1468      6400
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 39
+ 1461              	.LASF7:
+ 1462 01e6 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1462      206C6F6E 
+ 1462      6720756E 
+ 1462      7369676E 
+ 1462      65642069 
+ 1463              	.LASF40:
+ 1464 01fd 44657465 		.ascii	"Detect_Seuil_Recept_ZeroCal\000"
+ 1464      63745F53 
+ 1464      6575696C 
+ 1464      5F526563 
+ 1464      6570745F 
+ 1465              	.LASF23:
+ 1466 0219 73706565 		.ascii	"speed\000"
+ 1466      6400
+ 1467              	.LASF16:
+ 1468 021f 73697A65 		.ascii	"sizetype\000"
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 39
 
 
- 1469              	.LASF16:
- 1470 021f 73697A65 		.ascii	"sizetype\000"
- 1470      74797065 
- 1470      00
- 1471              	.LASF18:
- 1472 0228 7472696D 		.ascii	"trimCntMax\000"
- 1472      436E744D 
- 1472      617800
- 1473              	.LASF6:
- 1474 0233 6C6F6E67 		.ascii	"long long int\000"
- 1474      206C6F6E 
- 1474      6720696E 
- 1474      7400
- 1475              	.LASF42:
- 1476 0241 43794465 		.ascii	"CyDelayUs\000"
- 1476      6C617955 
- 1476      7300
- 1477              	.LASF14:
- 1478 024b 63686172 		.ascii	"char\000"
- 1478      00
- 1479              	.LASF36:
- 1480 0250 47656E65 		.ascii	"Generated_Source\\PSoC5\\Detect_Seuil_Recept.c\000"
- 1480      72617465 
- 1480      645F536F 
- 1480      75726365 
- 1480      5C50536F 
- 1481              	.LASF2:
- 1482 027d 73686F72 		.ascii	"short int\000"
- 1482      7420696E 
- 1482      7400
- 1483              	.LASF24:
- 1484 0287 44657465 		.ascii	"Detect_Seuil_Recept_SetSpeed\000"
+ 1468      74797065 
+ 1468      00
+ 1469              	.LASF18:
+ 1470 0228 7472696D 		.ascii	"trimCntMax\000"
+ 1470      436E744D 
+ 1470      617800
+ 1471              	.LASF6:
+ 1472 0233 6C6F6E67 		.ascii	"long long int\000"
+ 1472      206C6F6E 
+ 1472      6720696E 
+ 1472      7400
+ 1473              	.LASF42:
+ 1474 0241 43794465 		.ascii	"CyDelayUs\000"
+ 1474      6C617955 
+ 1474      7300
+ 1475              	.LASF14:
+ 1476 024b 63686172 		.ascii	"char\000"
+ 1476      00
+ 1477              	.LASF36:
+ 1478 0250 47656E65 		.ascii	"Generated_Source\\PSoC5\\Detect_Seuil_Recept.c\000"
+ 1478      72617465 
+ 1478      645F536F 
+ 1478      75726365 
+ 1478      5C50536F 
+ 1479              	.LASF2:
+ 1480 027d 73686F72 		.ascii	"short int\000"
+ 1480      7420696E 
+ 1480      7400
+ 1481              	.LASF24:
+ 1482 0287 44657465 		.ascii	"Detect_Seuil_Recept_SetSpeed\000"
+ 1482      63745F53 
+ 1482      6575696C 
+ 1482      5F526563 
+ 1482      6570745F 
+ 1483              	.LASF33:
+ 1484 02a4 44657465 		.ascii	"Detect_Seuil_Recept_PwrDwnOverrideEnable\000"
  1484      63745F53 
  1484      6575696C 
  1484      5F526563 
  1484      6570745F 
- 1485              	.LASF33:
- 1486 02a4 44657465 		.ascii	"Detect_Seuil_Recept_PwrDwnOverrideEnable\000"
- 1486      63745F53 
- 1486      6575696C 
- 1486      5F526563 
- 1486      6570745F 
- 1487              	.LASF4:
- 1488 02cd 6C6F6E67 		.ascii	"long int\000"
- 1488      20696E74 
- 1488      00
- 1489              	.LASF31:
- 1490 02d6 44657465 		.ascii	"Detect_Seuil_Recept_LoadTrim\000"
+ 1485              	.LASF4:
+ 1486 02cd 6C6F6E67 		.ascii	"long int\000"
+ 1486      20696E74 
+ 1486      00
+ 1487              	.LASF31:
+ 1488 02d6 44657465 		.ascii	"Detect_Seuil_Recept_LoadTrim\000"
+ 1488      63745F53 
+ 1488      6575696C 
+ 1488      5F526563 
+ 1488      6570745F 
+ 1489              	.LASF21:
+ 1490 02f3 44657465 		.ascii	"Detect_Seuil_Recept_Stop\000"
  1490      63745F53 
  1490      6575696C 
  1490      5F526563 
  1490      6570745F 
- 1491              	.LASF21:
- 1492 02f3 44657465 		.ascii	"Detect_Seuil_Recept_Stop\000"
- 1492      63745F53 
- 1492      6575696C 
- 1492      5F526563 
-ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccvQgYwn.s 			page 40
+ 1491              	.LASF0:
+ARM GAS  C:\Users\Julien\AppData\Local\Temp\ccwVUYtD.s 			page 40
 
 
- 1492      6570745F 
- 1493              	.LASF0:
- 1494 030c 7369676E 		.ascii	"signed char\000"
- 1494      65642063 
- 1494      68617200 
- 1495              	.LASF20:
- 1496 0318 44657465 		.ascii	"Detect_Seuil_Recept_Enable\000"
- 1496      63745F53 
- 1496      6575696C 
- 1496      5F526563 
- 1496      6570745F 
- 1497              	.LASF37:
- 1498 0333 433A5C55 		.ascii	"C:\\Users\\Julien\\Documents\\INSA\\5A\\BE_systemes"
- 1498      73657273 
- 1498      5C4A756C 
- 1498      69656E5C 
- 1498      446F6375 
- 1499 0360 5F656D62 		.ascii	"_embarques\\BE_systemes_embarques\\projet_entier.cy"
- 1499      61727175 
- 1499      65735C42 
- 1499      455F7379 
- 1499      7374656D 
- 1500 0391 64736E00 		.ascii	"dsn\000"
- 1501              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 1492 030c 7369676E 		.ascii	"signed char\000"
+ 1492      65642063 
+ 1492      68617200 
+ 1493              	.LASF20:
+ 1494 0318 44657465 		.ascii	"Detect_Seuil_Recept_Enable\000"
+ 1494      63745F53 
+ 1494      6575696C 
+ 1494      5F526563 
+ 1494      6570745F 
+ 1495              	.LASF37:
+ 1496 0333 433A5C55 		.ascii	"C:\\Users\\Julien\\Documents\\INSA\\5A\\BE_systemes"
+ 1496      73657273 
+ 1496      5C4A756C 
+ 1496      69656E5C 
+ 1496      446F6375 
+ 1497 0360 5F656D62 		.ascii	"_embarques\\BE_systemes_embarques\\projet_entier.cy"
+ 1497      61727175 
+ 1497      65735C42 
+ 1497      455F7379 
+ 1497      7374656D 
+ 1498 0391 64736E00 		.ascii	"dsn\000"
+ 1499              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

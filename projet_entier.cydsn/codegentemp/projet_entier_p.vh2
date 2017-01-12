@@ -1,5 +1,5 @@
 -- Project:   projet_entier
--- Generated: 01/11/2017 22:50:42
+-- Generated: 01/12/2017 16:59:03
 -- PSoC Creator  4.0
 
 ENTITY projet_entier IS
@@ -337,9 +337,13 @@ ARCHITECTURE __DEFAULT__ OF projet_entier IS
     ATTRIBUTE lib_model OF PWM_FR(0) : LABEL IS "iocell14";
     ATTRIBUTE Location OF PWM_FR(0) : LABEL IS "P12[5]";
     ATTRIBUTE lib_model OF PWM_BL(0) : LABEL IS "iocell15";
-    ATTRIBUTE Location OF PWM_BL(0) : LABEL IS "P1[7]";
+    ATTRIBUTE Location OF PWM_BL(0) : LABEL IS "P5[1]";
     ATTRIBUTE lib_model OF PWM_BR(0) : LABEL IS "iocell16";
     ATTRIBUTE Location OF PWM_BR(0) : LABEL IS "P1[6]";
+    ATTRIBUTE lib_model OF Moteur_BL_inA(0) : LABEL IS "iocell17";
+    ATTRIBUTE Location OF Moteur_BL_inA(0) : LABEL IS "P0[1]";
+    ATTRIBUTE lib_model OF Moteur_BL_inB(0) : LABEL IS "iocell18";
+    ATTRIBUTE Location OF Moteur_BL_inB(0) : LABEL IS "P0[0]";
     ATTRIBUTE lib_model OF \US_40kHz:PWMUDB:status_2\ : LABEL IS "macrocell1";
     ATTRIBUTE lib_model OF \Timer_US:TimerUDB:capt_fifo_load\ : LABEL IS "macrocell2";
     ATTRIBUTE lib_model OF \Timer_US:TimerUDB:status_tc\ : LABEL IS "macrocell3";
@@ -356,8 +360,8 @@ ARCHITECTURE __DEFAULT__ OF projet_entier IS
     ATTRIBUTE lib_model OF \US_40kHz:PWMUDB:genblk8:stsreg\ : LABEL IS "statusicell1";
     ATTRIBUTE lib_model OF \US_40kHz:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "datapathcell1";
     ATTRIBUTE lib_model OF \US_40kHz:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "datapathcell2";
-    ATTRIBUTE Location OF \Detect_Seuil_Recept:ctComp\ : LABEL IS "F(Comparator,2)";
-    ATTRIBUTE Location OF \V_seuil:viDAC8\ : LABEL IS "F(VIDAC,2)";
+    ATTRIBUTE Location OF \Detect_Seuil_Recept:ctComp\ : LABEL IS "F(Comparator,0)";
+    ATTRIBUTE Location OF \V_seuil:viDAC8\ : LABEL IS "F(VIDAC,0)";
     ATTRIBUTE lib_model OF \Timer_US:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell2";
     ATTRIBUTE lib_model OF \Timer_US:TimerUDB:sT24:timerdp:u0\ : LABEL IS "datapathcell3";
     ATTRIBUTE lib_model OF \Timer_US:TimerUDB:sT24:timerdp:u1\ : LABEL IS "datapathcell4";
