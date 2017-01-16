@@ -30,7 +30,7 @@
     <peripheral>
       <name>ctrl_led</name>
       <description>No description available</description>
-      <baseAddress>0x40006476</baseAddress>
+      <baseAddress>0x40006475</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -88,7 +88,7 @@
         <register>
           <name>RX_XBee_UART_RX_STATUS</name>
           <description>RX status register</description>
-          <addressOffset>0x4000646E</addressOffset>
+          <addressOffset>0x4000646D</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -160,7 +160,7 @@
         <register>
           <name>Timer_periode_COUNTER</name>
           <description>UDB.A0 - Current Down Counter Value</description>
-          <addressOffset>0x40006408</addressOffset>
+          <addressOffset>0x40006402</addressOffset>
           <size>24</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -169,7 +169,7 @@
         <register>
           <name>Timer_periode_PERIOD</name>
           <description>UDB.D0 - Assigned Period</description>
-          <addressOffset>0x40006428</addressOffset>
+          <addressOffset>0x40006422</addressOffset>
           <size>24</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -178,7 +178,7 @@
         <register>
           <name>Timer_periode_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006479</addressOffset>
+          <addressOffset>0x4000647C</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -224,7 +224,7 @@
         <register>
           <name>Timer_periode_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x40006489</addressOffset>
+          <addressOffset>0x40006484</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -263,7 +263,7 @@
         <register>
           <name>Timer_periode_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006499</addressOffset>
+          <addressOffset>0x40006494</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -400,7 +400,7 @@
         <register>
           <name>PWM_Back__COMPARE1</name>
           <description>UDB.D0 - Assigned Compare1 Value</description>
-          <addressOffset>0x40006529</addressOffset>
+          <addressOffset>0x4000642F</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -409,7 +409,7 @@
         <register>
           <name>PWM_Back__COMPARE2</name>
           <description>UDB.D1 - Assigned Compare2 Value</description>
-          <addressOffset>0x40006539</addressOffset>
+          <addressOffset>0x4000643F</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -418,7 +418,7 @@
         <register>
           <name>PWM_Back_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006579</addressOffset>
+          <addressOffset>0x40006473</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -450,7 +450,7 @@
         <register>
           <name>PWM_Back_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x40006589</addressOffset>
+          <addressOffset>0x40006483</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -496,7 +496,7 @@
         <register>
           <name>PWM_Back_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006599</addressOffset>
+          <addressOffset>0x4000649F</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -633,7 +633,7 @@
         <register>
           <name>PWM_Front__COMPARE1</name>
           <description>UDB.D0 - Assigned Compare1 Value</description>
-          <addressOffset>0x4000642B</addressOffset>
+          <addressOffset>0x40006525</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -642,7 +642,7 @@
         <register>
           <name>PWM_Front__COMPARE2</name>
           <description>UDB.D1 - Assigned Compare2 Value</description>
-          <addressOffset>0x4000643B</addressOffset>
+          <addressOffset>0x40006535</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -651,7 +651,7 @@
         <register>
           <name>PWM_Front_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006478</addressOffset>
+          <addressOffset>0x40006576</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -683,7 +683,7 @@
         <register>
           <name>PWM_Front_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x40006488</addressOffset>
+          <addressOffset>0x40006585</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -729,7 +729,7 @@
         <register>
           <name>PWM_Front_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x4000649B</addressOffset>
+          <addressOffset>0x40006595</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -902,7 +902,7 @@
         <register>
           <name>VDAC8_TR</name>
           <description>VDAC8_TR</description>
-          <addressOffset>0x40004608</addressOffset>
+          <addressOffset>0x4000460A</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -920,7 +920,7 @@
         <register>
           <name>VDAC8_CR0</name>
           <description>DAC Block Control Register 0</description>
-          <addressOffset>0x40005820</addressOffset>
+          <addressOffset>0x40005828</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -998,7 +998,7 @@
         <register>
           <name>VDAC8_CR1</name>
           <description>DAC Block Control Register 1</description>
-          <addressOffset>0x40005821</addressOffset>
+          <addressOffset>0x40005829</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1085,7 +1085,7 @@
         <register>
           <name>VDAC8_SW0</name>
           <description>DAC Analog Routing Register 0</description>
-          <addressOffset>0x40005A80</addressOffset>
+          <addressOffset>0x40005A90</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1134,7 +1134,7 @@
         <register>
           <name>VDAC8_SW2</name>
           <description>DAC Analog Routing Register 2</description>
-          <addressOffset>0x40005A82</addressOffset>
+          <addressOffset>0x40005A92</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1183,7 +1183,7 @@
         <register>
           <name>VDAC8_SW3</name>
           <description>DAC Analog Routing Register 3</description>
-          <addressOffset>0x40005A83</addressOffset>
+          <addressOffset>0x40005A93</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1251,7 +1251,7 @@
         <register>
           <name>VDAC8_SW4</name>
           <description>DAC Analog Routing Register 4</description>
-          <addressOffset>0x40005A84</addressOffset>
+          <addressOffset>0x40005A94</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1300,7 +1300,7 @@
         <register>
           <name>VDAC8_STROBE</name>
           <description>DAC Strobe Register</description>
-          <addressOffset>0x40005A87</addressOffset>
+          <addressOffset>0x40005A97</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1379,7 +1379,7 @@
         <register>
           <name>VDAC8_DATA</name>
           <description>DAC Data Register</description>
-          <addressOffset>0x40005B80</addressOffset>
+          <addressOffset>0x40005B82</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2234,7 +2234,7 @@
         <register>
           <name>Timer_US_COUNTER</name>
           <description>UDB.A0 - Current Down Counter Value</description>
-          <addressOffset>0x40006404</addressOffset>
+          <addressOffset>0x40006405</addressOffset>
           <size>24</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2243,7 +2243,7 @@
         <register>
           <name>Timer_US_PERIOD</name>
           <description>UDB.D0 - Assigned Period</description>
-          <addressOffset>0x40006424</addressOffset>
+          <addressOffset>0x40006425</addressOffset>
           <size>24</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2252,7 +2252,7 @@
         <register>
           <name>Timer_US_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x40006486</addressOffset>
+          <addressOffset>0x40006487</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2291,7 +2291,7 @@
         <register>
           <name>Timer_US_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006496</addressOffset>
+          <addressOffset>0x40006497</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2464,7 +2464,7 @@
         <register>
           <name>Detect_Seuil_Recept_Comp_TR0</name>
           <description>Comparator Trim Register_TR0</description>
-          <addressOffset>0x40004630</addressOffset>
+          <addressOffset>0x40004634</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2574,7 +2574,7 @@
         <register>
           <name>Detect_Seuil_Recept_Comp_TR1</name>
           <description>Comparator Trim Register_TR1</description>
-          <addressOffset>0x40004631</addressOffset>
+          <addressOffset>0x40004635</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2684,7 +2684,7 @@
         <register>
           <name>Detect_Seuil_Recept_Comp_CR</name>
           <description>Comparator Control Register</description>
-          <addressOffset>0x40005840</addressOffset>
+          <addressOffset>0x40005842</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2819,7 +2819,7 @@
         <register>
           <name>Detect_Seuil_Recept_Comp_SW0</name>
           <description>Comparator Analog Routing Register 0</description>
-          <addressOffset>0x40005AC0</addressOffset>
+          <addressOffset>0x40005AD0</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2982,7 +2982,7 @@
         <register>
           <name>Detect_Seuil_Recept_Comp_SW2</name>
           <description>Comparator Analog Routing Register 2</description>
-          <addressOffset>0x40005AC2</addressOffset>
+          <addressOffset>0x40005AD2</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3031,7 +3031,7 @@
         <register>
           <name>Detect_Seuil_Recept_Comp_SW3</name>
           <description>Comparator Analog Routing Register 3</description>
-          <addressOffset>0x40005AC3</addressOffset>
+          <addressOffset>0x40005AD3</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3137,7 +3137,7 @@
         <register>
           <name>Detect_Seuil_Recept_Comp_SW4</name>
           <description>Comparator Analog Routing Register 4</description>
-          <addressOffset>0x40005AC4</addressOffset>
+          <addressOffset>0x40005AD4</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3224,7 +3224,7 @@
         <register>
           <name>Detect_Seuil_Recept_Comp_SW6</name>
           <description>Comparator Analog Routing Register 6</description>
-          <addressOffset>0x40005AC6</addressOffset>
+          <addressOffset>0x40005AD6</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3273,7 +3273,7 @@
         <register>
           <name>Detect_Seuil_Recept_Comp_CLK</name>
           <description>Comparator Clock Control Register</description>
-          <addressOffset>0x40005AC7</addressOffset>
+          <addressOffset>0x40005AD7</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3422,7 +3422,7 @@
         <register>
           <name>US_40kHz_COMPARE_1</name>
           <description>UDB.D0 - Assigned Compare1 Value</description>
-          <addressOffset>0x40006422</addressOffset>
+          <addressOffset>0x40006526</addressOffset>
           <size>16</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3431,7 +3431,7 @@
         <register>
           <name>US_40kHz_COMPARE_2</name>
           <description>UDB.D1 - Assigned Compare2 Value</description>
-          <addressOffset>0x40006432</addressOffset>
+          <addressOffset>0x40006536</addressOffset>
           <size>16</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3440,7 +3440,7 @@
         <register>
           <name>US_40kHz_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x40006483</addressOffset>
+          <addressOffset>0x40006587</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3486,7 +3486,7 @@
         <register>
           <name>US_40kHz_STATUS_AUX_CTRLDP0</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006492</addressOffset>
+          <addressOffset>0x40006596</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3611,7 +3611,7 @@
         <register>
           <name>US_40kHz_STATUS_AUX_CTRLDP1</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006493</addressOffset>
+          <addressOffset>0x40006597</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3738,7 +3738,7 @@
     <peripheral>
       <name>Control_Reg_1</name>
       <description>No description available</description>
-      <baseAddress>0x40006474</baseAddress>
+      <baseAddress>0x40006574</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -3796,7 +3796,7 @@
         <register>
           <name>Counter_1_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x4000647C</addressOffset>
+          <addressOffset>0x40006477</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3828,7 +3828,7 @@
         <register>
           <name>Counter_1_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x4000648F</addressOffset>
+          <addressOffset>0x4000648C</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3888,7 +3888,7 @@
         <register>
           <name>Counter_1_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x4000649F</addressOffset>
+          <addressOffset>0x4000649C</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>

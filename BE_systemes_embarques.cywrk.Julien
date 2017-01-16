@@ -649,54 +649,9 @@
 <VisibleNodeIds>
 <v>BE_systemes_embarques</v>
 <v>BE_systemes_embarques\Counter_exemple</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1_CustChars.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1_LCDPort.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1_PM.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\clock_1.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\clock_2.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\Counter_1.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\Counter_1_PM.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CounterISR.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\P0_4.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\P0_5.lst</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Counter_exemple.elf</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Counter_exemple.hex</v>
-<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Counter_exemple.map</v>
-<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.gpdsc</v>
 <v>BE_systemes_embarques\Counter_exemple\Counter_exemple.rpt</v>
 <v>BE_systemes_embarques\Counter_exemple\Counter_exemple_timing.html</v>
 <v>BE_systemes_embarques\projet_entier</v>
-<v>BE_systemes_embarques\projet_entier\CortexM3</v>
-<v>BE_systemes_embarques\projet_entier\CortexM3\ARM_GCC_493</v>
-<v>BE_systemes_embarques\projet_entier\CortexM3\ARM_GCC_493\Debug</v>
-<v>BE_systemes_embarques\projet_entier\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
-<v>BE_systemes_embarques\projet_entier\CortexM3\ARM_GCC_493\Debug\Listing Files\Ampli_Recept.lst</v>
-<v>BE_systemes_embarques\projet_entier\CortexM3\ARM_GCC_493\Debug\Listing Files\Ampli_Recept_PM.lst</v>
-<v>BE_systemes_embarques\projet_entier\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1.lst</v>
-<v>BE_systemes_embarques\projet_entier\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1_CustChars.lst</v>
-<v>BE_systemes_embarques\projet_entier\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1_LCDPort.lst</v>
-<v>BE_systemes_embarques\projet_entier\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1_PM.lst</v>
-<v>BE_systemes_embarques\projet_entier\CortexM3\ARM_GCC_493\Debug\Listing Files\Clock_1.lst</v>
-<v>BE_systemes_embarques\projet_entier\CortexM3\ARM_GCC_493\Debug\Listing Files\Clock_2.lst</v>
-<v>BE_systemes_embarques\projet_entier\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
-<v>BE_systemes_embarques\projet_entier\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_1.lst</v>
-<v>BE_systemes_embarques\projet_entier\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_1_PM.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -835,8 +790,8 @@
 <OpenDocs>
 <name v=".\projet_entier.cydsn\main.c" />
 <name v=".\projet_entier.cydsn\motor_management.c" />
-<name v=".\projet_entier.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\projet_entier.cydsn\motor_management.h" />
+<name v=".\projet_entier.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\projet_entier.cydsn\projet_entier.cydwr" />
 <name v=".\projet_entier.cydsn\ultrason.h" />
 <name v=".\projet_entier.cydsn\ultrason.c" />
@@ -847,7 +802,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1371, 796" SelectedTabbedMdiWindow="28a02dbb-3495-47d9-a4f3-29a713abcec3"><DocumentWindow Key="ff364271-0621-4a3a-863f-ffe7c582c86b" Guid="28a02dbb-3495-47d9-a4f3-29a713abcec3" /><DocumentWindow Key="c4198f65-b8f0-48b9-8893-7987055dd79a" Guid="5e8f781c-71d5-4970-891b-871ff527b916" /><DocumentWindow Key="b9cde270-235f-452e-ba0d-e8ad0cfa3a46" Guid="22bf83d5-b822-47ec-84b3-80b2ff72f8bd" /><DocumentWindow Key="c325640a-58c2-4050-8461-29e0daefc516" Guid="f8491c15-f5c1-4c67-93fa-6cc279059410" /><DocumentWindow Key="f7bd3bba-41c6-44af-9c47-657c20964d6a" Guid="4c65aa68-57b2-4c12-93b3-f25290315fc8" /><DocumentWindow Key="41197d88-0fdf-42ec-bc68-897939faa047" Guid="a2abd798-4adf-4c30-89d0-101b38d81594" /><DocumentWindow Key="bb8c491a-286c-4207-a34c-38d361541527" Guid="b5ec5c65-9135-4ff0-a39e-06ff21de5904" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1625, 796" SelectedTabbedMdiWindow="63984a0b-52e1-4fb1-9163-8b2ebd5fdb73"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="6d0653a0-27c7-43e1-8e8c-eea05ee190dd" /><DocumentWindow Key="02613dbc-c9c9-4f16-905d-a3033288b7e3" Guid="0abe2d78-a09a-4966-854a-e68e81e109de" /><DocumentWindow Key="faa08004-543f-4a07-955f-e4be3c63e30b" Guid="8ad5e9cd-6939-400b-8d92-18e598727ff5" /><DocumentWindow Key="84c793e4-4de1-4165-8098-1af0cb521b50" Guid="67779489-930a-46bf-996e-f44e68b85d6b" /><DocumentWindow Key="1c66e36e-e184-4117-9f9a-3d8157dde4c5" Guid="821cadd6-9d30-48d3-b87c-26a1eb133d82" /><DocumentWindow Key="7d53a8bb-9237-4c33-af19-462edcfb5059" Guid="63984a0b-52e1-4fb1-9163-8b2ebd5fdb73" /><DocumentWindow Key="3fe949fb-c1cd-4809-a7d0-7cef2806e999" Guid="a7251012-d3f5-43c7-ac7f-44af390ae3e8" /><DocumentWindow Key="e8b5bfc4-8f1d-43b1-8830-7cd3b7cb04da" Guid="f805c500-ee59-4767-a09c-67f8e8e9a8bb" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
