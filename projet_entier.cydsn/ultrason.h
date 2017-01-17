@@ -10,6 +10,8 @@
  * ========================================
 */
 #include "project.h"
+extern uint16_t distance;
+extern uint8_t new_period;
 
 void init_ultrason();
 CY_ISR(timerInterrupt);

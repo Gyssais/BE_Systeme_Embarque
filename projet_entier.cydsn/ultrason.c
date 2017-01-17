@@ -14,7 +14,8 @@
 
 uint32 timerCount;
 uint8 recu;
-uint16 distance;
+uint16 distance=1000;
+uint8_t new_period=0; //mise à 1 toutes les 2.7ms
 
 void init_ultrason()
 {
@@ -49,10 +50,10 @@ CY_ISR(timerInterrupt)
     //Timer_US_STATUS_CAPTURE; // Remise à 0 status register
     distance = (uint16) ((16777216-timerCount)/48)*0.34; // en mm
         
-	CharLCD_1_Position(0u, 11u);
-    CharLCD_1_PrintString("     ");
-    CharLCD_1_Position(0u, 11u);
-    CharLCD_1_PrintNumber(distance);
+	//CharLCD_1_Position(0u, 11u);
+    //CharLCD_1_PrintString("     ");
+    //CharLCD_1_Position(0u, 11u);
+    //CharLCD_1_PrintNumber(distance);
     
     recu=1;
 }
@@ -64,9 +65,12 @@ CY_ISR(counterInterrupt)
 {
     if (recu==0)
     {
-        CharLCD_1_Position(0u, 11u);
-        CharLCD_1_PrintString("INF  ");
+        //CharLCD_1_Position(0u, 11u);
+        //CharLCD_1_PrintString("     ");
+        //CharLCD_1_Position(0u, 11u);
+        //CharLCD_1_PrintString("INF  ");
     }
+    distance=1000;
     Control_Reg_1_Write(0); // Arrêt émission US, activation réception
     recu = 0;
 }
@@ -81,6 +85,7 @@ CY_ISR(periodeInterrupt)
     Detect_Seuil_Recept_Start();
     Control_Reg_1_Write(1);// Génération signal pour émetteur ultrasons
     Timer_periode_ReadStatusRegister();
+    new_period=1;
 }
 
 /* [] END OF FILE */

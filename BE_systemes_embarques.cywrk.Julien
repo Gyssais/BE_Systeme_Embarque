@@ -649,9 +649,33 @@
 <VisibleNodeIds>
 <v>BE_systemes_embarques</v>
 <v>BE_systemes_embarques\Counter_exemple</v>
-<v>BE_systemes_embarques\Counter_exemple\Counter_exemple.rpt</v>
-<v>BE_systemes_embarques\Counter_exemple\Counter_exemple_timing.html</v>
-<v>BE_systemes_embarques\projet_entier</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1_CustChars.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1_LCDPort.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CharLCD_1_PM.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\clock_1.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\clock_2.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\Counter_1.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\Counter_1_PM.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CounterISR.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\P0_4.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Listing Files\P0_5.lst</v>
+<v>BE_systemes_embarques\Counter_exemple\CortexM3\ARM_GCC_493\Debug\Counter_exemple.elf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -753,27 +777,6 @@
 <v>BE_systemes_embarques\projet_entier\cy_clock_v2_20</v>
 <v>BE_systemes_embarques\projet_entier\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
 <v>BE_systemes_embarques\projet_entier\cy_isr_v1_70</v>
-<v>BE_systemes_embarques\projet_entier\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
-<v>BE_systemes_embarques\projet_entier\cy_pins_v2_20</v>
-<v>BE_systemes_embarques\projet_entier\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>BE_systemes_embarques\projet_entier\cy_srff_v1_0.pdf</v>
-<v>BE_systemes_embarques\projet_entier\cy_vref_v1_70.pdf</v>
-<v>BE_systemes_embarques\projet_entier\CyControlReg_v1_80</v>
-<v>BE_systemes_embarques\projet_entier\CyControlReg_v1_80\CyControlReg_v1_80.pdf</v>
-<v>BE_systemes_embarques\projet_entier\not_v1_0.pdf</v>
-<v>BE_systemes_embarques\projet_entier\PGA_Inv_v2_0.pdf</v>
-<v>BE_systemes_embarques\projet_entier\PWM_v3_30</v>
-<v>BE_systemes_embarques\projet_entier\PWM_v3_30\PWM_v3_30.pdf</v>
-<v>BE_systemes_embarques\projet_entier\Speaker_v1_0.pdf</v>
-<v>BE_systemes_embarques\projet_entier\Timer_v2_70</v>
-<v>BE_systemes_embarques\projet_entier\Timer_v2_70\Timer_v2_70.pdf</v>
-<v>BE_systemes_embarques\projet_entier\UART_v2_50.pdf</v>
-<v>BE_systemes_embarques\projet_entier\VDAC8_v1_90.pdf</v>
-<v>BE_systemes_embarques\projet_entier\ZeroTerminal.pdf</v>
-<v>BE_systemes_embarques\Test_timer</v>
-<v>BE_systemes_embarques\Test_timer\PSoC 5LP Architecture TRM</v>
-<v>BE_systemes_embarques\Test_timer\CY8C58LP Family Datasheet</v>
-<v>BE_systemes_embarques\Test_timer\System Reference Guides</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -802,7 +805,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1625, 796" SelectedTabbedMdiWindow="63984a0b-52e1-4fb1-9163-8b2ebd5fdb73"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="6d0653a0-27c7-43e1-8e8c-eea05ee190dd" /><DocumentWindow Key="02613dbc-c9c9-4f16-905d-a3033288b7e3" Guid="0abe2d78-a09a-4966-854a-e68e81e109de" /><DocumentWindow Key="faa08004-543f-4a07-955f-e4be3c63e30b" Guid="8ad5e9cd-6939-400b-8d92-18e598727ff5" /><DocumentWindow Key="84c793e4-4de1-4165-8098-1af0cb521b50" Guid="67779489-930a-46bf-996e-f44e68b85d6b" /><DocumentWindow Key="1c66e36e-e184-4117-9f9a-3d8157dde4c5" Guid="821cadd6-9d30-48d3-b87c-26a1eb133d82" /><DocumentWindow Key="7d53a8bb-9237-4c33-af19-462edcfb5059" Guid="63984a0b-52e1-4fb1-9163-8b2ebd5fdb73" /><DocumentWindow Key="3fe949fb-c1cd-4809-a7d0-7cef2806e999" Guid="a7251012-d3f5-43c7-ac7f-44af390ae3e8" /><DocumentWindow Key="e8b5bfc4-8f1d-43b1-8830-7cd3b7cb04da" Guid="f805c500-ee59-4767-a09c-67f8e8e9a8bb" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1371, 796" SelectedTabbedMdiWindow="85ab38a0-9f07-45e2-baa5-38a004e908d7"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="6d0653a0-27c7-43e1-8e8c-eea05ee190dd" /><DocumentWindow Key="68a752d2-8379-4141-afde-8618bc43dace" Guid="f44a7c5e-b579-410d-b2a4-40e5f4193c74" /><DocumentWindow Key="3532d876-4e28-47e5-91f1-7ca8be0ce391" Guid="3a55e1a1-1547-4c0f-90ab-8da48e3cd719" /><DocumentWindow Key="e0783746-3d19-4766-bd19-264ce6370f8b" Guid="85ab38a0-9f07-45e2-baa5-38a004e908d7" /><DocumentWindow Key="85761ede-559d-4c28-aeeb-d2b14e6974b1" Guid="2cc9a5c9-f978-4916-9c1a-331bf3d448bc" /><DocumentWindow Key="a919acf3-7fe6-4fc6-b691-c539646e27d7" Guid="8610978c-6042-4aca-add5-c898aef50f51" /><DocumentWindow Key="72ed7dfb-0400-4279-b97c-bfd284aa4905" Guid="97ee7935-40ae-4229-b1a7-4ead38158b61" /><DocumentWindow Key="d2ea2f56-2106-42aa-9310-3c61200aa17a" Guid="3eb5b304-00f8-492a-8925-2117eecbd54c" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

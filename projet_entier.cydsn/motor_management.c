@@ -33,73 +33,79 @@ void init_motor_management()
     PWM_Back_Init();   
 }
 
-void control_moteurs()
+//void control_moteurs()
+//{
+//    uint8 Received_Data;
+//    
+//    if(XBee_UART_GetRxBufferSize()>0)
+//    {   
+//        Received_Data = XBee_UART_GetChar();    
+//        if(Received_Data == KEY_AVANCE)
+//        {
+//            // AVANCE TOUS LES MOTEURS
+//            avance_moteurs();
+//        }
+//        else if(Received_Data == KEY_RECULE)
+//        {
+//            // RECULE TOUS LES MOTEURS
+//            recule_moteurs();
+//        }
+//        else if(Received_Data == KEY_DROITE)
+//        {
+//            // TOURNE À DROITE
+//            tourner_droite();            
+//        }
+//        else if(Received_Data == KEY_GAUCHE)
+//        {
+//            // TOURNE À GAUCHE
+//            tourner_gauche();                                        
+//        }
+//    }    
+//}
+
+void stop_moteurs()
 {
-    uint8 Received_Data;
-    
-    if(XBee_UART_GetRxBufferSize()>0)
-    {   
-        Received_Data = XBee_UART_GetChar();    
-        if(Received_Data == KEY_AVANCE)
-        {
-            // AVANCE TOUS LES MOTEURS
-            avance_moteurs();
-        }
-        else if(Received_Data == KEY_RECULE)
-        {
-            // RECULE TOUS LES MOTEURS
-            recule_moteurs();
-        }
-        else if(Received_Data == KEY_DROITE)
-        {
-            // TOURNE À DROITE
-            tourner_droite();            
-        }
-        else if(Received_Data == KEY_GAUCHE)
-        {
-            // TOURNE À GAUCHE
-            tourner_gauche();                                        
-        }
-    }    
+   ctrl_moteur_Write(STOP); 
 }
 
-void avance_moteurs(void)
+
+void avance_moteurs(uint8_t vitesse)
 {
     ctrl_moteur_Write(CTRL_AVANCE);
     
-    PWM_Front_WriteCompare1(VITESSE_1); // Moteur Front Left    
-    PWM_Front_WriteCompare2(VITESSE_1); // Moteur Front Right
-    PWM_Back_WriteCompare1(VITESSE_1);  // Moteur Back Left
-    PWM_Back_WriteCompare2(VITESSE_1);  // Moteur Back Right
+    PWM_Front_WriteCompare1(vitesse); // Moteur Front Left    
+    PWM_Front_WriteCompare2(vitesse); // Moteur Front Right
+    PWM_Back_WriteCompare1(vitesse);  // Moteur Back Left
+    PWM_Back_WriteCompare2(vitesse);  // Moteur Back Right
 }
-void recule_moteurs(void)
+void recule_moteurs(uint8_t vitesse)
 {
     ctrl_moteur_Write(CTRL_RECULE);
     
-    PWM_Front_WriteCompare1(VITESSE_1); // Moteur Front Left    
-    PWM_Front_WriteCompare2(VITESSE_1); // Moteur Front Right
-    PWM_Back_WriteCompare1(VITESSE_1);  // Moteur Back Left
-    PWM_Back_WriteCompare2(VITESSE_1);  // Moteur Back Right
+    PWM_Front_WriteCompare1(vitesse); // Moteur Front Left    
+    PWM_Front_WriteCompare2(vitesse); // Moteur Front Right
+    PWM_Back_WriteCompare1(vitesse);  // Moteur Back Left
+    PWM_Back_WriteCompare2(vitesse);  // Moteur Back Right
 }
 
-void tourner_droite(void)
+void tourner_droite(uint8_t vitesse)
 {
     ctrl_moteur_Write(CTRL_DROITE);
     
-    PWM_Front_WriteCompare1(VITESSE_1); // Moteur Front Left    
-    PWM_Front_WriteCompare2(VITESSE_1); // Moteur Front Right
-    PWM_Back_WriteCompare1(VITESSE_1);  // Moteur Back Left
-    PWM_Back_WriteCompare2(VITESSE_1);  // Moteur Back Right
+    PWM_Front_WriteCompare1(vitesse); // Moteur Front Left    
+    PWM_Front_WriteCompare2(vitesse); // Moteur Front Right
+    PWM_Back_WriteCompare1(vitesse);  // Moteur Back Left
+    PWM_Back_WriteCompare2(vitesse);  // Moteur Back Right
 } 
 
-void tourner_gauche(void)
+void tourner_gauche(uint8_t vitesse)
 {
     ctrl_moteur_Write(CTRL_GAUCHE);
     
-    PWM_Front_WriteCompare1(VITESSE_1); // Moteur Front Left    
-    PWM_Front_WriteCompare2(VITESSE_1); // Moteur Front Right
-    PWM_Back_WriteCompare1(VITESSE_1);  // Moteur Back Left
-    PWM_Back_WriteCompare2(VITESSE_1);  // Moteur Back Right
+    PWM_Front_WriteCompare1(vitesse); // Moteur Front Left    
+    PWM_Front_WriteCompare2(vitesse); // Moteur Front Right
+    PWM_Back_WriteCompare1(vitesse);  // Moteur Back Left
+    PWM_Back_WriteCompare2(vitesse);  // Moteur Back Right
 } 
 
 /* [] END OF FILE */
