@@ -65,10 +65,10 @@ CY_ISR(counterInterrupt)
 {
     if (recu==0)
     {
-        //CharLCD_1_Position(0u, 11u);
-        //CharLCD_1_PrintString("     ");
-        //CharLCD_1_Position(0u, 11u);
-        //CharLCD_1_PrintString("INF  ");
+        CharLCD_1_Position(0u, 11u);
+        CharLCD_1_PrintString("     ");
+        CharLCD_1_Position(0u, 11u);
+        CharLCD_1_PrintString("INF  ");
     }
     distance=1000;
     Control_Reg_1_Write(0); // Arrêt émission US, activation réception
@@ -86,6 +86,10 @@ CY_ISR(periodeInterrupt)
     Control_Reg_1_Write(1);// Génération signal pour émetteur ultrasons
     Timer_periode_ReadStatusRegister();
     new_period=1;
+    CharLCD_1_Position(0u, 11u);
+    CharLCD_1_PrintString("     ");
+    CharLCD_1_Position(0u, 11u);
+    CharLCD_1_PrintNumber(distance);
 }
 
 /* [] END OF FILE */

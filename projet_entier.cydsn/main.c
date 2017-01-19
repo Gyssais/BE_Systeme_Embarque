@@ -13,8 +13,8 @@
 #include "motor_management.h"
 #include "ultrason.h"
 
-#define DIST_MIN 100
-#define TIMING_VIRAGE 20 // *2.7ms = durée virage droite ou gauche
+#define DIST_MIN 300
+#define TIMING_VIRAGE 10 // *2.7ms = durée virage droite ou gauche
 
 int vitesse=0;
 
